@@ -13,10 +13,14 @@
   "license": "ISC",
   "dependencies": {
     "basic-ftp": "^2.13.2",
-    "body-parser": "^1.18.3", 
+    "body-parser": "^1.18.3",
+    "chokidar": "^2.0.4",
     "express": "^4.16.3",
     "ftp": "^0.3.10",
-    "ftp-client": "^0.2.2"
+    "ftp-client": "^0.2.2",
+    "xml-js": "^1.6.7",
+    "xml2js": "^0.4.19",
+    "xml2json": "^0.11.2"
   },
   "devDependencies": {
     "nodemon": "^1.18.3"
