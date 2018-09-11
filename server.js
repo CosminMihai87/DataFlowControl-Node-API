@@ -1,6 +1,6 @@
 var express = require('express') 
 const app = express();  
-var db = require('./database'); 
+var db = require('./database.js'); 
 var path = require('path');
 var fs = require('fs');
 var Client = require('ftp');   
@@ -17,7 +17,7 @@ app.get('/', (req, res)=> {
     console.log('Return succesfull for route: ', req.path );
     res.json({ message: 'Hello! Welcome to our REST API!' });  
 });
- 
+  
 app.get('/getProtocol/:process/:isoCode', (req, res)=>{  
     let isoCode = req.params.isoCode;
     let process = req.params.process;
@@ -26,44 +26,74 @@ app.get('/getProtocol/:process/:isoCode', (req, res)=>{
     var readFTP = new Client();
     //on connected to ftp event :
     readFTP.on('ready', ()=> { 
-        //changing the file to the specific protocol path:  
-        readFTP.cwd( processing.getProtPath(process,isoCode), (error)=> {
-            if (error) throw error;  
-            readFTP.list((error, list)=> {
-                //reading the files from the desired path and structuring them in a json
-                if (error) throw error; 
-                var files = list.map((k)=>{ return { type: k['type'], name: k['name'], owner: k['owner'], size: k['size'], date: k['date'].toISOString() } });  // processing.getProcessDateTime(k['name'])
-                if (process.toLowerCase()=='porthos') {  files = files.filter(k => k.owner === '32382'); } //all porthos log files 
-                // files = files.filter(k => k.date.indexOf(new Date().toISOString().substring(0,10)) == 0 ); //only take the curent day's files not older files.  
-                files = files.filter(k => k.date.indexOf('2018-08-13') == 0 );  //ARAMIS TEST FILE WITH ERRORs
-                    // downloading the specific files from the list above:
-                    for (let [index, filename] of files.map(k => k.name).entries() ) {      
-                        if (index==0) {
-                            readFTP.get( processing.getProtPath(process,isoCode) + filename, (error, stream)=> { 
-                                if (error) {  
-                                    console.log(error);
-                                    throw res.status(400).send({ error: true, message: error }); 
-                                } else {       
-                                    const chunks = [];  
-                                    stream.on("data", (chunk)=> { chunks.push(chunk); }) 
-                                    .on('end', ()=> {  
-                                        res.send({ 
-                                            error: false,    
-                                            file : files.map((k)=>{ return { name: k['name'], size: k['size'] } })[index] , 
-                                            data : processing.getProcessJSON(process,chunks), 
-                                            message: process + ' details for the country with the ' + isoCode + ' isoCode.' 
-                                        })
-                                    });    
-                                }
-                            }) 
-                        }  
+        readFTP.cwd( processing.getProtPath(process,isoCode), (error)=> {  
+            if (error) {   
+                console.log(`Error when changing the path on the ftp server: ${error}`);
+                throw res.status(400).send({ error: true, message: `Error when changing the path on the ftp server: ${error}` }); 
+            }
+            getFileDetails(readFTP).then((files)=> {   
+                //we call the for as an ASYNC function so that the res.send waits for answer from this for and then writes it to the UI
+                async function get_all_files() {
+                    var return_array =[];
+                    for (let [index, filename] of files.map(k => k.name).entries() ) {    
+                        var jsonResult = await getProcessedFile(readFTP,files,filename,index,process,isoCode); //we wait for each read from ftp to finish to start the next one
+                        return_array.push(jsonResult);
                     }
-                readFTP.end(); 
+                    return return_array;
+                }
+                get_all_files().then((jsonResult) => { 
+                    res.send({ process : jsonResult })
+                }); 
             }); 
-            readFTP.end();  
-        });   
-    }); 
-    readFTP.connect(db); 
+        })
+    });  
+     
+    readFTP.connect(db.connection(isoCode)); 
+
+    var getFileDetails = function(readFTP){
+        return new Promise((resolve, reject)=> {
+            readFTP.list((error, list)=> {
+                if (error) {   
+                    reject(`Error when getting the list of files: ${error}`)
+                    console.log(`Error when getting the list of files: ${error}`);
+                    throw res.status(400).send({ error: true, message: `Error when getting the list of files: ${error}` }); 
+                }
+                var files = list.map((k)=>{ return { type: k['type'], name: k['name'], owner: k['owner'], size: k['size'], date: k['date'].toISOString() } });  // processing.getProcessDateTime(k['name'])
+                files = files.filter(k => k.type != 'd'); //all files NOT folders 
+                files = files.sort( (a, b)=> { return new Date(a.date).getTime() - new Date(b.date).getTime(); }).reverse(); //sorting files descending based on date
+                if (process.toLowerCase()=='porthos') {  files = files.filter(k => k.owner === '32382'); }  //all porthos log files if the process is Porthos   
+                files = files.filter(k => k.date.indexOf(new Date().toISOString().substring(0,10)) == 0 ); //only take the curent day's files not older files. 
+                // files = files.filter(k => k.date.indexOf('2018-07-01') == 0 );  //ARAMIS TEST FILE WITH ERRORs    
+                resolve(files); 
+            })
+        })
+    }
+ 
+    async function getProcessedFile(readFTP,files,filename,index,process,isoCode){   
+        return new Promise((resolve, reject)=> {
+            readFTP.get( processing.getProtPath(process,isoCode) + filename, (error, stream )=> {  
+                if (error) {   
+                    reject(`Error when parsing and processing file ${filename} : ${error}`);
+                    console.log(`Error when parsing and processing file ${filename} : ${error}`);
+                    throw res.status(400).send({ error: true, message: `Error when parsing and processing file ${filename} : ${error}` }); 
+                } else {       
+                    const chunks = [];  
+                    stream.on("data", (chunk)=> { chunks.push(chunk); }) 
+                    .on('end', ()=> {  
+                        resolve({ 
+                            country: isoCode,
+                            application: process,
+                            run : processing.getProcessRunName(filename),
+                            date : processing.getProcessDateTime(filename),
+                            filename : filename, 
+                            data : processing.getProcessJSON(process,chunks,filename)   
+                        });   
+                    });  
+                }
+            })   
+        })
+    }
+    
 });
 
 
