@@ -1,9 +1,7 @@
 const express = require('express'); 
 const router = express.Router(); 
 const axios = require('axios');   
-const db = require('./database.js');   
-var tunnel = require('tunnel-ssh');   
-const functions = require('./functions.js');
+const db = require('./database.js');      
  
 router.get('/', (req, res)=> { 
     res.json({ message: 'Hello! Welcome to our main server service!' });  

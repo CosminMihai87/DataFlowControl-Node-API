@@ -12,20 +12,28 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "adm-zip": "^0.4.11",
     "axios": "^0.18.0",
     "basic-ftp": "^2.13.2",
     "body-parser": "^1.18.3",
     "chokidar": "^2.0.4",
     "express": "^4.16.3",
+    "extract-zip": "^1.6.7",
     "ftp": "^0.3.10",
     "ftp-client": "^0.2.2",
+    "gunzip-maybe": "^1.4.1",
     "inject-tunnel-ssh": "0.0.5",
     "mongoose": "^5.2.14",
     "ssh2": "^0.6.1",
+    "tar-stream": "^1.6.2",
+    "targz": "^1.0.1",
     "tunnel-ssh": "^4.1.4",
+    "unzip": "^0.1.11",
+    "unzip2": "^0.2.5",
     "xml-js": "^1.6.7",
     "xml2js": "^0.4.19",
-    "xml2json": "^0.11.2"
+    "xml2json": "^0.11.2",
+    "zlib": "^1.0.5"
   },
   "devDependencies": {
     "nodemon": "^1.18.3"

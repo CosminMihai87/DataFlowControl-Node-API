@@ -1,16 +1,21 @@
 const express = require('express');
+const fs = require('fs');   
+const path = require('path');
+var targz = require('targz');   
 const router = express.Router();
 const db = require('../../database.js');   
 var client = require('ftp');  
 var functions = require('../../functions.js');   
 
-router.get('/', (req, res)=> { 
-    res.json({ message: 'Hello! Welcome to our readFromFTP microservice!' });  
+router.use('/', express.static('html'));
+ 
+router.get('/', (req, res)=> {  
+    res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-router.get('/getLogFilesList/:process/:isoCode', (req, res)=>{  
+router.get('/getLogFilesList/:process/:isoCode', (req, res)=>{   
     let isoCode = req.params.isoCode;
-    let process = req.params.process;
+    let process = req.params.process; 
     if (!isoCode) { return res.status(400).send({ api_error: true, message: 'Please provide a country isoCode!' }); }  
     if (!process) { return res.status(400).send({ api_error: true, message: 'Please provide a process name!' }); }  
     var readFTP = new client();
@@ -26,8 +31,16 @@ router.get('/getLogFilesList/:process/:isoCode', (req, res)=>{
                     if (error) {    
                         console.log(`Error when getting the list of files: ${error}`);
                         res.status(400).send({ api_error: true, message: `Error when getting the list of files: ${error}` }); 
-                    } else { 
-                        var files = list.map((k)=>{ return { type: k['type'], name: k['name'], owner: k['owner'], size: k['size'], date: functions.getProcessDateTime(k['name'])  } });  // functions.getProcessDateTime(k['name'])     // k['date'].toISOString()
+                    } else {   
+                        var files = list.map((k)=>{ return { 
+                            type: k['type'], 
+                            name: k['name'], 
+                            owner: k['owner'], 
+                            size: k['size'], 
+                            date: functions.getProcessDateTime(k['name']), // functions.getProcessDateTime(k['name'])     // k['date'].toISOString()
+                            path: functions.getProtPath(process,isoCode)
+                        } });  
+
                         files = files.filter(k => k.type != 'd'); //all files NOT folders 
                         files = files.sort( (a, b)=> { return new Date(a.date).getTime() - new Date(b.date).getTime(); }).reverse(); //sorting files descending based on date
                         if (process.toLowerCase()=='porthos') { 
@@ -39,7 +52,11 @@ router.get('/getLogFilesList/:process/:isoCode', (req, res)=>{
                             files = files.filter(k => k.date.indexOf(new Date().toISOString().substring(0,10)) == 0 ); //only take the curent day's files not older files.  
                         }
                         // files = files.filter(k => k.date.indexOf('2018-07-01') == 0 );  //ARAMIS TEST FILE WITH ERRORs FOR TESTING   
-                        res.status(200).json({ api_error: false, message: `The Log files list for the  ${isoCode} ${process} process is:`, files: files });  
+                        res.status(200).json({
+                            api_error: false, 
+                            message: `The last Log files list for the  ${isoCode} ${process} process is:`, 
+                            files: files
+                        });  
                     }
                 })
             };
@@ -48,7 +65,174 @@ router.get('/getLogFilesList/:process/:isoCode', (req, res)=>{
     readFTP.connect(db.ftpConnection(isoCode));    
 });
 
+router.get('/getLogFilesList/:process/:isoCode/:date', (req, res)=>{  
+    let isoCode = req.params.isoCode;
+    let process = req.params.process;
+    let date = req.params.date; 
+    if ((!isoCode) || isoCode.match(/^[a-zA-Z][a-zA-Z]$/g)!=isoCode ) {
+         return res.status(400).send({ api_error: true, message: 'Please provide a valid country isoCode!' }); 
+    }  
+    if ((!process) || ['porthos','aramis','datatrans','rc'].indexOf(process.toLowerCase())==-1 ) 
+        { return res.status(400).send({ api_error: true, message: 'Please provide a valid process name!' }); 
+    } 
+    if ((!date) || date.match(/([12]\d{3}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01]))/g)!=date ) {   
+        return res.status(400).send({ api_error: true, message: 'Please provide a valid date!' }); 
+    }     
+    var readFTP = new client(); 
+    readFTP.on('ready', ()=> { 
+        var final_list = [];  
+        readFTP.cwd( functions.getProtPath(process,isoCode), (error)=> {  
+            if (error) {   
+                console.log(`Error when changing the path on the ftp server: ${error}`);
+                res.status(400).send({ api_error: true, message: `Error when changing the path on the ftp server: ${error}` }); 
+            } else {
+                readFTP.list((error, list)=> {  
+                    if (error) {    
+                        console.log(`Error when getting the list of files: ${error}`);
+                        res.status(400).send({ api_error: true, message: `Error when getting the list of files: ${error}` }); 
+                    };
+                    if (process.toLowerCase()=='porthos') {  list = list.filter(k => k.owner === '32382');  };  //all porthos log files if the process is Porthos   
+                    var filtered =  list.filter(k => k.name.indexOf(date)!=-1 ); 
+                    if ( filtered.length > 0 ) {   
+                        filtered.forEach(item => {
+                            final_list.push(  
+                                { 
+                                    type: item.type, 
+                                    name: item.name,
+                                    owner: item.owner,
+                                    size: item.size,
+                                    date: functions.getProcessDateTime(item.name),
+                                    path: functions.getProtPath(process,isoCode)    
+                                }
+                            );
+                        }); 
+                        res.status(200).json({ 
+                            api_error: false, 
+                            message: `The Log files list for the  ${isoCode} ${process} process from ${date.slice(0,4)+'-'+date.slice(4,6)+'-'+date.slice(6,8)} are:`, 
+                            files: final_list 
+                        });    
+                    } else {
+                        //this means it has been archived so we need to "dig deeper" for the files :) : 
+                        readFTP.cwd( functions.getProtPath(process,isoCode)+'/archive', (error)=> {  
+                            if (error) {    
+                                console.log(`Error when changing the path on the ftp server: ${error}`);
+                                res.status(400).send({ api_error: true, message: `Error when changing the path on the ftp server: ${error}` }); 
+                            } else {
+                                readFTP.list((error, list)=> {  
+                                    if (error) {    
+                                        console.log(`Error when getting the list of files: ${error}`);
+                                        res.status(400).send({ api_error: true, message: `Error when getting the list of files: ${error}` }); 
+                                    } else {
+                                        list = list.filter(k => k.name.indexOf(date)!=-1 ); 
+                                        if  (list.length > 0) {
+                                            // we download the archive since we cannot parse from archives   
+                                            readFTP.get( functions.getProtPath(process,isoCode)+'/archive/'+ list[0].name , (error, stream) => {
+                                                var body = '';
+                                                var i = 0;
+                                                if (error) {
+                                                    console.log(`Error when downloading the archive file locally: ${error}`);
+                                                    res.status(400).send({ api_error: true, message: `Error when downloading the archive file locally: ${error}` }); 
+                                                }
+                                                stream.once('close', ()=> { readFTP.end(); }); 
+                                                stream.pipe(fs.createWriteStream('./downloads/'+list[0].name));    
+                                                stream.on('finish', () => {   
+                                                    // the async unzip function
+                                                    async function unzip(path){
+                                                        return await new Promise((resolve, reject) => { 
+                                                            targz.decompress({
+                                                                src: path,
+                                                                dest: path.split('.')[1]
+                                                            }, (error) => {
+                                                                if(error) {
+                                                                    console.log(`Error when extracting the .tar.gz archive locally: ${error}`); 
+                                                                    reject(`Error when extracting the .tar.gz archive locally: ${error}`); 
+                                                                } else { 
+                                                                    console.log(`Decompressed locally succesfully : ${path.split('.')[1]}`);
+                                                                    resolve(path.split('.')[1]);
+                                                                }
+                                                            })
+                                                        });
+                                                    };  
+                                                    // gettin (async) the files from the unzipped path  
+                                                    async function getFileList(path) { 
+                                                        return await new Promise((resolve, reject) => {
+                                                            try {  
+                                                                fs.readdir(path, (error, files) => {
+                                                                    if(error) {
+                                                                        console.log(`Error when getting the names of the files from local extracted folder: ${error}`);
+                                                                        reject(`Error when getting the names of the files from local extracted folder: ${error}`);
+                                                                        res.status(400).send({ api_error: true, message: `Error when getting the names of the files from local extracted folder: ${error}` }); 
+                                                                    } else {  
+                                                                        var resp = [];
+                                                                        files.forEach(file => {  
+                                                                            if (file.indexOf('GDPR')==-1) {
+                                                                                resp.push({ 
+                                                                                        type: '-', 
+                                                                                        name: file,
+                                                                                        owner: '32382',
+                                                                                        size: fs.statSync(path+'/'+file).size,
+                                                                                        date: functions.getProcessDateTime(file),
+                                                                                        path: functions.getProtPath(process,isoCode)+'archive/'+list[0].name 
+                                                                                });
+                                                                            }
+                                                                        });  
+                                                                        resolve(resp);
+                                                                    }  
+                                                                })
+                                                            } catch (error) {
+                                                                console.log(`Error when getting the names of the files via sync function 'getFileList': ${error}`);
+                                                                reject(`Error when getting the names of the files via sync function 'getFileList: ${error}`);
+                                                                throw res.status(400).send({ api_error: true, message: `Error when getting the names of the files via sync function 'getFileList': ${error}` });  
+                                                            } 
+                                                        });
+                                                    };   
+                                                    // cleaning up the downloads folder where we downloaded , unzipped and processed the files 
+                                                    async function clean_up(path2clean) {
+                                                        return await new Promise((resolve, reject) => {
+                                                            fs.readdir(path2clean, (err, files) => {     
+                                                                if (err) throw err; 
+                                                                for (const file of files) { 
+                                                                    fs.unlink(path.join(path2clean, file), err => { 
+                                                                        if (err) {
+                                                                            reject(error)
+                                                                            throw err;
+                                                                        } else {
+                                                                            resolve(`Deleted locally succesfully : ${path2clean}`)
+                                                                        }
+                                                                    });
+                                                                }
+                                                            });
+                                                        });
+                                                    };  
 
+                                                    // the process in order : unzipp the downloaded files , work with them to get the res json to display, then delete the downloaded fiels
+                                                    unzip('./downloads/'+list[0].name).then((path)=>{
+                                                        getFileList(path).then((result)=>{ 
+                                                            res.status(200).json({ 
+                                                                api_error: false, 
+                                                                message: `The Log files list for the ${isoCode} ${process} process from ${date.slice(0,4)+'-'+date.slice(4,6)+'-'+date.slice(6,8)} are:`, 
+                                                                files: result 
+                                                            });
+                                                            clean_up('./downloads/').then((response)=>{
+                                                                console.log(response);
+                                                            }); 
+                                                        });    
+                                                    }); 
+                                                });
+                                            }); 
+                                        }
+                                    }
+                                });      
+                            }
+                        });  
+                    } 
+                })  
+            };
+        });
+    }); 
+    readFTP.connect(db.ftpConnection(isoCode)); 
+});
+ 
 router.get('/getLogData/:process/:isoCode/:filename', (req, res)=>{  
     let isoCode = req.params.isoCode;
     let process = req.params.process;

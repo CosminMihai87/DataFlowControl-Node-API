@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dataflow Control API</title> 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <style>
+        body { padding-top:50px; }
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div class="jumbotron">
+            <h2>Welcome to one of our GFK Dataflow Control API's</h1>
+            <h3 style='color:red;'>General Info:</h1>
+                <li>This API connects to one of GFK's servers and reads logs of the processes that run on a daily basis for all the countries.</li>
+            <h3 style='color:red;'>Parameter Info:</h1>
+                <li>process = The GFK Application that runs (for example: <i>Porthos, Aramis, Datatrans, RC</i>) </li>
+                <li>isoCode = The country's ISOCode (for example: <i>RO=Romania, AT=Austria, etc.</i>)</li>
+                <li>date = The date from which we want the protocols to be displayed YYYYmmdd format (for example: <i>20180922</i> ) </li>
+                <li>filename = The exact name of the log file produced (for example: <i>ScanPlus_dataro_20180920_062118.xml.log</i> ) </li>
+            <h3 style='color:red;'>/getLogFilesList/:process/:isoCode</h1>
+                <li>Details : This is an API that returns a JSON array with all the process runs <u>in the curent day</u> for the specified application and country.  </li>
+                <li>Example : <i>getLogFilesList/Porthos/RO/</i>  </li>
+            <h3 style='color:red;'>/getLogFilesList/:process/:isoCode/:date</h1>
+                <li>Details : This is an API that returns a JSON array with all the process runs for the specified day,application and country.  </li>
+                <li>Example : <i>getLogFilesList/Porthos/RO/20180922</i>  </li>
+            <h3 style='color:red;'>/getLogData/:process/:isoCode/:filename</h1>
+                <li>Details : This is an API that returns a JSON with all the process details of a specific run extracted from a specific log file for a specific Country and Application </li>
+                <li>Example : <i>getLogData/Porthos/RO/ScanPlus_RO_RC_20180927_062355.log</i>  </li>
+        </div>
+    </div> 
+</body>
+</html>
+
