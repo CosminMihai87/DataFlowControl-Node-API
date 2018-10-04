@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dataflow Control API</title> 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <style>
+        body { padding-top:50px; }
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div class="jumbotron">
+            <h2>Welcome to one of our GFK Dataflow Control API's</h1>
+            <h3 style='color:red;'>General Info:</h1>
+                <li>This API connects to one of GFK's servers and reads logs of the processes that run on a daily basis for all the countries.</li>
+            <h3 style='color:red;'>Parameter Info:</h1>
+                <li>process = The GFK Application that runs (for example: <i>Porthos, Aramis, Datatrans, RC</i>) </li>
+                <li>isoCode = The country's ISOCode (for example: <i>RO=Romania, AT=Austria, etc.</i>)</li>
+                <li>date = The date from which we want the protocols to be displayed YYYYmmdd format (for example: <i>20180922</i> ) </li>
+                <li>dateFrom = The date from which we want the protocols to be displayed YYYYmmdd format (for example: <i>20180920</i> ) *Used togheter with `dateTo`</li>
+                <li>dateTo = The date until when we want the protocols to be displayed YYYYmmdd format (for example: <i>20180922</i> ) *Used togheter with `dateFrom`</li>
+                <li>filename = The exact name of the log file produced (for example: <i>ScanPlus_dataro_20180920_062118.xml.log</i> ) </li>
+            <h3 style='color:red;'>/updateMongoDB/:isoCode/:process</h1>
+                <li>Details : This is an API that calls multiple other microservices and updates the stated country DB with the log data for <b>today's</b> stated process</li>
+                <li>Example : <i> /updateMongoDB/RO/porthos</i>  </li> 
+            <h3 style='color:red;'>/updateMongoDB/:isoCode/:process/:date</h1>
+                <li>Details : This is an API that calls multiple other microservices and updates the stated country DB with the log data for <b>a specified date</b> for the states process</li>
+                <li>Example : <i> /updateMongoDB/RO/porthos/20180922</i>  </li> 
+        </div>
+    </div> 
+</body>
+</html>
+

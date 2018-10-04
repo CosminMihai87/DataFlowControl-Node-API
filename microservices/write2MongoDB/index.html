@@ -18,10 +18,12 @@
                 <li>process = The GFK Application that runs (for example: <i>Porthos, Aramis, Datatrans, RC</i>) </li>
                 <li>isoCode = The country's ISOCode (for example: <i>RO=Romania, AT=Austria, etc.</i>)</li>
                 <li>date = The date from which we want the protocols to be displayed YYYYmmdd format (for example: <i>20180922</i> ) </li>
+                <li>dateFrom = The date from which we want the protocols to be displayed YYYYmmdd format (for example: <i>20180920</i> ) *Used togheter with `dateTo`</li>
+                <li>dateTo = The date until when we want the protocols to be displayed YYYYmmdd format (for example: <i>20180922</i> ) *Used togheter with `dateFrom`</li>
                 <li>filename = The exact name of the log file produced (for example: <i>ScanPlus_dataro_20180920_062118.xml.log</i> ) </li>
-            <h3 style='color:red;'>sendLogData/porthos  ,  data</h1>
-                <li>Details : This is an API does a post to the database with the process name and the JSON data it wants to write to the db.</li>
-                <li>Example : <i> sendLogData/porthos  ,  [data]</i>  </li> 
+            <h3 style='color:red;'>/sendLogData/:isoCode/:process  ,  [data]</h1>
+                <li>Details : This is an API that does a POST request to the database with the process name and the JSON data it wants to write to the db.</li>
+                <li>Example : <i> sendLogData/RO/porthos  ,  [data]</i>  </li> 
         </div>
     </div> 
 </body>

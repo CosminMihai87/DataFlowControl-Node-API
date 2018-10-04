@@ -8,7 +8,7 @@ app.use('/', api);
 var server = app.listen(1003, ()=> { 
     var host = server.address().address == "::" ? "localhost" : server.address().address ;
     var port = server.address().port;   
-    console.log(`Node Application is listening at http://${host}:${port}`);
+    console.log(`Node API "write2MongoDB" is listening at http://${host}:${port}`);
 }); 
  
 module.exports = app;

@@ -1,12 +1,10 @@
 const express = require('express'); 
 const router = express.Router(); 
-const axios = require('axios');   
-const db = require('./database.js');      
- 
-router.get('/', (req, res)=> { 
-    res.json({ message: 'Hello! Welcome to our main server service!' });  
-});
-  
+const axios = require('axios');      
+const path = require('path'); 
+
+router.use('/', express.static('html'));
+   
 router.get('/updateMongoDB/:isoCode/:process', (req, res)=> { //example : /UpdateMongoDB/Aramis/RO
     let isoCode = req.params.isoCode;
     let process = req.params.process; 
@@ -21,7 +19,7 @@ router.get('/updateMongoDB/:isoCode/:process', (req, res)=> { //example : /Updat
     .then((response) => {      
         filelist = response.data.files.map((k)=>{ return {name: k.name, date: k.date} });    
         const all_checkLogData_Calls = async () => {
-            var returnJson =[]; 
+            var returnJson =[];  
             try {
                 let to_call = filelist.map((k) => { return axios.get('http://localhost:1002/checkLogData/'+ isoCode +'/'+ process +'/'+ k.name) } );
                 let called = await Promise.all(to_call);  
@@ -72,9 +70,7 @@ router.get('/updateMongoDB/:isoCode/:process', (req, res)=> { //example : /Updat
     });  
 }); 
 
-
-
-router.get('/updateMongoDB/:process/:isoCode/:date', (req, res)=> { //example : /UpdateMongoDB/Aramis/RO
+router.get('/updateMongoDB/:isoCode/:process/:date', (req, res)=> { //example : /UpdateMongoDB/Aramis/RO
     let isoCode = req.params.isoCode;
     let process = req.params.process; 
     let date = req.params.date; 
@@ -142,6 +138,11 @@ router.get('/updateMongoDB/:process/:isoCode/:date', (req, res)=> { //example : 
         throw res.status(400).send({ api_error: true, message: `Error when calling the 'getLogFilesList' from main server: ${error}` }); 
     });  
 }); 
+
+router.get('*', (req, res)=> {  
+    res.sendFile(path.join(__dirname + '/index.html'));
+});
+
 
 module.exports = router;
 

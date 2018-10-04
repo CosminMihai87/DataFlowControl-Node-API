@@ -18,10 +18,12 @@
                 <li>process = The GFK Application that runs (for example: <i>Porthos, Aramis, Datatrans, RC</i>) </li>
                 <li>isoCode = The country's ISOCode (for example: <i>RO=Romania, AT=Austria, etc.</i>)</li>
                 <li>date = The date from which we want the protocols to be displayed YYYYmmdd format (for example: <i>20180922</i> ) </li>
+                <li>dateFrom = The date from which we want the protocols to be displayed YYYYmmdd format (for example: <i>20180920</i> ) *Used togheter with `dateTo`</li>
+                <li>dateTo = The date until when we want the protocols to be displayed YYYYmmdd format (for example: <i>20180922</i> ) *Used togheter with `dateFrom`</li>
                 <li>filename = The exact name of the log file produced (for example: <i>ScanPlus_dataro_20180920_062118.xml.log</i> ) </li>
-            <h3 style='color:red;'>/checkLogData/:process/:filename</h1>
+            <h3 style='color:red;'>/checkLogData/:isoCode/:process/:filename</h1>
                 <li>Details : This is an API that returns a JSON stating if the stated file protocol was found in the Database or not. </li>
-                <li>Example : <i>checkLogData/porthos/ScanPlus_RO_RC_20180919_062303.log</i>  </li> 
+                <li>Example : <i>checkLogData/RO/porthos/ScanPlus_RO_RC_20180919_062303.log</i>  </li> 
         </div>
     </div> 
 </body>

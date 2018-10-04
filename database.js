@@ -20,7 +20,8 @@ function ftpConnection(country) {
     return {   
         host: host,  
         user: 'nue.cpshub.svc',
-        password: 'R2Utfn47' 
+        password: 'R2Utfn47',
+        connTimeout:'30000'
     };
 };
 
