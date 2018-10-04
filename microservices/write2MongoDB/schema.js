@@ -6,12 +6,13 @@ const Schema = mongoose.Schema;
 var schema_porthos = new Schema({
     country: {type: String, default: 'country'},
     application: {type: String, default: 'application'},
+    panel: {type: String, default: 'panel'}, 
     run: {type: String, default: 'run'},
+    process_type: {type: String, default: 'process_type'},
     date: {type: String, default: 'date'},
     filename: {type: String, default: 'filename'},
     data: {
-        dataflow: {type: String, default: 'ScanPlus_dataro'},
-        panel: {type: String, default: 'ScanPlus'},
+        dataflow: {type: String, default: 'dataflow'},
         starttime: {type: String, default: '2018-01-01 06:23:23'},
         endtime: {type: String, default: '2018-01-01 06:25:25'},
         input_count: {type: Number, default: '1'},
@@ -27,16 +28,17 @@ var schema_porthos = new Schema({
 const schema_aramis = new Schema({
     country: {type: String, default: 'country'},
     application: {type: String, default: 'application'},
+    panel: {type: String, default: 'panel'},
     run: {type: String, default: 'run'},
+    process_type: {type: String, default: 'missing'},
     date: {type: String, default: 'date'},
     filename: {type: String, default: 'filename'},
     data: { 
-        panel: {type: String, default: 'ScanPlus'},
         starttime: {type: String, default: '2018-01-01 06:23:23'},
         endtime: {type: String, default: '2018-01-01 06:25:25'},
-        errors: {type: Number, default: '1'},
+        nr_errors: {type: Number, default: '1'},
         error_details: { type: ['Mixed'] }, 
-        warnings: {type: Number, default: '1'}, 
+        nr_warnings: {type: Number, default: '1'}, 
         warning_details: { type: ['Mixed'] }, 
         info_details: { type: ['Mixed'] }, 
         purchacts_total: {type: Number, default: '1'},
@@ -53,11 +55,12 @@ const schema_aramis = new Schema({
 const schema_datatrans = new Schema({
     country: {type: String, default: 'country'},
     application: {type: String, default: 'application'},
+    panel: {type: String, default: 'panel'},
     run: {type: String, default: 'run'},
+    process_type: {type: String, default: 'missing'},
     date: {type: String, default: 'date'},
     filename: {type: String, default: 'filename'},
     data: { 
-        panel: {type: String, default: 'ScanPlus'},
         nr_errors: {type: Number, default: '1'},
         nr_new_art_created: {type: Number, default: '1'},
         error_details: { type: ['Mixed'] },
@@ -69,22 +72,34 @@ const schema_datatrans = new Schema({
 const schema_rc = new Schema({
     country: {type: String, default: 'country'},
     application: {type: String, default: 'application'},
+    panel: {type: String, default: 'panel'},
     run: {type: String, default: 'run'},
+    process_type: {type: String, default: 'missing'},
     date: {type: String, default: 'date'},
     filename: {type: String, default: 'filename'},
     data: { 
-        panel: {type: String, default: 'ScanPlus'},
         starttime: {type: String, default: '2018-01-01 06:23:23'},
         endtime: {type: String, default: '2018-01-01 06:25:25'},
         records_loaded: {type: Number, default: '1'},
         records_failed: {type: Number, default: '1'},
         records_total: {type: Number, default: '1'},
+        nr_errors : {type: Number, default: '1'},
         error_details: { type: ['Mixed'] } 
     } 
 },{versionKey: false});  
   
 
-module.exports = mongoose.model('porthos', schema_porthos, 'processes'); 
-module.exports = mongoose.model('aramis', schema_aramis, 'processes'); 
-module.exports = mongoose.model('datatrans', schema_datatrans, 'processes'); 
-module.exports = mongoose.model('rc', schema_rc, 'processes'); 
+///////////////////////////////////////////////////////////////////////////////dataflow
+const schema_dataflow = new Schema({
+    country: {type: String, default: 'country'},
+    date: {type: String, default: 'date'},  
+    application: {type: String, default: 'application'},
+    panel: { type: ['Mixed'] } 
+},{versionKey: false});   
+
+
+module.exports.schema_porthos = schema_porthos; 
+module.exports.schema_aramis = schema_aramis; 
+module.exports.schema_datatrans = schema_datatrans; 
+module.exports.schema_rc = schema_rc; 
+module.exports.schema_dataflow = schema_dataflow; 

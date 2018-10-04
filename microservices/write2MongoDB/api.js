@@ -1,17 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../../database.js');  
-const tunnel = require('tunnel-ssh');  
-const mongoDBSchemas = require('./mongoDBSchemas.js'); 
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema; 
+const path = require('path');
+const db = require('../../database.js');    
+const schema = require('./schema.js'); 
+const mongoose = require('mongoose'); 
 var bodyParser = require('body-parser');
 router.use(bodyParser.json({limit: '10mb', extended: true})); // support json encoded bodies
 router.use(bodyParser.urlencoded({limit: '10mb', extended: true})); // support encoded bodies
   
-router.get('/', (req, res)=> { 
-    res.json({ message: 'Hello! Welcome to our write2MongoDB microservice!' });  
-});
+router.use('/', express.static('html'));
 
 require('inject-tunnel-ssh')([db.SSHTunelConfig])
 .on('error', (err)=>{
@@ -19,26 +16,32 @@ require('inject-tunnel-ssh')([db.SSHTunelConfig])
     res.status(400).send({ api_error: true, message: `Error when calling the 'checkLogData' microservice - Tunnel-SSH-injection: ${err}` }); 
 }); 
   
-router.post('/sendLogData/:process', (req, res)=>{    
+router.post('/sendLogData/:isoCode/:process', (req, res)=>{    
     let process = req.params.process;  
-    if (!process) { return res.status(400).send({ api_error: true, message: 'Please provide a process name!' }); }   
-    var dbURI = 'mongodb://dcex-rotcps01.gfk.com:27017/dfc-db'; 
+    let isoCode = req.params.isoCode; 
+    if ((!isoCode) || isoCode.match(/^[a-zA-Z][a-zA-Z]$/g)!=isoCode ) {
+        return res.status(400).send({ api_error: true, message: 'Please provide a valid country isoCode!' }); 
+    };
+    if ((!process) || ['porthos','aramis','datatrans','rc'].indexOf(process.toLowerCase())==-1 ) 
+        { return res.status(400).send({ api_error: true, message: 'Please provide a valid process name!' }); 
+    };  
+    var dbURI = db.SSHTunelConfig.dstHost;
     var jsonData = req.body;  
     var filename = req.body.filename;  
     var country = req.body.country;   
     mongoose.connect( dbURI, db.mongoConnOptions).then(() => {   
         switch (process.toLowerCase()) {
-            case "porthos":
-                var processModel = mongoose.model('porthos'); 
+            case "porthos": 
+                var processModel = mongoose.model('porthos', schema.schema_porthos, 'processes_'+isoCode); 
                 break;
-            case "aramis":
-                var processModel = mongoose.model('aramis'); 
+            case "aramis": 
+                var processModel = mongoose.model('aramis', schema.schema_aramis, 'processes_'+isoCode); 
                 break;
-            case "datatrans":
-                var processModel = mongoose.model('datatrans');  
+            case "datatrans": 
+                var processModel = mongoose.model('datatrans', schema.schema_datatrans, 'processes_'+isoCode); 
                 break;
-            case "rc":
-                var processModel = mongoose.model('rc'); 
+            case "rc": 
+                var processModel = mongoose.model('rc', schema.schema_rc, 'processes_'+isoCode); 
                 break;
         };   
         var newProcess = new processModel(jsonData);     
@@ -56,5 +59,11 @@ router.post('/sendLogData/:process', (req, res)=>{
         throw res.status(400).send({ api_error: true, message: `Error when calling the 'sendLogData' microservice - MongoDB connection error: ${error}` }); 
     });      
 }); 
+   
+router.get('*', (req, res)=> {  
+    res.sendFile(path.join(__dirname + '/index.html'));
+});
+
+
 
 module.exports = router;

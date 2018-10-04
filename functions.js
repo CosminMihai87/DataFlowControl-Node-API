@@ -61,9 +61,9 @@ function getProcessDateTime(string) {
     var time = '';
     for (let [index, str] of array.entries() ) {  
         if (str.match(/([12]\d{3}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01]))/g)) {
-                 date += (array[index].substr(0,4) +'-'+ array[index].substr(4,2) +'-'+ array[index].substr(6,2)); 
+                date += (array[index].substr(0,4) +'-'+ array[index].substr(4,2) +'-'+ array[index].substr(6,2)); 
             if( array[index+1].match(/(([0-1]?[0-9])|(2[0-3]))[0-5][0-9][0-5][0-9]/g) ) {    
-                                 time += (array[index+1].substr(0,2) +':'+ array[index+1].substr(2,2) +':'+ array[index+1].substr(4,2));
+                    time += (array[index+1].substr(0,2) +':'+ array[index+1].substr(2,2) +':'+ array[index+1].substr(4,2));
             }; 
         };
     };
@@ -71,6 +71,23 @@ function getProcessDateTime(string) {
     time = (time.length > 0 ? time : '00:00:00');
     return (date+'T'+time+'.000Z');
 };
+
+// returns an array of string dates between two given dates , for example : startDate='20180928' , endDate='20180930', dateArray='20180928,20180929,20180930'
+function getArrayofDates(startDate, endDate, RegEX) { 
+    var start = (startDate.substr(0,4) +'-'+ startDate.substr(4,2) +'-'+startDate.substr(6,2)); 
+    var end = (endDate.substr(0,4) +'-'+ endDate.substr(4,2) +'-'+endDate.substr(6,2)); 
+    var dateArray = new Array();
+    var currentDate = new Date(start);
+    while (currentDate <= new Date(end)) {
+        dateArray.push( currentDate.toISOString().replace(/-|:|.000Z/g,'').replace(/T/g,'_').split('_')[0] );
+        currentDate = new Date((currentDate.getTime() + 864e5 )) 
+    }
+    if(typeof RegEX !== "undefined") {
+        return dateArray.map((k)=> { return new RegExp(k) });  //new RegExp('^'+date+'', "i")}
+    } else {
+        return dateArray;
+    } 
+}
 
 function getProcessRunName(string) { 
     var array = string.substring(string.split('_')[0].length+1, string.length).split('_')  //removing pannel name
@@ -81,16 +98,37 @@ function getProcessRunName(string) {
     return result;
 };
  
-function getProcessJSON(process,chunks,filename) { 
+// return the porthos type based on the name of the log file : 
+function getPorthosType(process,string) {  
+    // removing the ".log" that comes at the end :
+    var array = string.split(".")[0];
+    // removing pannel name , which always comes first
+    array = array.substring(array.split('_')[0].length+1, array.length).split('_')  
+    // the rest of the string should contain the panel type and the date and time all separated by "_" , 
+    // so we eliminate the date+time and what remains needs to be te pannel type, if nothing remains thant we consider it "export" type
+    var result = "";
+    for (let [index, str] of array.entries()) {   
+        if (isNaN(parseInt(str))) {
+            result = result + str + "_";
+        }
+    }
+    if (process=="porthos") { // only porthos has this feature, it;s missing for the other processes
+        return (result=="" ? "export" : result.substring(0,result.length-1)  ); //removing the _ at the end.
+    } else {
+        return "missing";
+    }
+};  
+
+function getProcessJSON(process,data,filename) { 
     switch (process.toLowerCase()) {
-        case "porthos":
-            return getPorthosJSON(Buffer.concat(chunks).toString('utf8'),filename); 
+        case "porthos": 
+            return getPorthosJSON(data,filename); 
         case "aramis":
-            return getAramisJSON(Buffer.concat(chunks).toString('utf8'),filename); 
+            return getAramisJSON(data,filename); 
         case "datatrans":
-            return getDatatransJSON(Buffer.concat(chunks).toString('utf8'),filename); 
+            return getDatatransJSON(data,filename); 
         case "rc":
-            return getRCJSON(Buffer.concat(chunks).toString('utf8'),filename); 
+            return getRCJSON(data,filename); 
     }  
 };
   
@@ -98,8 +136,7 @@ function getPorthosJSON(data,filename) {
     try {
         var convert = require('xml-js');
         var Json_string = convert.xml2json(data, {compact: true, spaces: 4});   
-        const dataflow = JSON.parse(Json_string)['protocol'].general.dataflow['_text'];
-        const panel = dataflow.split('_')[0];
+        const dataflow = JSON.parse(Json_string)['protocol'].general.dataflow['_text']; 
         const starttime = JSON.parse(Json_string)['protocol'].general.start['_text']; 
         const endtime = JSON.parse(Json_string)['protocol'].summary.end['_text'];
         const input_count = JSON.parse(Json_string)['protocol'].statistics.input_count['_text'];
@@ -126,14 +163,12 @@ function getPorthosJSON(data,filename) {
         const inf_warn_err = unique.map((k)=>{ 
             return {text: k, 
                     type: messages.filter(j => j.text === k)[0].type,
-                    nr: (messages.reduce(function (n, mess) { return n + (mess.text == k); }, 0)),
-                    comment:''
+                    nr: (messages.reduce(function (n, mess) { return n + (mess.text == k); }, 0)) 
             } 
         });  
 
         var result = JSON.stringify({ 
-            dataflow: dataflow,
-            panel: panel,
+            dataflow: dataflow, 
             starttime: starttime.replace('T',' ').substring(0,starttime.length-2),
             endtime: endtime.replace('T',' ').substring(0,starttime.length-2),
             input_count: input_count,
@@ -155,8 +190,7 @@ function getAramisJSON(data) {
         let lines = data.split('\n'); 
         for (let [index, line] of lines.entries() ) {      
             if (line.indexOf('input file:  ')==0) {
-                let len = line.split('/').length;
-                var panel = line.split('/')[len-1].split('_')[0];
+                let len = line.split('/').length; 
             };
             if (line.indexOf('starting ARaMIS')==0) {
                 let len = line.split(' ').length;
@@ -169,15 +203,15 @@ function getAramisJSON(data) {
             if (line.indexOf('DBUser:')==0) { var dbUser = line.split(':')[1].trim(); }; 
             if (line.indexOf('DBServer:')==0) { var dbServer = line.split(':')[1].trim(); }; 
             if (line.indexOf('DB:')==0) { var db = line.split(':')[1].trim(); };   
-            if (line.indexOf('Errors:')==0) { var errors = line.split(':')[1]; }; 
-            if (line.indexOf('Warnings:')==0) { var warnings = line.split(':')[1]; }; 
-            if (line.indexOf('Purchacts total:')==0) { var purchacts_total = line.split(':')[1]; }; 
-            if (line.indexOf('Articles total:')==0) { var articles_total = line.split(':')[1]; }; 
-            if (line.indexOf('Number of processed purchacts:')==0) { var nr_processed_purchacts = line.split(':')[1]; }; 
-            if (line.indexOf('Number of processed movement records:')==0) { var nr_processed_movement_records = line.split(':')[1]; }; 
-            if (line.indexOf('Records processed:')==0) { var records_processed = line.split(':')[1]; }; 
-            if (line.indexOf('Number of faulty purchacts:')==0) { var nr_faulty_purchacts = line.split(':')[1]; }; 
-            if (line.indexOf('Number of faulty movement records:')==0) { var nr_faulty_movement_records = line.split(':')[1]; }; 
+            if (line.indexOf('Errors:')==0) { var nr_errors = parseInt(line.split(':')[1]); }; 
+            if (line.indexOf('Warnings:')==0) { var nr_warnings = parseInt(line.split(':')[1]); }; 
+            if (line.indexOf('Purchacts total:')==0) { var purchacts_total = parseInt(line.split(':')[1]); }; 
+            if (line.indexOf('Articles total:')==0) { var articles_total = parseInt(line.split(':')[1]); }; 
+            if (line.indexOf('Number of processed purchacts:')==0) { var nr_processed_purchacts = parseInt(line.split(':')[1]); }; 
+            if (line.indexOf('Number of processed movement records:')==0) { var nr_processed_movement_records = parseInt(line.split(':')[1]); }; 
+            if (line.indexOf('Records processed:')==0) { var records_processed = parseInt(line.split(':')[1]); }; 
+            if (line.indexOf('Number of faulty purchacts:')==0) { var nr_faulty_purchacts = parseInt(line.split(':')[1]); }; 
+            if (line.indexOf('Number of faulty movement records:')==0) { var nr_faulty_movement_records = parseInt(line.split(':')[1]); }; 
 
             if (line.indexOf('ERROR BEGIN')==0) { var ERROR_BEGIN_index = index; }; 
             if (line.indexOf('ERROR END')==0) { var ERROR_END_index = index; }; 
@@ -240,8 +274,7 @@ function getAramisJSON(data) {
                 }
                 error_details.push({ 
                     text: errorgroup[1], 
-                    nr: errorgroup.length-3,  
-                    comment:'',
+                    nr: errorgroup.length-3,   
                     details: details_array
                 });
             }  
@@ -288,23 +321,21 @@ function getAramisJSON(data) {
                 }
                 warning_details.push({ 
                     text: WARNINGgroup[1], 
-                    nr: WARNINGgroup.length-3, 
-                    comment:'',
+                    nr: WARNINGgroup.length-3,  
                     details: details_array 
                 }); 
             }  
         }
       
-        var result = JSON.stringify({ 
-            panel: panel,
+        var result = JSON.stringify({  
             starttime: starttime.replace('T',' ').substring(0,starttime.length-2), 
             endtime: endtime.replace('T',' ').substring(0,starttime.length-2), 
             db: db,
             dbUser: dbUser,
             dbServer: dbServer,
-            errors: errors,
+            nr_errors: nr_errors,
             error_details: error_details,
-            warnings: warnings,
+            nr_warnings: nr_warnings,
             warning_details: warning_details, 
             info_details: info_details,
             purchacts_total: purchacts_total,
@@ -326,10 +357,7 @@ function getDatatransJSON(data) {
     try {
         let lines = data.split('\n'); 
         var ERROR=[];
-        for (let [index, line] of lines.entries() ) {   
-            if (line.indexOf('processing file: ')==0) { 
-                var panel = line.split('processing file: ')[1].split('_')[0];
-            }   
+        for (let [index, line] of lines.entries() ) {    
             if (line.indexOf('** error: ')==0) { 
                 ERROR.push(line)
             }  
@@ -355,8 +383,7 @@ function getDatatransJSON(data) {
             .map((k)=>{ 
                     return {
                         text: k,  
-                        nr: (ERROR_pre.reduce(function (n, mess) { return n + (mess.text== k); }, 0)),
-                        comment: '',
+                        nr: (ERROR_pre.reduce(function (n, mess) { return n + (mess.text== k); }, 0)), 
                         details: ERROR_pre.filter(j => j.text === k).map((l)=>{ return { line: l['line'], article: l['article'] }})
                     }}
                 ); 
@@ -371,8 +398,7 @@ function getDatatransJSON(data) {
                     }}
                 ); 
  
-        var result = JSON.stringify({ 
-            panel: panel, 
+        var result = JSON.stringify({  
             nr_errors: ERROR.length,
             error_details: ERROR_details,
             nr_new_art_created: new_art_created.length, 
@@ -388,10 +414,7 @@ function getDatatransJSON(data) {
 function getRCJSON(data) {   
     try {  
         let lines = data.split('\n'); 
-        for (let [index, line] of lines.entries() ) {   
-            if (line.indexOf('Input   : ')==0) { 
-                var panel = line.split('Input   : ')[1].split('/')[5].split('_')[0];
-            }   
+        for (let [index, line] of lines.entries() ) {     
             if (line.indexOf('Records loaded: ')==0) { var records_loaded = line.split('Records loaded: ')[1].trim(); } 
             if (line.indexOf('Records failed: ')==0) { var records_failed = line.split('Records failed: ')[1].trim(); } 
             if (line.indexOf('Records total : ')==0) { var records_total = line.split('Records total : ')[1].trim(); } 
@@ -407,6 +430,7 @@ function getRCJSON(data) {
             if (index >= ERROR_BEGIN_index && index <= ERROR_END_index && lines[index].length>0) { ERROR.push(lines[index].replace(': ','')) };  
         }
         var error_details=[]; 
+        var nr_errors=0; 
         if (ERROR.length>0) {
             //mapping the positions where we need to push a '\n' in our array to separate the grooups of erros
             var index_array=[];
@@ -431,6 +455,7 @@ function getRCJSON(data) {
                 var details_array=[];
                 for (let value of errorgroup_arr ) {       
                     if ( errorgroup_arr.indexOf(value)>=2 ) {   //ignoring the first 2 values since they are 'ERROR' and '[the error text]'   
+                        nr_errors++;
                         var details = {
                             household: value.split(' ')[0],
                             panelcode: value.split(' ')[3],
@@ -443,17 +468,16 @@ function getRCJSON(data) {
                 }
                 error_details.push({ 
                     text: errorgroup[1], 
-                    nr: errorgroup.length-2, 
-                    comment: '',
+                    nr: errorgroup.length-2,  
                     details: details_array 
                 });
             }   
         } 
  
-        var result = JSON.stringify({ 
-            panel: panel, 
+        var result = JSON.stringify({  
             starttime: starttime,
             endtime : endtime, 
+            nr_errors: nr_errors,
             error_details: error_details, 
             records_loaded: records_loaded,
             records_failed: records_failed,
@@ -465,14 +489,82 @@ function getRCJSON(data) {
         return JSON.parse( JSON.stringify( { error: true, message: `Error when converting and processing ${filename} to JSON : ${error}` } ) ); 
     }   
 };
+
+function getStatus(process) {   
+    var result = "";
+    switch (process.application) {
+        case "porthos": 
+            (process.data[0].nr_errors>0) ? result="error" :  ((process.data[0].nr_warnings>0) ? result="warning" : "ok" );
+            break;
+        case "aramis":
+            (process.data[0].nr_errors>0) ? result="error" :  ((process.data[0].nr_warnings>0) ? result="warning" : "ok" );
+            break;
+        case "datatrans":
+            if (process.data.length>0) {
+                (process.data[0].nr_errors>0) ? result="error" :  ((process.data[0].nr_warnings>0) ? result="warning" : ( (process.data[0].nr_informations>0) ? result="ok" : "missing" ) );
+            } else {
+                result="missing" 
+            }
+            break;
+        case "rc":
+            (process.data[0].nr_errors>0) ? result="error" :  ((process.data[0].nr_warnings>0) ? result="warning" : ( (process.data[0].nr_informations>0) ? result="ok" : "missing" ) );
+            break; 
+    }
+    return result;
+}
+
+function getDataflowJSON(data) {   
+    try {   
+        var porthos = [];
+        var aramis = [];
+        var datatrans = [];
+        var rc = [];
+        var details = [];
+        for (let [index, process] of data.entries() ) {    
+            // switch (process.application) {
+            //     case "porthos": 
+            //         porthos.push({run: process.run, status: getStatus(process) });
+            //         break;
+            //     case "aramis":
+            //         aramis.push({run: process.run, status: getStatus(process) });
+            //         break;
+            //     case "datatrans":  
+            //         datatrans.push({run: process.run, status: getStatus(process) }); 
+            //         break;
+            //     case "rc":
+            //         rc.push({run: process.run, status: getStatus(process) });
+            //         break; 
+            // }
+            details.push({run: process.run, status: (process.data[0].nr_errors>0) ? result="error" :  ((process.data[0].nr_warnings>0) ? result="warning" : "ok" ) });
+        }  
+        var result = JSON.stringify({ 
+            process: { 
+                details: details,
+                // porthos: porthos,
+                // aramis: aramis,
+                // datatrans: datatrans,
+                // rc: rc
+            } 
+        }) 
+        return JSON.parse(result); 
+    }  catch (error) {  
+        console.log(`Error when running 'getDataflowJSON' : ${error}`);
+        return JSON.parse( JSON.stringify( { error: true, message: `Error when running 'getDataflowJSON' : ${error}` } ) ); 
+    }   
+};
  
   
  
 module.exports.getProtPath = getProtPath;
 module.exports.getProcessDateTime = getProcessDateTime;
+module.exports.getArrayofDates = getArrayofDates;
 module.exports.getProcessRunName = getProcessRunName;
+module.exports.getPorthosType = getPorthosType;
 module.exports.getProcessJSON = getProcessJSON;
 module.exports.getPorthosJSON = getPorthosJSON;  
 module.exports.getAramisJSON = getAramisJSON; 
 module.exports.getDatatransJSON = getDatatransJSON; 
 module.exports.getRCJSON = getRCJSON;  
+module.exports.getDataflowJSON = getDataflowJSON;  
+
+
