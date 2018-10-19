@@ -1,5 +1,5 @@
 const express = require('express');
-const db = require('../../database.js');  
+const db = require('../../settings.js');  
 const router = express.Router(); 
 const path = require('path');
 var schema = require('./schema.js'); 

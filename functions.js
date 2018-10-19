@@ -1,4 +1,3 @@
- 
 function getProtPath(process,country) {
     var path;  
     switch (process.toLowerCase()) {
@@ -88,6 +87,15 @@ function getArrayofDates(startDate, endDate, RegEX) {
         return dateArray;
     } 
 }
+
+// returns the element with the highest occurences from an array or elements (example: for [1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 0, 0] the answer is 1)
+function getmostOccurances(array) { 
+    var result = array.sort((a,b) =>
+        array.filter(v => v===a).length
+        - array.filter(v => v===b).length
+    ).pop();
+    return result;
+}; 
 
 function getProcessRunName(string) { 
     var array = string.substring(string.split('_')[0].length+1, string.length).split('_')  //removing pannel name
@@ -489,75 +497,270 @@ function getRCJSON(data) {
         return JSON.parse( JSON.stringify( { error: true, message: `Error when converting and processing ${filename} to JSON : ${error}` } ) ); 
     }   
 };
-
-function getStatus(process) {   
-    var result = "";
-    switch (process.application) {
-        case "porthos": 
-            (process.data[0].nr_errors>0) ? result="error" :  ((process.data[0].nr_warnings>0) ? result="warning" : "ok" );
-            break;
-        case "aramis":
-            (process.data[0].nr_errors>0) ? result="error" :  ((process.data[0].nr_warnings>0) ? result="warning" : "ok" );
-            break;
-        case "datatrans":
-            if (process.data.length>0) {
-                (process.data[0].nr_errors>0) ? result="error" :  ((process.data[0].nr_warnings>0) ? result="warning" : ( (process.data[0].nr_informations>0) ? result="ok" : "missing" ) );
-            } else {
-                result="missing" 
-            }
-            break;
-        case "rc":
-            (process.data[0].nr_errors>0) ? result="error" :  ((process.data[0].nr_warnings>0) ? result="warning" : ( (process.data[0].nr_informations>0) ? result="ok" : "missing" ) );
-            break; 
-    }
-    return result;
-}
-
-function getDataflowJSON(data) {   
-    try {   
-        var porthos = [];
-        var aramis = [];
-        var datatrans = [];
-        var rc = [];
-        var details = [];
-        for (let [index, process] of data.entries() ) {    
-            // switch (process.application) {
-            //     case "porthos": 
-            //         porthos.push({run: process.run, status: getStatus(process) });
-            //         break;
-            //     case "aramis":
-            //         aramis.push({run: process.run, status: getStatus(process) });
-            //         break;
-            //     case "datatrans":  
-            //         datatrans.push({run: process.run, status: getStatus(process) }); 
-            //         break;
-            //     case "rc":
-            //         rc.push({run: process.run, status: getStatus(process) });
-            //         break; 
-            // }
-            details.push({run: process.run, status: (process.data[0].nr_errors>0) ? result="error" :  ((process.data[0].nr_warnings>0) ? result="warning" : "ok" ) });
-        }  
-        var result = JSON.stringify({ 
-            process: { 
-                details: details,
-                // porthos: porthos,
-                // aramis: aramis,
-                // datatrans: datatrans,
-                // rc: rc
-            } 
-        }) 
-        return JSON.parse(result); 
+ 
+function getDataflowJSON_data(data) {   
+    try {    
+        // mapping individual panels  
+        const panels = [...new Set(data.map(k => k.panel))]; 
+        var result=[]; 
+        var porthos_es=[];
+        var aramis_es=[];
+        var datatrans_es=[];
+        var rc_es=[];  
+        // calculating status of the processes ran for each pannel
+        for (let [index, panel] of panels.entries() ) {   
+            porthos_es =  data.filter(k => (k.panel==panel && k.application=="porthos"))
+                            .map(x=> { return {
+                                run : x.run,
+                                process_type: x.process_type,
+                                date: x.date,
+                                status: (x.data[0].nr_errors>0) ? "error" :  ((x.data[0].nr_warnings>0) ? "warning" : "ok" )
+                            }});
+            aramis_es =  data.filter(k => (k.panel==panel && k.application=="aramis"))
+                            .map(x=> { return {
+                                run : x.run,
+                                process_type: x.process_type,
+                                date: x.date,
+                                status: (x.data[0].nr_errors>0) ? "error" :  ((x.data[0].nr_warnings>0) ? "warning" : "ok" )
+                            }});
+            datatrans_es =  data.filter(k => (k.panel==panel && k.application=="datatrans"))
+                            .map(x=> { return {
+                                run : x.run,
+                                process_type: x.process_type,
+                                date: x.date,
+                                status: (x.data[0].nr_errors>0) ? "error" :  ((x.data[0].nr_warnings>0) ? "warning" : "ok" )
+                            }});
+            rc_es =  data.filter(k => (k.panel==panel && k.application=="rc"))
+                            .map(x=> { return {
+                                run : x.run,
+                                process_type: x.process_type,
+                                date: x.date,
+                                status: (x.data[0].nr_errors>0) ? "error" :  ((x.data[0].nr_warnings>0) ? "warning" : "ok" )
+                            }});  
+            result.push({
+                panel: panel,  
+                processes: {
+                    porthos : porthos_es,
+                    aramis: aramis_es,
+                    datatrans: datatrans_es,
+                    rc: rc_es
+                } 
+            }); 
+        }    
+        return JSON.parse(JSON.stringify(result));   
     }  catch (error) {  
-        console.log(`Error when running 'getDataflowJSON' : ${error}`);
-        return JSON.parse( JSON.stringify( { error: true, message: `Error when running 'getDataflowJSON' : ${error}` } ) ); 
+        console.log(`Error when running 'getDataflowJSON_data' : ${error}`);
+        return JSON.parse( JSON.stringify( { error: true, message: `Error when running 'getDataflowJSON_data' : ${error}` } ) ); 
+    }   
+};
+
+function getDataflowJSON_data_details(data) {   
+    try {      
+        var porthos = []; 
+        var porthos_unique = [];
+        var aramis = []; 
+        var aramis_unique = []; 
+        var datatrans = [];
+        var datatrans_unique = [];
+        var rc = [];
+        var rc_unique = [];
+        //porthos:
+        data.filter(k => k.application=="porthos")
+        .forEach(k => k.data[0].inf_warn_err
+            .filter( k => (k.type.toLowerCase()=="warning" || k.type.toLowerCase()=="error") )
+                .forEach(k => porthos.push( {text: k.text, type: k.type, nr: k.nr} ) 
+            ) 
+        );   
+        [...new Set(porthos.map(k => k.text))].forEach(k => { porthos_unique.push({ 
+            text: k,
+            type: porthos.filter(m => m.text == k)[0].type.toLowerCase(),
+            nr: porthos.filter(m => m.text == k).reduce((sum, el) => { return sum + el.nr },0)  
+            })
+        }); 
+
+        //aramis:
+        data.filter(k => k.application=="aramis")
+        .forEach(k => k.data[0].error_details
+            .forEach(k => aramis.push( {text: k.text, type: "error", nr: k.nr} ))
+        ); 
+        data.filter(k => k.application=="aramis")
+        .forEach(k => k.data[0].warning_details
+            .forEach(k => aramis.push( {text: k.text, type: "warning", nr: k.nr} ))
+        ); 
+        [...new Set(aramis.map(k => k.text))].forEach(k => {aramis_unique.push({ 
+            text: k,
+            type: aramis.filter(m => m.text == k)[0].type,
+            nr: aramis.filter(m => m.text == k).reduce((sum, el) => { return sum + el.nr },0)  
+            })
+        }); 
+
+        //datatrans:
+        data.filter(k => k.application=="datatrans")
+        .forEach(k => k.data[0].error_details
+            .forEach(k => datatrans.push( {text: k.text, type: "error", nr: k.nr} ))
+        );  
+        [...new Set(datatrans.map(k => k.text))].forEach(k => {datatrans_unique.push({ 
+            text: k,
+            type: datatrans.filter(m => m.text == k)[0].type,
+            nr: datatrans.filter(m => m.text == k).reduce((sum, el) => { return sum + el.nr },0)  
+            })
+        }); 
+
+        //rc: 
+        data.filter(k => k.application=="rc")
+        .forEach(k => k.data[0].error_details
+            .forEach(k => rc.push( {text: k.text, type: "error", nr: k.nr} ))
+        );
+        [...new Set(rc.map(k => k.text))].forEach(k => {rc_unique.push({ 
+            text: k,
+            type: rc.filter(m => m.text == k)[0].type,
+            nr: rc.filter(m => m.text == k).reduce((sum, el) => { return sum + el.nr },0)  
+            })
+        }); 
+
+        var result = {  
+            porthos : porthos_unique,
+            aramis: aramis_unique,
+            datatrans: datatrans_unique,
+            rc: rc_unique
+        };  
+        return JSON.parse(JSON.stringify(result));   
+    }  catch (error) {  
+        console.log(`Error when running 'getDataflowJSON_data' : ${error}`);
+        return JSON.parse( JSON.stringify( { error: true, message: `Error when running 'getDataflowJSON_data' : ${error}` } ) ); 
     }   
 };
  
+function getDataflowJSON_progressbars(data,nr_days,expected) { 
+    try {   
+        var expected_porthos = expected.porthos*nr_days;
+        var expected_aramis = expected.aramis*nr_days;
+        var expected_datatrans = expected.datatrans*nr_days;
+        var expected_rc = expected.rc*nr_days;
+    
+        // calcuating the percentage and nr or warning/errors/ok in total (on all pannels for a country for a day)
+        const details = getDataflowJSON_data(data); 
+        const panels = [...new Set(details.map(k => k.panel))];   
+        var porthos_nr_ok=0, porthos_nr_warning=0, porthos_nr_error=0;
+        var aramis_nr_ok=0, aramis_nr_warning=0, aramis_nr_error=0;
+        var datatrans_nr_ok=0, datatrans_nr_warning=0, datatrans_nr_error=0;
+        var rc_nr_ok=0, rc_nr_warning=0, rc_nr_error=0; 
+
+        for (let [index, panel] of panels.entries() ) {    
+            porthos_nr_ok += details.filter(k => k.panel==panel)[0].processes.porthos.filter(k => k.status=="ok").length;
+            porthos_nr_warning += details.filter(k => k.panel==panel)[0].processes.porthos.filter(k => k.status=="warning").length;
+            porthos_nr_error += details.filter(k => k.panel==panel)[0].processes.porthos.filter(k => k.status=="error").length;
+            aramis_nr_ok += details.filter(k => k.panel==panel)[0].processes.aramis.filter(k => k.status=="ok").length;
+            aramis_nr_warning += details.filter(k => k.panel==panel)[0].processes.aramis.filter(k => k.status=="warning").length;
+            aramis_nr_error += details.filter(k => k.panel==panel)[0].processes.aramis.filter(k => k.status=="error").length;
+            datatrans_nr_ok += details.filter(k => k.panel==panel)[0].processes.datatrans.filter(k => k.status=="ok").length;
+            datatrans_nr_warning += details.filter(k => k.panel==panel)[0].processes.datatrans.filter(k => k.status=="warning").length;
+            datatrans_nr_error += details.filter(k => k.panel==panel)[0].processes.datatrans.filter(k => k.status=="error").length; 
+            rc_nr_ok += details.filter(k => k.panel==panel)[0].processes.rc.filter(k => k.status=="ok").length;
+            rc_nr_warning += details.filter(k => k.panel==panel)[0].processes.rc.filter(k => k.status=="warning").length;
+            rc_nr_error += details.filter(k => k.panel==panel)[0].processes.rc.filter(k => k.status=="error").length; 
+        } 
+        var result = {
+            porthos: {
+                ok: {
+                    nr: porthos_nr_ok,
+                    percent: ((porthos_nr_ok*100)/expected_porthos).toFixed(2)+"%"
+                },
+                warning: {
+                    nr: porthos_nr_warning,
+                    percent: ((porthos_nr_warning*100)/expected_porthos).toFixed(2)+"%"
+                },
+                error: {
+                    nr: porthos_nr_error,
+                    percent: ((porthos_nr_error*100)/expected_porthos).toFixed(2)+"%"
+                }
+            },
+            aramis: {
+                ok: {
+                    nr: aramis_nr_ok,
+                    percent: ((aramis_nr_ok*100)/expected_aramis).toFixed(2)+"%"
+                },
+                warning: {
+                    nr: aramis_nr_warning,
+                    percent: ((aramis_nr_warning*100)/expected_aramis).toFixed(2)+"%"
+                },
+                error: {
+                    nr: aramis_nr_error,
+                    percent: ((aramis_nr_error*100)/expected_aramis).toFixed(2)+"%"
+                }
+            },
+            datatrans: {
+                ok: {
+                    nr: datatrans_nr_ok,
+                    percent: ((datatrans_nr_ok*100)/expected_datatrans).toFixed(2)+"%"
+                },
+                warning: {
+                    nr: datatrans_nr_warning,
+                    percent: ((datatrans_nr_warning*100)/expected_datatrans).toFixed(2)+"%"
+                },
+                error: {
+                    nr: datatrans_nr_error,
+                    percent: ((datatrans_nr_error*100)/expected_datatrans).toFixed(2)+"%"
+                }
+            },
+            rc: {
+                ok: {
+                    nr: rc_nr_ok,
+                    percent: ((rc_nr_ok*100)/expected_rc).toFixed(2)+"%"
+                },
+                warning: {
+                    nr: rc_nr_warning,
+                    percent: ((rc_nr_warning*100)/expected_rc).toFixed(2)+"%"
+                },
+                error: {
+                    nr: rc_nr_error,
+                    percent: ((rc_nr_error*100)/expected_rc).toFixed(2)+"%"
+                }
+            }
+        };     
+        return JSON.parse(JSON.stringify(result));   
+
+    }  catch (error) {  
+        console.log(`Error when running 'getDataflowJSON_progressbars' : ${error}`);
+        return JSON.parse( JSON.stringify( { error: true, message: `Error when running 'getDataflowJSON_progressbars' : ${error}` } ) ); 
+    }   
+};
+
+function getDataflowJSON_articleout(data,date) {   
+    try {      
+        var aramis = []; 
+        if (date.indexOf('-') != -1) {
+            var dateFrom = date.split('-')[0];
+            var dateTo = date.split('-')[1];
+            var dateArray = getArrayofDates(dateFrom,dateTo);
+        } else {
+            var dateArray = [date];
+        } 
+        //aramis: 
+        data = data.filter(k => k.application=="aramis"); 
+        dateArray.forEach(k => aramis.push( 
+                {
+                    labels: (k.substr(6,2) +'/'+ k.substr(4,2) +'/'+ k.substr(0,4)),
+                    data: data.filter(m => m.run.split('_')[0]==k).reduce((sum, el) => { return sum + el.data[0].records_processed },0)     
+                } 
+            ) 
+        );  
+        return JSON.parse(JSON.stringify(aramis));   
+    }  catch (error) {  
+        console.log(`Error when running 'getDataflowJSON_articleout' : ${error}`);
+        return JSON.parse( JSON.stringify( { error: true, message: `Error when running 'getDataflowJSON_articleout' : ${error}` } ) ); 
+    }   
+};
+
+
+
+
   
  
 module.exports.getProtPath = getProtPath;
 module.exports.getProcessDateTime = getProcessDateTime;
 module.exports.getArrayofDates = getArrayofDates;
+module.exports.getmostOccurances = getmostOccurances;
 module.exports.getProcessRunName = getProcessRunName;
 module.exports.getPorthosType = getPorthosType;
 module.exports.getProcessJSON = getProcessJSON;
@@ -565,6 +768,8 @@ module.exports.getPorthosJSON = getPorthosJSON;
 module.exports.getAramisJSON = getAramisJSON; 
 module.exports.getDatatransJSON = getDatatransJSON; 
 module.exports.getRCJSON = getRCJSON;  
-module.exports.getDataflowJSON = getDataflowJSON;  
-
+module.exports.getDataflowJSON_data = getDataflowJSON_data;  
+module.exports.getDataflowJSON_data_details = getDataflowJSON_data_details;  
+module.exports.getDataflowJSON_progressbars = getDataflowJSON_progressbars;  
+module.exports.getDataflowJSON_articleout = getDataflowJSON_articleout; 
 

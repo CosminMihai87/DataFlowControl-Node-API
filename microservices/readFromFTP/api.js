@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 var targz = require('targz');   
 const router = express.Router();
-const db = require('../../database.js');   
+const db = require('../../settings.js');   
 var client = require('ftp');  
 var functions = require('../../functions.js');   
 
@@ -332,8 +332,7 @@ router.get('/getLogData/:isoCode/:process/:filename', (req, res)=>{
                                                     // getting (async) the files from the unzipped path  
                                                     async function getProcessDetails(path) {  
                                                         return await new Promise((resolve, reject) => {
-                                                            try {  
-                                                                console.log(path+'/'+filename);
+                                                            try {   
                                                                 fs.readFile(path+'/'+filename, {encoding: 'utf-8'}, (error,data)=>{
                                                                     if (error) {    
                                                                         console.log(`Error when reading the local downloaded file : ${filename} : ${error}`); 

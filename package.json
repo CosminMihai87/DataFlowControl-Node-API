@@ -8,7 +8,7 @@
     "checkwithMongoDB": "nodemon ./microservices/checkwithMongoDB/server.js",
     "write2MongoDB": "nodemon ./microservices/write2MongoDB/server.js",
     "readFromMongoDB": "nodemon ./microservices/readFromMongoDB/server.js",
-    "start": "concurrently --raw --kill-others \"npm run main\" \"npm run readFromFTP\" \"npm run checkwithMongoDB\" \"npm run write2MongoDB\" \"npm run readFromMongoDB\" "
+    "dev": "concurrently --raw --kill-others \"npm run main\" \"npm run readFromFTP\" \"npm run checkwithMongoDB\" \"npm run write2MongoDB\" \"npm run readFromMongoDB\" "
   },
   "keywords": [],
   "author": "",
@@ -19,7 +19,7 @@
     "concurrently": "^4.0.1",
     "express": "^4.16.3",
     "ftp": "^0.3.10",
-    "inject-tunnel-ssh": "0.0.5",
+    "inject-tunnel-ssh": "0.0.5", 
     "mongoose": "^5.2.14",
     "npm": "^6.4.1",
     "targz": "^1.0.1",
