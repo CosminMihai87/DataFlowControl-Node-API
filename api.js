@@ -5,7 +5,7 @@ const path = require('path');
 
 router.use('/', express.static('html'));
    
-router.get('/updateMongoDB/:isoCode/:process', (req, res)=> { //example : /UpdateMongoDB/Aramis/RO
+router.get('/updateMongoDB/:isoCode/:process', (req, res)=> {   
     let isoCode = req.params.isoCode;
     let process = req.params.process; 
     if ((!isoCode) || isoCode.match(/^[a-zA-Z][a-zA-Z]$/g)!=isoCode ) {
@@ -13,9 +13,9 @@ router.get('/updateMongoDB/:isoCode/:process', (req, res)=> { //example : /Updat
     };  
     if ((!process) || ['porthos','aramis','datatrans','rc'].indexOf(process.toLowerCase())==-1 ) 
         { return res.status(400).send({ api_error: true, message: 'Please provide a valid process name!' }); 
-    }; 
+    };   
     // grabing the filelist from the FTP server 
-    axios.get('http://localhost:1001/getLogFilesList/'+ isoCode +'/'+ process)
+    axios.get('http://localhost:1001/getLogFilesList/'+ isoCode +'/'+ process) 
     .then((response) => {      
         filelist = response.data.files.map((k)=>{ return {name: k.name, date: k.date} });    
         const all_checkLogData_Calls = async () => {
@@ -70,7 +70,7 @@ router.get('/updateMongoDB/:isoCode/:process', (req, res)=> { //example : /Updat
     });  
 }); 
 
-router.get('/updateMongoDB/:isoCode/:process/:date', (req, res)=> { //example : /UpdateMongoDB/Aramis/RO
+router.get('/updateMongoDB/:isoCode/:process/:date', (req, res)=> {  
     let isoCode = req.params.isoCode;
     let process = req.params.process; 
     let date = req.params.date; 

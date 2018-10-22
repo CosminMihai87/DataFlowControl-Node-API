@@ -23,7 +23,7 @@ function ftpConnection(country) {
         password: 'R2Utfn47',
         connTimeout:'30000'
     };
-};
+}; 
 
 var SSHTunelConfig = {  
     // keepAlive: true,
@@ -51,5 +51,5 @@ var mongoConnOptions = {
 }
  
 module.exports.ftpConnection = ftpConnection; 
-module.exports.SSHTunelConfig= SSHTunelConfig; 
-module.exports.mongoConnOptions= mongoConnOptions; 
+module.exports.SSHTunelConfig = SSHTunelConfig; 
+module.exports.mongoConnOptions = mongoConnOptions;  

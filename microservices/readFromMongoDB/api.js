@@ -139,7 +139,7 @@ router.get('/getDataflowData/:isoCode/:date', (req, res)=>{
     };   
     if ((!date) || date.match(/([12]\d{3}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01]))/g)!=date ) {   
         return res.status(400).send({ api_error: true, message: 'Please provide a valid date!' }); 
-    };   
+    };    
     //calling getExpectedProcesses to get the average processes ran for the past 14 days , we need it to calculate the progressbars below 
     axios.get('http://localhost:1004/getExpectedProcesses/'+ isoCode).then((response) => {  
         var average = response.data.average_per_day; 
@@ -180,6 +180,7 @@ router.get('/getDataflowData/:isoCode/:date', (req, res)=>{
 });
 
 router.get('/getDataflowData/:isoCode/:dateFrom/:dateTo', (req, res)=>{  
+    console.log(process.env.NODE_ENV.trim() );
     let dateFrom = req.params.dateFrom;   
     let dateTo = req.params.dateTo; 
     let isoCode = req.params.isoCode; 
@@ -241,9 +242,9 @@ router.get('/getExpectedProcesses/:isoCode', (req, res)=>{
     var dbURI = db.SSHTunelConfig.dstHost;   
     mongoose.connect( dbURI, db.mongoConnOptions).then(() => {   
         var processModel = mongoose.model('all', schema.schema_all, 'processes_'+isoCode);  
-        dateFrom = new Date(Date.now() - 864e5*14).toISOString().substring(0,10).replace(/-|:|.000Z/g,'').replace(/T/g,'_').split('_')[0]   //30 days ago
+        dateFrom = new Date(Date.now() - 864e5*24).toISOString().substring(0,10).replace(/-|:|.000Z/g,'').replace(/T/g,'_').split('_')[0]   //30 days ago
         dateTo = new Date().toISOString().substring(0,10).replace(/-|:|.000Z/g,'').replace(/T/g,'_').split('_')[0]  //today
-        var date_array = functions.getArrayofDates(dateFrom, dateTo, "RegEX"); //recorded in the last month
+        var date_array = functions.getArrayofDates(dateFrom, dateTo, "RegEX"); //recorded in the last month 
         var query = processModel.find({ application: {"$in": ['porthos','aramis','datatrans','rc'] }, run: {"$in": date_array }} ); 
         query.select("-_id");
         query.exec((err, result)=> { 
