@@ -159,7 +159,7 @@ router.get('/getDataflowData/:isoCode/:date', (req, res)=>{
                         country: isoCode,
                         date: date, 
                         data: {
-                            status: functions.getDataflowJSON_data(result),
+                            // status: functions.getDataflowJSON_data(result),
                             details: functions.getDataflowJSON_data_details(result) 
                         },
                         progressbars: functions.getDataflowJSON_progressbars(result, 1, average),
@@ -214,7 +214,7 @@ router.get('/getDataflowData/:isoCode/:dateFrom/:dateTo', (req, res)=>{
                         country: isoCode,
                         date: dateFrom+"-"+dateTo, 
                         data: {
-                            status: functions.getDataflowJSON_data(result),
+                            // status: functions.getDataflowJSON_data(result),
                             details: functions.getDataflowJSON_data_details(result) 
                         },
                         progressbars: "aaa",
@@ -242,7 +242,7 @@ router.get('/getExpectedProcesses/:isoCode', (req, res)=>{
     var dbURI = db.SSHTunelConfig.dstHost;   
     mongoose.connect( dbURI, db.mongoConnOptions).then(() => {   
         var processModel = mongoose.model('all', schema.schema_all, 'processes_'+isoCode);  
-        dateFrom = new Date(Date.now() - 864e5*24).toISOString().substring(0,10).replace(/-|:|.000Z/g,'').replace(/T/g,'_').split('_')[0]   //30 days ago
+        dateFrom = new Date(Date.now() - 864e5*14).toISOString().substring(0,10).replace(/-|:|.000Z/g,'').replace(/T/g,'_').split('_')[0]   //30 days ago
         dateTo = new Date().toISOString().substring(0,10).replace(/-|:|.000Z/g,'').replace(/T/g,'_').split('_')[0]  //today
         var date_array = functions.getArrayofDates(dateFrom, dateTo, "RegEX"); //recorded in the last month 
         var query = processModel.find({ application: {"$in": ['porthos','aramis','datatrans','rc'] }, run: {"$in": date_array }} ); 

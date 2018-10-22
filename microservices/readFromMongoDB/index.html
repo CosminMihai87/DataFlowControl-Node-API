@@ -27,6 +27,15 @@
             <h3 style='color:red;'>/getData/:isoCode/:process/:dateFrom/:dateTo</h1>
                 <li>Details : This is an API that returns a JSON with the details of the logs for the specified country, process and time period. <br>*You can use `all` as a process parameter to gell all 4 processes log data.</li>
                 <li>Example : <i>getData/RO/porthos/20180922/20180924</i>  </li> 
+            <h3 style='color:red;'>/getDataflowData/:isoCode/:date</h1>
+                <li>Details : This is an API that returns a JSON with the log details(for all processes) for a certain day in terms of : status, errors grouped up, progressbards and articleouts </li>
+                <li>Example : <i>getDataflowData/RO/20181003</i>  </li> 
+            <h3 style='color:red;'>/getDataflowData/:isoCode/:dateFrom/:dateTo</h1>
+                <li>Details : This is an API that returns a JSON with the log details(for all processes) for a  multiple days in terms of : status, errors grouped up, progressbards and articleouts </li>
+                <li>Example : <i>getDataflowData/RO/20181003/20181015</i>  </li> 
+            <h3 style='color:red;'>/getExpectedProcesses/:isoCode</h1>
+                <li>Details : This is an API that returns a JSON with a prediction(looking at the past 14 days) of the number of processes that run on a daily basis. </li>
+                <li>Example : <i>getExpectedProcesses/RO</i>  </li>  
         </div>
     </div> 
 </body>

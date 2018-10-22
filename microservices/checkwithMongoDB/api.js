@@ -29,10 +29,9 @@ router.get('/checkLogData/:isoCode/:process/:filename', (req, res)=>{
     if (!filename) { return res.status(400).send({ api_error: true, message: 'Please provide the filename parameter!' }); };
     var dbURI = db.SSHTunelConfig.dstHost;   
     mongoose.connect( dbURI, db.mongoConnOptions).then(() => {   
-        const processModel = mongoose.model('processes_'+isoCode, schema.schema ); 
-        var query = processModel.findOne({filename: filename, application: process });  
-        query.exec((err, result)=> { 
-            console.log(result);
+        const processModel = mongoose.model('name', schema.schema , 'processes_'+isoCode ); 
+        var query = processModel.findOne({application: process, filename: filename });  
+        query.exec((err, result)=> {  
             if (err) {
                 console.log(`Error when calling the 'checkLogData' microservice - DBQuery issue on execution: ${err}`); 
                 res.status(400).send({ api_error: true, message: `Error when calling the 'checkLogData' microservice - DBQuery issue on execution: ${err}` });

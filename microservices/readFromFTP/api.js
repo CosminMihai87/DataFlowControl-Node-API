@@ -116,7 +116,7 @@ router.get('/getLogFilesList/:isoCode/:process/:date', (req, res)=>{
                         });    
                     } else {
                         //this means it has been archived so we need to "dig deeper" for the files :) : 
-                        readFTP.cwd( functions.getProtPath(process,isoCode)+'/archive', (error)=> {  
+                        readFTP.cwd( functions.getProtPath(process,isoCode)+'archive', (error)=> {   
                             if (error) {    
                                 console.log(`Error when changing the path on the ftp server: ${error}`);
                                 res.status(400).send({ api_error: true, message: `Error when changing the path on the ftp server: ${error}` }); 

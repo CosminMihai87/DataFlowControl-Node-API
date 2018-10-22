@@ -15,7 +15,7 @@
     "prod-readFromMongoDB": "pm2 start --name prod-readFromMongoDB ./microservices/readFromMongoDB/server.js",
     "prod-deleteall": "pm2 delete all",
     "dev": "SET NODE_ENV=localhost & concurrently --raw --kill-others \"npm run dev-main\" \"npm run dev-readFromFTP\" \"npm run dev-checkwithMongoDB\" \"npm run dev-write2MongoDB\" \"npm run dev-readFromMongoDB\" ",  
-    "prod": "NODE_ENV=localhost && npm run prod-deleteall && npm run prod-main && npm run prod-readFromFTP && npm run prod-checkwithMongoDB && npm run prod-write2MongoDB && npm run prod-readFromMongoDB"  
+    "prod": "NODE_ENV=10.10.1.235 && npm run prod-main && npm run prod-readFromFTP && npm run prod-checkwithMongoDB && npm run prod-write2MongoDB && npm run prod-readFromMongoDB"  
   }, 
   "keywords": [],
   "author": "",
