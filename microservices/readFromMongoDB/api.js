@@ -140,8 +140,9 @@ router.get('/getDataflowData/:isoCode/:date', (req, res)=>{
     if ((!date) || date.match(/([12]\d{3}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01]))/g)!=date ) {   
         return res.status(400).send({ api_error: true, message: 'Please provide a valid date!' }); 
     };    
+    console.log('http://' + process.env.NODE_ENV + ':1004/getExpectedProcesses/'+ isoCode);
     //calling getExpectedProcesses to get the average processes ran for the past 14 days , we need it to calculate the progressbars below 
-    axios.get('http://localhost:1004/getExpectedProcesses/'+ isoCode).then((response) => {  
+    axios.get('http://' + process.env.NODE_ENV + ':1004/getExpectedProcesses/'+ isoCode).then((response) => {  
         var average = response.data.average_per_day; 
         //now we connect to the mongo db to get the rest of the data and sent it over to the functions to process and return what we need.
         var dbURI = db.SSHTunelConfig.dstHost;   
