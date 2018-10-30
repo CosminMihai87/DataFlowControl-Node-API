@@ -37,10 +37,8 @@ const schema_aramis = new Schema({
         starttime: {type: String, default: '2018-01-01 06:23:23'},
         endtime: {type: String, default: '2018-01-01 06:25:25'},
         nr_errors: {type: Number, default: '1'},
-        error_details: { type: ['Mixed'] }, 
         nr_warnings: {type: Number, default: '1'}, 
-        warning_details: { type: ['Mixed'] }, 
-        info_details: { type: ['Mixed'] }, 
+        inf_warn_err: { type: ['Mixed'] },  
         purchacts_total: {type: Number, default: '1'},
         articles_total: {type: Number, default: '1'},
         nr_processed_purchacts: {type: Number, default: '1'},
@@ -61,9 +59,11 @@ const schema_datatrans = new Schema({
     date: {type: String, default: 'date'},
     filename: {type: String, default: 'filename'},
     data: { 
+        starttime: {type: String, default: '2018-01-01 06:25:25'},
+        endtime: {type: String, default: '2018-01-01 06:25:25'},
         nr_errors: {type: Number, default: '1'},
-        nr_new_art_created: {type: Number, default: '1'},
-        error_details: { type: ['Mixed'] },
+        inf_warn_err: { type: ['Mixed'] },
+        nr_new_art_created: {type: Number, default: '1'}, 
         new_art_created_details: { type: ['Mixed'] }
     } 
 },{versionKey: false});  
@@ -84,7 +84,7 @@ const schema_rc = new Schema({
         records_failed: {type: Number, default: '1'},
         records_total: {type: Number, default: '1'},
         nr_errors : {type: Number, default: '1'},
-        error_details: { type: ['Mixed'] } 
+        inf_warn_err: { type: ['Mixed'] } 
     } 
 },{versionKey: false});   
 

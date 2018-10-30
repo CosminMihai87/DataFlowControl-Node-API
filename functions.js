@@ -237,9 +237,7 @@ function getAramisJSON(data) {
             if (index >= WARNING_BEGIN_index && index <= WARNING_END_index && lines[index].length>0 ) { WARNING.push(lines[index]) };  
             if (index >= INFO_BEGIN_index && index <= INFO_END_index && lines[index].length>0 ) { INFO.push(lines[index]) }; 
         }
-        var error_details=[];
-        var warning_details=[];
-        var info_details=[];  
+        var inf_warn_err=[]; 
 
         // ERRORS //
         if (ERROR.length>2) { // if this array contains more than 2 lines "ERROR BEGIN" and "ERROR END"   
@@ -280,8 +278,9 @@ function getAramisJSON(data) {
                         details_array.push(details)
                     } 
                 }
-                error_details.push({ 
+                inf_warn_err.push({ 
                     text: errorgroup[1], 
+                    type: "Error",
                     nr: errorgroup.length-3,   
                     details: details_array
                 });
@@ -327,8 +326,9 @@ function getAramisJSON(data) {
                         details_array.push(details)
                     } 
                 }
-                warning_details.push({ 
+                inf_warn_err.push({ 
                     text: WARNINGgroup[1], 
+                    type: "Warning",
                     nr: WARNINGgroup.length-3,  
                     details: details_array 
                 }); 
@@ -342,10 +342,8 @@ function getAramisJSON(data) {
             dbUser: dbUser,
             dbServer: dbServer,
             nr_errors: nr_errors,
-            error_details: error_details,
             nr_warnings: nr_warnings,
-            warning_details: warning_details, 
-            info_details: info_details,
+            inf_warn_err: inf_warn_err, 
             purchacts_total: purchacts_total,
             articles_total: articles_total,
             nr_processed_purchacts: nr_processed_purchacts,
@@ -371,6 +369,7 @@ function getDatatransJSON(data) {
             }  
             if (line.indexOf('New articles were created for the following keys:')==0) { var START_new_art_created_index = index; } 
             if (line.indexOf('finished file: ')==0) { var END_new_art_created_index = index; } 
+            if (line.indexOf('processing file: ')==0) { var filename = line.split('processing file: ')[1]; } 
         }
         var new_art_created=[]; 
         for (let [index, line] of lines.entries() ) {      
@@ -391,6 +390,7 @@ function getDatatransJSON(data) {
             .map((k)=>{ 
                     return {
                         text: k,  
+                        type: "Error",  
                         nr: (ERROR_pre.reduce(function (n, mess) { return n + (mess.text== k); }, 0)), 
                         details: ERROR_pre.filter(j => j.text === k).map((l)=>{ return { line: l['line'], article: l['article'] }})
                     }}
@@ -401,14 +401,16 @@ function getDatatransJSON(data) {
             .map((k)=>{ 
                     return {   
                         date: k,  
-                        nr: (new_art_created_pre.reduce(function (n, mess) { return n + (mess.date== k); }, 0)), 
-                        article: new_art_created_pre.filter(j => j.date === k).map((l)=> { return { article: l['article'] } }) 
+                        nr: (new_art_created_pre.reduce(function (n, mess) { return n + (mess.date== k); }, 0)),  
+                        articles: new_art_created_pre.filter(j => j.date === k).map((l)=> { return l['article']  }) 
                     }}
                 ); 
  
         var result = JSON.stringify({  
+            starttime: getProcessDateTime(filename).replace('T',' ').substring(0,getProcessDateTime(filename).length-5),
+            endtime: getProcessDateTime(filename).replace('T',' ').substring(0,getProcessDateTime(filename).length-5), 
             nr_errors: ERROR.length,
-            error_details: ERROR_details,
+            inf_warn_err: ERROR_details,
             nr_new_art_created: new_art_created.length, 
             new_art_created_details: new_art_created_details
         })
@@ -437,7 +439,7 @@ function getRCJSON(data) {
         for (let [index, line] of lines.entries() ) {       
             if (index >= ERROR_BEGIN_index && index <= ERROR_END_index && lines[index].length>0) { ERROR.push(lines[index].replace(': ','')) };  
         }
-        var error_details=[]; 
+        var inf_warn_err=[]; 
         var nr_errors=0; 
         if (ERROR.length>0) {
             //mapping the positions where we need to push a '\n' in our array to separate the grooups of erros
@@ -474,8 +476,9 @@ function getRCJSON(data) {
                         details_array.push(details)
                     } 
                 }
-                error_details.push({ 
+                inf_warn_err.push({ 
                     text: errorgroup[1], 
+                    type: "Error",  
                     nr: errorgroup.length-2,  
                     details: details_array 
                 });
@@ -486,7 +489,7 @@ function getRCJSON(data) {
             starttime: starttime,
             endtime : endtime, 
             nr_errors: nr_errors,
-            error_details: error_details, 
+            inf_warn_err: inf_warn_err, 
             records_loaded: records_loaded,
             records_failed: records_failed,
             records_total: records_total 
@@ -555,7 +558,7 @@ function getDataflowJSON_data(data) {
 };
 
 function getDataflowJSON_data_details(data) {   
-    try {      
+    // try {      
         var porthos = []; 
         var porthos_unique = [];
         var aramis = []; 
@@ -580,13 +583,9 @@ function getDataflowJSON_data_details(data) {
 
         //aramis:
         data.filter(k => k.application=="aramis")
-        .forEach(k => k.data[0].error_details
+        .forEach(k => k.data[0].inf_warn_err
             .forEach(k => aramis.push( {text: k.text, type: "error", nr: k.nr} ))
-        ); 
-        data.filter(k => k.application=="aramis")
-        .forEach(k => k.data[0].warning_details
-            .forEach(k => aramis.push( {text: k.text, type: "warning", nr: k.nr} ))
-        ); 
+        );  
         [...new Set(aramis.map(k => k.text))].forEach(k => {aramis_unique.push({ 
             text: k,
             type: aramis.filter(m => m.text == k)[0].type,
@@ -596,7 +595,7 @@ function getDataflowJSON_data_details(data) {
 
         //datatrans:
         data.filter(k => k.application=="datatrans")
-        .forEach(k => k.data[0].error_details
+        .forEach(k => k.data[0].inf_warn_err
             .forEach(k => datatrans.push( {text: k.text, type: "error", nr: k.nr} ))
         );  
         [...new Set(datatrans.map(k => k.text))].forEach(k => {datatrans_unique.push({ 
@@ -608,7 +607,7 @@ function getDataflowJSON_data_details(data) {
 
         //rc: 
         data.filter(k => k.application=="rc")
-        .forEach(k => k.data[0].error_details
+        .forEach(k => k.data[0].inf_warn_err
             .forEach(k => rc.push( {text: k.text, type: "error", nr: k.nr} ))
         );
         [...new Set(rc.map(k => k.text))].forEach(k => {rc_unique.push({ 
@@ -625,10 +624,10 @@ function getDataflowJSON_data_details(data) {
             rc: rc_unique
         };  
         return JSON.parse(JSON.stringify(result));   
-    }  catch (error) {  
-        console.log(`Error when running 'getDataflowJSON_data' : ${error}`);
-        return JSON.parse( JSON.stringify( { error: true, message: `Error when running 'getDataflowJSON_data' : ${error}` } ) ); 
-    }   
+    // }  catch (error) {  
+    //     console.log(`Error when running 'getDataflowJSON_data_details' : ${error}`);
+    //     return JSON.parse( JSON.stringify( { error: true, message: `Error when running 'getDataflowJSON_data_details' : ${error}` } ) ); 
+    // }   
 };
  
 function getDataflowJSON_progressbars(data,nr_days,expected) { 
@@ -726,7 +725,7 @@ function getDataflowJSON_progressbars(data,nr_days,expected) {
     }   
 };
 
-function getDataflowJSON_articleout(data,date) {   
+function getDataflowJSON_articleout(data,date,labels_data) {   
     try {      
         var aramis = []; 
         if (date.indexOf('-') != -1) {
@@ -744,8 +743,13 @@ function getDataflowJSON_articleout(data,date) {
                     data: data.filter(m => m.run.split('_')[0]==k).reduce((sum, el) => { return sum + el.data[0].records_processed },0)     
                 } 
             ) 
-        );  
-        return JSON.parse(JSON.stringify(aramis));   
+        );   
+        return JSON.parse(JSON.stringify(
+            {  
+                data: aramis.map((k)=>{ return k.labels }),
+                labels: aramis.map((k)=>{ return k.data }) 
+            }
+        ));   
     }  catch (error) {  
         console.log(`Error when running 'getDataflowJSON_articleout' : ${error}`);
         return JSON.parse( JSON.stringify( { error: true, message: `Error when running 'getDataflowJSON_articleout' : ${error}` } ) ); 

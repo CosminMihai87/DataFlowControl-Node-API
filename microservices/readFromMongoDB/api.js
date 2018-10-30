@@ -139,10 +139,9 @@ router.get('/getDataflowData/:isoCode/:date', (req, res)=>{
     };   
     if ((!date) || date.match(/([12]\d{3}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01]))/g)!=date ) {   
         return res.status(400).send({ api_error: true, message: 'Please provide a valid date!' }); 
-    };    
-    console.log('http://' + process.env.NODE_ENV + ':1004/getExpectedProcesses/'+ isoCode);
+    };     
     //calling getExpectedProcesses to get the average processes ran for the past 14 days , we need it to calculate the progressbars below 
-    axios.get('http://' + process.env.NODE_ENV + ':1004/getExpectedProcesses/'+ isoCode).then((response) => {  
+    axios.get('http://localhost:1004/getExpectedProcesses/'+ isoCode).then((response) => {  
         var average = response.data.average_per_day; 
         //now we connect to the mongo db to get the rest of the data and sent it over to the functions to process and return what we need.
         var dbURI = db.SSHTunelConfig.dstHost;   
@@ -180,12 +179,10 @@ router.get('/getDataflowData/:isoCode/:date', (req, res)=>{
 
 });
 
-router.get('/getDataflowData/:isoCode/:dateFrom/:dateTo', (req, res)=>{  
-    console.log(process.env.NODE_ENV.trim() );
+router.get('/getDataflowData/:isoCode/:dateFrom/:dateTo', (req, res)=>{   
     let dateFrom = req.params.dateFrom;   
     let dateTo = req.params.dateTo; 
-    let isoCode = req.params.isoCode; 
-    let date = req.params.date;   
+    let isoCode = req.params.isoCode;  
     if ((!isoCode) || isoCode.match(/^[a-zA-Z][a-zA-Z]$/g)!=isoCode ) {
         return res.status(400).send({ api_error: true, message: 'Please provide a valid country isoCode!' }); 
     };    
@@ -217,10 +214,9 @@ router.get('/getDataflowData/:isoCode/:dateFrom/:dateTo', (req, res)=>{
                         data: {
                             // status: functions.getDataflowJSON_data(result),
                             details: functions.getDataflowJSON_data_details(result) 
-                        },
-                        progressbars: "aaa",
+                        }, 
                         progressbars: functions.getDataflowJSON_progressbars(result, functions.getArrayofDates(dateFrom,dateTo).length, average), 
-                        articleout: functions.getDataflowJSON_articleout(result,(dateFrom+"-"+dateTo))
+                        articleout: functions.getDataflowJSON_articleout(result,(dateFrom+"-"+dateTo)) 
                     });   
                 }; 
                 mongoose.connection.close();
