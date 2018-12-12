@@ -17,16 +17,15 @@ router.get('/checkLogData/:isoCode/:process/:filename', (req, res)=>{
     let isoCode = req.params.isoCode;
     let process = req.params.process;
     let filename = req.params.filename;   
-    if ((!process) || ['porthos','aramis','datatrans','rc'].indexOf(process.toLowerCase())==-1 ) 
-        { return res.status(400).send({ api_error: true, message: 'Please provide a valid process name!' }); 
+    if ((!process) || ['porthos','aramis','datatrans','rc'].indexOf(process.toLowerCase())==-1 ) { 
+        return res.status(400).send({ api_error: true, message: 'Please provide a valid process name!' }); 
     }; 
     if (!filename) {   
         return res.status(400).send({ api_error: true, message: 'Please provide a filename!' }); 
     };      
     if ((!isoCode) || isoCode.match(/^[a-zA-Z][a-zA-Z]$/g)!=isoCode ) {
         return res.status(400).send({ api_error: true, message: 'Please provide a valid country isoCode!' }); 
-    };  
-    if (!filename) { return res.status(400).send({ api_error: true, message: 'Please provide the filename parameter!' }); };
+    };   
     var dbURI = db.SSHTunelConfig.dstHost;   
     mongoose.connect( dbURI, db.mongoConnOptions).then(() => {   
         const processModel = mongoose.model('name', schema.schema , 'processes_'+isoCode ); 

@@ -8,14 +8,14 @@ function ftpConnection(country) {
         case "nl":
         case "no":
         case "se":
-            host='nuex-apct02.gfk.com';
+            host='dcex-apatrp02'; //old : nuex-apct02.gfk.com
             break;
         case "de":
         case "fr":
-            host='nuex-fsct01.gfk.com'; 
+            host='dcex-apatrp01'; //old : nuex-fsct01.gfk.com
             break;
         default:
-            host='nuex-apct03.gfk.com'; 
+            host='dcex-apatrp03'; //old : nuex-apct03.gfk.com
     };  
     return {   
         host: host,  
@@ -31,7 +31,7 @@ var SSHTunelConfig = {
     password: 'gps0155', 
     host: 'dcex-rotcps01.gfk.com',  
     port: 22,
-    dstHost: 'mongodb://dcex-rotcps01.gfk.com:27017/dfc-db',
+    dstHost: 'mongodb://cnmiha:Cosmin1987@dcex-rotcps01.gfk.com:27017/dfc-db',
     dstPort: 27017, 
     localHost:'127.0.0.1',
     localPort: 27001,
@@ -39,6 +39,8 @@ var SSHTunelConfig = {
 }
 
 var mongoConnOptions = {  
+    user: "cnmiha",
+    pass: "Cosmin1987",
     useNewUrlParser: true,
     autoIndex: false, // Don't build indexes
     reconnectTries: Number.MAX_VALUE, // Never stop trying to reconnect

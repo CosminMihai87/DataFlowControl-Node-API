@@ -54,7 +54,7 @@ function getProtPath(process,country) {
 };
   
 // splits a string by _ and searches for all the splited strings of the format YYYYmmDD folowed by a string of format HHmmSS and combines them into a date of format 2018-07-19T05:39:00(for example)
-function getProcessDateTime(string) { 
+function getProcessDateTime(string) {  
     var array = string.split('_');   
     var date = '';
     var time = '';
@@ -459,7 +459,7 @@ function getRCJSON(data) {
                 ERRORs_array.push(['ERROR:']) :
                 ERRORs_array[ERRORs_array.length - 1].push(item)
             );    
-            //constructing our json and attaching it to the output :  
+            //constructing our json and attaching it to the output :   
             for (let errorgroup of ERRORs_array) { 
                 var errorgroup_arr =  ERRORs_array[ERRORs_array.indexOf(errorgroup)];  
                 var details_array=[];
@@ -468,7 +468,7 @@ function getRCJSON(data) {
                         nr_errors++;
                         var details = {
                             household: value.split(' ')[0],
-                            panelcode: value.split(' ')[3],
+                            panelcode: value.split(' ')[3], 
                             year: value.split(' ')[4],
                             week: value.split(' ')[5],
                             RCvalue: value.split(' ')[6]
@@ -595,7 +595,7 @@ function getDataflowJSON_data_details(data) {
 
         //datatrans:
         data.filter(k => k.application=="datatrans")
-        .forEach(k => k.data[0].inf_warn_err
+        .forEach(k => k.data[0].inf_warn_err 
             .forEach(k => datatrans.push( {text: k.text, type: "error", nr: k.nr} ))
         );  
         [...new Set(datatrans.map(k => k.text))].forEach(k => {datatrans_unique.push({ 

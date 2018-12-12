@@ -4,9 +4,14 @@ const axios = require('axios');
 const path = require('path'); 
 
 router.use('/', express.static('html'));
+
+router.get('/updateMongoDB/:isoCode', (req, res)=> {   
+
+
+}); 
+
    
-router.get('/updateMongoDB/:isoCode/:process', (req, res)=> {   
-    // console.log(`env variable NODE_ENV =${process.env.NODE_ENV.trim()}`); 
+router.get('/updateMongoDB/:isoCode/:process', (req, res)=> {    
     let isoCode = req.params.isoCode;
     let process = req.params.process; 
     if ((!isoCode) || isoCode.match(/^[a-zA-Z][a-zA-Z]$/g)!=isoCode ) {
@@ -38,7 +43,7 @@ router.get('/updateMongoDB/:isoCode/:process', (req, res)=> {
                                 // };
                                 // add_to_returnJson().then((result) => {  
                                 //     console.log(result.message)
-                                //     returnJson.push(result);  
+                                //     returnJson.push(result);   
                                 // }); 
                                 console.log( response.data.message );
                             }) 

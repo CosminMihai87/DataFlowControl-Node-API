@@ -25,9 +25,11 @@
     "concurrently": "^4.0.1",
     "express": "^4.16.3",
     "ftp": "^0.3.10",
+    "http2": "^3.3.7",
     "inject-tunnel-ssh": "0.0.5",
     "mongoose": "^5.2.14",
-    "npm": "^6.4.1",
+    "npm": "^6.5.0",
+    "spdy": "^4.0.0",
     "targz": "^1.0.1",
     "tunnel-ssh": "^4.1.4",
     "xml-js": "^1.6.7"

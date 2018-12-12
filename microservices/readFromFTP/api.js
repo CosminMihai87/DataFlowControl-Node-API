@@ -9,20 +9,20 @@ var functions = require('../../functions.js');
 
 router.use('/', express.static('html'));
  
-router.get('/getLogFilesList/:isoCode/:process', (req, res)=>{   
+router.get('/getLogFilesList/:isoCode/:process', (req, res)=>{    
     let isoCode = req.params.isoCode;
     let process = req.params.process; 
     if ((!isoCode) || isoCode.match(/^[a-zA-Z][a-zA-Z]$/g)!=isoCode ) {
         return res.status(400).send({ api_error: true, message: 'Please provide a valid country isoCode!' }); 
     };  
-    if ((!process) || ['porthos','aramis','datatrans','rc'].indexOf(process.toLowerCase())==-1 ) 
-        { return res.status(400).send({ api_error: true, message: 'Please provide a valid process name!' }); 
+    if ((!process) || ['porthos','aramis','datatrans','rc'].indexOf(process.toLowerCase())==-1 ) { 
+        return res.status(400).send({ api_error: true, message: 'Please provide a valid process name!' }); 
     }; 
     var readFTP = new client();
     //on connected to ftp event :
-    readFTP.on('ready', ()=> { 
+    readFTP.on('ready', ()=> {  
         // navigating to the proper path on the ftp depending on country and process:
-        readFTP.cwd( functions.getProtPath(process,isoCode), (error)=> {  
+        readFTP.cwd( functions.getProtPath(process,isoCode), (error)=> {   
             if (error) {   
                 console.log(`Error when changing the path on the ftp server: ${error}`);
                 res.status(400).send({ api_error: true, message: `Error when changing the path on the ftp server: ${error}` }); 
@@ -31,7 +31,7 @@ router.get('/getLogFilesList/:isoCode/:process', (req, res)=>{
                     if (error) {    
                         console.log(`Error when getting the list of files: ${error}`);
                         res.status(400).send({ api_error: true, message: `Error when getting the list of files: ${error}` }); 
-                    } else {   
+                    } else {    
                         var files = list.map((k)=>{ return { 
                             type: k['type'], 
                             name: k['name'], 
@@ -135,10 +135,10 @@ router.get('/getLogFilesList/:isoCode/:process/:date', (req, res)=>{
                                                     res.status(400).send({ api_error: true, message: `Error when downloading the archive file locally: ${error}` }); 
                                                 }
                                                 stream.once('close', ()=> { readFTP.end(); }); 
-                                                stream.pipe(fs.createWriteStream('./downloads/'+list[0].name));    
+                                                stream.pipe(fs.createWriteStream( path.join(__dirname, './../../downloads/') +list[0].name));    
                                                 stream.on('finish', () => {   
                                                     // the async unzip function
-                                                    async function unzip(path){
+                                                    async function unzip(path){ 
                                                         return await new Promise((resolve, reject) => { 
                                                             targz.decompress({
                                                                 src: path,
@@ -190,7 +190,7 @@ router.get('/getLogFilesList/:isoCode/:process/:date', (req, res)=>{
                                                     // cleaning up the downloads folder where we downloaded , unzipped and processed the files 
                                                     async function clean_up(path2clean) {
                                                         return await new Promise((resolve, reject) => {
-                                                            fs.readdir(path2clean, (err, files) => {     
+                                                            fs.readdir(path2clean, (err, files) => {    
                                                                 if (err) throw err; 
                                                                 for (const file of files) { 
                                                                     fs.unlink(path.join(path2clean, file), err => { 
@@ -206,14 +206,14 @@ router.get('/getLogFilesList/:isoCode/:process/:date', (req, res)=>{
                                                         });
                                                     };   
                                                     // the process in order : unzipp the downloaded files , work with them to get the res json to display, then delete the downloaded fiels
-                                                    unzip('./downloads/'+list[0].name).then((path)=>{
-                                                        getFileList(path).then((result)=>{ 
+                                                    unzip( path.join(__dirname, './../../downloads/') +list[0].name).then((finalpath)=>{ 
+                                                        getFileList( finalpath ).then((result)=>{ 
                                                             res.status(200).json({ 
                                                                 api_error: false, 
                                                                 message: `The Log files list for the ${isoCode} ${process} process from ${date.slice(0,4)+'-'+date.slice(4,6)+'-'+date.slice(6,8)} are:`, 
                                                                 files: result 
                                                             }); 
-                                                            clean_up('./downloads/').then((response)=>{
+                                                            clean_up( path.join(__dirname, './../../downloads/') ).then((response)=>{
                                                                 console.log(response);
                                                             }); 
                                                         });    
