@@ -2,15 +2,15 @@ const express = require('express');
 const router = express.Router(); 
 const axios = require('axios');      
 const path = require('path'); 
+const https = require('https');
 
 router.use('/', express.static('html'));
 
-router.get('/updateMongoDB/:isoCode', (req, res)=> {   
-
-
+router.get('/updateMongoDB/:isoCode', (req, res)=> {    
+    
 }); 
+ 
 
-   
 router.get('/updateMongoDB/:isoCode/:process', (req, res)=> {    
     let isoCode = req.params.isoCode;
     let process = req.params.process; 
@@ -21,22 +21,22 @@ router.get('/updateMongoDB/:isoCode/:process', (req, res)=> {
         { return res.status(400).send({ api_error: true, message: 'Please provide a valid process name!' }); 
     };   
     // grabing the filelist from the FTP server 
-    axios.get('http://localhost:1001/getLogFilesList/'+ isoCode +'/'+ process) 
+    axios.get('https://localhost:1001/getLogFilesList/'+ isoCode +'/'+ process, { httpsAgent: new https.Agent({ rejectUnauthorized: false })} ) 
     .then((response) => {      
         filelist = response.data.files.map((k)=>{ return {name: k.name, date: k.date} });    
         const all_checkLogData_Calls = async () => {
             var returnJson =[];  
             try {
-                let to_call = filelist.map((k) => { return axios.get('http://localhost:1002/checkLogData/'+ isoCode +'/'+ process +'/'+ k.name) } );
+                let to_call = filelist.map((k) => { return axios.get('https://localhost:1002/checkLogData/'+ isoCode +'/'+ process +'/'+ k.name, { httpsAgent: new https.Agent({ rejectUnauthorized: false })} ) } );
                 let called = await Promise.all(to_call);  
                 called.forEach(response => {  
                     // if the file is not found we call the microservice to write it to the db 
                     if (response.data.found == false ) {  
                         // we call the microservice that parses the log and extracts the data in a json format 
-                        axios.get('http://localhost:1001/getLogData/'+ isoCode +'/'+ process +'/'+ response.data.filename )
+                        axios.get('https://localhost:1001/getLogData/'+ isoCode +'/'+ process +'/'+ response.data.filename, { httpsAgent: new https.Agent({ rejectUnauthorized: false })} )
                         .then((response) => {    
                             // we call another microservice to write the data extracted in the DB
-                            axios.post('http://localhost:1003/sendLogData/'+ isoCode +'/'+ process , response.data.process )
+                            axios.post('https://localhost:1003/sendLogData/'+ isoCode +'/'+ process , response.data.process, { httpsAgent: new https.Agent({ rejectUnauthorized: false })} )
                             .then((response) => {     
                                 // const add_to_returnJson = async () => {
                                 //     return { filename: response.data.filename, message: response.data.message, process: response.data.process }; 
@@ -90,22 +90,22 @@ router.get('/updateMongoDB/:isoCode/:process/:date', (req, res)=> {
         return res.status(400).send({ api_error: true, message: 'Please provide a valid date!' }); 
     };    
     // grabing the filelist from the FTP server 
-    axios.get('http://localhost:1001/getLogFilesList/'+ isoCode +'/'+ process +'/'+ date)
+    axios.get('https://localhost:1001/getLogFilesList/'+ isoCode +'/'+ process +'/'+ date, { httpsAgent: new https.Agent({ rejectUnauthorized: false })} )
     .then((response) => {      
         filelist = response.data.files.map((k)=>{ return {name: k.name, date: k.date} });    
         const all_checkLogData_Calls = async () => {
             var returnJson =[]; 
             try {
-                let to_call = filelist.map((k) => { return axios.get('http://localhost:1002/checkLogData/'+ isoCode +'/'+ process +'/'+ k.name) } );
+                let to_call = filelist.map((k) => { return axios.get('https://localhost:1002/checkLogData/'+ isoCode +'/'+ process +'/'+ k.name, { httpsAgent: new https.Agent({ rejectUnauthorized: false })} ) } );
                 let called = await Promise.all(to_call);  
                 called.forEach(response => { 
                     // if the file is not found we call the microservice to write it to the db 
                     if (response.data.found == false ) {  
                         // we call the microservice that parses the log and extracts the data in a json format 
-                        axios.get('http://localhost:1001/getLogData/'+ isoCode +'/'+ process +'/'+ response.data.filename )
+                        axios.get('https://localhost:1001/getLogData/'+ isoCode +'/'+ process +'/'+ response.data.filename, { httpsAgent: new https.Agent({ rejectUnauthorized: false })} )
                         .then((response) => {    
                             // we call another microservice to write the data extracted in the DB
-                            axios.post('http://localhost:1003/sendLogData/'+ isoCode +'/'+ process , response.data.process )
+                            axios.post('https://localhost:1003/sendLogData/'+ isoCode +'/'+ process , response.data.process, { httpsAgent: new https.Agent({ rejectUnauthorized: false })} )
                             .then((response) => {    
                                 // const add_to_returnJson = async () => {
                                 //     return { filename: response.data.filename, message: response.data.message, process: response.data.process }; 

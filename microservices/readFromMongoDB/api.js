@@ -9,6 +9,7 @@ const functions = require('../../functions.js');
 var bodyParser = require('body-parser');
 router.use(bodyParser.json({limit: '10mb', extended: true})); // support json encoded bodies
 router.use(bodyParser.urlencoded({limit: '10mb', extended: true})); // support encoded bodies
+const https = require('https');
   
 router.use('/', express.static('html'));
 
@@ -77,7 +78,7 @@ router.get('/getData/:isoCode/:process/:dateFrom/:dateTo', (req, res)=>{
     let process = req.params.process.toLowerCase();
     let dateFrom = req.params.dateFrom;   
     let dateTo = req.params.dateTo; 
-    if ((!isoCode) || isoCode.match(/^[a-zA-Z][a-zA-Z]$/g)!=isoCode ) {
+    if ((!isoCode) || isoCode.match(/^([a-zA-Z][a-zA-Z]|ALL)$/g)!=isoCode ) {
         return res.status(400).send({ api_error: true, message: 'Please provide a valid country isoCode!' }); 
     };  
     if ((!process) || ['porthos','aramis','datatrans','rc','all'].indexOf(process.toLowerCase())==-1 ) 
@@ -141,7 +142,7 @@ router.get('/getDataflowData/:isoCode/:date', (req, res)=>{
         return res.status(400).send({ api_error: true, message: 'Please provide a valid date!' }); 
     };     
     //calling getExpectedProcesses to get the average processes ran for the past 14 days , we need it to calculate the progressbars below 
-    axios.get('http://localhost:1004/getExpectedProcesses/'+ isoCode).then((response) => {  
+    axios.get('https://localhost:1004/getExpectedProcesses/'+ isoCode, { httpsAgent: new https.Agent({ rejectUnauthorized: false })} ).then((response) => {  
         var average = response.data.average_per_day; 
         //now we connect to the mongo db to get the rest of the data and sent it over to the functions to process and return what we need.
         var dbURI = db.SSHTunelConfig.dstHost;   
@@ -193,7 +194,7 @@ router.get('/getDataflowData/:isoCode/:dateFrom/:dateTo', (req, res)=>{
         return res.status(400).send({ api_error: true, message: 'Please provide a valid dateTo!' }); 
     };   
      //calling getExpectedProcesses to get the average processes ran for the past 14 days , we need it to calculate the progressbars below 
-     axios.get('http://localhost:1004/getExpectedProcesses/'+ isoCode).then((response) => {  
+     axios.get('https://localhost:1004/getExpectedProcesses/'+ isoCode, { httpsAgent: new https.Agent({ rejectUnauthorized: false })} ).then((response) => {  
         var average = response.data.average_per_day; 
         //now we connect to the mongo db to get the rest of the data and sent it over to the functions to process and return what we need.
         var dbURI = db.SSHTunelConfig.dstHost;   
@@ -202,7 +203,7 @@ router.get('/getDataflowData/:isoCode/:dateFrom/:dateTo', (req, res)=>{
             var date_array = functions.getArrayofDates(dateFrom, dateTo, "RegEX"); 
             var query = processModel.find({ application: {"$in": ['porthos','aramis','datatrans','rc'] }, run: {"$in": date_array }} ); 
             query.select("-_id");
-            query.exec((err, result)=> { 
+            query.exec((err, result)=> {  
                 if (err) {
                     console.log(`Error when calling the 'getDataflowData' microservice - DBQuery issue on execution: ${err}`); 
                     res.status(400).send({ api_error: true, message: `Error when calling the 'getDataflowData' microservice - DBQuery issue on execution: ${err}` });
@@ -278,7 +279,6 @@ router.get('/getExpectedProcesses/:isoCode', (req, res)=>{
         throw res.status(400).send({ api_error: true, message: `Error when calling the 'readFromMongoDB' microservice - MongoDB connection error: ${error}` }); 
     });    
 });
-
 
 router.get('*', (req, res)=> {  
     res.sendFile(path.join(__dirname + '/index.html'));

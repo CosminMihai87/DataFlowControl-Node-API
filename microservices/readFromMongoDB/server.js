@@ -8,9 +8,9 @@ const api = require('./api');
 // Get our API routes
 app.use('/', api);
  
-var certOptions = {
-    key: fs.readFileSync(path.join(__dirname, './../certificates/', 'dfc-key.pem')),
-    cert: fs.readFileSync(path.join(__dirname, './../certificates/', 'dfc-cert.pem')) 
+var certOptions = { 
+    key: fs.readFileSync(path.join(__dirname, './../certificates/', 'ca.key')),
+    cert: fs.readFileSync(path.join(__dirname, './../certificates/', 'ca.crt')) 
 };
 var port = 1004;
 

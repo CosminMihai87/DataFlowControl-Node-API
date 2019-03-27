@@ -53,6 +53,9 @@ function getProtPath(process,country) {
     return path.replace('{country}',country.toLowerCase()) 
 };
   
+
+
+
 // splits a string by _ and searches for all the splited strings of the format YYYYmmDD folowed by a string of format HHmmSS and combines them into a date of format 2018-07-19T05:39:00(for example)
 function getProcessDateTime(string) {  
     var array = string.split('_');   
