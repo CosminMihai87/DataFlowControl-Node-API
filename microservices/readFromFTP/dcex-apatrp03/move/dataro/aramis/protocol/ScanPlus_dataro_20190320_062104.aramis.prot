@@ -1,0 +1,76 @@
+---------------------------------------------------------
+starting ARaMIS (version 3.00.3319) at 2019-03-20 06:30:38
+---------------------------------------------------------
+DB Environment:
+---------------------------------------------------------
+DBUser:   dataro
+DBPass:   *******
+DBServer: SYB_ATRRO
+DB:       ro_admin
+=========================================================
+parameter:
+---------------------------------------------------------
+input file:  /move/dataro/aramis/work/ScanPlus_dataro_20190320_062104.aramis
+output file: /move/dataro/datatrans/ScanPlus_dataro_20190320_062104.xml
+protocol file: /move/dataro/aramis/protocol/ScanPlus_dataro_20190320_062104.aramis.prot
+error file: /move/dataro/aramis/error/ScanPlus_dataro_20190320_062104.aramis.err
+=========================================================
+ERROR BEGIN
+Code Error: Unknown CP Feature
+Line	PurchactId	Cp Version Code	CP Entry Code	CP Feature
+89661	303	A	shch	product_group
+
+89838	304	A	shch	product_group
+
+106854	364	A	shch	product_group
+
+107031	365	A	shch	product_group
+
+350472	1137	A	shch	product_group
+
+350651	1138	A	shch	product_group
+
+
+Code Error: Unknown CP Value
+Line	PurchactId	Cp Version Code	CP Entry Code	CP Feature	CP Value
+90013	305	A	shch	type	Cheese - Cascaval
+
+90188	306	A	shch	type	Cheese - Cascaval
+
+
+Unknown CP Entry Code
+Line	PurchactId	CP Entry Code
+89601	303	chov
+89778	304	chov
+89953	305	chov
+90128	306	chov
+106794	364	chov
+106971	365	chov
+107146	366	chov
+107321	367	chov
+350411	1137	chov
+350590	1138	chov
+350766	1139	chov
+350941	1140	chov
+
+
+ERROR END
+WARNING BEGIN
+
+WARNING END
+INFO BEGIN
+
+INFO END
+Summary:
+-------------
+Errors:20
+Warnings:0
+Purchacts total:1490
+Articles total:8965
+Number of processed purchacts:1490
+Number of processed movement records:8945
+Records processed:8945
+Number of faulty purchacts:0
+Number of faulty movement records:20
+
+finished at: 2019-03-20 06:39:51

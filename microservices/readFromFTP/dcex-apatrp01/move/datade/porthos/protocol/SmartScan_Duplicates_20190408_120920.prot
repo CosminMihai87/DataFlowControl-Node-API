@@ -1,0 +1,24 @@
+﻿--------------------------------------------------------------------------------
+Protocol of SmartScan duplicates determination
+--------------------------------------------------------------------------------
+DateTime         : 08.04.2019 12:09:20
+Username         : dce.PorthosAdmin.svc
+Executable       : D:\Programs\SmartScan Duplicates\SmartScan_Duplicates.exe
+Version          : 1.3
+Files path       : D:\DATA\DE\Input SmartScan
+Country          : Germany
+Protocol path    : D:\DATA\DE\Protocol File
+--------------------------------------------------------------------------------
+Start            : 12:09:20
+End              : 12:10:13
+Duration         : 00:00:53
+--------------------------------------------------------------------------------
+Files total      : 276
+Files processed  : 276
+Already processed: 0
+Originals        : 276
+Duplicates       : 0
+--------------------------------------------------------------------------------
+Message(s)       : ---
+Exit code        : 7
+--------------------------------------------------------------------------------

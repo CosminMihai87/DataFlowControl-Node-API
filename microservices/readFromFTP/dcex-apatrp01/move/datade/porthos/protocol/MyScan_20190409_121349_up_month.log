@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<protocol name="Porthos protocol" time="2019-04-09T12:13:49+2" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+  <general>
+    <start>2019-04-09T12:13:49+2</start>
+    <task>JOB 1</task>
+    <dataflow>MyScan_RC_UP_month</dataflow>
+    <application>Porthos</application>
+    <version>2.3.002</version>
+    <user>dce.PorthosAdmin.svc</user>
+    <input_file>D:\DATA\DE\Input MyScan\*.myscan</input_file>
+    <output_file>D:\DATA\DE\ARaMIS File\MyScan_20190409_121349_up_month.aramis</output_file>
+    <protocol_file>D:\DATA\DE\Protocol File\MyScan_20190409_121349_up_month.log</protocol_file>
+    <error_file>D:\DATA\DE\Error File\MyScan_20190409_121349_up_month.error</error_file>
+  </general>
+  <messages>
+    <message time="2019-04-09T12:13:49+2" type="Information">
+      <text>29 file(s) ready for processing. </text>
+    </message>
+    <message time="2019-04-09T12:13:49+2" type="Information">
+      <text>Process 1 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:49+2" type="Information">
+      <text>Process 2 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_105643.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:49+2" type="Information">
+      <text>Process 3 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:49+2" type="Information">
+      <text>Process 4 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:49+2" type="Information">
+      <text>Process 5 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:49+2" type="Information">
+      <text>Process 6 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091212.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:49+2" type="Information">
+      <text>Process 7 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:49+2" type="Information">
+      <text>Process 8 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281474_9ce22eb7-5a02-4fb3-ac00-a1db0_20190409_094843.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:49+2" type="Information">
+      <text>Process 9 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281489_d4352eec-e860-4a47-8be6-f50cc_20190409_092352.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:49+2" type="Information">
+      <text>Process 10 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281553_915d7112-c84f-4e73-8aea-236dc_20190409_111944.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 11 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_084955.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 12 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_091915.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 13 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281739_0fae8c9e-38bf-4498-9e55-bde8f_20190409_100540.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 14 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281744_8de2414c-54c3-4171-87d6-e8d1a_20190409_111325.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 15 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281771_c23a54d6-0a98-4aa2-928a-d8158_20190409_091442.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Error">
+      <text>Read file error: The 'Variables' start tag on line 136 does not match the end tag of 'Gfk'. Line 171, position 7. </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 16 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 17 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281910_5c3cee58-12ab-463d-9caa-124f8_20190409_085038.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 18 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281910_5c3cee58-12ab-463d-9caa-124f8_20190409_085409.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 19 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281910_5c3cee58-12ab-463d-9caa-124f8_20190409_085948.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 20 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281919_ce544681-95ad-4041-b758-72eac_20190409_085801.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 21 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281922_afa2eb5d-36b5-4fb6-8cf7-86476_20190409_103902.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 22 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281922_afa2eb5d-36b5-4fb6-8cf7-86476_20190409_104213.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 23 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281922_afa2eb5d-36b5-4fb6-8cf7-86476_20190409_105105.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 24 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281922_afa2eb5d-36b5-4fb6-8cf7-86476_20190409_105345.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 25 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281922_afa2eb5d-36b5-4fb6-8cf7-86476_20190409_105620.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 26 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281922_afa2eb5d-36b5-4fb6-8cf7-86476_20190409_105808.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 27 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281943_03e98c09-f89c-4e7b-a2c5-33e51_20190409_084329.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 28 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281986_9e52125f-ae90-4b3d-852d-2eec4_20190409_081816.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Process 29 / 29 ('D:\DATA\DE\Input MyScan\MyScan_282019_61f3b995-c946-49ce-b6a3-bf33f_20190409_112759.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 28 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 27 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 26 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 25 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 24 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 23 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 22 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 21 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 20 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 19 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 18 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 17 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 16 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 15 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 14 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 13 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 12 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 11 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 10 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 9 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 8 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 7 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 6 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 5 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 4 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 3 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 2 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 1 </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Skipping Result: 0 of 28 Purchase Acts were skipped due to their redundant occurrence (now 0 Purchase Acts). </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Writing ARaMIS-File 'D:\DATA\DE\ARaMIS File\MyScan_20190409_121349_up_month.aramis' </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Warning">
+      <text>There are no Purchase Acts to write. ARaMIS-file will not be created. </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Writing ReturnCode-File 'D:\DATA\DE\ARaMIS File\MyScan_20190409_121349_up_month.rc' </text>
+    </message>
+    <message time="2019-04-09T12:13:50+2" type="Information">
+      <text>Input files will be copied to folder 'D:\DATA\DE\Original Data'. </text>
+    </message>
+  </messages>
+  <statistics>
+    <input_count>28</input_count>
+    <output_count>0</output_count>
+  </statistics>
+  <summary>
+    <warnings>29</warnings>
+    <errors>1</errors>
+    <end>2019-04-09T12:13:50+2</end>
+  </summary>
+</protocol>

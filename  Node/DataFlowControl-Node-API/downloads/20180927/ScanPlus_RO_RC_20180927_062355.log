@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<protocol name="Porthos protocol" time="2018-09-27T06:23:55+2" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+  <general>
+    <start>2018-09-27T06:23:55+2</start>
+    <task>JOB 1</task>
+    <dataflow>ScanPlus_RO_RC</dataflow>
+    <application>Porthos</application>
+    <version>2.3.002</version>
+    <user>dce.PorthosAdmin.svc</user>
+    <input_file>\\nuex-fsweb01.gfk.com\ScanPlus_Prod_data\ro\xml\*.rcinfo</input_file>
+    <output_file>D:\DATA\RO\ARaMIS File\ScanPlus_RO_RC_20180927_062355.aramis</output_file>
+    <protocol_file>D:\DATA\RO\Protocol File\ScanPlus_RO_RC_20180927_062355.log</protocol_file>
+    <error_file>D:\DATA\RO\Error File\ScanPlus_RO_RC_20180927_062355.error</error_file>
+  </general>
+  <messages>
+    <message time="2018-09-27T06:23:55+2" type="Information">
+      <text>8 file(s) ready for processing. </text>
+    </message>
+    <message time="2018-09-27T06:23:55+2" type="Information">
+      <text>Process 1 / 8 ('\\nuex-fsweb01.gfk.com\ScanPlus_Prod_data\ro\xml\20180926_150459.rcinfo') </text>
+    </message>
+    <message time="2018-09-27T06:23:55+2" type="Information">
+      <text>Process 2 / 8 ('\\nuex-fsweb01.gfk.com\ScanPlus_Prod_data\ro\xml\20180926_150553.rcinfo') </text>
+    </message>
+    <message time="2018-09-27T06:23:55+2" type="Information">
+      <text>Process 3 / 8 ('\\nuex-fsweb01.gfk.com\ScanPlus_Prod_data\ro\xml\20180926_190557.rcinfo') </text>
+    </message>
+    <message time="2018-09-27T06:23:55+2" type="Information">
+      <text>Process 4 / 8 ('\\nuex-fsweb01.gfk.com\ScanPlus_Prod_data\ro\xml\20180926_230502.rcinfo') </text>
+    </message>
+    <message time="2018-09-27T06:23:55+2" type="Information">
+      <text>Process 5 / 8 ('\\nuex-fsweb01.gfk.com\ScanPlus_Prod_data\ro\xml\20180926_230450.rcinfo') </text>
+    </message>
+    <message time="2018-09-27T06:23:56+2" type="Information">
+      <text>Process 6 / 8 ('\\nuex-fsweb01.gfk.com\ScanPlus_Prod_data\ro\xml\20180926_090156.rcinfo') </text>
+    </message>
+    <message time="2018-09-27T06:24:00+2" type="Information">
+      <text>Process 7 / 8 ('\\nuex-fsweb01.gfk.com\ScanPlus_Prod_data\ro\xml\20180926_090500.rcinfo') </text>
+    </message>
+    <message time="2018-09-27T06:24:00+2" type="Information">
+      <text>Process 8 / 8 ('\\nuex-fsweb01.gfk.com\ScanPlus_Prod_data\ro\xml\20180926_190240.rcinfo') </text>
+    </message>
+    <message time="2018-09-27T06:24:01+2" type="Information">
+      <text>Grouping Result: 3837 Purchase Acts were joined to 0 Purchase Acts. </text>
+    </message>
+    <message time="2018-09-27T06:24:01+2" type="Information">
+      <text>Skipping Result: 0 of 0 Purchase Acts were skipped due to their redundant occurrence (now 0 Purchase Acts). </text>
+    </message>
+    <message time="2018-09-27T06:24:01+2" type="Information">
+      <text>Writing ARaMIS-File 'D:\DATA\RO\ARaMIS File\ScanPlus_RO_RC_20180927_062355.aramis' </text>
+    </message>
+    <message time="2018-09-27T06:24:01+2" type="Warning">
+      <text>There are no Purchase Acts to write. ARaMIS-file will not be created. </text>
+    </message>
+    <message time="2018-09-27T06:24:01+2" type="Information">
+      <text>Writing ReturnCode-File 'D:\DATA\RO\ARaMIS File\ScanPlus_RO_RC_20180927_062355.rc' </text>
+    </message>
+    <message time="2018-09-27T06:24:01+2" type="Information">
+      <text>Input files will be moved to folder 'D:\DATA\RO\Original Data'. </text>
+    </message>
+  </messages>
+  <statistics>
+    <input_count>3837</input_count>
+    <output_count>0</output_count>
+  </statistics>
+  <summary>
+    <warnings>1</warnings>
+    <errors>0</errors>
+    <end>2018-09-27T06:24:01+2</end>
+  </summary>
+</protocol>

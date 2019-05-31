@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<protocol name="Porthos protocol" time="2019-04-08T12:07:12+2" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+  <general>
+    <start>2019-04-08T12:07:12+2</start>
+    <task>JOB 1</task>
+    <dataflow>IndividualPanel</dataflow>
+    <application>Porthos</application>
+    <version>2.3.002</version>
+    <user>dce.PorthosAdmin.svc</user>
+    <input_file>\\gfk.com\data\000106\ecpo_prod\DESCOPE\ExternalData\export\Daily_Export_D_Scan\ECPOIndividualPanel_*.xml</input_file>
+    <output_file>D:\DATA\DE\ARaMIS File\ECPOScan_20190408_120712_export.aramis</output_file>
+    <protocol_file>D:\DATA\DE\Protocol File\ECPOScan_20190408_120712_export.log</protocol_file>
+    <error_file>D:\DATA\DE\Error File\ECPOScan_20190408_120712_export.error</error_file>
+  </general>
+  <messages>
+    <message time="2019-04-08T12:07:12+2" type="Information">
+      <text>1 file(s) ready for processing. </text>
+    </message>
+    <message time="2019-04-08T12:07:12+2" type="Information">
+      <text>Process 1 / 1 ('\\gfk.com\data\000106\ecpo_prod\DESCOPE\ExternalData\export\Daily_Export_D_Scan\ECPOIndividualPanel_20190408_110112_export.xml') </text>
+    </message>
+    <message time="2019-04-08T12:07:21+2" type="Information">
+      <text>Grouping Result: 343 Purchase Acts were joined to 343 Purchase Acts. </text>
+    </message>
+    <message time="2019-04-08T12:07:21+2" type="Information">
+      <text>Skipping Result: 0 of 343 Purchase Acts were skipped due to their redundant occurrence (now 343 Purchase Acts). </text>
+    </message>
+    <message time="2019-04-08T12:07:21+2" type="Information">
+      <text>Writing ARaMIS-File 'D:\DATA\DE\ARaMIS File\ECPOScan_20190408_120712_export.aramis' </text>
+    </message>
+    <message time="2019-04-08T12:07:21+2" type="Information">
+      <text>Input files will be moved to folder 'D:\DATA\DE\Original Data'. </text>
+    </message>
+  </messages>
+  <statistics>
+    <input_count>343</input_count>
+    <output_count>343</output_count>
+  </statistics>
+  <summary>
+    <warnings>80906</warnings>
+    <errors>0</errors>
+    <end>2019-04-08T12:07:22+2</end>
+  </summary>
+</protocol>

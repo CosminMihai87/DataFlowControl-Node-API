@@ -1,0 +1,54 @@
+---------------------------------------------------------
+starting ARaMIS (version 3.00.3319) at 2019-03-23 06:30:23
+---------------------------------------------------------
+DB Environment:
+---------------------------------------------------------
+DBUser:   dataro
+DBPass:   *******
+DBServer: SYB_ATRRO
+DB:       ro_admin
+=========================================================
+parameter:
+---------------------------------------------------------
+input file:  /move/dataro/aramis/work/ScanPlus_dataro_20190323_062059.aramis
+output file: /move/dataro/datatrans/ScanPlus_dataro_20190323_062059.xml
+protocol file: /move/dataro/aramis/protocol/ScanPlus_dataro_20190323_062059.aramis.prot
+error file: /move/dataro/aramis/error/ScanPlus_dataro_20190323_062059.aramis.err
+=========================================================
+ERROR BEGIN
+Code Error: Unknown CP Feature
+Line	PurchactId	Cp Version Code	CP Entry Code	CP Feature
+106391	319	A	roap	brand_first_name
+
+106449	319	A	roap	brand_first_name
+
+
+Classification not found or not valid for the given pickdate 
+Line	PurchactId	domain	feature name	feature value	requested feature	pickDate
+276132	824	shop	Shop Barcode	718	shop_temp	20190322
+
+Unknown Version for Move Date
+Line	PurchactId	CP Version Code	Validity	MoveDate
+281780	846	M	Jan 1, 2012 - <active>	Apr 3, 2006
+
+
+ERROR END
+WARNING BEGIN
+
+WARNING END
+INFO BEGIN
+
+INFO END
+Summary:
+-------------
+Errors:4
+Warnings:0
+Purchacts total:1439
+Articles total:9477
+Number of processed purchacts:1437
+Number of processed movement records:9466
+Records processed:9466
+Number of faulty purchacts:2
+Number of faulty movement records:11
+
+finished at: 2019-03-23 06:33:27

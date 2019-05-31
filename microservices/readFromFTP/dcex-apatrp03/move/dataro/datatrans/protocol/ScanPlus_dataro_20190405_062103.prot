@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<protocol name="Datatrans" time="2019-04-05T21:00:12Z" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+	<general>
+		<start>2019-04-05T21:00:12Z</start>
+		<application>Datatrans</application>
+		<version>2.6.9091     (dt_batch-2.0.0)</version>
+		<user>dataro</user>
+		<atr_server>SYB_ATRRO</atr_server>
+		<atr_user>dataro</atr_user>
+		<atr_database>ro_admin</atr_database>
+		<input_file>ScanPlus_dataro_20190405_062103.xml</input_file>
+		<period_from>0</period_from>
+	</general>
+	<messages>
+		<message time="2019-04-05T21:00:30Z" type="error">
+			<text>** error: line 2802, file:/move/dataro/datatrans/ScanPlus_dataro_20190405_062103.xml: unknown shop '010'.
+</text>
+		</message>
+		<message time="2019-04-05T21:00:31Z" type="error">
+			<text>** error: line 2803, file:/move/dataro/datatrans/ScanPlus_dataro_20190405_062103.xml: unknown shop '010'.
+</text>
+		</message>
+		<message time="2019-04-05T21:00:31Z" type="error">
+			<text>** error: line 2804, file:/move/dataro/datatrans/ScanPlus_dataro_20190405_062103.xml: unknown shop '010'.
+</text>
+		</message>
+		<message time="2019-04-05T21:00:31Z" type="error">
+			<text>** error: line 2805, file:/move/dataro/datatrans/ScanPlus_dataro_20190405_062103.xml: unknown shop '010'.
+</text>
+		</message>
+		<message time="2019-04-05T21:00:31Z" type="error">
+			<text>** error: line 2806, file:/move/dataro/datatrans/ScanPlus_dataro_20190405_062103.xml: unknown shop '010'.
+</text>
+		</message>
+		<message time="2019-04-05T21:00:31Z" type="error">
+			<text>** error: line 2807, file:/move/dataro/datatrans/ScanPlus_dataro_20190405_062103.xml: unknown shop '010'.
+</text>
+		</message>
+		<message time="2019-04-05T21:00:31Z" type="error">
+			<text>** error: line 2808, file:/move/dataro/datatrans/ScanPlus_dataro_20190405_062103.xml: unknown shop '010'.
+</text>
+		</message>
+		<message time="2019-04-05T21:00:31Z" type="error">
+			<text>** error: line 2809, file:/move/dataro/datatrans/ScanPlus_dataro_20190405_062103.xml: unknown shop '010'.
+</text>
+		</message>
+		<message time="2019-04-05T21:00:31Z" type="error">
+			<text>** error: line 2810, file:/move/dataro/datatrans/ScanPlus_dataro_20190405_062103.xml: unknown shop '010'.
+</text>
+		</message>
+		<message time="2019-04-05T21:00:31Z" type="error">
+			<text>** error: line 2811, file:/move/dataro/datatrans/ScanPlus_dataro_20190405_062103.xml: unknown shop '010'.
+</text>
+		</message>
+		<message time="2019-04-05T21:00:31Z" type="error">
+			<text>** error: line 2812, file:/move/dataro/datatrans/ScanPlus_dataro_20190405_062103.xml: unknown shop '010'.
+</text>
+		</message>
+		<message time="2019-04-05T21:00:31Z" type="error">
+			<text>** error: line 2813, file:/move/dataro/datatrans/ScanPlus_dataro_20190405_062103.xml: unknown shop '010'.
+</text>
+		</message>
+		<message time="2019-04-05T21:02:05Z" type="information">
+			<text>finished file: ScanPlus_dataro_20190405_062103.xml</text>
+		</message>
+	</messages>
+	<statistics>
+		<input_count>10163</input_count>
+		<output_count>10151</output_count>
+		<failed>12</failed>
+		<new_article_created>141</new_article_created>
+		<variable_weight_art_records>0</variable_weight_art_records>
+		<inserted_to_pool>0</inserted_to_pool>
+		<VariableWeightArticles_created>0</VariableWeightArticles_created>
+		<VariableWeightRecords_with_wrong_value>0</VariableWeightRecords_with_wrong_value>
+		<Value_adjusted>0</Value_adjusted>
+		<loadids>
+			<loadid>3361</loadid>
+		</loadids>
+	</statistics>
+	<summary>
+		<warnings>0</warnings>
+		<errors>12</errors>
+		<end>2019-04-05T21:02:05Z</end>
+		<exitcode>2</exitcode>
+	</summary>
+</protocol>

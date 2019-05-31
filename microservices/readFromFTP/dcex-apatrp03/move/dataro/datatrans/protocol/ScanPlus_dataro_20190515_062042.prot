@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<protocol name="Datatrans" time="2019-05-15T21:00:11Z" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+	<general>
+		<start>2019-05-15T21:00:11Z</start>
+		<application>Datatrans</application>
+		<version>2.6.9091     (dt_batch-2.0.0)</version>
+		<user>dataro</user>
+		<atr_server>SYB_ATRRO</atr_server>
+		<atr_user>dataro</atr_user>
+		<atr_database>ro_admin</atr_database>
+		<input_file>ScanPlus_dataro_20190515_062042.xml</input_file>
+		<period_from>0</period_from>
+	</general>
+	<messages>
+		<message time="2019-05-15T21:00:17Z" type="error">
+			<text>** error: line 1241, file:/move/dataro/datatrans/ScanPlus_dataro_20190515_062042.xml: invalid article key: '04700012'
+</text>
+		</message>
+		<message time="2019-05-15T21:00:18Z" type="error">
+			<text>** error: line 1830, file:/move/dataro/datatrans/ScanPlus_dataro_20190515_062042.xml: invalid article key: '01059417500007263922400'
+</text>
+		</message>
+		<message time="2019-05-15T21:00:27Z" type="error">
+			<text>** error: line 8676, file:/move/dataro/datatrans/ScanPlus_dataro_20190515_062042.xml: invalid article key: '01059413300022943922454'
+</text>
+		</message>
+		<message time="2019-05-15T21:00:27Z" type="error">
+			<text>** error: line 8682, file:/move/dataro/datatrans/ScanPlus_dataro_20190515_062042.xml: invalid article key: '01059413300022943922454'
+</text>
+		</message>
+		<message time="2019-05-15T21:00:29Z" type="error">
+			<text>** error: line 10056, file:/move/dataro/datatrans/ScanPlus_dataro_20190515_062042.xml: invalid article key: '01059412380078103922286'
+</text>
+		</message>
+		<message time="2019-05-15T21:00:29Z" type="error">
+			<text>** error: line 10305, file:/move/dataro/datatrans/ScanPlus_dataro_20190515_062042.xml: invalid article key: '010433718518062039221231'
+</text>
+		</message>
+		<message time="2019-05-15T21:01:03Z" type="information">
+			<text>finished file: ScanPlus_dataro_20190515_062042.xml</text>
+		</message>
+	</messages>
+	<statistics>
+		<input_count>10352</input_count>
+		<output_count>10346</output_count>
+		<failed>6</failed>
+		<new_article_created>158</new_article_created>
+		<variable_weight_art_records>0</variable_weight_art_records>
+		<inserted_to_pool>0</inserted_to_pool>
+		<VariableWeightArticles_created>0</VariableWeightArticles_created>
+		<VariableWeightRecords_with_wrong_value>0</VariableWeightRecords_with_wrong_value>
+		<Value_adjusted>0</Value_adjusted>
+		<loadids>
+			<loadid>3399</loadid>
+		</loadids>
+	</statistics>
+	<summary>
+		<warnings>0</warnings>
+		<errors>6</errors>
+		<end>2019-05-15T21:01:03Z</end>
+		<exitcode>2</exitcode>
+	</summary>
+</protocol>

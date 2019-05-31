@@ -1,0 +1,59 @@
+		<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+		<protocol name="Datatrans" time="2019-03-30T22:00:09Z" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+			<general>
+				<start>2019-03-30T22:00:09Z</start>
+				<application>Datatrans</application>
+				<version>2.6.9088     (dt_batch-2.0.0)</version>
+				<user>dataro</user>
+				<atr_server>SYB_ATRRO</atr_server>
+				<atr_user>dataro</atr_user>
+				<atr_database>ro_admin</atr_database>
+				<input_file>ScanPlus_dataro_20190330_062059.xml</input_file>
+				<period_from>0</period_from>
+			</general>
+			<messages>
+				<message time="2019-03-30T22:00:12Z" type="error">
+					<text>** error: line 435, file:/move/dataro/datatrans/ScanPlus_dataro_20190330_062059.xml: invalid article key: '90100100490290881892'
+</text>
+				</message>
+				<message time="2019-03-30T22:00:12Z" type="error">
+					<text>** error: line 436, file:/move/dataro/datatrans/ScanPlus_dataro_20190330_062059.xml: invalid article key: '90100100500290882776'
+</text>
+				</message>
+				<message time="2019-03-30T22:00:15Z" type="error">
+					<text>** error: line 1295, file:/move/dataro/datatrans/ScanPlus_dataro_20190330_062059.xml: invalid article key: '010287770500270139221206'
+</text>
+				</message>
+				<message time="2019-03-30T22:00:20Z" type="error">
+					<text>** error: line 4057, file:/move/dataro/datatrans/ScanPlus_dataro_20190330_062059.xml: invalid article key: '06000066'
+</text>
+				</message>
+				<message time="2019-03-30T22:00:20Z" type="error">
+					<text>** error: line 4238, file:/move/dataro/datatrans/ScanPlus_dataro_20190330_062059.xml: invalid article key: '01000000400844283922175'
+</text>
+				</message>
+				<message time="2019-03-30T22:00:57Z" type="information">
+					<text>finished file: ScanPlus_dataro_20190330_062059.xml (PARTIAL)</text>
+				</message>
+			</messages>
+		</protocol>
+	</messages>
+	<statistics>
+		<input_count>10363</input_count>
+		<output_cnt>10358</output_cnt>
+		<failed>5</failed>
+		<new_article_created>113</new_article_created>
+		<variable_weight_art_records>0</variable_weight_art_records>
+		<inserted_to_pool>0</inserted_to_pool>
+		<VariableWeightArticles created>0</VariableWeightArticles created>
+		<VariableWeightRecords with wrong value>0</VariableWeightRecords with wrong value>
+		<Value adjusted>0</Value adjusted>
+		<loadid>3355</loadid>
+	</statistics>
+	<summary>
+		<warnings>0</warnings>
+		<errors>5</errors>
+		<end>2019-03-30T22:00:57Z</end>
+		<exitcode>2</exitcode>
+	</summary>
+</protocol>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<protocol name="Porthos protocol" time="2019-04-08T08:51:16+2" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+  <general>
+    <start>2019-04-08T08:51:16+2</start>
+    <task>JOB 1</task>
+    <dataflow>Textile_DE_RC_CODE</dataflow>
+    <application>Porthos</application>
+    <version>2.3.002</version>
+    <user>dce.PorthosAdmin.svc</user>
+    <input_file>D:\DATA\DE\Input Textile\*.xml</input_file>
+    <output_file>D:\DATA\DE\ARaMIS File\Textile_20190408_085116_ecpo.aramis</output_file>
+    <protocol_file>D:\DATA\DE\Protocol File\Textile_20190408_085116_ecpo.log</protocol_file>
+    <error_file>D:\DATA\DE\Error File\Textile_20190408_085116_ecpo.error</error_file>
+  </general>
+  <messages>
+    <message time="2019-04-08T08:51:16+2" type="Information">
+      <text>3 file(s) ready for processing. </text>
+    </message>
+    <message time="2019-04-08T08:51:16+2" type="Information">
+      <text>Process 1 / 3 ('D:\DATA\DE\Input Textile\Textil_Unprocessed_20190406_025917.xml') </text>
+    </message>
+    <message time="2019-04-08T08:51:18+2" type="Information">
+      <text>Process 2 / 3 ('D:\DATA\DE\Input Textile\Textil_Unprocessed_20190407_025918.xml') </text>
+    </message>
+    <message time="2019-04-08T08:51:20+2" type="Information">
+      <text>Process 3 / 3 ('D:\DATA\DE\Input Textile\Textil_Unprocessed_20190408_025918.xml') </text>
+    </message>
+    <message time="2019-04-08T08:51:21+2" type="Information">
+      <text>Grouping Result: 1404 Purchase Acts were joined to 0 Purchase Acts. </text>
+    </message>
+    <message time="2019-04-08T08:51:21+2" type="Information">
+      <text>Writing ARaMIS-File 'D:\DATA\DE\ARaMIS File\Textile_20190408_085116_ecpo.aramis' </text>
+    </message>
+    <message time="2019-04-08T08:51:21+2" type="Warning">
+      <text>There are no Purchase Acts to write. ARaMIS-file will not be created. </text>
+    </message>
+    <message time="2019-04-08T08:51:21+2" type="Information">
+      <text>Writing ReturnCode-File 'D:\DATA\DE\ARaMIS File\Textile_20190408_085116_ecpo.rc' </text>
+    </message>
+    <message time="2019-04-08T08:51:21+2" type="Information">
+      <text>Input files will be moved to folder 'D:\DATA\DE\Original Data Textile'. </text>
+    </message>
+  </messages>
+  <statistics>
+    <input_count>1404</input_count>
+    <output_count>0</output_count>
+  </statistics>
+  <summary>
+    <warnings>1</warnings>
+    <errors>0</errors>
+    <end>2019-04-08T08:51:22+2</end>
+  </summary>
+</protocol>

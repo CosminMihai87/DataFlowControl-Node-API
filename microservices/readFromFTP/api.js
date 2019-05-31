@@ -1,15 +1,303 @@
 const express = require('express');
+const router = express.Router();
 const fs = require('fs');   
 const path = require('path');
-var targz = require('targz');   
-const router = express.Router();
 const settings = require('../../settings.js');   
-var client = require('ftp');  
 var functions = require('../../functions.js');   
+var client = require('ftp');  
+const axios = require('axios');  
+const https = require('https');  
+var zlib = require('zlib'); 
+var tarstream = require('tar-stream');  
+var targz = require('targz');   
+const unzip = require('unzip');
+const unzip_stream = require('unzip-stream');
+const decompress = require('decompress');
+const unzipper = require('unzipper');
+var stream = require('stream');
 
 router.use('/', express.static('html'));
+
+//READING DIRECTLY FROM THE MOUNTED DRIVES:
+
+router.get('/getLogFilesList/:isoCode/:process', (req, res)=>{   
+    let isoCode = req.params.isoCode;
+    let process = req.params.process; 
+    if ((!isoCode) || isoCode.match(/^[a-zA-Z][a-zA-Z]$/g)!=isoCode ) {
+        return res.status(400).send({ api_error: true, message: 'Please provide a valid country isoCode!' }); 
+    };  
+    if ((!process) || ['porthos','aramis','datatrans','rc'].indexOf(process.toLowerCase())==-1 ) { 
+        return res.status(400).send({ api_error: true, message: 'Please provide a valid process name!' }); 
+    };  
+    let protocol_path = "./" + settings.getProtocolDetails(isoCode).dbsettings.host + settings.getProtocolDetails(isoCode).processes.filter(k => k.process.toLowerCase() == process.toLowerCase() )[0].protocol_path 
+
+    let currentDirPath = path.join(__dirname, protocol_path);
+    function getFileList(currentDirPath) {
+        var files =[];
+        fs.readdirSync(currentDirPath).forEach((file)=> {  
+            var filePath = path.join(currentDirPath,"/", file);
+            var stats = fs.statSync(filePath);
+            files.push({
+                type: (stats.isDirectory() ? 'd' : 'f'),  
+                name: file,  
+                size: stats['size'],
+                date: functions.getProcessDateTime(file), 
+                path: protocol_path
+            }); 
+        })    
+        files = files.filter(k => k.type != 'd'); //all files NOT folders 
+        files = files.sort( (a, b)=> { return new Date(a.date).getTime() - new Date(b.date).getTime(); }).reverse(); //sorting files descending based on date 
+        files = files.filter(k => settings.getProtocolDetails(isoCode).runs.some(m => m.test(k['name'])) );  //filtering out to have only relevant protocol files ( no GDPR stuff )
+        if (process.toLowerCase()=='datatrans') { 
+            files = files.filter(k => k.date.indexOf(new Date(Date.now() - 864e5).toISOString().substring(0,10)) == 0 );  //since datatrans runs 1 day behind we might need to grab the previous day one 
+        } else {
+            files = files.filter(k => k.date.indexOf(new Date().toISOString().substring(0,10)) == 0 ); //only take the curent day's files not older files.  
+        }  
+        return files;
+    } 
+    res.status(200).json({
+        api_error: false, 
+        message: `The last Log files list for the  ${isoCode} ${process} process is:`, 
+        files: getFileList(currentDirPath)
+    });   
+});
  
-router.get('/getLogFilesList/:isoCode/:process', (req, res)=>{    
+router.get('/getLogFilesList/:isoCode/:process/:date', (req, res)=>{  
+    let isoCode = req.params.isoCode;
+    let process = req.params.process;
+    let date = req.params.date; 
+    if ((!isoCode) || isoCode.match(/^[a-zA-Z][a-zA-Z]$/g)!=isoCode ) {
+         return res.status(400).send({ api_error: true, message: 'Please provide a valid country isoCode!' }); a
+    };  
+    if ((!process) || ['porthos','aramis','datatrans','rc'].indexOf(process.toLowerCase())==-1 ) 
+        { return res.status(400).send({ api_error: true, message: 'Please provide a valid process name!' }); 
+    }; 
+    if ((!date) || date.match(/([12]\d{3}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01]))/g)!=date ) {   
+        return res.status(400).send({ api_error: true, message: 'Please provide a valid date!' }); 
+    };     
+    let protocol_path = "./" + settings.getProtocolDetails(isoCode).dbsettings.host + settings.getProtocolDetails(isoCode).processes.filter(k => k.process.toLowerCase() == process.toLowerCase() )[0].protocol_path 
+    
+    let currentDirPath = path.join(__dirname, protocol_path);
+    function getFileList(currentDirPath, filelist) {
+        filelist = filelist || [];
+        fs.readdirSync(currentDirPath).forEach((file)=> {  
+            var filePath = path.join(currentDirPath,"/", file);
+            var stats = fs.statSync(filePath);
+            if (stats.isDirectory()){
+                getFileList(filePath, filelist);
+            } else { 
+                filelist.push(filePath);
+            }  
+        })    
+        return filelist; 
+    } 
+    // only take the file that we are interested from the list above: 
+    var filtered =  getFileList(currentDirPath).filter(k => k.indexOf(date)!=-1);   
+    var result = [];
+    if ( filtered.filter(k =>  (k.indexOf('archive')!=-1 || k.indexOf('.tar')!=-1 || k.indexOf('.gz')!=-1)).length==0 ) {   
+        //if the file is NOT archived:  
+        result = filtered.map(k => { return {
+            type: 'f',  
+            name: k.split('\\').slice(-1)[0],  
+            size: fs.statSync(k)['size'],
+            date: functions.getProcessDateTime(k.split('\\').slice(-1)[0]), 
+            path: k.split('readFromFTP')[1]
+        }})
+        .sort( (a, b)=> { return new Date(a.date).getTime() - new Date(b.date).getTime(); }).reverse()  //sorting files descending based on date 
+        .filter(k => settings.getProtocolDetails(isoCode).runs.some(m => m.test(k['name'])) );  //filtering out to have only relevant protocol files ( no GDPR stuff )
+        res.status(200).json({
+            api_error: false,  
+            message: `The Log files list for the  ${isoCode} ${process} process from ${date.slice(0,4)+'-'+date.slice(4,6)+'-'+date.slice(6,8)} are:`, 
+            files: result
+        });  
+
+    //if the file is archived .tar.gz:  
+    } else if ( filtered.filter(k =>  (k.indexOf('.tar')!=-1 && k.indexOf('.gz')!=-1)).length>0 ) {   
+        var extract = gunzip.extract(); 
+        extract.on('entry', (header, stream, cb) => { 
+            result.push({
+                type: 'f',   
+                name: header.name,  
+                // size: fs.statSync(header.name)['size'],
+                date: functions.getProcessDateTime(header.name), 
+                path: filtered[0].split('readFromFTP')[1]
+            }); 
+            stream.on('end', () => {
+                cb();
+            }); 
+            stream.resume();
+        }); 
+        extract.on('finish', () => { 
+            res.status(200).json({
+                api_error: false,  
+                message: `The Log files list for the  ${isoCode} ${process} process from ${date.slice(0,4)+'-'+date.slice(4,6)+'-'+date.slice(6,8)} are:`, 
+                files: result.sort( (a, b)=> { return new Date(a.date).getTime() - new Date(b.date).getTime(); }).reverse()  //sorting files descending based on date 
+                            .filter(k => settings.getProtocolDetails(isoCode).runs.some(m => m.test(k['name'])) )  //filtering out to have only relevant protocol files ( no GDPR stuff )
+            });    
+        }); 
+        fs.createReadStream(filtered[0])
+        .pipe(zlib.createGunzip())
+        .pipe(extract);   
+
+    //if the file is archived .gz:  
+    }  else if ( filtered.filter(k => (k.indexOf('.gz')!=-1)).length>0 ) {    
+
+        // fs.createReadStream(filtered[0])
+        // .pipe(zlib.createGunzip())
+        // .on('data', (header, stream, cb) => { 
+        //     console.log(header);
+        //     console.log(stream);
+        //     result.push({
+        //         type: 'f',   
+        //         name: header.name,   
+        //         // date: functions.getProcessDateTime(header.name), 
+        //         path: filtered[0].split('readFromFTP')[1]
+        //     }); 
+        //     stream.on('end', () => {
+        //         cb();
+        //     }); 
+        //     stream.resume();
+        // })
+        // .on('finish', () => {  
+        //     res.status(200).json({
+        //         api_error: false,  
+        //         message: `The Log files list for the  ${isoCode} ${process} process from ${date.slice(0,4)+'-'+date.slice(4,6)+'-'+date.slice(6,8)} are:`, 
+        //         files: result
+        //     });    
+        // }); 
+
+        // fs.createReadStream(filtered[0])
+        // .pipe(unzip_stream.Parse())
+        // .on('entry', (entry) => {   
+        //     var fileName = entry.path;
+        //     var type = entry.type; // 'Directory' or 'File'
+        //     var size = entry.size; 
+        //     console.log(fileName);
+        //     // if (fileName === "this IS the file I'm looking for") {
+        //     //     entry.pipe(fs.createWriteStream('output/path'));
+        //     // } else {
+        //     //     entry.autodrain();
+        //     // }
+        // });
+        
+
+    }
+});
+
+router.get('/getLog/:isoCode/:process/:filename', (req, res)=>{  
+    let isoCode = req.params.isoCode;
+    let process = req.params.process;
+    let filename = req.params.filename;  
+    if ((!isoCode) || isoCode.match(/^[a-zA-Z][a-zA-Z]$/g)!=isoCode ) {
+        return res.status(400).send({ api_error: true, message: 'Please provide a valid country isoCode!' }); 
+    };   
+    if ((!process) || ['porthos','aramis','datatrans','rc'].indexOf(process.toLowerCase())==-1 ) 
+        { return res.status(400).send({ api_error: true, message: 'Please provide a valid process name!' }); 
+    }; 
+    if (!filename) {   
+        return res.status(400).send({ api_error: true, message: 'Please provide a filename!' }); 
+    };      
+    let protocol_path = "./" + settings.getProtocolDetails(isoCode).dbsettings.host + settings.getProtocolDetails(isoCode).processes.filter(k => k.process.toLowerCase() == process.toLowerCase() )[0].protocol_path 
+    
+    let currentDirPath = path.join(__dirname, protocol_path); 
+    function getFileList(currentDirPath, filelist) {
+        filelist = filelist || [];
+        fs.readdirSync(currentDirPath).forEach((file)=> {  
+            let filePath = path.join(currentDirPath,"/", file);
+            let stats = fs.statSync(filePath);
+            if (stats.isDirectory()){
+                getFileList(filePath, filelist);
+            } else { 
+                filelist.push(filePath);
+            }  
+        })    
+        return filelist; 
+    } 
+
+    // if the file is locally then the path is local path, if the file is archived then the path to the archive is stated ( for the extraction process):
+    var file_path = "" 
+    file_path = (getFileList(currentDirPath).filter(k => k.indexOf(filename)!=-1).length>0)  ?  getFileList(currentDirPath).filter(k => k.indexOf(filename)!=-1)[0] : getFileList(currentDirPath).filter(k => k.indexOf( functions.getProcessDateTime(filename).split('T')[0].replace(/-/g,'') )!=-1)[0];  
+
+    if (file_path.indexOf('archive')!=-1 || file_path.indexOf('.tar')!=-1 || file_path.indexOf('.gz')!=-1 ) {    
+        //if the file is archived:  
+        var data = "";
+        var extract = tarstream.extract(); 
+        extract.on('entry', (header, stream, cb) => {  
+            stream.on('data', (chunk) => {
+            if (header.name == filename)
+                data += chunk;
+            }); 
+            stream.on('end', () => {
+                cb();
+            }); 
+            stream.resume();
+        }); 
+        extract.on('finish', () => { 
+            res.status(200).json({
+                api_error: false,  
+                message: `The content of the Log file ${filename} for the ${isoCode} ${process} process is:`, 
+                file: data
+            });    
+        }); 
+        fs.createReadStream( file_path )
+            .pipe(zlib.createGunzip())
+            .pipe(extract);     
+    } else {  
+        //if the file is NOT archived:
+        if (!fs.existsSync(file_path)) {
+            console.log(`Error when reading the local file : ${file_path} : ${error}`); 
+            res.status(400).send({ api_error: true, message: `Error when reading the local file : ${file_path} : ${error}` }); 
+        } else {  
+            res.status(200).json({
+                api_error: false,  
+                message: `The content of the Log file ${filename} for the ${isoCode} ${process} process is:`, 
+                file: fs.readFileSync(file_path, 'utf-8') 
+            });  
+        } 
+    };  
+});
+
+router.get('/getLogData/:isoCode/:process/:filename', (req, res)=>{  
+    let isoCode = req.params.isoCode;
+    let process = req.params.process;
+    let filename = req.params.filename; 
+    if ((!isoCode) || isoCode.match(/^[a-zA-Z][a-zA-Z]$/g)!=isoCode ) {
+        return res.status(400).send({ api_error: true, message: 'Please provide a valid country isoCode!' }); 
+    };  
+    if ((!process) || ['porthos','aramis','datatrans','rc'].indexOf(process.toLowerCase())==-1 ) 
+        { return res.status(400).send({ api_error: true, message: 'Please provide a valid process name!' }); 
+    }; 
+    if (!filename) {   
+        return res.status(400).send({ api_error: true, message: 'Please provide a filename!' }); 
+    };      
+ 
+    axios.get('https://localhost:1001/getLog/'+ isoCode +'/'+ process +'/'+ filename, { httpsAgent: new https.Agent({ rejectUnauthorized: false })} ) 
+    .then((response) => {   
+        res.status(200).json({
+            api_error: false, 
+            message: `The LogData for the ${isoCode} ${process} file '${filename}' is:`, 
+            process: {
+                country: isoCode,
+                application: process.toLowerCase(), 
+                panel: filename.split('_')[0], 
+                run : functions.getProcessDateTime(filename).replace(/-|:|.000Z/g,'').replace(/T/g,'_'), 
+                process_type: functions.getPorthosType(process,filename),
+                date : functions.getProcessDateTime(filename),
+                filename : filename,  
+                data : functions.getProcessJSON(process, response.data.file, filename)  
+            }
+        });  
+    }) 
+    .catch((error) => {
+        console.log(`Error when calling the 'getLog' from readFromFTP microservice : ${error}`);
+        throw res.status(400).send({ api_error: true, message: `Error when calling the 'getLog' from readFromFTP microservice: ${error}` }); 
+    }); 
+}); 
+
+ 
+//READING FROM FTP:
+
+router.get('/getLogFilesList_ftp/:isoCode/:process', (req, res)=>{   
     let isoCode = req.params.isoCode;
     let process = req.params.process; 
     if ((!isoCode) || isoCode.match(/^[a-zA-Z][a-zA-Z]$/g)!=isoCode ) {
@@ -66,7 +354,7 @@ router.get('/getLogFilesList/:isoCode/:process', (req, res)=>{
     readFTP.connect(settings.getProtocolDetails(isoCode).dbsettings);    
 });
 
-router.get('/getLogFilesList/:isoCode/:process/:date', (req, res)=>{  
+router.get('/getLogFilesList_ftp/:isoCode/:process/:date', (req, res)=>{  
     let isoCode = req.params.isoCode;
     let process = req.params.process;
     let date = req.params.date; 
@@ -233,7 +521,7 @@ router.get('/getLogFilesList/:isoCode/:process/:date', (req, res)=>{
     readFTP.connect(settings.getProtocolDetails(isoCode).dbsettings);    
 });
  
-router.get('/getLogData/:isoCode/:process/:filename', (req, res)=>{  
+router.get('/getLogData_ftp/:isoCode/:process/:filename', (req, res)=>{  
     let isoCode = req.params.isoCode;
     let process = req.params.process;
     let filename = req.params.filename; 
@@ -396,134 +684,6 @@ router.get('/getLogData/:isoCode/:process/:filename', (req, res)=>{
                             }
                         });  // readFTP.cwd( functions.getProtPath(process,isoCode)+'/archive', (error)=> {  
                     } // if ( filtered.length > 0 ) { 
-                }); //readFTP.list((error, list)=> {  
-            } // if (error) {   
-        }); // readFTP.cwd( functions.getProtPath(process,isoCode), (error)=> {  
-    }); // readFTP.on('ready', ()=> { 
-    readFTP.connect(settings.getProtocolDetails(isoCode).dbsettings);       
-});
-
-router.get('/getLog/:isoCode/:process/:filename', (req, res)=>{  
-    let isoCode = req.params.isoCode;
-    let process = req.params.process;
-    let filename = req.params.filename; 
-    let protocol_path = settings.getProtocolDetails(isoCode).processes.filter(k => k.process.toLowerCase()==process.toLowerCase())[0].protocol_path;
-    let process_type = settings.getProtocolDetails(isoCode).processes.filter(k => k.process.toLowerCase()==process.toLowerCase())[0].type; 
-    if ((!isoCode) || isoCode.match(/^[a-zA-Z][a-zA-Z]$/g)!=isoCode ) {
-        return res.status(400).send({ api_error: true, message: 'Please provide a valid country isoCode!' }); 
-    };   
-    if (!filename) {   
-        return res.status(400).send({ api_error: true, message: 'Please provide a filename!' }); 
-    };      
-    var readFTP = new client();
-    //on connected to ftp event :
-    readFTP.on('ready', ()=> { 
-        //navigating to the proper path on the ftp depending on country and process:
-        readFTP.cwd(protocol_path, (error)=> {  
-            if (error) {   
-                console.log(`Error when changing the path on the ftp server: ${error}`);
-                res.status(400).send({ api_error: true, message: `Error when changing the path on the ftp server: ${error}` }); 
-            } else { 
-                readFTP.list((error, list)=> {  
-                    if (error) {    
-                        console.log(`Error when getting the list of files: ${error}`);
-                        res.status(400).send({ api_error: true, message: `Error when getting the list of files: ${error}` }); 
-                    };  
-                    if ( list.filter(k => k.name==filename).length>0 ) {  // when we find the file directly in the default folder 
-                        readFTP.get(protocol_path + filename, (error, stream )=> {  
-                            if (error) {    
-                                console.log(`Error when parsing and processing file ${protocol_path}${filename} : ${error}`); 
-                                res.status(400).send({ api_error: true, message: `Error when parsing and processing file ${protocol_path}${filename} : ${error}` }); 
-                            } else {       
-                                const chunks = [];  
-                                stream.on("data", (chunk)=> { chunks.push(chunk); }) 
-                                .on('end', ()=> {  
-                                    res.status(200).json({
-                                        api_error: false, 
-                                        message: `The LogData for the ${isoCode} ${process} file '${filename}' is:`, 
-                                        process: {
-                                            // country: isoCode,
-                                            // application: process.toLowerCase(),
-                                            // panel: filename.split('_')[0],
-                                            // run : functions.getProcessDateTime(filename).replace(/-|:|.000Z/g,'').replace(/T/g,'_'),
-                                            // process_type: process_type,
-                                            // date : functions.getProcessDateTime(filename),
-                                            // filename : filename, 
-                                            // data : functions.getProcessJSON(process, Buffer.concat(chunks).toString('utf8'), filename)  
-                                            data : Buffer.concat(chunks).toString('utf8')
-                                        }
-                                    });  
-                                });  
-                            }
-                        })
-                    } else { // when we have to search trough archives to get the data
-                        date = functions.getProcessDateTime(filename).replace(/-|:|.000Z/g,'').replace(/T/g,'_').split('_')[0];
- 
-                        async function getFiles(dir) {
-                            const subdirs = await readFTP.list((error, list)=> {  
-                                if (error) {    
-                                    console.log(`Error when getting the list of files: ${error}`);
-                                    res.status(400).send({ api_error: true, message: `Error when getting the list of files: ${error}` }); 
-                                } else {
-                                    return list = list.filter(k=>k.type=='d').map((k)=>k.name);  
-                                }
-                            });
-                            // const files = await Promise.all(subdirs.map(async (subdir) => {
-                            //     const res = resolve(dir, subdir);
-                            //     return (await stat(res)).isDirectory() ? getFiles(res) : res;
-                            // }));
-                            // return Array.prototype.concat(...files);
-                        }
-
-                        async function getDirList(path) {
-                            return await new Promise((resolve, reject) => {
-                                readFTP.cwd( path, (error)=> {  
-                                    if (error) {    
-                                        console.log(`Error when changing the path on the ftp server: ${error}`);
-                                        res.status(400).send({ api_error: true, message: `Error when changing the path on the ftp server: ${error}` }); 
-                                        reject(error);
-                                    } else {
-                                        readFTP.list((error, list)=> {  
-                                            if (error) {    
-                                                console.log(`Error when getting the list of files: ${error}`);
-                                                res.status(400).send({ api_error: true, message: `Error when getting the list of files: ${error}` }); 
-                                                reject(error);
-                                            } else {
-                                                resolve(list.filter(k=>k.type=='d').map((k)=> path+k.name)) 
-                                            }
-                                        }) 
-                                    }
-                                })
-                            }); 
-                        };  
-
-                        async function getDirList5(path) {  
-                            let subdirs1 = await getDirList(path);
-                            console.log(subdirs1)
-                            let to_call = subdirs1.map((k) => { return getDirList(k) }); 
-                            let called = await Promise.all(to_call); 
-                            called.forEach((response)=>{
-                                return response.data 
-                            });
-
-                             
-                        };  
-
-
-                        getDirList5(protocol_path).then((response)=>{
-                            // console.log(response);
-                        }); 
- 
-                        // async function getFiles(path) {
-                        //     const subdirs = await readdir(dir);
-                        //     const files = await Promise.all(subdirs.map(async (subdir) => {
-                        //       const res = resolve(dir, subdir);
-                        //       return (await stat(res)).isDirectory() ? getFiles(res) : res;
-                        //     }));
-                        //     return Array.prototype.concat(...files);
-                        // }
-
-                    } 
                 }); //readFTP.list((error, list)=> {  
             } // if (error) {   
         }); // readFTP.cwd( functions.getProtPath(process,isoCode), (error)=> {  

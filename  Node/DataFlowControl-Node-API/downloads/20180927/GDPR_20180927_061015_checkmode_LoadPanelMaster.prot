@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------
+Perl script                                       : loadPanelMaster.pl
+--------------------------------------------------------------------------------
+Version                                           : 1.01.8052
+Arguments                                         :  -c load_Characteristics.ctrl -m check -fh GDPR_20180927_061015.csv -s 20180927 -p GDPR_20180927_061015_checkmode_LoadPanelMaster.prot
+--------------------------------------------------------------------------------
+Database user                                     : atrcron
+Database                                          : ro_admin
+Server                                            : SYB_ATRRO
+--------------------------------------------------------------------------------
+Process started at 27.09.2018 06:12:22
+ERROR BEGIN
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ERROR END
+WARNING BEGIN
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+WARNING END
+INFO BEGIN
+--------------------------------------------------------------------------------
+Control file settings
+................................................................................
+General
+	col_sep = '\t'
+Household
+	>create_new = no
+	>from_date = external_start_date (20180927)
+	>overwrite_start_date = no
+	>to_date = max_date
+Individual
+	>create_new = no
+	>from_date = external_start_date (20180927)
+	>overwrite_start_date = no
+	>to_date = max_date
+Feature
+	>create_new = no
+Value
+	>create_new = no
+Panel
+	<not given>
+Characteristic
+	mode = overwrite
+	from_date = external_start_date (20180927)
+	>to_date = max_date
+Panel filter
+	<not given>
+................................................................................
+--------------------------------------------------------------------------------
+INFO END
+
+Summary:
+Amount changed characteristics                    : 0
+
+Summary for housholds:
+Double household check                            : no
+Changed panelists                                 : 0
+Unchanged panelists                               : 10
+Total data lines                                  : 10
+
+Total amount of errors                            : 0
+Total amount of warnings                          : 0
+--------------------------------------------------------------------------------
+Process started                                   : 27.09.2018 06:12:22
+Process finished                                  : 27.09.2018 06:12:26
+Time for process                                  : 0 hrs 0 min, 4 sec

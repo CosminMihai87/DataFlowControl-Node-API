@@ -1,0 +1,39 @@
+---------------------------------------------------------
+starting ARaMIS (version 3.00.3319) at 2019-03-05 06:30:25
+---------------------------------------------------------
+DB Environment:
+---------------------------------------------------------
+DBUser:   dataro
+DBPass:   *******
+DBServer: SYB_ATRRO
+DB:       ro_admin
+=========================================================
+parameter:
+---------------------------------------------------------
+input file:  /move/dataro/aramis/work/ScanPlus_dataro_20190305_062111.aramis
+output file: /move/dataro/datatrans/ScanPlus_dataro_20190305_062111.xml
+protocol file: /move/dataro/aramis/protocol/ScanPlus_dataro_20190305_062111.aramis.prot
+error file: /move/dataro/aramis/error/ScanPlus_dataro_20190305_062111.aramis.err
+=========================================================
+ERROR BEGIN
+
+ERROR END
+WARNING BEGIN
+
+WARNING END
+INFO BEGIN
+
+INFO END
+Summary:
+-------------
+Errors:0
+Warnings:0
+Purchacts total:1344
+Articles total:7754
+Number of processed purchacts:1344
+Number of processed movement records:7754
+Records processed:7754
+Number of faulty purchacts:0
+Number of faulty movement records:0
+
+finished at: 2019-03-05 06:33:00

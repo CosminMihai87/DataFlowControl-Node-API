@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<protocol name="Datatrans" time="2019-04-08T21:00:08Z" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+	<general>
+		<start>2019-04-08T21:00:08Z</start>
+		<application>Datatrans</application>
+		<version>2.6.9091     (dt_batch-2.0.0)</version>
+		<user>dataro</user>
+		<atr_server>SYB_ATRRO</atr_server>
+		<atr_user>dataro</atr_user>
+		<atr_database>ro_admin</atr_database>
+		<input_file>ScanPlus_dataro_20190408_062045.xml</input_file>
+		<period_from>0</period_from>
+	</general>
+	<messages>
+		<message time="2019-04-08T21:00:10Z" type="error">
+			<text>** error: line 71, file:/move/dataro/datatrans/ScanPlus_dataro_20190408_062045.xml: invalid article key: '01059490694000393922769'
+</text>
+		</message>
+		<message time="2019-04-08T21:00:15Z" type="error">
+			<text>** error: line 1064, file:/move/dataro/datatrans/ScanPlus_dataro_20190408_062045.xml: invalid article key: '01059490694007493922100'
+</text>
+		</message>
+		<message time="2019-04-08T21:00:15Z" type="error">
+			<text>** error: line 1065, file:/move/dataro/datatrans/ScanPlus_dataro_20190408_062045.xml: invalid article key: '01059413300111803922300'
+</text>
+		</message>
+		<message time="2019-04-08T21:00:15Z" type="error">
+			<text>** error: line 1066, file:/move/dataro/datatrans/ScanPlus_dataro_20190408_062045.xml: invalid article key: '01064201039022013922310'
+</text>
+		</message>
+		<message time="2019-04-08T21:00:16Z" type="error">
+			<text>** error: line 1679, file:/move/dataro/datatrans/ScanPlus_dataro_20190408_062045.xml: invalid article key: '01028000170124893922485'
+</text>
+		</message>
+		<message time="2019-04-08T21:00:16Z" type="error">
+			<text>** error: line 1680, file:/move/dataro/datatrans/ScanPlus_dataro_20190408_062045.xml: invalid article key: '01028580210054093922418'
+</text>
+		</message>
+		<message time="2019-04-08T21:00:16Z" type="error">
+			<text>** error: line 1682, file:/move/dataro/datatrans/ScanPlus_dataro_20190408_062045.xml: invalid article key: '01028036750083823922167'
+</text>
+		</message>
+		<message time="2019-04-08T21:00:16Z" type="error">
+			<text>** error: line 1683, file:/move/dataro/datatrans/ScanPlus_dataro_20190408_062045.xml: invalid article key: '01028036730083223922166'
+</text>
+		</message>
+		<message time="2019-04-08T21:00:16Z" type="error">
+			<text>** error: line 1684, file:/move/dataro/datatrans/ScanPlus_dataro_20190408_062045.xml: invalid article key: '01028036750075453922150'
+</text>
+		</message>
+		<message time="2019-04-08T21:00:16Z" type="error">
+			<text>** error: line 1695, file:/move/dataro/datatrans/ScanPlus_dataro_20190408_062045.xml: invalid article key: '01059412650256103922500'
+</text>
+		</message>
+		<message time="2019-04-08T21:00:16Z" type="error">
+			<text>** error: line 1696, file:/move/dataro/datatrans/ScanPlus_dataro_20190408_062045.xml: invalid article key: '01059412650256103922500'
+</text>
+		</message>
+		<message time="2019-04-08T21:00:16Z" type="error">
+			<text>** error: line 1703, file:/move/dataro/datatrans/ScanPlus_dataro_20190408_062045.xml: invalid article key: '01028580270050833922393'
+</text>
+		</message>
+		<message time="2019-04-08T21:00:24Z" type="error">
+			<text>** error: line 6817, file:/move/dataro/datatrans/ScanPlus_dataro_20190408_062045.xml: invalid article key: '04700005'
+</text>
+		</message>
+		<message time="2019-04-08T21:01:21Z" type="information">
+			<text>finished file: ScanPlus_dataro_20190408_062045.xml</text>
+		</message>
+	</messages>
+	<statistics>
+		<input_count>12948</input_count>
+		<output_count>12935</output_count>
+		<failed>13</failed>
+		<new_article_created>139</new_article_created>
+		<variable_weight_art_records>0</variable_weight_art_records>
+		<inserted_to_pool>0</inserted_to_pool>
+		<VariableWeightArticles_created>0</VariableWeightArticles_created>
+		<VariableWeightRecords_with_wrong_value>0</VariableWeightRecords_with_wrong_value>
+		<Value_adjusted>0</Value_adjusted>
+		<loadids>
+			<loadid>3364</loadid>
+		</loadids>
+	</statistics>
+	<summary>
+		<warnings>0</warnings>
+		<errors>13</errors>
+		<end>2019-04-08T21:01:21Z</end>
+		<exitcode>2</exitcode>
+	</summary>
+</protocol>

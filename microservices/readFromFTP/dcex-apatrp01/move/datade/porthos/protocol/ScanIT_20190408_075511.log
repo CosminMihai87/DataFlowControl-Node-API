@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<protocol name="Porthos protocol" time="2019-04-08T08:27:50+2" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+  <general>
+    <start>2019-04-08T08:27:50+2</start>
+    <task>JOB 1</task>
+    <dataflow>DE_ScanIT</dataflow>
+    <application>Porthos</application>
+    <version>2.3.002</version>
+    <user>dce.PorthosAdmin.svc</user>
+    <input_file>D:\DATA\DE\Input ScanEasy_IT\ScanIT_20190408_075511.org</input_file>
+    <output_file>D:\DATA\DE\ARaMIS File\ScanIT_20190408_075511.aramis</output_file>
+    <protocol_file>D:\DATA\DE\Protocol File\ScanIT_20190408_075511.log</protocol_file>
+    <error_file>D:\DATA\DE\Error File\ScanIT_20190408_075511.error</error_file>
+  </general>
+  <messages>
+    <message time="2019-04-08T08:27:50+2" type="Information">
+      <text>1 file(s) ready for processing. </text>
+    </message>
+    <message time="2019-04-08T08:27:50+2" type="Information">
+      <text>Process 1 / 1 ('D:\DATA\DE\Input ScanEasy_IT\ScanIT_20190408_075511.org') </text>
+    </message>
+    <message time="2019-04-08T08:29:37+2" type="Information">
+      <text>Writing ARaMIS-File 'D:\DATA\DE\ARaMIS File\ScanIT_20190408_075511.aramis' </text>
+    </message>
+    <message time="2019-04-08T08:29:56+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:30:10+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:30:12+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:30:12+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:30:12+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:30:12+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:30:12+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:20+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Warning">
+      <text>Purchase Act was skipped due to script events  </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Information">
+      <text>55 of 811 Purchase Acts were skipped due to script events (now 756 Purchase Acts). </text>
+    </message>
+    <message time="2019-04-08T08:30:21+2" type="Information">
+      <text>7 of 8074 Articles were skipped due to script events (now 8012 Articles). </text>
+    </message>
+    <message time="2019-04-08T08:30:22+2" type="Information">
+      <text>Writing ReturnCode-File 'D:\DATA\DE\ARaMIS File\ScanIT_20190408_075511.rc' </text>
+    </message>
+    <message time="2019-04-08T08:30:22+2" type="Information">
+      <text>Input files will be moved to folder 'D:\DATA\DE\Original Data ScanEasy_IT'. </text>
+    </message>
+  </messages>
+  <statistics>
+    <input_count>8074</input_count>
+    <output_count>8012</output_count>
+  </statistics>
+  <summary>
+    <warnings>730769</warnings>
+    <errors>0</errors>
+    <end>2019-04-08T08:30:23+2</end>
+  </summary>
+</protocol>

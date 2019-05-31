@@ -2,30 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dataflow Control API</title> 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <style>
-        body { padding-top:50px; }
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name="description" content="DataflowControl Microservices">
+    <meta name="author" content="GFK Romania"> 
+    <title>DataflowControl Microservices</title>  
+    <link rel="icon" href="../../assets/images/favicon.ico">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style> 
+        .card-header, .card-body {
+            height: 100%;
+            padding: .375rem .75rem;
+        } 
+        .card-header {
+            border-top: 1px solid rgba(0,0,0,.125);
+        }
+        .list-group-item { 
+            padding: .375rem .75rem;
+        }
+        h4 { 
+            color: red;
+        }
+        h2 { 
+            text-align: center;
+        }
+        .jumbotron { 
+            padding: 5em inherit;
+            background-color: white;
+        }
+        table tbody tr td:nth-child(1) {  
+            font-weight: bold;
+            color: red;
+        }
     </style>
 </head>
 <body> 
-    <div class="container">
-        <div class="jumbotron">
-            <h2>Welcome to one of our GFK Dataflow Control API's</h1>
-            <h3 style='color:red;'>General Info:</h1>
-                <li>This API connects to one of GFK's servers and reads logs of the processes that run on a daily basis for all the countries.</li>
-            <h3 style='color:red;'>Parameter Info:</h1>
-                <li>process = The GFK Application that runs (for example: <i>Porthos, Aramis, Datatrans, RC</i>) </li>
-                <li>isoCode = The country's ISOCode (for example: <i>RO=Romania, AT=Austria, etc.</i>)</li>
-                <li>date = The date from which we want the protocols to be displayed YYYYmmdd format (for example: <i>20180922</i> ) </li>
-                <li>dateFrom = The date from which we want the protocols to be displayed YYYYmmdd format (for example: <i>20180920</i> ) *Used togheter with `dateTo`</li>
-                <li>dateTo = The date until when we want the protocols to be displayed YYYYmmdd format (for example: <i>20180922</i> ) *Used togheter with `dateFrom`</li>
-                <li>filename = The exact name of the log file produced (for example: <i>ScanPlus_dataro_20180920_062118.xml.log</i> ) </li>
-            <h3 style='color:red;'>/sendLogData/:isoCode/:process  ,  [data]</h1>
-                <li>Details : This is an API that does a POST request to the database with the process name and the JSON data it wants to write to the db.</li>
-                <li>Example : <i> sendLogData/RO/porthos  ,  [data]</i>  </li> 
-        </div>
-    </div> 
+    <div class="jumbotron jumbotron-fluid">  
+        <div class="container col-md-9">
+            <h2>GFK Dataflow Control Microservice</h1> 
+            <hr>
+            <div class="card"> 
+                <div class="card-header">
+                    <h4>General Info:</h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Microservice that connects to one of GFK's servers(or to the mounted drives on those servers) and reads logs of the processes that run on a daily basis for all the countries.</p>
+                </div>
+                <div class="card-header">
+                    <h4>Parameter Info:</h4>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>process</b> = The GFK Application that runs (for example: <i>Porthos, Aramis, Datatrans, RC</i>) </li>
+                    <li class="list-group-item"><b>isoCode</b> = The country's ISOCode (for example: <i>RO=Romania, AT=Austria, etc.</i>) </li>
+                    <li class="list-group-item"><b>date</b> = The date from which we want the protocols to be displayed YYYYmmdd format (for example: <i>20180922</i>) </li>
+                    <li class="list-group-item"><b>dateFrom</b> = The date from which we want the protocols to be displayed YYYYmmdd format (for example: <i>20180920</i>) *Used togheter with `dateTo` </li>
+                    <li class="list-group-item"><b>dateTo</b> = The date until when we want the protocols to be displayed YYYYmmdd format (for example: <i>20180922</i>) *Used togheter with `dateFrom` </li>
+                    <li class="list-group-item"><b>filename</b> = The exact name of the log file produced (for example: <i>ScanPlus_dataro_20180920_062118.xml.log</i>) </li>
+                </ul> 
+            </div>  
+            <hr>   
+            <table class="table table-bordered table-striped">
+            <thead>
+                <tr> 
+                    <th scope="col">Route</th>
+                    <th scope="col">Example</th>
+                    <th scope="col">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td>/sendLogData/:isoCode/:process</td>
+                    <td>/sendLogData/RO/porthos  ,  [data]</td> 
+                    <td>This is an API that does a POST request to the database with the process name and the JSON data it wants to write to the db.</td> 
+                </tr> 
+            </tbody>
+            </table> 
+        </div>  
+    </div>
 </body>
-</html>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>  
 

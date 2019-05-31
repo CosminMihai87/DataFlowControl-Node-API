@@ -1,0 +1,44 @@
+---------------------------------------------------------
+starting ARaMIS (version 3.00.3319) at 2019-01-14 06:30:22
+---------------------------------------------------------
+DB Environment:
+---------------------------------------------------------
+DBUser:   dataro
+DBPass:   *******
+DBServer: SYB_ATRRO
+DB:       ro_admin
+=========================================================
+parameter:
+---------------------------------------------------------
+input file:  /move/dataro/aramis/work/ScanPlus_dataro_20190114_062046.aramis
+output file: /move/dataro/datatrans/ScanPlus_dataro_20190114_062046.xml
+protocol file: /move/dataro/aramis/protocol/ScanPlus_dataro_20190114_062046.aramis.prot
+error file: /move/dataro/aramis/error/ScanPlus_dataro_20190114_062046.aramis.err
+=========================================================
+ERROR BEGIN
+Code Error: Unknown CP Feature
+Line	PurchactId	Cp Version Code	CP Entry Code	CP Feature
+486498	1351	A	chca	view
+
+
+
+ERROR END
+WARNING BEGIN
+
+WARNING END
+INFO BEGIN
+
+INFO END
+Summary:
+-------------
+Errors:1
+Warnings:0
+Purchacts total:1700
+Articles total:12118
+Number of processed purchacts:1700
+Number of processed movement records:12117
+Records processed:12117
+Number of faulty purchacts:0
+Number of faulty movement records:1
+
+finished at: 2019-01-14 06:33:25

@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<protocol name="Porthos protocol" time="2019-04-09T12:13:48+2" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+  <general>
+    <start>2019-04-09T12:13:48+2</start>
+    <task>JOB 1</task>
+    <dataflow>MyScan_RC_CODE</dataflow>
+    <application>Porthos</application>
+    <version>2.3.002</version>
+    <user>dce.PorthosAdmin.svc</user>
+    <input_file>D:\DATA\DE\Input MyScan\*.myscan</input_file>
+    <output_file>D:\DATA\DE\ARaMIS File\MyScan_20190409_121348_code.aramis</output_file>
+    <protocol_file>D:\DATA\DE\Protocol File\MyScan_20190409_121348_code.log</protocol_file>
+    <error_file>D:\DATA\DE\Error File\MyScan_20190409_121348_code.error</error_file>
+  </general>
+  <messages>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>29 file(s) ready for processing. </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 1 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '30')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '45')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '60')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '145')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '160')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '179')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '194')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '209')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '224')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '239')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '254')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '271')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '288')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '303')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_094401.myscan' rawid '318')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 2 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_105643.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_105643.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_105643.myscan' rawid '32')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_105643.myscan' rawid '49')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281047_25f3fbd4-9552-406e-a941-7bb7f_20190409_105643.myscan' rawid '86')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 3 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '30')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '47')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '62')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '77')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '115')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '130')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '145')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '160')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '175')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '190')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '205')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '244')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '259')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '274')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '338')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '363')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '378')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281129_901817ab-38ad-4203-837b-f792b_20190409_090427.myscan' rawid '393')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 4 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan' rawid '30')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan' rawid '45')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan' rawid '60')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan' rawid '75')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan' rawid '90')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan' rawid '112')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan' rawid '127')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan' rawid '142')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan' rawid '157')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan' rawid '172')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan' rawid '259')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281194_55fa3507-da8d-45cd-9bfd-8cab9_20190409_104235.myscan' rawid '274')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 5 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '30')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '45')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '60')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '75')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '113')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '128')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '238')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '253')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '268')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '285')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '300')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '315')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '354')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '369')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '384')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '399')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '414')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091033.myscan' rawid '429')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 6 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091212.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091212.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_091212.myscan' rawid '30')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 7 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '30')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '45')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '60')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '75')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '90')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '105')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '120')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '135')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '150')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '165')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '180')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '195')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '210')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '225')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '240')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '255')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281244_9912cfb3-dbc2-40a2-a95a-4e79a_20190409_092014.myscan' rawid '270')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 8 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281474_9ce22eb7-5a02-4fb3-ac00-a1db0_20190409_094843.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281474_9ce22eb7-5a02-4fb3-ac00-a1db0_20190409_094843.myscan' rawid '40')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281474_9ce22eb7-5a02-4fb3-ac00-a1db0_20190409_094843.myscan' rawid '55')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281474_9ce22eb7-5a02-4fb3-ac00-a1db0_20190409_094843.myscan' rawid '70')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281474_9ce22eb7-5a02-4fb3-ac00-a1db0_20190409_094843.myscan' rawid '85')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281474_9ce22eb7-5a02-4fb3-ac00-a1db0_20190409_094843.myscan' rawid '100')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281474_9ce22eb7-5a02-4fb3-ac00-a1db0_20190409_094843.myscan' rawid '115')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281474_9ce22eb7-5a02-4fb3-ac00-a1db0_20190409_094843.myscan' rawid '130')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281474_9ce22eb7-5a02-4fb3-ac00-a1db0_20190409_094843.myscan' rawid '145')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 9 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281489_d4352eec-e860-4a47-8be6-f50cc_20190409_092352.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281489_d4352eec-e860-4a47-8be6-f50cc_20190409_092352.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281489_d4352eec-e860-4a47-8be6-f50cc_20190409_092352.myscan' rawid '33')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281489_d4352eec-e860-4a47-8be6-f50cc_20190409_092352.myscan' rawid '51')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281489_d4352eec-e860-4a47-8be6-f50cc_20190409_092352.myscan' rawid '69')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281489_d4352eec-e860-4a47-8be6-f50cc_20190409_092352.myscan' rawid '87')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281489_d4352eec-e860-4a47-8be6-f50cc_20190409_092352.myscan' rawid '105')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281489_d4352eec-e860-4a47-8be6-f50cc_20190409_092352.myscan' rawid '123')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281489_d4352eec-e860-4a47-8be6-f50cc_20190409_092352.myscan' rawid '141')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 10 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281553_915d7112-c84f-4e73-8aea-236dc_20190409_111944.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281553_915d7112-c84f-4e73-8aea-236dc_20190409_111944.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281553_915d7112-c84f-4e73-8aea-236dc_20190409_111944.myscan' rawid '30')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281553_915d7112-c84f-4e73-8aea-236dc_20190409_111944.myscan' rawid '45')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281553_915d7112-c84f-4e73-8aea-236dc_20190409_111944.myscan' rawid '60')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281553_915d7112-c84f-4e73-8aea-236dc_20190409_111944.myscan' rawid '75')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281553_915d7112-c84f-4e73-8aea-236dc_20190409_111944.myscan' rawid '90')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281553_915d7112-c84f-4e73-8aea-236dc_20190409_111944.myscan' rawid '105')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281553_915d7112-c84f-4e73-8aea-236dc_20190409_111944.myscan' rawid '120')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281553_915d7112-c84f-4e73-8aea-236dc_20190409_111944.myscan' rawid '135')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281553_915d7112-c84f-4e73-8aea-236dc_20190409_111944.myscan' rawid '150')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281553_915d7112-c84f-4e73-8aea-236dc_20190409_111944.myscan' rawid '165')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 11 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_084955.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_084955.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 12 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_091915.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_091915.myscan' rawid '63')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_091915.myscan' rawid '102')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_091915.myscan' rawid '117')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_091915.myscan' rawid '154')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_091915.myscan' rawid '169')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_091915.myscan' rawid '184')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_091915.myscan' rawid '199')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_091915.myscan' rawid '214')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_091915.myscan' rawid '252')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281598_652b9923-853f-48ca-b269-2047d_20190409_091915.myscan' rawid '267')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 13 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281739_0fae8c9e-38bf-4498-9e55-bde8f_20190409_100540.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 14 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281744_8de2414c-54c3-4171-87d6-e8d1a_20190409_111325.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281744_8de2414c-54c3-4171-87d6-e8d1a_20190409_111325.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281744_8de2414c-54c3-4171-87d6-e8d1a_20190409_111325.myscan' rawid '30')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281744_8de2414c-54c3-4171-87d6-e8d1a_20190409_111325.myscan' rawid '45')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281744_8de2414c-54c3-4171-87d6-e8d1a_20190409_111325.myscan' rawid '60')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281744_8de2414c-54c3-4171-87d6-e8d1a_20190409_111325.myscan' rawid '75')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 15 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281771_c23a54d6-0a98-4aa2-928a-d8158_20190409_091442.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Read file error: The 'Variables' start tag on line 136 does not match the end tag of 'Gfk'. Line 171, position 7. </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 16 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '30')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '69')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '106')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '121')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '136')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '151')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '166')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '181')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '196')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '235')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '250')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '269')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '284')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '299')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '314')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '333')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '348')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '387')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '427')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '442')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '457')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '472')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '487')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '502')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '517')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '532')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '547')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '562')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '577')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '592')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '607')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '622')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '637')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '652')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '667')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '682')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '697')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '712')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '727')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '742')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '757')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '772')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281829_ba2df5e9-a8a2-4c9c-8118-27df4_20190409_113146.myscan' rawid '787')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 17 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281910_5c3cee58-12ab-463d-9caa-124f8_20190409_085038.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 18 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281910_5c3cee58-12ab-463d-9caa-124f8_20190409_085409.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281910_5c3cee58-12ab-463d-9caa-124f8_20190409_085409.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 19 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281910_5c3cee58-12ab-463d-9caa-124f8_20190409_085948.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281910_5c3cee58-12ab-463d-9caa-124f8_20190409_085948.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 20 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281919_ce544681-95ad-4041-b758-72eac_20190409_085801.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281919_ce544681-95ad-4041-b758-72eac_20190409_085801.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 21 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281922_afa2eb5d-36b5-4fb6-8cf7-86476_20190409_103902.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 22 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281922_afa2eb5d-36b5-4fb6-8cf7-86476_20190409_104213.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 23 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281922_afa2eb5d-36b5-4fb6-8cf7-86476_20190409_105105.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281922_afa2eb5d-36b5-4fb6-8cf7-86476_20190409_105105.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 24 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281922_afa2eb5d-36b5-4fb6-8cf7-86476_20190409_105345.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 25 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281922_afa2eb5d-36b5-4fb6-8cf7-86476_20190409_105620.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 26 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281922_afa2eb5d-36b5-4fb6-8cf7-86476_20190409_105808.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 27 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281943_03e98c09-f89c-4e7b-a2c5-33e51_20190409_084329.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281943_03e98c09-f89c-4e7b-a2c5-33e51_20190409_084329.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281943_03e98c09-f89c-4e7b-a2c5-33e51_20190409_084329.myscan' rawid '54')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281943_03e98c09-f89c-4e7b-a2c5-33e51_20190409_084329.myscan' rawid '162')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281943_03e98c09-f89c-4e7b-a2c5-33e51_20190409_084329.myscan' rawid '177')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281943_03e98c09-f89c-4e7b-a2c5-33e51_20190409_084329.myscan' rawid '199')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281943_03e98c09-f89c-4e7b-a2c5-33e51_20190409_084329.myscan' rawid '214')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281943_03e98c09-f89c-4e7b-a2c5-33e51_20190409_084329.myscan' rawid '229')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 28 / 29 ('D:\DATA\DE\Input MyScan\MyScan_281986_9e52125f-ae90-4b3d-852d-2eec4_20190409_081816.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281986_9e52125f-ae90-4b3d-852d-2eec4_20190409_081816.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281986_9e52125f-ae90-4b3d-852d-2eec4_20190409_081816.myscan' rawid '32')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281986_9e52125f-ae90-4b3d-852d-2eec4_20190409_081816.myscan' rawid '49')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_281986_9e52125f-ae90-4b3d-852d-2eec4_20190409_081816.myscan' rawid '66')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Process 29 / 29 ('D:\DATA\DE\Input MyScan\MyScan_282019_61f3b995-c946-49ce-b6a3-bf33f_20190409_112759.myscan') </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_282019_61f3b995-c946-49ce-b6a3-bf33f_20190409_112759.myscan' rawid '15')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_282019_61f3b995-c946-49ce-b6a3-bf33f_20190409_112759.myscan' rawid '30')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_282019_61f3b995-c946-49ce-b6a3-bf33f_20190409_112759.myscan' rawid '45')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_282019_61f3b995-c946-49ce-b6a3-bf33f_20190409_112759.myscan' rawid '60')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_282019_61f3b995-c946-49ce-b6a3-bf33f_20190409_112759.myscan' rawid '75')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_282019_61f3b995-c946-49ce-b6a3-bf33f_20190409_112759.myscan' rawid '90')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_282019_61f3b995-c946-49ce-b6a3-bf33f_20190409_112759.myscan' rawid '105')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_282019_61f3b995-c946-49ce-b6a3-bf33f_20190409_112759.myscan' rawid '146')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Error">
+      <text>Check failed   (description: 'Retruncode Purchase' source 'D:\DATA\DE\Input MyScan\MyScan_282019_61f3b995-c946-49ce-b6a3-bf33f_20190409_112759.myscan' rawid '161')</text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 28 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 27 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 26 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 25 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 24 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 23 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 22 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 21 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 20 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 19 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 18 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 17 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 16 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 15 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 14 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 13 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 12 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 11 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 10 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 9 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 8 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 7 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 6 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 5 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 4 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 3 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 2 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 1 </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Skipping Result: 0 of 28 Purchase Acts were skipped due to their redundant occurrence (now 0 Purchase Acts). </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Writing ARaMIS-File 'D:\DATA\DE\ARaMIS File\MyScan_20190409_121348_code.aramis' </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Warning">
+      <text>There are no Purchase Acts to write. ARaMIS-file will not be created. </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Writing ReturnCode-File 'D:\DATA\DE\ARaMIS File\MyScan_20190409_121348_code.rc' </text>
+    </message>
+    <message time="2019-04-09T12:13:48+2" type="Information">
+      <text>Input files will be copied to folder 'D:\DATA\DE\Original Data'. </text>
+    </message>
+  </messages>
+  <statistics>
+    <input_count>257</input_count>
+    <output_count>0</output_count>
+  </statistics>
+  <summary>
+    <warnings>29</warnings>
+    <errors>203</errors>
+    <end>2019-04-09T12:13:48+2</end>
+  </summary>
+</protocol>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<protocol name="Datatrans" time="2019-05-27T21:00:21Z" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+	<general>
+		<start>2019-05-27T21:00:21Z</start>
+		<application>Datatrans</application>
+		<version>2.6.9091     (dt_batch-2.0.0)</version>
+		<user>dataro</user>
+		<atr_server>SYB_ATRRO</atr_server>
+		<atr_user>dataro</atr_user>
+		<atr_database>ro_admin</atr_database>
+		<input_file>ScanPlus_dataro_20190527_061032.xml</input_file>
+		<period_from>0</period_from>
+	</general>
+	<messages>
+		<message time="2019-05-27T21:00:49Z" type="error">
+			<text>** error: line 5402, file:/move/dataro/datatrans/ScanPlus_dataro_20190527_061032.xml: invalid article key: '01059418640056483922475'
+</text>
+		</message>
+		<message time="2019-05-27T21:00:53Z" type="error">
+			<text>** error: line 7157, file:/move/dataro/datatrans/ScanPlus_dataro_20190527_061032.xml: invalid article key: '90112102922691461622'
+</text>
+		</message>
+		<message time="2019-05-27T21:00:55Z" type="error">
+			<text>** error: line 7639, file:/move/dataro/datatrans/ScanPlus_dataro_20190527_061032.xml: invalid article key: '0134568074402375'
+</text>
+		</message>
+		<message time="2019-05-27T21:00:59Z" type="error">
+			<text>** error: line 9036, file:/move/dataro/datatrans/ScanPlus_dataro_20190527_061032.xml: invalid article key: '01973174'
+</text>
+		</message>
+		<message time="2019-05-27T21:00:59Z" type="error">
+			<text>** error: line 9041, file:/move/dataro/datatrans/ScanPlus_dataro_20190527_061032.xml: invalid article key: '01109030'
+</text>
+		</message>
+		<message time="2019-05-27T21:00:59Z" type="error">
+			<text>** error: line 9045, file:/move/dataro/datatrans/ScanPlus_dataro_20190527_061032.xml: invalid article key: '03785898'
+</text>
+		</message>
+		<message time="2019-05-27T21:01:02Z" type="error">
+			<text>** error: line 9986, file:/move/dataro/datatrans/ScanPlus_dataro_20190527_061032.xml: invalid article key: '0127502456676817'
+</text>
+		</message>
+		<message time="2019-05-27T21:02:15Z" type="information">
+			<text>finished file: ScanPlus_dataro_20190527_061032.xml</text>
+		</message>
+	</messages>
+	<statistics>
+		<input_count>10477</input_count>
+		<output_count>10470</output_count>
+		<failed>7</failed>
+		<new_article_created>99</new_article_created>
+		<variable_weight_art_records>0</variable_weight_art_records>
+		<inserted_to_pool>0</inserted_to_pool>
+		<VariableWeightArticles_created>0</VariableWeightArticles_created>
+		<VariableWeightRecords_with_wrong_value>0</VariableWeightRecords_with_wrong_value>
+		<Value_adjusted>0</Value_adjusted>
+		<loadids>
+			<loadid>3411</loadid>
+		</loadids>
+	</statistics>
+	<summary>
+		<warnings>0</warnings>
+		<errors>7</errors>
+		<end>2019-05-27T21:02:15Z</end>
+		<exitcode>2</exitcode>
+	</summary>
+</protocol>

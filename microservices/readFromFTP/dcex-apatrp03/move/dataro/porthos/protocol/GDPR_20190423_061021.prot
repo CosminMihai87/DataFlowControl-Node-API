@@ -1,0 +1,73 @@
+--------------------------------------------------------------------------------
+Perl script                                       : loadPanelMaster.pl
+--------------------------------------------------------------------------------
+Version                                           : 1.01.8052
+Arguments                                         :  -c load_Characteristics.ctrl -m exec -fh GDPR_20190423_061021.csv -s 20190423 -p GDPR_20190423_061021.prot
+--------------------------------------------------------------------------------
+Database user                                     : atrcron
+Database                                          : ro_admin
+Server                                            : SYB_ATRRO
+--------------------------------------------------------------------------------
+Process started at 23.04.2019 06:10:39
+ERROR BEGIN
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ERROR END
+WARNING BEGIN
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+WARNING END
+INFO BEGIN
+--------------------------------------------------------------------------------
+Control file settings
+................................................................................
+General
+	col_sep = '\t'
+Household
+	>create_new = no
+	>from_date = external_start_date (20190423)
+	>overwrite_start_date = no
+	>to_date = max_date
+Individual
+	>create_new = no
+	>from_date = external_start_date (20190423)
+	>overwrite_start_date = no
+	>to_date = max_date
+Feature
+	>create_new = no
+Value
+	>create_new = no
+Panel
+	<not given>
+Characteristic
+	mode = overwrite
+	from_date = external_start_date (20190423)
+	>to_date = max_date
+Panel filter
+	<not given>
+................................................................................
+
+................................................................................
+Characteristic: 3 feature(s) found in data file data file '/home/uxservnfs/atrcron/GDPR/RO/GDPR_20190423_061021.csv' ( file contains 4 lines)
+................................................................................
+GDPR_Adult_Consent            : 2 change(s)
+LegalResponsible              : 2 change(s)
+GDPR_Consent_Status           : 2 change(s)
+--------------------------------------------------------------------------------
+INFO END
+
+Summary:
+Amount changed characteristics                    : 6
+
+Summary for housholds:
+Double household check                            : no
+Changed panelists                                 : 2
+Unchanged panelists                               : 1
+Total data lines                                  : 3
+
+Total amount of errors                            : 0
+Total amount of warnings                          : 0
+--------------------------------------------------------------------------------
+Process started                                   : 23.04.2019 06:10:39
+Process finished                                  : 23.04.2019 06:10:40
+Time for process                                  : 0 hrs 0 min, 1 sec

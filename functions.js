@@ -51,11 +51,8 @@ function getProtPath(process,country) {
             break; 
     } 
     return path.replace('{country}',country.toLowerCase()) 
-};
-  
-
-
-
+}; //deprecated
+   
 // splits a string by _ and searches for all the splited strings of the format YYYYmmDD folowed by a string of format HHmmSS and combines them into a date of format 2018-07-19T05:39:00(for example)
 function getProcessDateTime(string) {  
     var array = string.split('_');   
@@ -362,62 +359,44 @@ function getAramisJSON(data) {
     }   
 };
 
-function getDatatransJSON(data) {     
+function getDatatransJSON(data,filename) {     
     try {
-        let lines = data.split('\n'); 
-        var ERROR=[];
-        for (let [index, line] of lines.entries() ) {    
-            if (line.indexOf('** error: ')==0) { 
-                ERROR.push(line)
-            }  
-            if (line.indexOf('New articles were created for the following keys:')==0) { var START_new_art_created_index = index; } 
-            if (line.indexOf('finished file: ')==0) { var END_new_art_created_index = index; } 
-            if (line.indexOf('processing file: ')==0) { var filename = line.split('processing file: ')[1]; } 
-        }
-        var new_art_created=[]; 
-        for (let [index, line] of lines.entries() ) {      
-            let lines = data.split('\n'); 
-            if (index-1 > START_new_art_created_index && index < END_new_art_created_index && lines[index].length>0 ) { new_art_created.push(lines[index]) };  
-        }  
-        var new_art_created_pre = new_art_created.map((k)=>{ return { article: k.split(' ')[0], date: k.split(' ')[1] }} ); 
-        var ERROR_pre = ERROR.map((k)=>{ 
+        var convert = require('xml-js');
+        var Json_string = convert.xml2json(data, {compact: true, spaces: 4});  
+        const starttime = JSON.parse(Json_string)['protocol'].general.start['_text']; 
+        const endtime = JSON.parse(Json_string)['protocol'].summary.end['_text'];  
+        const errors = JSON.parse(Json_string)['protocol'].messages.message.filter(k => k._attributes.type=="error"); 
+        const new_article_created = JSON.parse(Json_string)['protocol'].statistics.new_article_created['_text'];  
+        
+        var ERROR_pre =  errors.map(k => k.text).map(k => k._text).map((k)=>{ 
             return { 
                 text : k.split('.xml: ')[1].split('\'')[0].replace(':','').trim(),  
                 line : k.split(' ')[3].replace(',',''), 
                 article: k.split('.xml: ')[1].split('\'')[1]
             }} 
         );
-        
-        //ERROR_details:    ( grouped up by error type text and counted also) 
-        const ERROR_details = [...new Set(ERROR_pre.map(k => k.text))]
-            .map((k)=>{ 
-                    return {
-                        text: k,  
-                        type: "Error",  
-                        nr: (ERROR_pre.reduce(function (n, mess) { return n + (mess.text== k); }, 0)), 
-                        details: ERROR_pre.filter(j => j.text === k).map((l)=>{ return { line: l['line'], article: l['article'] }})
-                    }}
-                ); 
 
-        //new_art_created_details:    ( grouped up by date of creation and counted also)
-        const new_art_created_details = [...new Set(new_art_created_pre.map(k => k.date))]
-            .map((k)=>{ 
-                    return {   
-                        date: k,  
-                        nr: (new_art_created_pre.reduce(function (n, mess) { return n + (mess.date== k); }, 0)),  
-                        articles: new_art_created_pre.filter(j => j.date === k).map((l)=> { return l['article']  }) 
-                    }}
-                ); 
- 
+        //ERROR_details:    ( grouped up by error type text and counted also) 
+        const ERROR_details = [...new Set(ERROR_pre.map(k => k.text))] 
+        .map((k)=>{ 
+                return {
+                    text: k,  
+                    type: "Error",   
+                    nr: (ERROR_pre.reduce(function (n, mess) { return n + (mess.text== k); }, 0)), 
+                    details: ERROR_pre.filter(j => j.text === k).map((l)=>{ return { line: l['line'], article: l['article'] }})
+                }
+            }
+        );  
+            
         var result = JSON.stringify({  
-            starttime: getProcessDateTime(filename).replace('T',' ').substring(0,getProcessDateTime(filename).length-5),
-            endtime: getProcessDateTime(filename).replace('T',' ').substring(0,getProcessDateTime(filename).length-5), 
-            nr_errors: ERROR.length,
-            inf_warn_err: ERROR_details,
-            nr_new_art_created: new_art_created.length, 
-            new_art_created_details: new_art_created_details
+            starttime: starttime,
+            endtime: endtime,  
+            nr_errors: errors.length,
+            inf_warn_err: ERROR_details, 
+            new_article_created: new_article_created 
         })
-        return JSON.parse(result); 
+        return JSON.parse(result);        
+ 
     } catch (error) {  
         console.log(`Error when converting and processing ${filename} to JSON : ${error}`);
         return JSON.parse( JSON.stringify( { error: true, message: `Error when converting and processing ${filename} to JSON : ${error}` } ) ); 

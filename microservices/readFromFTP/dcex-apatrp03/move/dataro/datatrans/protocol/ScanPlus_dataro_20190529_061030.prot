@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<protocol name="Datatrans" time="2019-05-29T21:00:11Z" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+	<general>
+		<start>2019-05-29T21:00:11Z</start>
+		<application>Datatrans</application>
+		<version>2.6.9091     (dt_batch-2.0.0)</version>
+		<user>dataro</user>
+		<atr_server>SYB_ATRRO</atr_server>
+		<atr_user>dataro</atr_user>
+		<atr_database>ro_admin</atr_database>
+		<input_file>ScanPlus_dataro_20190529_061030.xml</input_file>
+		<period_from>0</period_from>
+	</general>
+	<messages>
+		<message time="2019-05-29T21:00:14Z" type="error">
+			<text>** error: line 177, file:/move/dataro/datatrans/ScanPlus_dataro_20190529_061030.xml: invalid article key: '01059413260018503922209'
+</text>
+		</message>
+		<message time="2019-05-29T21:00:16Z" type="error">
+			<text>** error: line 492, file:/move/dataro/datatrans/ScanPlus_dataro_20190529_061030.xml: invalid article key: '01028049950074753922388'
+</text>
+		</message>
+		<message time="2019-05-29T21:00:29Z" type="error">
+			<text>** error: line 6847, file:/move/dataro/datatrans/ScanPlus_dataro_20190529_061030.xml: invalid article key: '01080111750048873922437'
+</text>
+		</message>
+		<message time="2019-05-29T21:00:29Z" type="error">
+			<text>** error: line 6848, file:/move/dataro/datatrans/ScanPlus_dataro_20190529_061030.xml: invalid article key: '01059418846011273922455'
+</text>
+		</message>
+		<message time="2019-05-29T21:00:57Z" type="information">
+			<text>finished file: ScanPlus_dataro_20190529_061030.xml</text>
+		</message>
+	</messages>
+	<statistics>
+		<input_count>8593</input_count>
+		<output_count>8589</output_count>
+		<failed>4</failed>
+		<new_article_created>100</new_article_created>
+		<variable_weight_art_records>0</variable_weight_art_records>
+		<inserted_to_pool>0</inserted_to_pool>
+		<VariableWeightArticles_created>0</VariableWeightArticles_created>
+		<VariableWeightRecords_with_wrong_value>0</VariableWeightRecords_with_wrong_value>
+		<Value_adjusted>0</Value_adjusted>
+		<loadids>
+			<loadid>3413</loadid>
+		</loadids>
+	</statistics>
+	<summary>
+		<warnings>0</warnings>
+		<errors>4</errors>
+		<end>2019-05-29T21:00:57Z</end>
+		<exitcode>2</exitcode>
+	</summary>
+</protocol>

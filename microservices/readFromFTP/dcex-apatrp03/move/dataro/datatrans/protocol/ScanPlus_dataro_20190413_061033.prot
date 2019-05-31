@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<protocol name="Datatrans" time="2019-04-13T21:00:09Z" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+	<general>
+		<start>2019-04-13T21:00:09Z</start>
+		<application>Datatrans</application>
+		<version>2.6.9091     (dt_batch-2.0.0)</version>
+		<user>dataro</user>
+		<atr_server>SYB_ATRRO</atr_server>
+		<atr_user>dataro</atr_user>
+		<atr_database>ro_admin</atr_database>
+		<input_file>ScanPlus_dataro_20190413_061033.xml</input_file>
+		<period_from>0</period_from>
+	</general>
+	<messages>
+		<message time="2019-04-13T21:00:19Z" type="error">
+			<text>** error: line 4135, file:/move/dataro/datatrans/ScanPlus_dataro_20190413_061033.xml: invalid article key: '010280484301513339221769'
+</text>
+		</message>
+		<message time="2019-04-13T21:00:19Z" type="error">
+			<text>** error: line 4143, file:/move/dataro/datatrans/ScanPlus_dataro_20190413_061033.xml: invalid article key: '010287500300780039221404'
+</text>
+		</message>
+		<message time="2019-04-13T21:00:19Z" type="error">
+			<text>** error: line 4154, file:/move/dataro/datatrans/ScanPlus_dataro_20190413_061033.xml: invalid article key: '01040255002147223922135'
+</text>
+		</message>
+		<message time="2019-04-13T21:00:23Z" type="error">
+			<text>** error: line 7506, file:/move/dataro/datatrans/ScanPlus_dataro_20190413_061033.xml: invalid article key: '01059413300088833922186'
+</text>
+		</message>
+		<message time="2019-04-13T21:00:24Z" type="error">
+			<text>** error: line 8885, file:/move/dataro/datatrans/ScanPlus_dataro_20190413_061033.xml: invalid article key: '01028774850036083922970'
+</text>
+		</message>
+		<message time="2019-04-13T21:00:25Z" type="error">
+			<text>** error: line 9517, file:/move/dataro/datatrans/ScanPlus_dataro_20190413_061033.xml: invalid article key: '01059414190034403922329'
+</text>
+		</message>
+		<message time="2019-04-13T21:00:25Z" type="error">
+			<text>** error: line 9817, file:/move/dataro/datatrans/ScanPlus_dataro_20190413_061033.xml: invalid article key: '01059418508420803922979'
+</text>
+		</message>
+		<message time="2019-04-13T21:01:01Z" type="information">
+			<text>finished file: ScanPlus_dataro_20190413_061033.xml</text>
+		</message>
+	</messages>
+	<statistics>
+		<input_count>11293</input_count>
+		<output_count>11286</output_count>
+		<failed>7</failed>
+		<new_article_created>166</new_article_created>
+		<variable_weight_art_records>0</variable_weight_art_records>
+		<inserted_to_pool>0</inserted_to_pool>
+		<VariableWeightArticles_created>0</VariableWeightArticles_created>
+		<VariableWeightRecords_with_wrong_value>0</VariableWeightRecords_with_wrong_value>
+		<Value_adjusted>0</Value_adjusted>
+		<loadids>
+			<loadid>3369</loadid>
+		</loadids>
+	</statistics>
+	<summary>
+		<warnings>0</warnings>
+		<errors>7</errors>
+		<end>2019-04-13T21:01:01Z</end>
+		<exitcode>2</exitcode>
+	</summary>
+</protocol>

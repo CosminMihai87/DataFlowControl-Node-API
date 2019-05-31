@@ -1,0 +1,95 @@
+		<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+		<protocol name="Datatrans" time="2019-03-29T22:00:09Z" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+			<general>
+				<start>2019-03-29T22:00:09Z</start>
+				<application>Datatrans</application>
+				<version>2.6.9088     (dt_batch-2.0.0)</version>
+				<user>dataro</user>
+				<atr_server>SYB_ATRRO</atr_server>
+				<atr_user>dataro</atr_user>
+				<atr_database>ro_admin</atr_database>
+				<input_file>ScanPlus_dataro_20190329_061051.xml</input_file>
+				<period_from>0</period_from>
+			</general>
+			<messages>
+				<message time="2019-03-29T22:00:17Z" type="error">
+					<text>** error: line 1885, file:/move/dataro/datatrans/ScanPlus_dataro_20190329_061051.xml: invalid article key: '01043371851559323922200'
+</text>
+				</message>
+				<message time="2019-03-29T22:00:17Z" type="error">
+					<text>** error: line 1961, file:/move/dataro/datatrans/ScanPlus_dataro_20190329_061051.xml: invalid article key: '01064218820023283922300'
+</text>
+				</message>
+				<message time="2019-03-29T22:00:18Z" type="error">
+					<text>** error: line 2730, file:/move/dataro/datatrans/ScanPlus_dataro_20190329_061051.xml: invalid article key: '01028580350050203922376'
+</text>
+				</message>
+				<message time="2019-03-29T22:00:18Z" type="error">
+					<text>** error: line 2731, file:/move/dataro/datatrans/ScanPlus_dataro_20190329_061051.xml: invalid article key: '01028580360050053922367'
+</text>
+				</message>
+				<message time="2019-03-29T22:00:18Z" type="error">
+					<text>** error: line 2732, file:/move/dataro/datatrans/ScanPlus_dataro_20190329_061051.xml: invalid article key: '010599642600715839221145'
+</text>
+				</message>
+				<message time="2019-03-29T22:00:20Z" type="error">
+					<text>** error: line 3688, file:/move/dataro/datatrans/ScanPlus_dataro_20190329_061051.xml: invalid article key: '01059491010002653922125'
+</text>
+				</message>
+				<message time="2019-03-29T22:00:20Z" type="error">
+					<text>** error: line 3954, file:/move/dataro/datatrans/ScanPlus_dataro_20190329_061051.xml: invalid article key: '01043371850066783922712'
+</text>
+				</message>
+				<message time="2019-03-29T22:00:20Z" type="error">
+					<text>** error: line 3955, file:/move/dataro/datatrans/ScanPlus_dataro_20190329_061051.xml: invalid article key: '01059412650104633922199'
+</text>
+				</message>
+				<message time="2019-03-29T22:00:20Z" type="error">
+					<text>** error: line 3956, file:/move/dataro/datatrans/ScanPlus_dataro_20190329_061051.xml: invalid article key: '01059418506311653922262'
+</text>
+				</message>
+				<message time="2019-03-29T22:00:24Z" type="error">
+					<text>** error: line 7861, file:/move/dataro/datatrans/ScanPlus_dataro_20190329_061051.xml: invalid article key: '01040497280034013922323'
+</text>
+				</message>
+				<message time="2019-03-29T22:00:24Z" type="error">
+					<text>** error: line 7862, file:/move/dataro/datatrans/ScanPlus_dataro_20190329_061051.xml: invalid article key: '010286669601052939221016'
+</text>
+				</message>
+				<message time="2019-03-29T22:00:24Z" type="error">
+					<text>** error: line 7863, file:/move/dataro/datatrans/ScanPlus_dataro_20190329_061051.xml: invalid article key: '01028666960097213922938'
+</text>
+				</message>
+				<message time="2019-03-29T22:00:25Z" type="error">
+					<text>** error: line 8667, file:/move/dataro/datatrans/ScanPlus_dataro_20190329_061051.xml: invalid article key: '010594905323282039221264'
+</text>
+				</message>
+				<message time="2019-03-29T22:00:25Z" type="error">
+					<text>** error: line 8777, file:/move/dataro/datatrans/ScanPlus_dataro_20190329_061051.xml: invalid article key: '01100013'
+</text>
+				</message>
+				<message time="2019-03-29T22:00:55Z" type="information">
+					<text>finished file: ScanPlus_dataro_20190329_061051.xml (PARTIAL)</text>
+				</message>
+			</messages>
+		</protocol>
+	</messages>
+	<statistics>
+		<input_count>9511</input_count>
+		<output_cnt>9497</output_cnt>
+		<failed>14</failed>
+		<new_article_created>105</new_article_created>
+		<variable_weight_art_records>0</variable_weight_art_records>
+		<inserted_to_pool>0</inserted_to_pool>
+		<VariableWeightArticles created>0</VariableWeightArticles created>
+		<VariableWeightRecords with wrong value>0</VariableWeightRecords with wrong value>
+		<Value adjusted>0</Value adjusted>
+		<loadid>3354</loadid>
+	</statistics>
+	<summary>
+		<warnings>0</warnings>
+		<errors>14</errors>
+		<end>2019-03-29T22:00:55Z</end>
+		<exitcode>2</exitcode>
+	</summary>
+</protocol>
