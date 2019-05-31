@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<protocol name="Porthos protocol" time="2019-04-09T08:03:07+2" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+  <general>
+    <start>2019-04-09T08:03:07+2</start>
+    <task>JOB 1</task>
+    <dataflow>SmartScan_RC_INFO</dataflow>
+    <application>Porthos</application>
+    <version>2.3.002</version>
+    <user>dce.PorthosAdmin.svc</user>
+    <input_file>D:\DATA\DE\Input SmartScan\*.rcinfo</input_file>
+    <output_file>D:\DATA\DE\AraMIS File\SmartScan_20190409_080307_TechnicalRC.aramis</output_file>
+    <protocol_file>D:\DATA\DE\Protocol File\SmartScan_20190409_080307_TechnicalRC.log</protocol_file>
+    <error_file>D:\DATA\DE\Error File\SmartScan_20190409_080307_TechnicalRC.error</error_file>
+  </general>
+  <messages>
+    <message time="2019-04-09T08:03:07+2" type="Information">
+      <text>2 file(s) ready for processing. </text>
+    </message>
+    <message time="2019-04-09T08:03:07+2" type="Information">
+      <text>Process 1 / 2 ('D:\DATA\DE\Input SmartScan\20190408_220215.rcinfo') </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Information">
+      <text>Process 2 / 2 ('D:\DATA\DE\Input SmartScan\20190408_220258.rcinfo') </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 454 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 453 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 452 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 451 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 450 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 449 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 448 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 447 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 446 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 445 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 444 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 443 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 442 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 441 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 440 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 439 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 438 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 437 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 436 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 435 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 434 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 433 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 432 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 431 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 430 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 429 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 428 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 427 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 426 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 425 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 424 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 423 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 422 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 421 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 420 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 419 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 418 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 417 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 416 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 415 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 414 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 413 </text>
+    </message>
+    <message time="2019-04-09T08:03:08+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 412 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 411 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 410 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 409 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 408 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 407 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 406 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 405 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 404 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 403 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 402 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 401 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 400 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 399 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 398 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 397 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 396 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 395 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 394 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 393 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 392 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 391 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 390 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 389 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 388 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 387 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 386 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 385 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 384 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 383 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 382 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 381 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 380 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 379 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 378 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 377 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 376 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 375 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 374 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 373 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 372 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 371 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 370 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 369 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 368 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 367 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 366 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 365 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 364 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 363 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 362 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 361 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 360 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 359 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 358 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 357 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 356 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 355 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 354 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 353 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 352 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 351 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 350 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 349 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 348 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 347 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 346 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 345 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 344 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 343 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 342 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 341 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 340 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 339 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 338 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 337 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 336 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 335 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 334 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 333 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 332 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 331 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 330 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 329 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 328 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 327 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 326 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 325 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 324 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 323 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 322 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 321 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 320 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 319 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 318 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 317 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 316 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 315 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 314 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 313 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 312 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 311 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 310 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 309 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 308 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 307 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 306 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 305 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 304 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 303 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 302 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 301 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 300 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 299 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 298 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 297 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 296 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 295 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 294 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 293 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 292 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 291 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 290 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 289 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 288 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 287 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 286 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 285 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 284 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 283 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 282 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 281 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 280 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 279 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 278 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 277 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 276 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 275 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 274 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 273 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 272 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 271 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 270 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 269 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 268 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 267 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 266 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 265 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 264 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 263 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 262 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 261 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 260 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 259 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 258 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 257 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 256 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 255 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 254 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 253 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 252 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 251 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 250 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 249 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 248 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 247 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 246 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 245 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 244 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 243 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 242 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 241 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 240 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 239 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 238 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 237 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 236 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 235 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 234 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 233 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 232 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 231 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 230 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 229 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 228 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 227 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 226 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 225 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 224 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 223 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 222 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 221 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 220 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 219 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 218 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 217 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 216 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 215 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 214 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 213 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 212 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 211 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 210 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 209 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 208 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 207 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 206 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 205 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 204 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 203 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 202 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 201 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 200 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 199 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 198 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 197 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 196 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 195 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 194 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 193 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 192 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 191 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 190 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 189 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 188 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 187 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 186 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 185 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 184 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 183 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 182 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 181 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 180 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 179 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 178 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 177 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 176 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 175 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 174 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 173 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 172 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 171 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 170 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 169 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 168 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 167 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 166 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 165 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 164 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 163 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 162 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 161 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 160 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 159 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 158 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 157 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 156 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 155 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 154 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 153 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 152 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 151 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 150 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 149 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 148 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 147 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 146 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 145 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 144 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 143 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 142 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 141 </text>
+    </message>
+    <message time="2019-04-09T08:03:09+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 140 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 139 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 138 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 137 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 136 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 135 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 134 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 133 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 132 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 131 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 130 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 129 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 128 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 127 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 126 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 125 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 124 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 123 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 122 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 121 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 120 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 119 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 118 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 117 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 116 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 115 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 114 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 113 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 112 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 111 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 110 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 109 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 108 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 107 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 106 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 105 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 104 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 103 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 102 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 101 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 100 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 99 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 98 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 97 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 96 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 95 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 94 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 93 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 92 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 91 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 90 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 89 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 88 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 87 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 86 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 85 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 84 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 83 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 82 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 81 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 80 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 79 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 78 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 77 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 76 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 75 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 74 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 73 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 72 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 71 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 70 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 69 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 68 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 67 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 66 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 65 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 64 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 63 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 62 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 61 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 60 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 59 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 58 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 57 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 56 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 55 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 54 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 53 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 52 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 51 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 50 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 49 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 48 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 47 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 46 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 45 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 44 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 43 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 42 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 41 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 40 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 39 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 38 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 37 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 36 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 35 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 34 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 33 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 32 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 31 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 30 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 29 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 28 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 27 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 26 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 25 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 24 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 23 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 22 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 21 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 20 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 19 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 18 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 17 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 16 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 15 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 14 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 13 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 12 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 11 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 10 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 9 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 8 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 7 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 6 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 5 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 4 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 3 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 2 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>Skipping Result: Purchase Act was skipped due to redundant occurrence. No: 1 </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Information">
+      <text>Skipping Result: 0 of 454 Purchase Acts were skipped due to their redundant occurrence (now 0 Purchase Acts). </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Information">
+      <text>Writing ARaMIS-File 'D:\DATA\DE\AraMIS File\SmartScan_20190409_080307_TechnicalRC.aramis' </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Warning">
+      <text>There are no Purchase Acts to write. ARaMIS-file will not be created. </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Information">
+      <text>Writing ReturnCode-File 'D:\DATA\DE\AraMIS File\SmartScan_20190409_080307_TechnicalRC.rc' </text>
+    </message>
+    <message time="2019-04-09T08:03:10+2" type="Information">
+      <text>Input files will be moved to folder 'D:\DATA\DE\Original Data'. </text>
+    </message>
+  </messages>
+  <statistics>
+    <input_count>454</input_count>
+    <output_count>0</output_count>
+  </statistics>
+  <summary>
+    <warnings>455</warnings>
+    <errors>0</errors>
+    <end>2019-04-09T08:03:10+2</end>
+  </summary>
+</protocol>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<protocol name="Datatrans" time="2019-04-20T21:00:08Z" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+	<general>
+		<start>2019-04-20T21:00:08Z</start>
+		<application>Datatrans</application>
+		<version>2.6.9091     (dt_batch-2.0.0)</version>
+		<user>dataro</user>
+		<atr_server>SYB_ATRRO</atr_server>
+		<atr_user>dataro</atr_user>
+		<atr_database>ro_admin</atr_database>
+		<input_file>ScanPlus_dataro_20190420_062053.xml</input_file>
+		<period_from>0</period_from>
+	</general>
+	<messages>
+		<message time="2019-04-20T21:00:20Z" type="error">
+			<text>** error: line 3161, file:/move/dataro/datatrans/ScanPlus_dataro_20190420_062053.xml: invalid article key: '01059490252006043922559'
+</text>
+		</message>
+		<message time="2019-04-20T21:00:22Z" type="error">
+			<text>** error: line 4481, file:/move/dataro/datatrans/ScanPlus_dataro_20190420_062053.xml: invalid article key: '01028797800025223922245'
+</text>
+		</message>
+		<message time="2019-04-20T21:00:26Z" type="error">
+			<text>** error: line 7559, file:/move/dataro/datatrans/ScanPlus_dataro_20190420_062053.xml: invalid article key: '01064240990015663922105'
+</text>
+		</message>
+		<message time="2019-04-20T21:01:11Z" type="information">
+			<text>finished file: ScanPlus_dataro_20190420_062053.xml</text>
+		</message>
+	</messages>
+	<statistics>
+		<input_count>11164</input_count>
+		<output_count>11161</output_count>
+		<failed>3</failed>
+		<new_article_created>153</new_article_created>
+		<variable_weight_art_records>0</variable_weight_art_records>
+		<inserted_to_pool>0</inserted_to_pool>
+		<VariableWeightArticles_created>0</VariableWeightArticles_created>
+		<VariableWeightRecords_with_wrong_value>0</VariableWeightRecords_with_wrong_value>
+		<Value_adjusted>0</Value_adjusted>
+		<loadids>
+			<loadid>3374</loadid>
+		</loadids>
+	</statistics>
+	<summary>
+		<warnings>0</warnings>
+		<errors>3</errors>
+		<end>2019-04-20T21:01:11Z</end>
+		<exitcode>2</exitcode>
+	</summary>
+</protocol>

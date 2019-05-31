@@ -1,0 +1,43 @@
+		<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+		<protocol name="Datatrans" time="2019-03-26T22:00:09Z" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+			<general>
+				<start>2019-03-26T22:00:09Z</start>
+				<application>Datatrans</application>
+				<version>2.6.9085     (dt_batch-2.0.0)</version>
+				<user>dataro</user>
+				<atr_server>SYB_ATRRO</atr_server>
+				<atr_user>dataro</atr_user>
+				<atr_database>ro_admin</atr_database>
+				<input_file>ScanPlus_dataro_20190326_062058.xml</input_file>
+				<period_from>0</period_from>
+			</general>
+			<messages>
+				<message time="2019-03-26T22:00:20Z" type="error">
+					<text>** error: line 4169, file:/move/dataro/datatrans/ScanPlus_dataro_20190326_062058.xml: invalid article key: '01043358966875063922104'
+</text>
+				</message>
+				<message time="2019-03-26T22:00:55Z" type="information">
+					<text>finished file: ScanPlus_dataro_20190326_062058.xml (PARTIAL)</text>
+				</message>
+			</messages>
+		</protocol>
+	</messages>
+	<statistics>
+		<input_count>8536</input_count>
+		<output_cnt>8535</output_cnt>
+		<failed>1</failed>
+		<new_article_created>127</new_article_created>
+		<variable_weight_art_records>0</variable_weight_art_records>
+		<inserted_to_pool>0</inserted_to_pool>
+		<VariableWeightArticles created>0</VariableWeightArticles created>
+		<VariableWeightRecords with wrong value>0</VariableWeightRecords with wrong value>
+		<Value adjusted>0</Value adjusted>
+		<loadid>3351</loadid>
+	</statistics>
+	<summary>
+		<warnings>0</warnings>
+		<errors>1</errors>
+		<end>2019-03-26T22:00:55Z</end>
+		<exitcode>2</exitcode>
+	</summary>
+</protocol>

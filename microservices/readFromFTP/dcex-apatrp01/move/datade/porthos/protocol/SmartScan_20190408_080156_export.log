@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<protocol name="Porthos protocol" time="2019-04-08T08:01:56+2" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+  <general>
+    <start>2019-04-08T08:01:56+2</start>
+    <task>JOB 1</task>
+    <dataflow>SmartScan</dataflow>
+    <application>Porthos</application>
+    <version>2.3.002</version>
+    <user>dce.PorthosAdmin.svc</user>
+    <input_file>D:\DATA\DE\Input SmartScan\original\*.xml</input_file>
+    <output_file>D:\DATA\DE\ARaMIS File\SmartScan_20190408_080156_export.aramis</output_file>
+    <protocol_file>D:\DATA\DE\Protocol File\SmartScan_20190408_080156_export.log</protocol_file>
+    <error_file>D:\DATA\DE\Error File\SmartScan_20190408_080156_export.error</error_file>
+  </general>
+  <messages>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>37 file(s) ready for processing. </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 1 / 37 ('D:\DATA\DE\Input SmartScan\original\059963_36bf79cc-6dc0-461d-a53b-fcb64_20190407_230613.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 2 / 37 ('D:\DATA\DE\Input SmartScan\original\258823_4AE9CA38-566C-4560-A0D0-531857_20190407_224922.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 3 / 37 ('D:\DATA\DE\Input SmartScan\original\259700_c275ce40-7aa6-4def-b638-df49a_20190408_051319.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 4 / 37 ('D:\DATA\DE\Input SmartScan\original\259700_c275ce40-7aa6-4def-b638-df49a_20190408_052452.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 5 / 37 ('D:\DATA\DE\Input SmartScan\original\354657_ffb09e39-6e16-46f5-861b-6131a_20190408_075433.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 6 / 37 ('D:\DATA\DE\Input SmartScan\original\365314_F384E49C-2424-4548-AD99-29C559_20190408_002110.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 7 / 37 ('D:\DATA\DE\Input SmartScan\original\462323_1715F834-B4F6-4B4D-8A34-8611ED_20190408_063555.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 8 / 37 ('D:\DATA\DE\Input SmartScan\original\462323_1715F834-B4F6-4B4D-8A34-8611ED_20190408_063620.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 9 / 37 ('D:\DATA\DE\Input SmartScan\original\489918_ed602488-d37e-4ef3-83d0-41fc3_20190408_052910.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 10 / 37 ('D:\DATA\DE\Input SmartScan\original\489918_ed602488-d37e-4ef3-83d0-41fc3_20190408_053010.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 11 / 37 ('D:\DATA\DE\Input SmartScan\original\490918_f557c4cc-82af-4c48-bc93-9003f_20190407_221242.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 12 / 37 ('D:\DATA\DE\Input SmartScan\original\490918_f557c4cc-82af-4c48-bc93-9003f_20190407_221347.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 13 / 37 ('D:\DATA\DE\Input SmartScan\original\493457_2cf76573-23cc-4e04-9c8e-85e0a_20190408_073916.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 14 / 37 ('D:\DATA\DE\Input SmartScan\original\493609_E0EAFBCB-24DA-4386-9C20-1873F9_20190407_230646.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 15 / 37 ('D:\DATA\DE\Input SmartScan\original\493609_E0EAFBCB-24DA-4386-9C20-1873F9_20190407_230727.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 16 / 37 ('D:\DATA\DE\Input SmartScan\original\493652_57d24794-6b11-4386-beb8-1bf33_20190407_220316.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:56+2" type="Information">
+      <text>Process 17 / 37 ('D:\DATA\DE\Input SmartScan\original\493652_57d24794-6b11-4386-beb8-1bf33_20190407_221133.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:57+2" type="Information">
+      <text>Process 18 / 37 ('D:\DATA\DE\Input SmartScan\original\493652_57d24794-6b11-4386-beb8-1bf33_20190407_221434.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:57+2" type="Information">
+      <text>Process 19 / 37 ('D:\DATA\DE\Input SmartScan\original\493652_57d24794-6b11-4386-beb8-1bf33_20190407_223116.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:57+2" type="Information">
+      <text>Process 20 / 37 ('D:\DATA\DE\Input SmartScan\original\493652_57d24794-6b11-4386-beb8-1bf33_20190407_223313.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:57+2" type="Information">
+      <text>Process 21 / 37 ('D:\DATA\DE\Input SmartScan\original\493652_57d24794-6b11-4386-beb8-1bf33_20190407_223525.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:57+2" type="Information">
+      <text>Process 22 / 37 ('D:\DATA\DE\Input SmartScan\original\493652_57d24794-6b11-4386-beb8-1bf33_20190407_223657.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:57+2" type="Information">
+      <text>Process 23 / 37 ('D:\DATA\DE\Input SmartScan\original\493652_57d24794-6b11-4386-beb8-1bf33_20190407_223809.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:57+2" type="Information">
+      <text>Process 24 / 37 ('D:\DATA\DE\Input SmartScan\original\495306_b204e426-2c5a-4e5a-b0d4-f91fa_20190407_223128.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:57+2" type="Information">
+      <text>Process 25 / 37 ('D:\DATA\DE\Input SmartScan\original\495306_b204e426-2c5a-4e5a-b0d4-f91fa_20190407_223226.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:57+2" type="Information">
+      <text>Process 26 / 37 ('D:\DATA\DE\Input SmartScan\original\498063_134e9e6f-a3e5-43c9-afdd-d48fe_20190407_224301.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:57+2" type="Information">
+      <text>Process 27 / 37 ('D:\DATA\DE\Input SmartScan\original\499384_5CA815D9-5AEF-403A-BBA5-8D7B1D_20190408_075353.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:58+2" type="Information">
+      <text>Process 28 / 37 ('D:\DATA\DE\Input SmartScan\original\808776_2D6406CB-0D1E-4BD3-BEAD-434E30_20190408_075036.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:58+2" type="Information">
+      <text>Process 29 / 37 ('D:\DATA\DE\Input SmartScan\original\968892_dc74e1a4-4a36-497c-8a20-f6478_20190408_074418.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:58+2" type="Information">
+      <text>Process 30 / 37 ('D:\DATA\DE\Input SmartScan\original\968892_dc74e1a4-4a36-497c-8a20-f6478_20190408_074439.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:59+2" type="Information">
+      <text>Process 31 / 37 ('D:\DATA\DE\Input SmartScan\original\971180_eac901da-2731-48f0-8b38-22c17_20190407_222506.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:59+2" type="Information">
+      <text>Process 32 / 37 ('D:\DATA\DE\Input SmartScan\original\971180_eac901da-2731-48f0-8b38-22c17_20190407_223128.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:59+2" type="Information">
+      <text>Process 33 / 37 ('D:\DATA\DE\Input SmartScan\original\971180_eac901da-2731-48f0-8b38-22c17_20190407_223211.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:59+2" type="Information">
+      <text>Process 34 / 37 ('D:\DATA\DE\Input SmartScan\original\971180_eac901da-2731-48f0-8b38-22c17_20190407_223544.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:59+2" type="Information">
+      <text>Process 35 / 37 ('D:\DATA\DE\Input SmartScan\original\976869_41efe7ae-fcc6-4edc-b9ea-4fe47_20190408_072146.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:59+2" type="Information">
+      <text>Process 36 / 37 ('D:\DATA\DE\Input SmartScan\original\988950_F35BCDDD-2EE2-4A64-A86C-CD4FDA_20190408_001027.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:59+2" type="Information">
+      <text>Process 37 / 37 ('D:\DATA\DE\Input SmartScan\original\988950_F35BCDDD-2EE2-4A64-A86C-CD4FDA_20190408_002007.xml') </text>
+    </message>
+    <message time="2019-04-08T08:02:00+2" type="Information">
+      <text>Writing ARaMIS-File 'D:\DATA\DE\ARaMIS File\SmartScan_20190408_080156_export.aramis' </text>
+    </message>
+    <message time="2019-04-08T08:02:00+2" type="Information">
+      <text>Writing ReturnCode-File 'D:\DATA\DE\ARaMIS File\SmartScan_20190408_080156_export.rc' </text>
+    </message>
+    <message time="2019-04-08T08:02:00+2" type="Information">
+      <text>Input files will be copied to folder 'D:\DATA\DE\Original Data'. </text>
+    </message>
+  </messages>
+  <statistics>
+    <input_count>141</input_count>
+    <output_count>178</output_count>
+  </statistics>
+  <summary>
+    <warnings>16277</warnings>
+    <errors>0</errors>
+    <end>2019-04-08T08:02:00+2</end>
+  </summary>
+</protocol>

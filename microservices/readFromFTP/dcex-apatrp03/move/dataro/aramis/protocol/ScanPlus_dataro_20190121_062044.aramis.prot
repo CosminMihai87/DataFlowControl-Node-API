@@ -1,0 +1,44 @@
+---------------------------------------------------------
+starting ARaMIS (version 3.00.3319) at 2019-01-21 06:30:21
+---------------------------------------------------------
+DB Environment:
+---------------------------------------------------------
+DBUser:   dataro
+DBPass:   *******
+DBServer: SYB_ATRRO
+DB:       ro_admin
+=========================================================
+parameter:
+---------------------------------------------------------
+input file:  /move/dataro/aramis/work/ScanPlus_dataro_20190121_062044.aramis
+output file: /move/dataro/datatrans/ScanPlus_dataro_20190121_062044.xml
+protocol file: /move/dataro/aramis/protocol/ScanPlus_dataro_20190121_062044.aramis.prot
+error file: /move/dataro/aramis/error/ScanPlus_dataro_20190121_062044.aramis.err
+=========================================================
+ERROR BEGIN
+Code Error: Unknown CP Value
+Line	PurchactId	Cp Version Code	CP Entry Code	CP Feature	CP Value
+304042	846	A	wine	pack	Unpacked
+
+
+
+ERROR END
+WARNING BEGIN
+
+WARNING END
+INFO BEGIN
+
+INFO END
+Summary:
+-------------
+Errors:1
+Warnings:0
+Purchacts total:1682
+Articles total:11662
+Number of processed purchacts:1682
+Number of processed movement records:11661
+Records processed:11661
+Number of faulty purchacts:0
+Number of faulty movement records:1
+
+finished at: 2019-01-21 06:33:27

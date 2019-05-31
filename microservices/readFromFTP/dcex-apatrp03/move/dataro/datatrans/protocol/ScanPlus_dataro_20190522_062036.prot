@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<protocol name="Datatrans" time="2019-05-22T21:00:19Z" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+	<general>
+		<start>2019-05-22T21:00:19Z</start>
+		<application>Datatrans</application>
+		<version>2.6.9091     (dt_batch-2.0.0)</version>
+		<user>dataro</user>
+		<atr_server>SYB_ATRRO</atr_server>
+		<atr_user>dataro</atr_user>
+		<atr_database>ro_admin</atr_database>
+		<input_file>ScanPlus_dataro_20190522_062036.xml</input_file>
+		<period_from>0</period_from>
+	</general>
+	<messages>
+		<message time="2019-05-22T21:00:29Z" type="error">
+			<text>** error: line 1525, file:/move/dataro/datatrans/ScanPlus_dataro_20190522_062036.xml: invalid article key: '01059411734021213922210'
+</text>
+		</message>
+		<message time="2019-05-22T21:00:29Z" type="error">
+			<text>** error: line 1528, file:/move/dataro/datatrans/ScanPlus_dataro_20190522_062036.xml: invalid article key: '01059412650113163922296'
+</text>
+		</message>
+		<message time="2019-05-22T21:00:29Z" type="error">
+			<text>** error: line 1529, file:/move/dataro/datatrans/ScanPlus_dataro_20190522_062036.xml: invalid article key: '01059418505336293922255'
+</text>
+		</message>
+		<message time="2019-05-22T21:00:29Z" type="error">
+			<text>** error: line 1530, file:/move/dataro/datatrans/ScanPlus_dataro_20190522_062036.xml: invalid article key: '01043371854758253922450'
+</text>
+		</message>
+		<message time="2019-05-22T21:00:44Z" type="error">
+			<text>** error: line 5886, file:/move/dataro/datatrans/ScanPlus_dataro_20190522_062036.xml: invalid article key: '0164262823500176'
+</text>
+		</message>
+		<message time="2019-05-22T21:00:48Z" type="error">
+			<text>** error: line 7616, file:/move/dataro/datatrans/ScanPlus_dataro_20190522_062036.xml: invalid article key: '01059414850072123922450'
+</text>
+		</message>
+		<message time="2019-05-22T21:00:49Z" type="error">
+			<text>** error: line 7620, file:/move/dataro/datatrans/ScanPlus_dataro_20190522_062036.xml: invalid article key: '01059414850072123922450'
+</text>
+		</message>
+		<message time="2019-05-22T21:00:49Z" type="error">
+			<text>** error: line 7626, file:/move/dataro/datatrans/ScanPlus_dataro_20190522_062036.xml: invalid article key: '0100000025007633392242'
+</text>
+		</message>
+		<message time="2019-05-22T21:00:49Z" type="error">
+			<text>** error: line 7965, file:/move/dataro/datatrans/ScanPlus_dataro_20190522_062036.xml: invalid article key: '01052021780819413922664'
+</text>
+		</message>
+		<message time="2019-05-22T21:00:50Z" type="error">
+			<text>** error: line 8014, file:/move/dataro/datatrans/ScanPlus_dataro_20190522_062036.xml: invalid article key: '01064201030240403922140'
+</text>
+		</message>
+		<message time="2019-05-22T21:01:54Z" type="information">
+			<text>finished file: ScanPlus_dataro_20190522_062036.xml</text>
+		</message>
+	</messages>
+	<statistics>
+		<input_count>8553</input_count>
+		<output_count>8543</output_count>
+		<failed>10</failed>
+		<new_article_created>94</new_article_created>
+		<variable_weight_art_records>0</variable_weight_art_records>
+		<inserted_to_pool>0</inserted_to_pool>
+		<VariableWeightArticles_created>0</VariableWeightArticles_created>
+		<VariableWeightRecords_with_wrong_value>0</VariableWeightRecords_with_wrong_value>
+		<Value_adjusted>0</Value_adjusted>
+		<loadids>
+			<loadid>3406</loadid>
+		</loadids>
+	</statistics>
+	<summary>
+		<warnings>0</warnings>
+		<errors>10</errors>
+		<end>2019-05-22T21:01:54Z</end>
+		<exitcode>2</exitcode>
+	</summary>
+</protocol>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<protocol name="Porthos protocol" time="2019-04-09T10:45:27+2" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+  <general>
+    <start>2019-04-09T10:45:27+2</start>
+    <task>JOB 1</task>
+    <dataflow>Textile_DE_RC_CODE</dataflow>
+    <application>Porthos</application>
+    <version>2.3.002</version>
+    <user>dce.PorthosAdmin.svc</user>
+    <input_file>D:\DATA\DE\Input Textile\*.xml</input_file>
+    <output_file>D:\DATA\DE\ARaMIS File\Textile_20190409_104527_ecpo.aramis</output_file>
+    <protocol_file>D:\DATA\DE\Protocol File\Textile_20190409_104527_ecpo.log</protocol_file>
+    <error_file>D:\DATA\DE\Error File\Textile_20190409_104527_ecpo.error</error_file>
+  </general>
+  <messages>
+    <message time="2019-04-09T10:45:27+2" type="Information">
+      <text>1 file(s) ready for processing. </text>
+    </message>
+    <message time="2019-04-09T10:45:27+2" type="Information">
+      <text>Process 1 / 1 ('D:\DATA\DE\Input Textile\Textil_Unprocessed_20190409_025917.xml') </text>
+    </message>
+    <message time="2019-04-09T10:45:30+2" type="Information">
+      <text>Grouping Result: 930 Purchase Acts were joined to 0 Purchase Acts. </text>
+    </message>
+    <message time="2019-04-09T10:45:30+2" type="Information">
+      <text>Writing ARaMIS-File 'D:\DATA\DE\ARaMIS File\Textile_20190409_104527_ecpo.aramis' </text>
+    </message>
+    <message time="2019-04-09T10:45:30+2" type="Warning">
+      <text>There are no Purchase Acts to write. ARaMIS-file will not be created. </text>
+    </message>
+    <message time="2019-04-09T10:45:30+2" type="Information">
+      <text>Writing ReturnCode-File 'D:\DATA\DE\ARaMIS File\Textile_20190409_104527_ecpo.rc' </text>
+    </message>
+    <message time="2019-04-09T10:45:30+2" type="Information">
+      <text>Input files will be moved to folder 'D:\DATA\DE\Original Data Textile'. </text>
+    </message>
+  </messages>
+  <statistics>
+    <input_count>930</input_count>
+    <output_count>0</output_count>
+  </statistics>
+  <summary>
+    <warnings>1</warnings>
+    <errors>0</errors>
+    <end>2019-04-09T10:45:31+2</end>
+  </summary>
+</protocol>

@@ -1,0 +1,43 @@
+---------------------------------------------------------
+starting ARaMIS (version 3.00.3319) at 2019-01-25 08:45:23
+---------------------------------------------------------
+DB Environment:
+---------------------------------------------------------
+DBUser:   dataro
+DBPass:   *******
+DBServer: SYB_ATRRO
+DB:       ro_admin
+=========================================================
+parameter:
+---------------------------------------------------------
+input file:  /move/dataro/aramis/work/ScanPlus_dataro_20190125_083710.aramis
+output file: /move/dataro/datatrans/ScanPlus_dataro_20190125_083710.xml
+protocol file: /move/dataro/aramis/protocol/ScanPlus_dataro_20190125_083710.aramis.prot
+error file: /move/dataro/aramis/error/ScanPlus_dataro_20190125_083710.aramis.err
+=========================================================
+ERROR BEGIN
+Unknown CP Entry Code
+Line	PurchactId	CP Entry Code
+343485	1041	C4&00877
+
+
+ERROR END
+WARNING BEGIN
+
+WARNING END
+INFO BEGIN
+
+INFO END
+Summary:
+-------------
+Errors:1
+Warnings:0
+Purchacts total:3245
+Articles total:20995
+Number of processed purchacts:3245
+Number of processed movement records:20994
+Records processed:20994
+Number of faulty purchacts:0
+Number of faulty movement records:1
+
+finished at: 2019-01-25 08:49:52

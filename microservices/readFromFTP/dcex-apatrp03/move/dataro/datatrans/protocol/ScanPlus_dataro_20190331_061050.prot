@@ -1,0 +1,51 @@
+		<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+		<protocol name="Datatrans" time="2019-03-31T21:00:09Z" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+			<general>
+				<start>2019-03-31T21:00:09Z</start>
+				<application>Datatrans</application>
+				<version>2.6.9088     (dt_batch-2.0.0)</version>
+				<user>dataro</user>
+				<atr_server>SYB_ATRRO</atr_server>
+				<atr_user>dataro</atr_user>
+				<atr_database>ro_admin</atr_database>
+				<input_file>ScanPlus_dataro_20190331_061050.xml</input_file>
+				<period_from>0</period_from>
+			</general>
+			<messages>
+				<message time="2019-03-31T21:00:18Z" type="error">
+					<text>** error: line 3055, file:/move/dataro/datatrans/ScanPlus_dataro_20190331_061050.xml: invalid article key: '04700005'
+</text>
+				</message>
+				<message time="2019-03-31T21:00:21Z" type="error">
+					<text>** error: line 5056, file:/move/dataro/datatrans/ScanPlus_dataro_20190331_061050.xml: invalid article key: '01080025800003663922470'
+</text>
+				</message>
+				<message time="2019-03-31T21:00:26Z" type="error">
+					<text>** error: line 8600, file:/move/dataro/datatrans/ScanPlus_dataro_20190331_061050.xml: invalid article key: '01032280231100573922391'
+</text>
+				</message>
+				<message time="2019-03-31T21:00:58Z" type="information">
+					<text>finished file: ScanPlus_dataro_20190331_061050.xml (PARTIAL)</text>
+				</message>
+			</messages>
+		</protocol>
+	</messages>
+	<statistics>
+		<input_count>10123</input_count>
+		<output_cnt>10120</output_cnt>
+		<failed>3</failed>
+		<new_article_created>133</new_article_created>
+		<variable_weight_art_records>0</variable_weight_art_records>
+		<inserted_to_pool>0</inserted_to_pool>
+		<VariableWeightArticles created>0</VariableWeightArticles created>
+		<VariableWeightRecords with wrong value>0</VariableWeightRecords with wrong value>
+		<Value adjusted>0</Value adjusted>
+		<loadid>3356</loadid>
+	</statistics>
+	<summary>
+		<warnings>0</warnings>
+		<errors>3</errors>
+		<end>2019-03-31T21:00:58Z</end>
+		<exitcode>2</exitcode>
+	</summary>
+</protocol>

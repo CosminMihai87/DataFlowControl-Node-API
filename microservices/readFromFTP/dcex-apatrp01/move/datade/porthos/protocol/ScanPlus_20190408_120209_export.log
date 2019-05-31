@@ -1,0 +1,2969 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<protocol name="Porthos protocol" time="2019-04-08T12:02:09+2" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+  <general>
+    <start>2019-04-08T12:02:09+2</start>
+    <task>JOB 1</task>
+    <dataflow>ScanPlus</dataflow>
+    <application>Porthos</application>
+    <version>2.3.002</version>
+    <user>dce.PorthosAdmin.svc</user>
+    <input_file>D:\DATA\DE\Original Data Temp\*.xml</input_file>
+    <output_file>D:\DATA\DE\ARaMIS File\ScanPlus_20190408_120209_export.aramis</output_file>
+    <protocol_file>D:\DATA\DE\Protocol File\ScanPlus_20190408_120209_export.log</protocol_file>
+    <error_file>D:\DATA\DE\Error File\ScanPlus_20190408_120209_export.error</error_file>
+  </general>
+  <messages>
+    <message time="2019-04-08T12:02:09+2" type="Information">
+      <text>852 file(s) ready for processing. </text>
+    </message>
+    <message time="2019-04-08T12:02:09+2" type="Information">
+      <text>Process 1 / 852 ('D:\DATA\DE\Original Data Temp\002490_Z127771_20190408_101800.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:10+2" type="Information">
+      <text>Process 2 / 852 ('D:\DATA\DE\Original Data Temp\003282_Z101229_20190408_104326.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:10+2" type="Information">
+      <text>Process 3 / 852 ('D:\DATA\DE\Original Data Temp\006466_Z119764_20190408_091851.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:10+2" type="Information">
+      <text>Process 4 / 852 ('D:\DATA\DE\Original Data Temp\006466_Z119764_20190408_104014.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:10+2" type="Information">
+      <text>Process 5 / 852 ('D:\DATA\DE\Original Data Temp\044007_Z127395_20190408_114543.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:10+2" type="Information">
+      <text>Process 6 / 852 ('D:\DATA\DE\Original Data Temp\066644_Z127102_20190408_102137.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:10+2" type="Information">
+      <text>Process 7 / 852 ('D:\DATA\DE\Original Data Temp\068750_Z106939_20190408_102008.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:10+2" type="Information">
+      <text>Process 8 / 852 ('D:\DATA\DE\Original Data Temp\073988_Z121559_20190408_100705.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:11+2" type="Information">
+      <text>Process 9 / 852 ('D:\DATA\DE\Original Data Temp\078791_Z128260_20190408_101116.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:11+2" type="Information">
+      <text>Process 10 / 852 ('D:\DATA\DE\Original Data Temp\083434_Z115378_20190408_095238.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:11+2" type="Information">
+      <text>Process 11 / 852 ('D:\DATA\DE\Original Data Temp\084977_Z150203_20190408_090143.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:11+2" type="Information">
+      <text>Process 12 / 852 ('D:\DATA\DE\Original Data Temp\089844_Z128585_20190408_103412.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:11+2" type="Information">
+      <text>Process 13 / 852 ('D:\DATA\DE\Original Data Temp\100381_Z115900_20190408_111502.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:11+2" type="Information">
+      <text>Process 14 / 852 ('D:\DATA\DE\Original Data Temp\100442_Z106724_20190408_111145.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:11+2" type="Information">
+      <text>Process 15 / 852 ('D:\DATA\DE\Original Data Temp\100452_Z101661_20190408_081308.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:11+2" type="Information">
+      <text>Process 16 / 852 ('D:\DATA\DE\Original Data Temp\100569_Z126841_20190408_080428.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:11+2" type="Information">
+      <text>Process 17 / 852 ('D:\DATA\DE\Original Data Temp\100569_Z126841_20190408_081639.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:11+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\100569_Z126841_20190408_081639.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:11+2" type="Information">
+      <text>Process 18 / 852 ('D:\DATA\DE\Original Data Temp\100569_Z126841_20190408_114742.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:11+2" type="Information">
+      <text>Process 19 / 852 ('D:\DATA\DE\Original Data Temp\100593_Z1200522_20190408_110301.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:11+2" type="Information">
+      <text>Process 20 / 852 ('D:\DATA\DE\Original Data Temp\100644_Z112731_20190408_113410.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:12+2" type="Information">
+      <text>Process 21 / 852 ('D:\DATA\DE\Original Data Temp\100734_Z121322_20190408_111709.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:12+2" type="Information">
+      <text>Process 22 / 852 ('D:\DATA\DE\Original Data Temp\100756_Z112972_20190408_103223.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:13+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\100756_Z112972_20190408_103223.xml' rawid '2410')</text>
+    </message>
+    <message time="2019-04-08T12:02:13+2" type="Information">
+      <text>Process 23 / 852 ('D:\DATA\DE\Original Data Temp\100797_Z150055_20190408_112150.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:13+2" type="Information">
+      <text>Process 24 / 852 ('D:\DATA\DE\Original Data Temp\100952_Z100928_20190408_114430.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:13+2" type="Information">
+      <text>Process 25 / 852 ('D:\DATA\DE\Original Data Temp\100955_Z150673_20190408_110018.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:13+2" type="Information">
+      <text>Process 26 / 852 ('D:\DATA\DE\Original Data Temp\101020_Z121984_20190408_082510.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:13+2" type="Information">
+      <text>Process 27 / 852 ('D:\DATA\DE\Original Data Temp\101168_Z128487_20190408_113735.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:13+2" type="Information">
+      <text>Process 28 / 852 ('D:\DATA\DE\Original Data Temp\101194_Z123218_20190408_090509.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:13+2" type="Information">
+      <text>Process 29 / 852 ('D:\DATA\DE\Original Data Temp\101217_Z119101_20190408_111822.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:13+2" type="Information">
+      <text>Process 30 / 852 ('D:\DATA\DE\Original Data Temp\101420_Z126447_20190408_102638.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:14+2" type="Information">
+      <text>Process 31 / 852 ('D:\DATA\DE\Original Data Temp\101482_Z127913_20190408_112409.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:14+2" type="Information">
+      <text>Process 32 / 852 ('D:\DATA\DE\Original Data Temp\101486_Z105394_20190408_103249.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:14+2" type="Information">
+      <text>Process 33 / 852 ('D:\DATA\DE\Original Data Temp\101564_Z127700_20190408_095556.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:14+2" type="Information">
+      <text>Process 34 / 852 ('D:\DATA\DE\Original Data Temp\101596_Z127644_20190408_094321.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:14+2" type="Information">
+      <text>Process 35 / 852 ('D:\DATA\DE\Original Data Temp\101715_Z131409_20190408_105109.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:14+2" type="Information">
+      <text>Process 36 / 852 ('D:\DATA\DE\Original Data Temp\101716_Z104553_20190408_115626.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:14+2" type="Information">
+      <text>Process 37 / 852 ('D:\DATA\DE\Original Data Temp\102114_Z130532_20190408_113910.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:15+2" type="Information">
+      <text>Process 38 / 852 ('D:\DATA\DE\Original Data Temp\102192_Z127779_20190408_111949.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:15+2" type="Information">
+      <text>Process 39 / 852 ('D:\DATA\DE\Original Data Temp\102478_Z122883_20190408_113627.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:15+2" type="Information">
+      <text>Process 40 / 852 ('D:\DATA\DE\Original Data Temp\102690_Z127642_20190408_114814.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:15+2" type="Information">
+      <text>Process 41 / 852 ('D:\DATA\DE\Original Data Temp\102717_Z112952_20190408_083056.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:15+2" type="Information">
+      <text>Process 42 / 852 ('D:\DATA\DE\Original Data Temp\102762_Z122028_20190408_115848.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:15+2" type="Information">
+      <text>Process 43 / 852 ('D:\DATA\DE\Original Data Temp\102781_Z1000276_20190408_100812.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:15+2" type="Information">
+      <text>Process 44 / 852 ('D:\DATA\DE\Original Data Temp\103107_Z124754_20190408_095122.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:15+2" type="Information">
+      <text>Process 45 / 852 ('D:\DATA\DE\Original Data Temp\103107_Z124754_20190408_111116.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:15+2" type="Information">
+      <text>Process 46 / 852 ('D:\DATA\DE\Original Data Temp\103218_Z125277_20190408_105159.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:16+2" type="Information">
+      <text>Process 47 / 852 ('D:\DATA\DE\Original Data Temp\103231_Z125721_20190408_104508.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:16+2" type="Information">
+      <text>Process 48 / 852 ('D:\DATA\DE\Original Data Temp\103317_Z103728_20190408_090720.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:16+2" type="Information">
+      <text>Process 49 / 852 ('D:\DATA\DE\Original Data Temp\103373_Z111225_20190408_105700.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:16+2" type="Information">
+      <text>Process 50 / 852 ('D:\DATA\DE\Original Data Temp\103391_Z110955_20190408_113310.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:16+2" type="Information">
+      <text>Process 51 / 852 ('D:\DATA\DE\Original Data Temp\103421_Z128556_20190408_104321.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:16+2" type="Information">
+      <text>Process 52 / 852 ('D:\DATA\DE\Original Data Temp\103431_Z112747_20190408_104342.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:16+2" type="Information">
+      <text>Process 53 / 852 ('D:\DATA\DE\Original Data Temp\103837_Z127811_20190408_114510.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:16+2" type="Information">
+      <text>Process 54 / 852 ('D:\DATA\DE\Original Data Temp\103884_Z128082_20190408_115455.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:17+2" type="Information">
+      <text>Process 55 / 852 ('D:\DATA\DE\Original Data Temp\103898_Z103996_20190408_112833.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:17+2" type="Information">
+      <text>Process 56 / 852 ('D:\DATA\DE\Original Data Temp\103961_Z111500_20190408_101637.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:17+2" type="Information">
+      <text>Process 57 / 852 ('D:\DATA\DE\Original Data Temp\104004_Z126642_20190408_111733.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:17+2" type="Information">
+      <text>Process 58 / 852 ('D:\DATA\DE\Original Data Temp\104132_Z128072_20190408_095805.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:17+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\104132_Z128072_20190408_095805.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:17+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\104132_Z128072_20190408_095805.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:17+2" type="Information">
+      <text>Process 59 / 852 ('D:\DATA\DE\Original Data Temp\104181_Z123211_20190408_112151.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:17+2" type="Information">
+      <text>Process 60 / 852 ('D:\DATA\DE\Original Data Temp\104200_Z122735_20190408_115750.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:17+2" type="Information">
+      <text>Process 61 / 852 ('D:\DATA\DE\Original Data Temp\104214_Z122243_20190408_111441.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:17+2" type="Information">
+      <text>Process 62 / 852 ('D:\DATA\DE\Original Data Temp\104313_Z102103_20190408_095313.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:17+2" type="Information">
+      <text>Process 63 / 852 ('D:\DATA\DE\Original Data Temp\104500_Z119595_20190408_105705.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:18+2" type="Information">
+      <text>Process 64 / 852 ('D:\DATA\DE\Original Data Temp\104807_Z104707_20190408_110534.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:18+2" type="Information">
+      <text>Process 65 / 852 ('D:\DATA\DE\Original Data Temp\105165_Z122512_20190408_104752.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:18+2" type="Information">
+      <text>Process 66 / 852 ('D:\DATA\DE\Original Data Temp\105186_Z119633_20190408_095240.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:18+2" type="Information">
+      <text>Process 67 / 852 ('D:\DATA\DE\Original Data Temp\105331_Z126878_20190408_113716.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:18+2" type="Information">
+      <text>Process 68 / 852 ('D:\DATA\DE\Original Data Temp\105383_Z102091_20190408_091810.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:18+2" type="Information">
+      <text>Process 69 / 852 ('D:\DATA\DE\Original Data Temp\105465_Z125726_20190408_115543.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:18+2" type="Information">
+      <text>Process 70 / 852 ('D:\DATA\DE\Original Data Temp\105492_Z119745_20190408_083052.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:18+2" type="Information">
+      <text>Process 71 / 852 ('D:\DATA\DE\Original Data Temp\105492_Z119745_20190408_114538.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:19+2" type="Information">
+      <text>Process 72 / 852 ('D:\DATA\DE\Original Data Temp\105527_Z112627_20190408_104210.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:19+2" type="Information">
+      <text>Process 73 / 852 ('D:\DATA\DE\Original Data Temp\105539_Z112808_20190408_093313.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:19+2" type="Information">
+      <text>Process 74 / 852 ('D:\DATA\DE\Original Data Temp\105645_Z127945_20190408_102257.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:19+2" type="Information">
+      <text>Process 75 / 852 ('D:\DATA\DE\Original Data Temp\105718_Z104867_20190408_082756.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:19+2" type="Information">
+      <text>Process 76 / 852 ('D:\DATA\DE\Original Data Temp\105770_Z101784_20190408_113521.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:19+2" type="Information">
+      <text>Process 77 / 852 ('D:\DATA\DE\Original Data Temp\105774_Z102044_20190408_103414.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:19+2" type="Information">
+      <text>Process 78 / 852 ('D:\DATA\DE\Original Data Temp\105833_Z106915_20190408_115425.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:19+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\105833_Z106915_20190408_115425.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:19+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\105833_Z106915_20190408_115425.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:19+2" type="Information">
+      <text>Process 79 / 852 ('D:\DATA\DE\Original Data Temp\105904_Z101409_20190408_092205.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:19+2" type="Information">
+      <text>Process 80 / 852 ('D:\DATA\DE\Original Data Temp\106001_Z121781_20190408_095036.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:19+2" type="Information">
+      <text>Process 81 / 852 ('D:\DATA\DE\Original Data Temp\106040_Z101414_20190408_100004.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:19+2" type="Information">
+      <text>Process 82 / 852 ('D:\DATA\DE\Original Data Temp\106049_Z112287_20190408_114655.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:20+2" type="Information">
+      <text>Process 83 / 852 ('D:\DATA\DE\Original Data Temp\106154_Z113017_20190408_115057.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:20+2" type="Information">
+      <text>Process 84 / 852 ('D:\DATA\DE\Original Data Temp\106202_Z122522_20190408_115008.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:20+2" type="Information">
+      <text>Process 85 / 852 ('D:\DATA\DE\Original Data Temp\106367_Z127805_20190408_114239.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:20+2" type="Information">
+      <text>Process 86 / 852 ('D:\DATA\DE\Original Data Temp\106526_Z121883_20190408_104403.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:20+2" type="Information">
+      <text>Process 87 / 852 ('D:\DATA\DE\Original Data Temp\106526_Z121883_20190408_115146.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:20+2" type="Information">
+      <text>Process 88 / 852 ('D:\DATA\DE\Original Data Temp\106547_Z122200_20190408_092306.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:21+2" type="Information">
+      <text>Process 89 / 852 ('D:\DATA\DE\Original Data Temp\106737_Z121019_20190408_115934.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:21+2" type="Information">
+      <text>Process 90 / 852 ('D:\DATA\DE\Original Data Temp\106768_Z101596_20190408_104516.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:21+2" type="Information">
+      <text>Process 91 / 852 ('D:\DATA\DE\Original Data Temp\106770_Z150323_20190408_104115.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:21+2" type="Information">
+      <text>Process 92 / 852 ('D:\DATA\DE\Original Data Temp\107314_Z1200525_20190408_114228.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:21+2" type="Information">
+      <text>Process 93 / 852 ('D:\DATA\DE\Original Data Temp\107519_Z128322_20190408_103908.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:21+2" type="Information">
+      <text>Process 94 / 852 ('D:\DATA\DE\Original Data Temp\107662_Z101579_20190408_101437.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:21+2" type="Information">
+      <text>Process 95 / 852 ('D:\DATA\DE\Original Data Temp\108144_Z127597_20190408_111748.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:21+2" type="Information">
+      <text>Process 96 / 852 ('D:\DATA\DE\Original Data Temp\108647_Z105592_20190408_104805.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:22+2" type="Information">
+      <text>Process 97 / 852 ('D:\DATA\DE\Original Data Temp\108677_Z1000069_20190408_095644.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:22+2" type="Information">
+      <text>Process 98 / 852 ('D:\DATA\DE\Original Data Temp\108756_Z103983_20190408_111855.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:22+2" type="Information">
+      <text>Process 99 / 852 ('D:\DATA\DE\Original Data Temp\108841_Z101570_20190408_114525.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:22+2" type="Information">
+      <text>Process 100 / 852 ('D:\DATA\DE\Original Data Temp\108890_Z127251_20190408_095801.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:22+2" type="Information">
+      <text>Process 101 / 852 ('D:\DATA\DE\Original Data Temp\108906_Z104118_20190408_094436.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:22+2" type="Information">
+      <text>Process 102 / 852 ('D:\DATA\DE\Original Data Temp\109016_Z105150_20190408_095322.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:22+2" type="Information">
+      <text>Process 103 / 852 ('D:\DATA\DE\Original Data Temp\109119_Z122456_20190408_103951.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:22+2" type="Information">
+      <text>Process 104 / 852 ('D:\DATA\DE\Original Data Temp\109482_Z150318_20190408_115446.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:22+2" type="Information">
+      <text>Process 105 / 852 ('D:\DATA\DE\Original Data Temp\109574_Z129145_20190408_113449.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:22+2" type="Information">
+      <text>Process 106 / 852 ('D:\DATA\DE\Original Data Temp\109665_Z122135_20190408_092816.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:23+2" type="Information">
+      <text>Process 107 / 852 ('D:\DATA\DE\Original Data Temp\109938_Z112720_20190408_115141.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:23+2" type="Information">
+      <text>Process 108 / 852 ('D:\DATA\DE\Original Data Temp\110801_Z113370_20190408_102013.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:23+2" type="Information">
+      <text>Process 109 / 852 ('D:\DATA\DE\Original Data Temp\110895_Z127248_20190408_115911.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:23+2" type="Information">
+      <text>Process 110 / 852 ('D:\DATA\DE\Original Data Temp\111476_Z129087_20190408_114527.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:23+2" type="Information">
+      <text>Process 111 / 852 ('D:\DATA\DE\Original Data Temp\111582_Z122485_20190408_092907.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:23+2" type="Information">
+      <text>Process 112 / 852 ('D:\DATA\DE\Original Data Temp\111809_Z128965_20190408_115416.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:23+2" type="Information">
+      <text>Process 113 / 852 ('D:\DATA\DE\Original Data Temp\111886_Z104761_20190408_101202.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:23+2" type="Information">
+      <text>Process 114 / 852 ('D:\DATA\DE\Original Data Temp\111923_Z119771_20190408_104641.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:23+2" type="Information">
+      <text>Process 115 / 852 ('D:\DATA\DE\Original Data Temp\111964_Z129253_20190408_112412.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:23+2" type="Information">
+      <text>Process 116 / 852 ('D:\DATA\DE\Original Data Temp\112045_Z104307_20190408_103310.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 117 / 852 ('D:\DATA\DE\Original Data Temp\112053_Z113053_20190408_114142.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 118 / 852 ('D:\DATA\DE\Original Data Temp\112100_Z127418_20190408_083443.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 119 / 852 ('D:\DATA\DE\Original Data Temp\112193_Z104123_20190408_110559.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 120 / 852 ('D:\DATA\DE\Original Data Temp\112245_Z123650_20190408_113808.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 121 / 852 ('D:\DATA\DE\Original Data Temp\112313_Z119918_20190408_114050.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 122 / 852 ('D:\DATA\DE\Original Data Temp\112320_Z126292_20190408_103225.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 123 / 852 ('D:\DATA\DE\Original Data Temp\112330_Z123617_20190408_104844.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 124 / 852 ('D:\DATA\DE\Original Data Temp\112345_Z103647_20190408_102727.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 125 / 852 ('D:\DATA\DE\Original Data Temp\112411_Z127425_20190408_112424.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 126 / 852 ('D:\DATA\DE\Original Data Temp\112930_Z123419_20190408_110512.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 127 / 852 ('D:\DATA\DE\Original Data Temp\113026_Z104975_20190408_085831.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 128 / 852 ('D:\DATA\DE\Original Data Temp\113141_Z125654_20190408_114351.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 129 / 852 ('D:\DATA\DE\Original Data Temp\113247_Z101484_20190408_111255.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 130 / 852 ('D:\DATA\DE\Original Data Temp\113377_Z127436_20190408_113516.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:24+2" type="Information">
+      <text>Process 131 / 852 ('D:\DATA\DE\Original Data Temp\113800_Z113379_20190408_095217.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:25+2" type="Information">
+      <text>Process 132 / 852 ('D:\DATA\DE\Original Data Temp\114215_Z126674_20190408_092452.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:25+2" type="Information">
+      <text>Process 133 / 852 ('D:\DATA\DE\Original Data Temp\114259_Z104519_20190408_105047.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:25+2" type="Information">
+      <text>Process 134 / 852 ('D:\DATA\DE\Original Data Temp\114595_Z127662_20190408_101916.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:25+2" type="Information">
+      <text>Process 135 / 852 ('D:\DATA\DE\Original Data Temp\114604_Z118836_20190408_111746.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:25+2" type="Information">
+      <text>Process 136 / 852 ('D:\DATA\DE\Original Data Temp\114638_Z126766_20190408_115318.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:25+2" type="Information">
+      <text>Process 137 / 852 ('D:\DATA\DE\Original Data Temp\114689_Z126114_20190408_103923.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:25+2" type="Information">
+      <text>Process 138 / 852 ('D:\DATA\DE\Original Data Temp\114708_Z104117_20190408_103936.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:25+2" type="Information">
+      <text>Process 139 / 852 ('D:\DATA\DE\Original Data Temp\115067_Z125285_20190408_115837.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:25+2" type="Information">
+      <text>Process 140 / 852 ('D:\DATA\DE\Original Data Temp\115623_Z122948_20190408_094224.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:25+2" type="Information">
+      <text>Process 141 / 852 ('D:\DATA\DE\Original Data Temp\115786_Z101212_20190408_082000.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:25+2" type="Information">
+      <text>Process 142 / 852 ('D:\DATA\DE\Original Data Temp\115821_Z150150_20190408_090756.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:25+2" type="Information">
+      <text>Process 143 / 852 ('D:\DATA\DE\Original Data Temp\115985_Z125947_20190408_104943.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:25+2" type="Information">
+      <text>Process 144 / 852 ('D:\DATA\DE\Original Data Temp\115994_Z122015_20190408_113844.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:25+2" type="Information">
+      <text>Process 145 / 852 ('D:\DATA\DE\Original Data Temp\116127_Z111518_20190408_094022.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:26+2" type="Information">
+      <text>Process 146 / 852 ('D:\DATA\DE\Original Data Temp\116150_Z105465_20190408_112453.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:26+2" type="Information">
+      <text>Process 147 / 852 ('D:\DATA\DE\Original Data Temp\116289_Z103744_20190408_102357.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:26+2" type="Information">
+      <text>Process 148 / 852 ('D:\DATA\DE\Original Data Temp\116339_Z126954_20190408_105744.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:26+2" type="Information">
+      <text>Process 149 / 852 ('D:\DATA\DE\Original Data Temp\116790_Z103502_20190408_095151.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:26+2" type="Information">
+      <text>Process 150 / 852 ('D:\DATA\DE\Original Data Temp\116911_Z122517_20190408_110401.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:27+2" type="Information">
+      <text>Process 151 / 852 ('D:\DATA\DE\Original Data Temp\116956_Z105566_20190408_110504.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:27+2" type="Information">
+      <text>Process 152 / 852 ('D:\DATA\DE\Original Data Temp\117058_Z104534_20190408_102307.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:27+2" type="Information">
+      <text>Process 153 / 852 ('D:\DATA\DE\Original Data Temp\117504_Z123079_20190408_103346.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:27+2" type="Information">
+      <text>Process 154 / 852 ('D:\DATA\DE\Original Data Temp\117545_Z122168_20190408_115736.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:27+2" type="Information">
+      <text>Process 155 / 852 ('D:\DATA\DE\Original Data Temp\117555_Z127475_20190408_115415.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:27+2" type="Information">
+      <text>Process 156 / 852 ('D:\DATA\DE\Original Data Temp\117557_Z1200276_20190408_111940.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:27+2" type="Information">
+      <text>Process 157 / 852 ('D:\DATA\DE\Original Data Temp\117559_Z113478_20190408_110321.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:27+2" type="Information">
+      <text>Process 158 / 852 ('D:\DATA\DE\Original Data Temp\117632_Z101232_20190408_100124.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:27+2" type="Information">
+      <text>Process 159 / 852 ('D:\DATA\DE\Original Data Temp\117633_Z125267_20190408_103156.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:27+2" type="Information">
+      <text>Process 160 / 852 ('D:\DATA\DE\Original Data Temp\117635_Z104170_20190408_093620.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:27+2" type="Information">
+      <text>Process 161 / 852 ('D:\DATA\DE\Original Data Temp\118067_Z126601_20190408_082617.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:27+2" type="Information">
+      <text>Process 162 / 852 ('D:\DATA\DE\Original Data Temp\118088_Z100479_20190408_090249.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:27+2" type="Information">
+      <text>Process 163 / 852 ('D:\DATA\DE\Original Data Temp\118102_Z104321_20190408_114452.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:28+2" type="Information">
+      <text>Process 164 / 852 ('D:\DATA\DE\Original Data Temp\118317_Z111569_20190408_112338.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:28+2" type="Information">
+      <text>Process 165 / 852 ('D:\DATA\DE\Original Data Temp\118420_Z107080_20190408_103917.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:28+2" type="Information">
+      <text>Process 166 / 852 ('D:\DATA\DE\Original Data Temp\118465_Z121084_20190408_100550.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:28+2" type="Information">
+      <text>Process 167 / 852 ('D:\DATA\DE\Original Data Temp\118639_Z104758_20190408_103657.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:28+2" type="Information">
+      <text>Process 168 / 852 ('D:\DATA\DE\Original Data Temp\118818_Z111544_20190408_100415.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:28+2" type="Information">
+      <text>Process 169 / 852 ('D:\DATA\DE\Original Data Temp\118856_Z128983_20190408_100223.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:28+2" type="Information">
+      <text>Process 170 / 852 ('D:\DATA\DE\Original Data Temp\118856_Z128983_20190408_105450.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:28+2" type="Information">
+      <text>Process 171 / 852 ('D:\DATA\DE\Original Data Temp\119862_Z103644_20190408_112621.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:28+2" type="Information">
+      <text>Process 172 / 852 ('D:\DATA\DE\Original Data Temp\120325_Z121412_20190408_110925.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:28+2" type="Information">
+      <text>Process 173 / 852 ('D:\DATA\DE\Original Data Temp\121278_Z110606_20190408_113459.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:28+2" type="Information">
+      <text>Process 174 / 852 ('D:\DATA\DE\Original Data Temp\121300_Z100890_20190408_111110.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 175 / 852 ('D:\DATA\DE\Original Data Temp\121740_Z1000236_20190408_085454.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 176 / 852 ('D:\DATA\DE\Original Data Temp\121930_Z125641_20190408_095208.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 177 / 852 ('D:\DATA\DE\Original Data Temp\122295_Z103875_20190408_094048.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 178 / 852 ('D:\DATA\DE\Original Data Temp\122295_Z103875_20190408_112501.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 179 / 852 ('D:\DATA\DE\Original Data Temp\122328_Z127878_20190408_091146.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 180 / 852 ('D:\DATA\DE\Original Data Temp\122434_Z126249_20190408_091411.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 181 / 852 ('D:\DATA\DE\Original Data Temp\122686_Z103770_20190408_115506.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 182 / 852 ('D:\DATA\DE\Original Data Temp\122948_Z128994_20190408_095431.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 183 / 852 ('D:\DATA\DE\Original Data Temp\123524_Z121786_20190408_101806.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 184 / 852 ('D:\DATA\DE\Original Data Temp\123524_Z121786_20190408_110920.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 185 / 852 ('D:\DATA\DE\Original Data Temp\123686_Z125866_20190408_114845.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 186 / 852 ('D:\DATA\DE\Original Data Temp\124013_Z125125_20190408_102904.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 187 / 852 ('D:\DATA\DE\Original Data Temp\124135_Z101699_20190408_111423.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 188 / 852 ('D:\DATA\DE\Original Data Temp\124705_Z123173_20190408_111652.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 189 / 852 ('D:\DATA\DE\Original Data Temp\124990_Z111200_20190408_104345.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 190 / 852 ('D:\DATA\DE\Original Data Temp\125058_Z124519_20190408_101900.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 191 / 852 ('D:\DATA\DE\Original Data Temp\125370_Z101025_20190408_115518.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:29+2" type="Information">
+      <text>Process 192 / 852 ('D:\DATA\DE\Original Data Temp\125999_Z104160_20190408_115406.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:30+2" type="Information">
+      <text>Process 193 / 852 ('D:\DATA\DE\Original Data Temp\126184_Z101620_20190408_082922.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:30+2" type="Information">
+      <text>Process 194 / 852 ('D:\DATA\DE\Original Data Temp\126342_Z115845_20190408_112729.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:30+2" type="Information">
+      <text>Process 195 / 852 ('D:\DATA\DE\Original Data Temp\126358_Z104416_20190408_113514.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:30+2" type="Information">
+      <text>Process 196 / 852 ('D:\DATA\DE\Original Data Temp\128002_Z125893_20190408_114050.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:30+2" type="Information">
+      <text>Process 197 / 852 ('D:\DATA\DE\Original Data Temp\128060_Z101967_20190408_113418.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:30+2" type="Information">
+      <text>Process 198 / 852 ('D:\DATA\DE\Original Data Temp\128143_Z101213_20190408_093433.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:30+2" type="Information">
+      <text>Process 199 / 852 ('D:\DATA\DE\Original Data Temp\128260_Z125410_20190408_110332.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:30+2" type="Information">
+      <text>Process 200 / 852 ('D:\DATA\DE\Original Data Temp\128411_Z125451_20190408_093153.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:30+2" type="Information">
+      <text>Process 201 / 852 ('D:\DATA\DE\Original Data Temp\128998_Z128678_20190408_113305.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:30+2" type="Information">
+      <text>Process 202 / 852 ('D:\DATA\DE\Original Data Temp\129057_Z100178_20190408_113646.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:30+2" type="Information">
+      <text>Process 203 / 852 ('D:\DATA\DE\Original Data Temp\129093_Z127129_20190408_082005.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:31+2" type="Information">
+      <text>Process 204 / 852 ('D:\DATA\DE\Original Data Temp\130059_Z103800_20190408_095712.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:31+2" type="Information">
+      <text>Process 205 / 852 ('D:\DATA\DE\Original Data Temp\130454_Z1200765_20190408_094343.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:31+2" type="Information">
+      <text>Process 206 / 852 ('D:\DATA\DE\Original Data Temp\130476_Z101872_20190408_101113.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:31+2" type="Information">
+      <text>Process 207 / 852 ('D:\DATA\DE\Original Data Temp\130510_Z102467_20190408_101738.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:31+2" type="Information">
+      <text>Process 208 / 852 ('D:\DATA\DE\Original Data Temp\130674_Z101201_20190408_101953.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:31+2" type="Information">
+      <text>Process 209 / 852 ('D:\DATA\DE\Original Data Temp\130710_Z136916_20190408_103540.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:31+2" type="Information">
+      <text>Process 210 / 852 ('D:\DATA\DE\Original Data Temp\131567_Z102241_20190408_103634.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:31+2" type="Information">
+      <text>Process 211 / 852 ('D:\DATA\DE\Original Data Temp\131714_Z121433_20190408_083011.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:31+2" type="Information">
+      <text>Process 212 / 852 ('D:\DATA\DE\Original Data Temp\131811_Z128677_20190408_105414.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:31+2" type="Information">
+      <text>Process 213 / 852 ('D:\DATA\DE\Original Data Temp\131854_Z128725_20190408_100656.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:32+2" type="Information">
+      <text>Process 214 / 852 ('D:\DATA\DE\Original Data Temp\131871_Z113288_20190408_111649.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:32+2" type="Information">
+      <text>Process 215 / 852 ('D:\DATA\DE\Original Data Temp\132184_Z104598_20190408_104223.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:32+2" type="Information">
+      <text>Process 216 / 852 ('D:\DATA\DE\Original Data Temp\132697_Z101641_20190408_080143.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:32+2" type="Information">
+      <text>Process 217 / 852 ('D:\DATA\DE\Original Data Temp\132697_Z101641_20190408_104522.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:32+2" type="Information">
+      <text>Process 218 / 852 ('D:\DATA\DE\Original Data Temp\132917_Z103806_20190408_105715.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:32+2" type="Information">
+      <text>Process 219 / 852 ('D:\DATA\DE\Original Data Temp\133028_Z122649_20190408_095517.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:32+2" type="Information">
+      <text>Process 220 / 852 ('D:\DATA\DE\Original Data Temp\133770_Z120850_20190408_112308.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:32+2" type="Information">
+      <text>Process 221 / 852 ('D:\DATA\DE\Original Data Temp\133942_Z101188_20190408_112546.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:32+2" type="Information">
+      <text>Process 222 / 852 ('D:\DATA\DE\Original Data Temp\134105_Z121122_20190408_084513.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:32+2" type="Information">
+      <text>Process 223 / 852 ('D:\DATA\DE\Original Data Temp\134159_Z105005_20190408_105607.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:32+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\134159_Z105005_20190408_105607.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:32+2" type="Information">
+      <text>Process 224 / 852 ('D:\DATA\DE\Original Data Temp\136081_Z112719_20190408_110911.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:32+2" type="Information">
+      <text>Process 225 / 852 ('D:\DATA\DE\Original Data Temp\136093_Z113543_20190408_111351.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:32+2" type="Information">
+      <text>Process 226 / 852 ('D:\DATA\DE\Original Data Temp\136314_Z112608_20190408_100428.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:33+2" type="Information">
+      <text>Process 227 / 852 ('D:\DATA\DE\Original Data Temp\136314_Z112608_20190408_111934.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:33+2" type="Information">
+      <text>Process 228 / 852 ('D:\DATA\DE\Original Data Temp\136432_Z103679_20190408_110739.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:33+2" type="Information">
+      <text>Process 229 / 852 ('D:\DATA\DE\Original Data Temp\136437_Z105102_20190408_110137.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:33+2" type="Information">
+      <text>Process 230 / 852 ('D:\DATA\DE\Original Data Temp\136467_Z107081_20190408_085625.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:33+2" type="Information">
+      <text>Process 231 / 852 ('D:\DATA\DE\Original Data Temp\136664_Z119940_20190408_095041.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:33+2" type="Information">
+      <text>Process 232 / 852 ('D:\DATA\DE\Original Data Temp\136664_Z119940_20190408_113335.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:33+2" type="Information">
+      <text>Process 233 / 852 ('D:\DATA\DE\Original Data Temp\136829_Z121959_20190408_101637.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:33+2" type="Information">
+      <text>Process 234 / 852 ('D:\DATA\DE\Original Data Temp\136846_Z128704_20190408_090534.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:33+2" type="Information">
+      <text>Process 235 / 852 ('D:\DATA\DE\Original Data Temp\136888_Z103649_20190408_115942.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:33+2" type="Information">
+      <text>Process 236 / 852 ('D:\DATA\DE\Original Data Temp\136908_Z121830_20190408_115519.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:33+2" type="Information">
+      <text>Process 237 / 852 ('D:\DATA\DE\Original Data Temp\137288_Z121397_20190408_105452.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:34+2" type="Information">
+      <text>Process 238 / 852 ('D:\DATA\DE\Original Data Temp\137296_Z115759_20190408_112220.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:34+2" type="Information">
+      <text>Process 239 / 852 ('D:\DATA\DE\Original Data Temp\137502_Z103717_20190408_101335.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:34+2" type="Information">
+      <text>Process 240 / 852 ('D:\DATA\DE\Original Data Temp\137556_Z113373_20190408_103035.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:34+2" type="Information">
+      <text>Process 241 / 852 ('D:\DATA\DE\Original Data Temp\137829_Z123334_20190408_102243.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:34+2" type="Information">
+      <text>Process 242 / 852 ('D:\DATA\DE\Original Data Temp\137914_Z1200169_20190408_112946.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:34+2" type="Information">
+      <text>Process 243 / 852 ('D:\DATA\DE\Original Data Temp\137940_Z129220_20190408_115005.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:34+2" type="Information">
+      <text>Process 244 / 852 ('D:\DATA\DE\Original Data Temp\137942_Z105092_20190408_110423.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:34+2" type="Information">
+      <text>Process 245 / 852 ('D:\DATA\DE\Original Data Temp\138314_Z113605_20190408_085233.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:34+2" type="Information">
+      <text>Process 246 / 852 ('D:\DATA\DE\Original Data Temp\138603_Z128661_20190408_110021.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:34+2" type="Information">
+      <text>Process 247 / 852 ('D:\DATA\DE\Original Data Temp\139116_Z104086_20190408_110208.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:34+2" type="Information">
+      <text>Process 248 / 852 ('D:\DATA\DE\Original Data Temp\139200_Z125750_20190408_113039.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:34+2" type="Information">
+      <text>Process 249 / 852 ('D:\DATA\DE\Original Data Temp\139210_Z119582_20190408_111945.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:34+2" type="Information">
+      <text>Process 250 / 852 ('D:\DATA\DE\Original Data Temp\139610_Z115524_20190408_093953.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:34+2" type="Information">
+      <text>Process 251 / 852 ('D:\DATA\DE\Original Data Temp\139625_Z105277_20190408_101828.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:35+2" type="Information">
+      <text>Process 252 / 852 ('D:\DATA\DE\Original Data Temp\139872_Z117251_20190408_112007.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:35+2" type="Information">
+      <text>Process 253 / 852 ('D:\DATA\DE\Original Data Temp\139887_Z125509_20190408_093857.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:35+2" type="Information">
+      <text>Process 254 / 852 ('D:\DATA\DE\Original Data Temp\139967_Z124873_20190408_113233.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:35+2" type="Information">
+      <text>Process 255 / 852 ('D:\DATA\DE\Original Data Temp\140099_Z125429_20190408_115537.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:35+2" type="Information">
+      <text>Process 256 / 852 ('D:\DATA\DE\Original Data Temp\140150_Z125503_20190408_092147.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:35+2" type="Information">
+      <text>Process 257 / 852 ('D:\DATA\DE\Original Data Temp\140292_Z101539_20190408_084108.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:35+2" type="Information">
+      <text>Process 258 / 852 ('D:\DATA\DE\Original Data Temp\140292_Z101539_20190408_104258.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:35+2" type="Information">
+      <text>Process 259 / 852 ('D:\DATA\DE\Original Data Temp\140598_Z121223_20190408_093020.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:35+2" type="Information">
+      <text>Process 260 / 852 ('D:\DATA\DE\Original Data Temp\140759_Z126022_20190408_092801.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:35+2" type="Information">
+      <text>Process 261 / 852 ('D:\DATA\DE\Original Data Temp\140894_Z127458_20190408_111152.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:35+2" type="Information">
+      <text>Process 262 / 852 ('D:\DATA\DE\Original Data Temp\141611_Z121287_20190408_085542.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:36+2" type="Information">
+      <text>Process 263 / 852 ('D:\DATA\DE\Original Data Temp\141946_Z122025_20190408_111436.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:36+2" type="Information">
+      <text>Process 264 / 852 ('D:\DATA\DE\Original Data Temp\142151_Z115904_20190408_111444.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:36+2" type="Information">
+      <text>Process 265 / 852 ('D:\DATA\DE\Original Data Temp\142233_Z125963_20190408_084933.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:36+2" type="Information">
+      <text>Process 266 / 852 ('D:\DATA\DE\Original Data Temp\142492_Z101576_20190408_115955.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:36+2" type="Information">
+      <text>Process 267 / 852 ('D:\DATA\DE\Original Data Temp\143447_Z125149_20190408_093555.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:36+2" type="Information">
+      <text>Process 268 / 852 ('D:\DATA\DE\Original Data Temp\143819_Z122187_20190408_115924.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:36+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\143819_Z122187_20190408_115924.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:36+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\143819_Z122187_20190408_115924.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:36+2" type="Information">
+      <text>Process 269 / 852 ('D:\DATA\DE\Original Data Temp\144254_Z104562_20190408_085448.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:36+2" type="Information">
+      <text>Process 270 / 852 ('D:\DATA\DE\Original Data Temp\144487_Z103641_20190408_101141.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:36+2" type="Information">
+      <text>Process 271 / 852 ('D:\DATA\DE\Original Data Temp\144817_Z100864_20190408_100806.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:36+2" type="Information">
+      <text>Process 272 / 852 ('D:\DATA\DE\Original Data Temp\145470_Z129130_20190408_105120.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:36+2" type="Information">
+      <text>Process 273 / 852 ('D:\DATA\DE\Original Data Temp\146150_Z113636_20190408_105635.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:37+2" type="Information">
+      <text>Process 274 / 852 ('D:\DATA\DE\Original Data Temp\146340_Z122103_20190408_112245.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:37+2" type="Information">
+      <text>Process 275 / 852 ('D:\DATA\DE\Original Data Temp\146477_Z119812_20190408_095401.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:37+2" type="Information">
+      <text>Process 276 / 852 ('D:\DATA\DE\Original Data Temp\146489_Z103648_20190408_094423.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:37+2" type="Information">
+      <text>Process 277 / 852 ('D:\DATA\DE\Original Data Temp\146880_Z127718_20190408_114941.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:37+2" type="Information">
+      <text>Process 278 / 852 ('D:\DATA\DE\Original Data Temp\147587_Z111766_20190408_115206.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Information">
+      <text>Process 279 / 852 ('D:\DATA\DE\Original Data Temp\148176_Z113290_20190408_113637.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Information">
+      <text>Process 280 / 852 ('D:\DATA\DE\Original Data Temp\148364_Z122813_20190408_093419.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Information">
+      <text>Process 281 / 852 ('D:\DATA\DE\Original Data Temp\148368_Z104250_20190408_110556.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Information">
+      <text>Process 282 / 852 ('D:\DATA\DE\Original Data Temp\148505_Z112693_20190408_111437.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Information">
+      <text>Process 283 / 852 ('D:\DATA\DE\Original Data Temp\148659_Z1035820_20190408_114153.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Information">
+      <text>Process 284 / 852 ('D:\DATA\DE\Original Data Temp\149417_Z125048_20190408_110058.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Information">
+      <text>Process 285 / 852 ('D:\DATA\DE\Original Data Temp\149444_Z110637_20190408_100557.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Information">
+      <text>Process 286 / 852 ('D:\DATA\DE\Original Data Temp\149530_Z111136_20190408_110738.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Information">
+      <text>Process 287 / 852 ('D:\DATA\DE\Original Data Temp\149611_Z128957_20190408_094709.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\149611_Z128957_20190408_094709.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\149611_Z128957_20190408_094709.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Information">
+      <text>Process 288 / 852 ('D:\DATA\DE\Original Data Temp\150928_Z122086_20190408_115957.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Information">
+      <text>Process 289 / 852 ('D:\DATA\DE\Original Data Temp\150987_Z124363_20190408_084736.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Information">
+      <text>Process 290 / 852 ('D:\DATA\DE\Original Data Temp\150989_Z105521_20190408_115429.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:38+2" type="Information">
+      <text>Process 291 / 852 ('D:\DATA\DE\Original Data Temp\151004_Z101352_20190408_115803.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:39+2" type="Information">
+      <text>Process 292 / 852 ('D:\DATA\DE\Original Data Temp\151010_Z111175_20190408_095955.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:39+2" type="Information">
+      <text>Process 293 / 852 ('D:\DATA\DE\Original Data Temp\151010_Z111175_20190408_114811.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:39+2" type="Information">
+      <text>Process 294 / 852 ('D:\DATA\DE\Original Data Temp\151014_Z126646_20190408_093638.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:39+2" type="Information">
+      <text>Process 295 / 852 ('D:\DATA\DE\Original Data Temp\151025_Z126433_20190408_101402.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:39+2" type="Information">
+      <text>Process 296 / 852 ('D:\DATA\DE\Original Data Temp\151135_Z112344_20190408_104635.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:39+2" type="Information">
+      <text>Process 297 / 852 ('D:\DATA\DE\Original Data Temp\151164_Z119783_20190408_090039.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:39+2" type="Information">
+      <text>Process 298 / 852 ('D:\DATA\DE\Original Data Temp\151479_Z100680_20190408_100100.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:39+2" type="Information">
+      <text>Process 299 / 852 ('D:\DATA\DE\Original Data Temp\151484_Z129222_20190408_082502.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:39+2" type="Information">
+      <text>Process 300 / 852 ('D:\DATA\DE\Original Data Temp\151520_Z118775_20190408_113250.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:39+2" type="Information">
+      <text>Process 301 / 852 ('D:\DATA\DE\Original Data Temp\151595_Z104166_20190408_110758.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:40+2" type="Information">
+      <text>Process 302 / 852 ('D:\DATA\DE\Original Data Temp\151651_Z111158_20190408_103907.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:40+2" type="Information">
+      <text>Process 303 / 852 ('D:\DATA\DE\Original Data Temp\151931_Z1000264_20190408_103959.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:40+2" type="Information">
+      <text>Process 304 / 852 ('D:\DATA\DE\Original Data Temp\151988_Z113604_20190408_104051.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:40+2" type="Information">
+      <text>Process 305 / 852 ('D:\DATA\DE\Original Data Temp\152306_Z112908_20190408_094302.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:40+2" type="Information">
+      <text>Process 306 / 852 ('D:\DATA\DE\Original Data Temp\152352_Z115885_20190408_094213.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:40+2" type="Information">
+      <text>Process 307 / 852 ('D:\DATA\DE\Original Data Temp\152510_Z111150_20190408_110746.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:40+2" type="Information">
+      <text>Process 308 / 852 ('D:\DATA\DE\Original Data Temp\152516_Z116366_20190408_103116.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:40+2" type="Information">
+      <text>Process 309 / 852 ('D:\DATA\DE\Original Data Temp\154046_Z111877_20190408_091716.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:40+2" type="Information">
+      <text>Process 310 / 852 ('D:\DATA\DE\Original Data Temp\154588_Z115474_20190408_104121.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:40+2" type="Information">
+      <text>Process 311 / 852 ('D:\DATA\DE\Original Data Temp\154604_Z113229_20190408_103123.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:40+2" type="Information">
+      <text>Process 312 / 852 ('D:\DATA\DE\Original Data Temp\154730_Z116923_20190408_094638.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:41+2" type="Information">
+      <text>Process 313 / 852 ('D:\DATA\DE\Original Data Temp\155166_Z121529_20190408_114455.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:41+2" type="Information">
+      <text>Process 314 / 852 ('D:\DATA\DE\Original Data Temp\155341_Z111439_20190408_085950.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:41+2" type="Information">
+      <text>Process 315 / 852 ('D:\DATA\DE\Original Data Temp\155341_Z111439_20190408_113930.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:41+2" type="Information">
+      <text>Process 316 / 852 ('D:\DATA\DE\Original Data Temp\155887_Z126166_20190408_113327.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:41+2" type="Information">
+      <text>Process 317 / 852 ('D:\DATA\DE\Original Data Temp\156116_Z101098_20190408_103104.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:41+2" type="Information">
+      <text>Process 318 / 852 ('D:\DATA\DE\Original Data Temp\156832_Z105475_20190408_114559.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:41+2" type="Information">
+      <text>Process 319 / 852 ('D:\DATA\DE\Original Data Temp\157159_Z100700_20190408_082406.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:41+2" type="Information">
+      <text>Process 320 / 852 ('D:\DATA\DE\Original Data Temp\157464_Z104834_20190408_113347.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:41+2" type="Information">
+      <text>Process 321 / 852 ('D:\DATA\DE\Original Data Temp\157793_Z120115_20190408_104930.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:41+2" type="Information">
+      <text>Process 322 / 852 ('D:\DATA\DE\Original Data Temp\157984_Z104839_20190408_101154.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:42+2" type="Information">
+      <text>Process 323 / 852 ('D:\DATA\DE\Original Data Temp\158067_Z128757_20190408_110618.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:42+2" type="Information">
+      <text>Process 324 / 852 ('D:\DATA\DE\Original Data Temp\158250_Z122520_20190408_101404.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:42+2" type="Information">
+      <text>Process 325 / 852 ('D:\DATA\DE\Original Data Temp\158323_Z111148_20190408_110807.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:42+2" type="Information">
+      <text>Process 326 / 852 ('D:\DATA\DE\Original Data Temp\158517_Z113455_20190408_115827.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:42+2" type="Information">
+      <text>Process 327 / 852 ('D:\DATA\DE\Original Data Temp\158696_Z115768_20190408_103651.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:42+2" type="Information">
+      <text>Process 328 / 852 ('D:\DATA\DE\Original Data Temp\158707_Z104269_20190408_110846.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:42+2" type="Information">
+      <text>Process 329 / 852 ('D:\DATA\DE\Original Data Temp\158807_Z127992_20190408_102027.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:42+2" type="Information">
+      <text>Process 330 / 852 ('D:\DATA\DE\Original Data Temp\159901_Z122885_20190408_115145.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:42+2" type="Information">
+      <text>Process 331 / 852 ('D:\DATA\DE\Original Data Temp\160142_Z150080_20190408_093451.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:43+2" type="Information">
+      <text>Process 332 / 852 ('D:\DATA\DE\Original Data Temp\160200_Z119945_20190408_101907.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:43+2" type="Information">
+      <text>Process 333 / 852 ('D:\DATA\DE\Original Data Temp\160465_Z126945_20190408_090207.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:43+2" type="Information">
+      <text>Process 334 / 852 ('D:\DATA\DE\Original Data Temp\160499_Z103621_20190408_100455.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:43+2" type="Information">
+      <text>Process 335 / 852 ('D:\DATA\DE\Original Data Temp\160656_Z121323_20190408_085416.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:43+2" type="Information">
+      <text>Process 336 / 852 ('D:\DATA\DE\Original Data Temp\161022_Z113528_20190408_103122.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:43+2" type="Information">
+      <text>Process 337 / 852 ('D:\DATA\DE\Original Data Temp\161340_Z104461_20190408_110641.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:43+2" type="Information">
+      <text>Process 338 / 852 ('D:\DATA\DE\Original Data Temp\161503_Z127756_20190408_103025.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:43+2" type="Information">
+      <text>Process 339 / 852 ('D:\DATA\DE\Original Data Temp\161776_Z129247_20190408_095345.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:43+2" type="Information">
+      <text>Process 340 / 852 ('D:\DATA\DE\Original Data Temp\162421_Z122136_20190408_115204.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:43+2" type="Information">
+      <text>Process 341 / 852 ('D:\DATA\DE\Original Data Temp\162642_Z127866_20190408_113642.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:43+2" type="Information">
+      <text>Process 342 / 852 ('D:\DATA\DE\Original Data Temp\162697_Z103719_20190408_114022.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:43+2" type="Information">
+      <text>Process 343 / 852 ('D:\DATA\DE\Original Data Temp\162996_Z130015_20190408_111932.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:43+2" type="Information">
+      <text>Process 344 / 852 ('D:\DATA\DE\Original Data Temp\163391_Z106691_20190408_102309.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:44+2" type="Information">
+      <text>Process 345 / 852 ('D:\DATA\DE\Original Data Temp\163436_Z121836_20190408_110837.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:44+2" type="Information">
+      <text>Process 346 / 852 ('D:\DATA\DE\Original Data Temp\163625_Z117016_20190408_104413.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:44+2" type="Information">
+      <text>Process 347 / 852 ('D:\DATA\DE\Original Data Temp\163625_Z117016_20190408_115223.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:44+2" type="Information">
+      <text>Process 348 / 852 ('D:\DATA\DE\Original Data Temp\163658_Z125802_20190408_090117.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:44+2" type="Information">
+      <text>Process 349 / 852 ('D:\DATA\DE\Original Data Temp\165050_Z105001_20190408_084214.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:44+2" type="Information">
+      <text>Process 350 / 852 ('D:\DATA\DE\Original Data Temp\165370_Z105015_20190408_104126.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:44+2" type="Information">
+      <text>Process 351 / 852 ('D:\DATA\DE\Original Data Temp\165430_Z104965_20190408_112717.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:44+2" type="Information">
+      <text>Process 352 / 852 ('D:\DATA\DE\Original Data Temp\165685_Z121592_20190408_103749.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:44+2" type="Information">
+      <text>Process 353 / 852 ('D:\DATA\DE\Original Data Temp\166022_Z112907_20190408_112622.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:44+2" type="Information">
+      <text>Process 354 / 852 ('D:\DATA\DE\Original Data Temp\166304_Z121739_20190408_101144.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:44+2" type="Information">
+      <text>Process 355 / 852 ('D:\DATA\DE\Original Data Temp\166766_Z123281_20190408_085840.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:44+2" type="Information">
+      <text>Process 356 / 852 ('D:\DATA\DE\Original Data Temp\167475_Z112483_20190408_111626.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:45+2" type="Information">
+      <text>Process 357 / 852 ('D:\DATA\DE\Original Data Temp\167736_Z105114_20190408_115231.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:45+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\167736_Z105114_20190408_115231.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:45+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\167736_Z105114_20190408_115231.xml' rawid '14')</text>
+    </message>
+    <message time="2019-04-08T12:02:45+2" type="Information">
+      <text>Process 358 / 852 ('D:\DATA\DE\Original Data Temp\168231_Z1200310_20190408_115146.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:45+2" type="Information">
+      <text>Process 359 / 852 ('D:\DATA\DE\Original Data Temp\168309_Z1000233_20190408_101319.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:45+2" type="Information">
+      <text>Process 360 / 852 ('D:\DATA\DE\Original Data Temp\168396_Z106653_20190408_103755.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:45+2" type="Information">
+      <text>Process 361 / 852 ('D:\DATA\DE\Original Data Temp\168531_Z107001_20190408_102549.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:45+2" type="Information">
+      <text>Process 362 / 852 ('D:\DATA\DE\Original Data Temp\168618_Z101669_20190408_112141.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:45+2" type="Information">
+      <text>Process 363 / 852 ('D:\DATA\DE\Original Data Temp\168621_Z100686_20190408_085019.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:45+2" type="Information">
+      <text>Process 364 / 852 ('D:\DATA\DE\Original Data Temp\168720_Z124507_20190408_115248.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:46+2" type="Information">
+      <text>Process 365 / 852 ('D:\DATA\DE\Original Data Temp\168723_Z127982_20190408_080735.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:46+2" type="Information">
+      <text>Process 366 / 852 ('D:\DATA\DE\Original Data Temp\169322_Z150164_20190408_083003.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:46+2" type="Information">
+      <text>Process 367 / 852 ('D:\DATA\DE\Original Data Temp\169322_Z150164_20190408_100300.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:46+2" type="Information">
+      <text>Process 368 / 852 ('D:\DATA\DE\Original Data Temp\169918_Z112753_20190408_104456.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:46+2" type="Information">
+      <text>Process 369 / 852 ('D:\DATA\DE\Original Data Temp\169969_Z128794_20190408_115617.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:46+2" type="Information">
+      <text>Process 370 / 852 ('D:\DATA\DE\Original Data Temp\170063_Z105070_20190408_113046.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:46+2" type="Information">
+      <text>Process 371 / 852 ('D:\DATA\DE\Original Data Temp\170463_Z104879_20190408_101123.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:46+2" type="Information">
+      <text>Process 372 / 852 ('D:\DATA\DE\Original Data Temp\170737_Z101053_20190408_105714.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:46+2" type="Information">
+      <text>Process 373 / 852 ('D:\DATA\DE\Original Data Temp\170977_Z105006_20190408_111959.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:47+2" type="Information">
+      <text>Process 374 / 852 ('D:\DATA\DE\Original Data Temp\171086_Z100626_20190408_103742.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:47+2" type="Information">
+      <text>Process 375 / 852 ('D:\DATA\DE\Original Data Temp\171153_Z128668_20190408_092115.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:47+2" type="Information">
+      <text>Process 376 / 852 ('D:\DATA\DE\Original Data Temp\171153_Z128668_20190408_104301.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:47+2" type="Information">
+      <text>Process 377 / 852 ('D:\DATA\DE\Original Data Temp\171704_Z124569_20190408_105432.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:47+2" type="Information">
+      <text>Process 378 / 852 ('D:\DATA\DE\Original Data Temp\172124_Z101718_20190408_103156.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:47+2" type="Information">
+      <text>Process 379 / 852 ('D:\DATA\DE\Original Data Temp\172293_Z122127_20190408_093359.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:47+2" type="Information">
+      <text>Process 380 / 852 ('D:\DATA\DE\Original Data Temp\172567_Z122925_20190408_112251.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:48+2" type="Information">
+      <text>Process 381 / 852 ('D:\DATA\DE\Original Data Temp\172587_Z104480_20190408_103543.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:48+2" type="Information">
+      <text>Process 382 / 852 ('D:\DATA\DE\Original Data Temp\172974_Z101373_20190408_112728.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:48+2" type="Information">
+      <text>Process 383 / 852 ('D:\DATA\DE\Original Data Temp\173373_Z125483_20190408_092758.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:48+2" type="Information">
+      <text>Process 384 / 852 ('D:\DATA\DE\Original Data Temp\173472_Z103703_20190408_115144.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:48+2" type="Information">
+      <text>Process 385 / 852 ('D:\DATA\DE\Original Data Temp\173929_Z107655_20190408_094815.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:48+2" type="Information">
+      <text>Process 386 / 852 ('D:\DATA\DE\Original Data Temp\174029_Z126069_20190408_085714.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:48+2" type="Information">
+      <text>Process 387 / 852 ('D:\DATA\DE\Original Data Temp\174484_Z126492_20190408_110706.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:48+2" type="Information">
+      <text>Process 388 / 852 ('D:\DATA\DE\Original Data Temp\174611_Z127923_20190408_114558.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Information">
+      <text>Process 389 / 852 ('D:\DATA\DE\Original Data Temp\174819_Z125622_20190408_103802.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\174819_Z125622_20190408_103802.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\174819_Z125622_20190408_103802.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Information">
+      <text>Process 390 / 852 ('D:\DATA\DE\Original Data Temp\174883_Z101438_20190408_085311.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Information">
+      <text>Process 391 / 852 ('D:\DATA\DE\Original Data Temp\175121_Z125594_20190408_104031.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Information">
+      <text>Process 392 / 852 ('D:\DATA\DE\Original Data Temp\175788_Z122511_20190408_103825.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Information">
+      <text>Process 393 / 852 ('D:\DATA\DE\Original Data Temp\175937_Z122595_20190408_105009.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Information">
+      <text>Process 394 / 852 ('D:\DATA\DE\Original Data Temp\176352_Z126938_20190408_104211.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Information">
+      <text>Process 395 / 852 ('D:\DATA\DE\Original Data Temp\176436_Z127703_20190408_111347.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Information">
+      <text>Process 396 / 852 ('D:\DATA\DE\Original Data Temp\176744_Z107007_20190408_110729.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Information">
+      <text>Process 397 / 852 ('D:\DATA\DE\Original Data Temp\176908_Z126487_20190408_111243.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Information">
+      <text>Process 398 / 852 ('D:\DATA\DE\Original Data Temp\177034_Z121396_20190408_091516.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Information">
+      <text>Process 399 / 852 ('D:\DATA\DE\Original Data Temp\177053_Z121865_20190408_111719.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Information">
+      <text>Process 400 / 852 ('D:\DATA\DE\Original Data Temp\177201_Z121114_20190408_111603.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:49+2" type="Information">
+      <text>Process 401 / 852 ('D:\DATA\DE\Original Data Temp\177212_Z121591_20190408_115441.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Information">
+      <text>Process 402 / 852 ('D:\DATA\DE\Original Data Temp\177403_Z121615_20190408_101219.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Information">
+      <text>Process 403 / 852 ('D:\DATA\DE\Original Data Temp\177675_Z105267_20190408_103540.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\177675_Z105267_20190408_103540.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Information">
+      <text>Process 404 / 852 ('D:\DATA\DE\Original Data Temp\177720_Z100258_20190408_115942.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Information">
+      <text>Process 405 / 852 ('D:\DATA\DE\Original Data Temp\177825_Z126403_20190408_113217.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Information">
+      <text>Process 406 / 852 ('D:\DATA\DE\Original Data Temp\178397_Z124385_20190408_100653.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\178397_Z124385_20190408_100653.xml' rawid '136')</text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Information">
+      <text>Process 407 / 852 ('D:\DATA\DE\Original Data Temp\178909_Z126812_20190408_102217.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Information">
+      <text>Process 408 / 852 ('D:\DATA\DE\Original Data Temp\178915_Z106670_20190408_111440.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Information">
+      <text>Process 409 / 852 ('D:\DATA\DE\Original Data Temp\179486_Z124534_20190408_094538.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Information">
+      <text>Process 410 / 852 ('D:\DATA\DE\Original Data Temp\179624_Z110954_20190408_102359.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Information">
+      <text>Process 411 / 852 ('D:\DATA\DE\Original Data Temp\179828_Z107089_20190408_110948.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\179828_Z107089_20190408_110948.xml' rawid '329')</text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\179828_Z107089_20190408_110948.xml' rawid '329')</text>
+    </message>
+    <message time="2019-04-08T12:02:50+2" type="Information">
+      <text>Process 412 / 852 ('D:\DATA\DE\Original Data Temp\180307_Z118811_20190408_102127.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:51+2" type="Information">
+      <text>Process 413 / 852 ('D:\DATA\DE\Original Data Temp\180390_Z125871_20190408_095053.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:51+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\180390_Z125871_20190408_095053.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:51+2" type="Information">
+      <text>Process 414 / 852 ('D:\DATA\DE\Original Data Temp\180675_Z126832_20190408_082909.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:51+2" type="Information">
+      <text>Process 415 / 852 ('D:\DATA\DE\Original Data Temp\180757_Z125078_20190408_095852.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:51+2" type="Information">
+      <text>Process 416 / 852 ('D:\DATA\DE\Original Data Temp\180847_Z122148_20190408_113302.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:51+2" type="Information">
+      <text>Process 417 / 852 ('D:\DATA\DE\Original Data Temp\181128_Z104656_20190408_095620.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:51+2" type="Information">
+      <text>Process 418 / 852 ('D:\DATA\DE\Original Data Temp\181990_Z104418_20190408_082944.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:51+2" type="Information">
+      <text>Process 419 / 852 ('D:\DATA\DE\Original Data Temp\182318_Z128110_20190408_091941.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:51+2" type="Information">
+      <text>Process 420 / 852 ('D:\DATA\DE\Original Data Temp\182617_Z111807_20190408_103708.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:51+2" type="Information">
+      <text>Process 421 / 852 ('D:\DATA\DE\Original Data Temp\182661_Z150872_20190408_112220.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:52+2" type="Information">
+      <text>Process 422 / 852 ('D:\DATA\DE\Original Data Temp\182776_Z118845_20190408_104327.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:52+2" type="Information">
+      <text>Process 423 / 852 ('D:\DATA\DE\Original Data Temp\183050_Z113016_20190408_115538.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:52+2" type="Information">
+      <text>Process 424 / 852 ('D:\DATA\DE\Original Data Temp\183181_Z1200279_20190408_113002.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:52+2" type="Information">
+      <text>Process 425 / 852 ('D:\DATA\DE\Original Data Temp\183294_Z115795_20190408_091857.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:52+2" type="Information">
+      <text>Process 426 / 852 ('D:\DATA\DE\Original Data Temp\183352_Z123407_20190408_115606.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:52+2" type="Information">
+      <text>Process 427 / 852 ('D:\DATA\DE\Original Data Temp\184313_Z128998_20190408_112331.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:52+2" type="Information">
+      <text>Process 428 / 852 ('D:\DATA\DE\Original Data Temp\184330_Z128986_20190408_103345.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:53+2" type="Information">
+      <text>Process 429 / 852 ('D:\DATA\DE\Original Data Temp\184537_Z121343_20190408_112138.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:53+2" type="Information">
+      <text>Process 430 / 852 ('D:\DATA\DE\Original Data Temp\185132_Z125032_20190408_104934.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:53+2" type="Information">
+      <text>Process 431 / 852 ('D:\DATA\DE\Original Data Temp\185411_Z1200318_20190408_115157.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:53+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\185411_Z1200318_20190408_115157.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:53+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\185411_Z1200318_20190408_115157.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:53+2" type="Information">
+      <text>Process 432 / 852 ('D:\DATA\DE\Original Data Temp\185718_Z127238_20190408_093858.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:53+2" type="Information">
+      <text>Process 433 / 852 ('D:\DATA\DE\Original Data Temp\185718_Z127238_20190408_104551.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:53+2" type="Information">
+      <text>Process 434 / 852 ('D:\DATA\DE\Original Data Temp\186051_Z1035812_20190408_095146.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:53+2" type="Information">
+      <text>Process 435 / 852 ('D:\DATA\DE\Original Data Temp\186208_Z102066_20190408_113056.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:53+2" type="Information">
+      <text>Process 436 / 852 ('D:\DATA\DE\Original Data Temp\186315_Z104615_20190408_114020.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:54+2" type="Information">
+      <text>Process 437 / 852 ('D:\DATA\DE\Original Data Temp\186679_Z122070_20190408_094835.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:54+2" type="Information">
+      <text>Process 438 / 852 ('D:\DATA\DE\Original Data Temp\186730_Z127221_20190408_112745.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:54+2" type="Information">
+      <text>Process 439 / 852 ('D:\DATA\DE\Original Data Temp\187458_Z119738_20190408_085727.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:54+2" type="Information">
+      <text>Process 440 / 852 ('D:\DATA\DE\Original Data Temp\187490_Z106689_20190408_110501.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:54+2" type="Information">
+      <text>Process 441 / 852 ('D:\DATA\DE\Original Data Temp\187715_Z102417_20190408_105022.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:54+2" type="Information">
+      <text>Process 442 / 852 ('D:\DATA\DE\Original Data Temp\188018_Z101805_20190408_080955.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:54+2" type="Information">
+      <text>Process 443 / 852 ('D:\DATA\DE\Original Data Temp\188105_Z119465_20190408_092904.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:54+2" type="Information">
+      <text>Process 444 / 852 ('D:\DATA\DE\Original Data Temp\189037_Z105169_20190408_104057.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:54+2" type="Information">
+      <text>Process 445 / 852 ('D:\DATA\DE\Original Data Temp\189703_Z126814_20190408_112409.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:54+2" type="Information">
+      <text>Process 446 / 852 ('D:\DATA\DE\Original Data Temp\189792_Z106997_20190408_102202.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:54+2" type="Information">
+      <text>Process 447 / 852 ('D:\DATA\DE\Original Data Temp\189917_Z128275_20190408_101231.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:54+2" type="Information">
+      <text>Process 448 / 852 ('D:\DATA\DE\Original Data Temp\189946_Z123373_20190408_090025.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 449 / 852 ('D:\DATA\DE\Original Data Temp\190489_Z124662_20190408_092720.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 450 / 852 ('D:\DATA\DE\Original Data Temp\190503_Z126624_20190408_110529.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 451 / 852 ('D:\DATA\DE\Original Data Temp\191164_Z121579_20190408_102058.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 452 / 852 ('D:\DATA\DE\Original Data Temp\191180_Z107076_20190408_102318.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 453 / 852 ('D:\DATA\DE\Original Data Temp\191249_Z104970_20190408_092101.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 454 / 852 ('D:\DATA\DE\Original Data Temp\191249_Z104970_20190408_110827.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 455 / 852 ('D:\DATA\DE\Original Data Temp\191314_Z124542_20190408_105214.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 456 / 852 ('D:\DATA\DE\Original Data Temp\191475_Z125705_20190408_115933.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 457 / 852 ('D:\DATA\DE\Original Data Temp\191789_Z127683_20190408_082207.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 458 / 852 ('D:\DATA\DE\Original Data Temp\192449_Z150064_20190408_090001.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 459 / 852 ('D:\DATA\DE\Original Data Temp\192566_Z150665_20190408_114201.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 460 / 852 ('D:\DATA\DE\Original Data Temp\192728_Z150119_20190408_104912.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 461 / 852 ('D:\DATA\DE\Original Data Temp\192773_Z150649_20190408_102943.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 462 / 852 ('D:\DATA\DE\Original Data Temp\192811_Z150566_20190408_115408.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:55+2" type="Information">
+      <text>Process 463 / 852 ('D:\DATA\DE\Original Data Temp\192839_Z150804_20190408_091806.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:56+2" type="Information">
+      <text>Process 464 / 852 ('D:\DATA\DE\Original Data Temp\193012_Z102182_20190408_101849.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:56+2" type="Information">
+      <text>Process 465 / 852 ('D:\DATA\DE\Original Data Temp\193201_Z150158_20190408_081132.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:56+2" type="Information">
+      <text>Process 466 / 852 ('D:\DATA\DE\Original Data Temp\193494_Z126522_20190408_105239.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:56+2" type="Information">
+      <text>Process 467 / 852 ('D:\DATA\DE\Original Data Temp\194037_Z150767_20190408_092332.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:56+2" type="Information">
+      <text>Process 468 / 852 ('D:\DATA\DE\Original Data Temp\194201_Z150008_20190408_100533.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:56+2" type="Information">
+      <text>Process 469 / 852 ('D:\DATA\DE\Original Data Temp\194604_Z127790_20190408_110807.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:56+2" type="Information">
+      <text>Process 470 / 852 ('D:\DATA\DE\Original Data Temp\194791_Z125590_20190408_111148.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:56+2" type="Information">
+      <text>Process 471 / 852 ('D:\DATA\DE\Original Data Temp\195114_Z123003_20190408_111708.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:56+2" type="Information">
+      <text>Process 472 / 852 ('D:\DATA\DE\Original Data Temp\195169_Z124871_20190408_113913.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:57+2" type="Information">
+      <text>Process 473 / 852 ('D:\DATA\DE\Original Data Temp\195634_Z111143_20190408_112601.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:57+2" type="Information">
+      <text>Process 474 / 852 ('D:\DATA\DE\Original Data Temp\195726_Z107045_20190408_093043.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:57+2" type="Information">
+      <text>Process 475 / 852 ('D:\DATA\DE\Original Data Temp\195726_Z107045_20190408_102010.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:57+2" type="Information">
+      <text>Process 476 / 852 ('D:\DATA\DE\Original Data Temp\195777_Z112935_20190408_093529.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:57+2" type="Information">
+      <text>Process 477 / 852 ('D:\DATA\DE\Original Data Temp\196076_Z104817_20190408_113632.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:57+2" type="Information">
+      <text>Process 478 / 852 ('D:\DATA\DE\Original Data Temp\196380_Z104902_20190408_111310.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:57+2" type="Information">
+      <text>Process 479 / 852 ('D:\DATA\DE\Original Data Temp\196499_Z125421_20190408_092813.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:57+2" type="Information">
+      <text>Process 480 / 852 ('D:\DATA\DE\Original Data Temp\196506_Z107023_20190408_115947.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:57+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\196506_Z107023_20190408_115947.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:02:57+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\196506_Z107023_20190408_115947.xml' rawid '15')</text>
+    </message>
+    <message time="2019-04-08T12:02:57+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\196506_Z107023_20190408_115947.xml' rawid '31')</text>
+    </message>
+    <message time="2019-04-08T12:02:57+2" type="Information">
+      <text>Process 481 / 852 ('D:\DATA\DE\Original Data Temp\196673_Z122426_20190408_112316.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:57+2" type="Information">
+      <text>Process 482 / 852 ('D:\DATA\DE\Original Data Temp\196916_Z126776_20190408_090617.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:58+2" type="Information">
+      <text>Process 483 / 852 ('D:\DATA\DE\Original Data Temp\197663_Z119594_20190408_103121.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:58+2" type="Information">
+      <text>Process 484 / 852 ('D:\DATA\DE\Original Data Temp\197990_Z127613_20190408_112843.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:58+2" type="Information">
+      <text>Process 485 / 852 ('D:\DATA\DE\Original Data Temp\198211_Z103700_20190408_100449.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:58+2" type="Information">
+      <text>Process 486 / 852 ('D:\DATA\DE\Original Data Temp\198303_Z124501_20190408_112455.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:58+2" type="Information">
+      <text>Process 487 / 852 ('D:\DATA\DE\Original Data Temp\198314_Z104739_20190408_103733.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:58+2" type="Information">
+      <text>Process 488 / 852 ('D:\DATA\DE\Original Data Temp\198768_Z128826_20190408_094505.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:58+2" type="Information">
+      <text>Process 489 / 852 ('D:\DATA\DE\Original Data Temp\198952_Z121834_20190408_094201.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:58+2" type="Information">
+      <text>Process 490 / 852 ('D:\DATA\DE\Original Data Temp\199231_Z129151_20190408_115847.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:58+2" type="Information">
+      <text>Process 491 / 852 ('D:\DATA\DE\Original Data Temp\199435_Z103705_20190408_093909.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:58+2" type="Information">
+      <text>Process 492 / 852 ('D:\DATA\DE\Original Data Temp\229955_Z123304_20190408_101149.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:59+2" type="Information">
+      <text>Process 493 / 852 ('D:\DATA\DE\Original Data Temp\235882_Z104657_20190408_104545.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:59+2" type="Information">
+      <text>Process 494 / 852 ('D:\DATA\DE\Original Data Temp\259152_Z127170_20190408_113137.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:59+2" type="Information">
+      <text>Process 495 / 852 ('D:\DATA\DE\Original Data Temp\260403_Z110968_20190408_104733.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:59+2" type="Information">
+      <text>Process 496 / 852 ('D:\DATA\DE\Original Data Temp\273064_Z113094_20190408_103135.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:59+2" type="Information">
+      <text>Process 497 / 852 ('D:\DATA\DE\Original Data Temp\273131_Z128623_20190408_114008.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:59+2" type="Information">
+      <text>Process 498 / 852 ('D:\DATA\DE\Original Data Temp\282880_Z121561_20190408_092927.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:59+2" type="Information">
+      <text>Process 499 / 852 ('D:\DATA\DE\Original Data Temp\285240_Z126129_20190408_104703.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:59+2" type="Information">
+      <text>Process 500 / 852 ('D:\DATA\DE\Original Data Temp\301630_Z126496_20190408_110437.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:59+2" type="Information">
+      <text>Process 501 / 852 ('D:\DATA\DE\Original Data Temp\316414_Z101731_20190408_092747.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:59+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\316414_Z101731_20190408_092747.xml' rawid '166')</text>
+    </message>
+    <message time="2019-04-08T12:02:59+2" type="Information">
+      <text>Process 502 / 852 ('D:\DATA\DE\Original Data Temp\317248_Z150508_20190408_092242.xml') </text>
+    </message>
+    <message time="2019-04-08T12:02:59+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\317248_Z150508_20190408_092242.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:03:00+2" type="Information">
+      <text>Process 503 / 852 ('D:\DATA\DE\Original Data Temp\351883_Z113541_20190408_112414.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:00+2" type="Information">
+      <text>Process 504 / 852 ('D:\DATA\DE\Original Data Temp\354734_Z116797_20190408_102651.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:00+2" type="Information">
+      <text>Process 505 / 852 ('D:\DATA\DE\Original Data Temp\354741_Z111507_20190408_101144.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:00+2" type="Information">
+      <text>Process 506 / 852 ('D:\DATA\DE\Original Data Temp\354749_Z125541_20190408_100050.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:00+2" type="Information">
+      <text>Process 507 / 852 ('D:\DATA\DE\Original Data Temp\360649_Z121213_20190408_112445.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:00+2" type="Information">
+      <text>Process 508 / 852 ('D:\DATA\DE\Original Data Temp\365033_Z106409_20190408_093843.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:00+2" type="Information">
+      <text>Process 509 / 852 ('D:\DATA\DE\Original Data Temp\365033_Z106409_20190408_115036.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:00+2" type="Information">
+      <text>Process 510 / 852 ('D:\DATA\DE\Original Data Temp\365055_Z106931_20190408_110026.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:00+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\365055_Z106931_20190408_110026.xml' rawid '139')</text>
+    </message>
+    <message time="2019-04-08T12:03:00+2" type="Information">
+      <text>Process 511 / 852 ('D:\DATA\DE\Original Data Temp\365081_Z121190_20190408_084826.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:00+2" type="Information">
+      <text>Process 512 / 852 ('D:\DATA\DE\Original Data Temp\365134_Z131181_20190408_105133.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:00+2" type="Information">
+      <text>Process 513 / 852 ('D:\DATA\DE\Original Data Temp\365135_Z128374_20190408_102008.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:01+2" type="Information">
+      <text>Process 514 / 852 ('D:\DATA\DE\Original Data Temp\365139_Z131478_20190408_112407.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:01+2" type="Information">
+      <text>Process 515 / 852 ('D:\DATA\DE\Original Data Temp\365145_Z117898_20190408_095950.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:01+2" type="Information">
+      <text>Process 516 / 852 ('D:\DATA\DE\Original Data Temp\365153_Z128424_20190408_082606.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:01+2" type="Information">
+      <text>Process 517 / 852 ('D:\DATA\DE\Original Data Temp\365366_Z124781_20190408_083245.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:01+2" type="Information">
+      <text>Process 518 / 852 ('D:\DATA\DE\Original Data Temp\365366_Z124781_20190408_115214.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:01+2" type="Information">
+      <text>Process 519 / 852 ('D:\DATA\DE\Original Data Temp\365370_Z126506_20190408_094235.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:01+2" type="Information">
+      <text>Process 520 / 852 ('D:\DATA\DE\Original Data Temp\365391_Z128045_20190408_100411.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:01+2" type="Information">
+      <text>Process 521 / 852 ('D:\DATA\DE\Original Data Temp\365440_Z123187_20190408_115556.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:02+2" type="Information">
+      <text>Process 522 / 852 ('D:\DATA\DE\Original Data Temp\365458_Z102213_20190408_092850.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:02+2" type="Information">
+      <text>Process 523 / 852 ('D:\DATA\DE\Original Data Temp\404442_Z126253_20190408_083502.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:02+2" type="Information">
+      <text>Process 524 / 852 ('D:\DATA\DE\Original Data Temp\417719_Z126619_20190408_105500.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:02+2" type="Information">
+      <text>Process 525 / 852 ('D:\DATA\DE\Original Data Temp\419806_Z126159_20190408_114159.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:02+2" type="Information">
+      <text>Process 526 / 852 ('D:\DATA\DE\Original Data Temp\427167_Z122991_20190408_105133.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:02+2" type="Information">
+      <text>Process 527 / 852 ('D:\DATA\DE\Original Data Temp\428340_Z150831_20190408_083535.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:02+2" type="Information">
+      <text>Process 528 / 852 ('D:\DATA\DE\Original Data Temp\460772_Z126172_20190408_102540.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:02+2" type="Information">
+      <text>Process 529 / 852 ('D:\DATA\DE\Original Data Temp\464980_Z121472_20190408_112053.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:02+2" type="Information">
+      <text>Process 530 / 852 ('D:\DATA\DE\Original Data Temp\467960_Z103772_20190408_100547.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:02+2" type="Information">
+      <text>Process 531 / 852 ('D:\DATA\DE\Original Data Temp\480241_Z119845_20190408_113544.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:03+2" type="Information">
+      <text>Process 532 / 852 ('D:\DATA\DE\Original Data Temp\485855_Z114469_20190408_090254.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:03+2" type="Information">
+      <text>Process 533 / 852 ('D:\DATA\DE\Original Data Temp\486134_Z126497_20190408_084350.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:03+2" type="Information">
+      <text>Process 534 / 852 ('D:\DATA\DE\Original Data Temp\486328_Z105951_20190408_101754.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:03+2" type="Information">
+      <text>Process 535 / 852 ('D:\DATA\DE\Original Data Temp\486328_Z105951_20190408_114603.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:03+2" type="Information">
+      <text>Process 536 / 852 ('D:\DATA\DE\Original Data Temp\486912_Z116989_20190408_100709.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:03+2" type="Information">
+      <text>Process 537 / 852 ('D:\DATA\DE\Original Data Temp\487014_Z103570_20190408_094455.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:03+2" type="Information">
+      <text>Process 538 / 852 ('D:\DATA\DE\Original Data Temp\487390_Z105405_20190408_115031.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:03+2" type="Information">
+      <text>Process 539 / 852 ('D:\DATA\DE\Original Data Temp\487440_Z114780_20190408_112945.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:03+2" type="Information">
+      <text>Process 540 / 852 ('D:\DATA\DE\Original Data Temp\487606_Z110553_20190408_113702.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:04+2" type="Information">
+      <text>Process 541 / 852 ('D:\DATA\DE\Original Data Temp\488310_Z112157_20190408_103306.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:04+2" type="Information">
+      <text>Process 542 / 852 ('D:\DATA\DE\Original Data Temp\488554_Z108180_20190408_101756.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:04+2" type="Information">
+      <text>Process 543 / 852 ('D:\DATA\DE\Original Data Temp\488561_Z127523_20190408_113728.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:04+2" type="Information">
+      <text>Process 544 / 852 ('D:\DATA\DE\Original Data Temp\489497_Z128695_20190408_083159.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:04+2" type="Information">
+      <text>Process 545 / 852 ('D:\DATA\DE\Original Data Temp\489497_Z128695_20190408_103009.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:04+2" type="Information">
+      <text>Process 546 / 852 ('D:\DATA\DE\Original Data Temp\489749_Z113041_20190408_115134.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:04+2" type="Information">
+      <text>Process 547 / 852 ('D:\DATA\DE\Original Data Temp\491916_Z122017_20190408_100300.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:04+2" type="Information">
+      <text>Process 548 / 852 ('D:\DATA\DE\Original Data Temp\492149_Z125734_20190408_115200.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:04+2" type="Information">
+      <text>Process 549 / 852 ('D:\DATA\DE\Original Data Temp\492411_Z101448_20190408_091315.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:04+2" type="Information">
+      <text>Process 550 / 852 ('D:\DATA\DE\Original Data Temp\492526_Z130058_20190408_114932.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:05+2" type="Information">
+      <text>Process 551 / 852 ('D:\DATA\DE\Original Data Temp\492849_Z100548_20190408_105111.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:05+2" type="Information">
+      <text>Process 552 / 852 ('D:\DATA\DE\Original Data Temp\493334_Z124250_20190408_112141.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:05+2" type="Information">
+      <text>Process 553 / 852 ('D:\DATA\DE\Original Data Temp\493489_Z120546_20190408_103422.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:05+2" type="Information">
+      <text>Process 554 / 852 ('D:\DATA\DE\Original Data Temp\493678_Z101788_20190408_104646.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:05+2" type="Information">
+      <text>Process 555 / 852 ('D:\DATA\DE\Original Data Temp\493720_Z113585_20190408_091414.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:05+2" type="Information">
+      <text>Process 556 / 852 ('D:\DATA\DE\Original Data Temp\493729_Z100735_20190408_103900.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:05+2" type="Information">
+      <text>Process 557 / 852 ('D:\DATA\DE\Original Data Temp\493858_Z116509_20190408_112151.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:05+2" type="Information">
+      <text>Process 558 / 852 ('D:\DATA\DE\Original Data Temp\493891_Z101795_20190408_105053.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:06+2" type="Information">
+      <text>Process 559 / 852 ('D:\DATA\DE\Original Data Temp\493903_Z119743_20190408_103020.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:06+2" type="Information">
+      <text>Process 560 / 852 ('D:\DATA\DE\Original Data Temp\494193_Z117263_20190408_112956.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:06+2" type="Information">
+      <text>Process 561 / 852 ('D:\DATA\DE\Original Data Temp\494299_Z115125_20190408_101314.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:06+2" type="Information">
+      <text>Process 562 / 852 ('D:\DATA\DE\Original Data Temp\494353_Z150876_20190408_102858.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:06+2" type="Information">
+      <text>Process 563 / 852 ('D:\DATA\DE\Original Data Temp\494394_Z125660_20190408_113045.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:06+2" type="Information">
+      <text>Process 564 / 852 ('D:\DATA\DE\Original Data Temp\494511_Z101378_20190408_110215.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:06+2" type="Information">
+      <text>Process 565 / 852 ('D:\DATA\DE\Original Data Temp\494544_Z100248_20190408_093820.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Information">
+      <text>Process 566 / 852 ('D:\DATA\DE\Original Data Temp\494706_Z127145_20190408_111118.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Information">
+      <text>Process 567 / 852 ('D:\DATA\DE\Original Data Temp\494729_Z112041_20190408_101121.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Information">
+      <text>Process 568 / 852 ('D:\DATA\DE\Original Data Temp\495034_Z101479_20190408_094051.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Information">
+      <text>Process 569 / 852 ('D:\DATA\DE\Original Data Temp\495065_Z125948_20190408_102851.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Information">
+      <text>Process 570 / 852 ('D:\DATA\DE\Original Data Temp\495219_Z114361_20190408_095439.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Information">
+      <text>Process 571 / 852 ('D:\DATA\DE\Original Data Temp\495290_Z130198_20190408_113717.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\495290_Z130198_20190408_113717.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\495290_Z130198_20190408_113717.xml' rawid '14')</text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\495290_Z130198_20190408_113717.xml' rawid '29')</text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\495290_Z130198_20190408_113717.xml' rawid '110')</text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\495290_Z130198_20190408_113717.xml' rawid '125')</text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Information">
+      <text>Process 572 / 852 ('D:\DATA\DE\Original Data Temp\495300_Z121847_20190408_093359.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Information">
+      <text>Process 573 / 852 ('D:\DATA\DE\Original Data Temp\495300_Z121847_20190408_095136.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Information">
+      <text>Process 574 / 852 ('D:\DATA\DE\Original Data Temp\495363_Z119098_20190408_093556.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\495363_Z119098_20190408_093556.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Information">
+      <text>Process 575 / 852 ('D:\DATA\DE\Original Data Temp\495532_Z110893_20190408_111808.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:07+2" type="Information">
+      <text>Process 576 / 852 ('D:\DATA\DE\Original Data Temp\495835_Z115455_20190408_113658.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:08+2" type="Information">
+      <text>Process 577 / 852 ('D:\DATA\DE\Original Data Temp\495835_Z115455_20190408_115743.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:08+2" type="Information">
+      <text>Process 578 / 852 ('D:\DATA\DE\Original Data Temp\495839_Z113004_20190408_105017.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:08+2" type="Information">
+      <text>Process 579 / 852 ('D:\DATA\DE\Original Data Temp\496039_Z119174_20190408_094638.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:08+2" type="Information">
+      <text>Process 580 / 852 ('D:\DATA\DE\Original Data Temp\496055_Z128769_20190408_113531.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:08+2" type="Information">
+      <text>Process 581 / 852 ('D:\DATA\DE\Original Data Temp\496304_Z122705_20190408_091651.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:08+2" type="Information">
+      <text>Process 582 / 852 ('D:\DATA\DE\Original Data Temp\496306_Z110285_20190408_114057.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:08+2" type="Information">
+      <text>Process 583 / 852 ('D:\DATA\DE\Original Data Temp\496307_Z111762_20190408_110417.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:08+2" type="Information">
+      <text>Process 584 / 852 ('D:\DATA\DE\Original Data Temp\496529_Z116643_20190408_111050.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:08+2" type="Information">
+      <text>Process 585 / 852 ('D:\DATA\DE\Original Data Temp\496824_Z121351_20190408_105915.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:08+2" type="Information">
+      <text>Process 586 / 852 ('D:\DATA\DE\Original Data Temp\496852_Z124859_20190408_111547.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:08+2" type="Information">
+      <text>Process 587 / 852 ('D:\DATA\DE\Original Data Temp\496855_Z100676_20190408_112250.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Information">
+      <text>Process 588 / 852 ('D:\DATA\DE\Original Data Temp\496910_Z100635_20190408_105930.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Information">
+      <text>Process 589 / 852 ('D:\DATA\DE\Original Data Temp\496929_Z122901_20190408_093829.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Information">
+      <text>Process 590 / 852 ('D:\DATA\DE\Original Data Temp\497442_Z123091_20190408_083918.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\497442_Z123091_20190408_083918.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\497442_Z123091_20190408_083918.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Information">
+      <text>Process 591 / 852 ('D:\DATA\DE\Original Data Temp\497634_Z129474_20190408_114247.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\497634_Z129474_20190408_114247.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Information">
+      <text>Process 592 / 852 ('D:\DATA\DE\Original Data Temp\497699_Z125836_20190408_112050.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Information">
+      <text>Process 593 / 852 ('D:\DATA\DE\Original Data Temp\497750_Z120024_20190408_104843.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Information">
+      <text>Process 594 / 852 ('D:\DATA\DE\Original Data Temp\497785_Z124791_20190408_082833.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Information">
+      <text>Process 595 / 852 ('D:\DATA\DE\Original Data Temp\497864_Z107654_20190408_091450.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Information">
+      <text>Process 596 / 852 ('D:\DATA\DE\Original Data Temp\498126_Z112363_20190408_102320.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\498126_Z112363_20190408_102320.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\498126_Z112363_20190408_102320.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Information">
+      <text>Process 597 / 852 ('D:\DATA\DE\Original Data Temp\498395_Z128799_20190408_091029.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:09+2" type="Information">
+      <text>Process 598 / 852 ('D:\DATA\DE\Original Data Temp\498777_Z101308_20190408_112902.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:10+2" type="Information">
+      <text>Process 599 / 852 ('D:\DATA\DE\Original Data Temp\498851_Z114312_20190408_113017.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:10+2" type="Information">
+      <text>Process 600 / 852 ('D:\DATA\DE\Original Data Temp\498888_Z125282_20190408_103658.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:10+2" type="Information">
+      <text>Process 601 / 852 ('D:\DATA\DE\Original Data Temp\499095_Z107035_20190408_105650.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:10+2" type="Information">
+      <text>Process 602 / 852 ('D:\DATA\DE\Original Data Temp\499148_Z100045_20190408_103208.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:10+2" type="Information">
+      <text>Process 603 / 852 ('D:\DATA\DE\Original Data Temp\499523_Z128667_20190408_112137.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:10+2" type="Information">
+      <text>Process 604 / 852 ('D:\DATA\DE\Original Data Temp\499600_Z124792_20190408_100756.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:10+2" type="Information">
+      <text>Process 605 / 852 ('D:\DATA\DE\Original Data Temp\499613_Z116732_20190408_102620.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:10+2" type="Information">
+      <text>Process 606 / 852 ('D:\DATA\DE\Original Data Temp\499936_Z150069_20190408_112837.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:11+2" type="Information">
+      <text>Process 607 / 852 ('D:\DATA\DE\Original Data Temp\499946_Z101156_20190408_103700.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:11+2" type="Information">
+      <text>Process 608 / 852 ('D:\DATA\DE\Original Data Temp\502491_Z101199_20190408_094726.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:11+2" type="Information">
+      <text>Process 609 / 852 ('D:\DATA\DE\Original Data Temp\502491_Z101199_20190408_111817.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:11+2" type="Information">
+      <text>Process 610 / 852 ('D:\DATA\DE\Original Data Temp\502663_Z123786_20190408_112639.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:11+2" type="Information">
+      <text>Process 611 / 852 ('D:\DATA\DE\Original Data Temp\502674_Z126214_20190408_095006.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:11+2" type="Information">
+      <text>Process 612 / 852 ('D:\DATA\DE\Original Data Temp\502713_Z121590_20190408_111918.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:11+2" type="Information">
+      <text>Process 613 / 852 ('D:\DATA\DE\Original Data Temp\503287_Z122292_20190408_111649.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:12+2" type="Information">
+      <text>Process 614 / 852 ('D:\DATA\DE\Original Data Temp\503558_Z124648_20190408_114836.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:12+2" type="Information">
+      <text>Process 615 / 852 ('D:\DATA\DE\Original Data Temp\575368_Z127681_20190408_102305.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:12+2" type="Information">
+      <text>Process 616 / 852 ('D:\DATA\DE\Original Data Temp\575664_Z101629_20190408_111556.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:12+2" type="Information">
+      <text>Process 617 / 852 ('D:\DATA\DE\Original Data Temp\575926_Z104153_20190408_114422.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:12+2" type="Information">
+      <text>Process 618 / 852 ('D:\DATA\DE\Original Data Temp\578742_Z150324_20190408_091249.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:12+2" type="Information">
+      <text>Process 619 / 852 ('D:\DATA\DE\Original Data Temp\578771_Z124977_20190408_081151.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:12+2" type="Information">
+      <text>Process 620 / 852 ('D:\DATA\DE\Original Data Temp\579063_Z135784_20190408_100607.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:12+2" type="Information">
+      <text>Process 621 / 852 ('D:\DATA\DE\Original Data Temp\579086_Z123368_20190408_090617.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:12+2" type="Information">
+      <text>Process 622 / 852 ('D:\DATA\DE\Original Data Temp\579426_Z121742_20190408_115844.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:12+2" type="Information">
+      <text>Process 623 / 852 ('D:\DATA\DE\Original Data Temp\579432_Z110647_20190408_101316.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Information">
+      <text>Process 624 / 852 ('D:\DATA\DE\Original Data Temp\579858_Z128926_20190408_085758.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Information">
+      <text>Process 625 / 852 ('D:\DATA\DE\Original Data Temp\579858_Z128926_20190408_110458.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\579858_Z128926_20190408_110458.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Information">
+      <text>Process 626 / 852 ('D:\DATA\DE\Original Data Temp\579858_Z128926_20190408_115600.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Information">
+      <text>Process 627 / 852 ('D:\DATA\DE\Original Data Temp\579879_Z127043_20190408_091005.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Information">
+      <text>Process 628 / 852 ('D:\DATA\DE\Original Data Temp\580120_Z136409_20190408_100621.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Information">
+      <text>Process 629 / 852 ('D:\DATA\DE\Original Data Temp\580446_Z127494_20190408_102317.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Information">
+      <text>Process 630 / 852 ('D:\DATA\DE\Original Data Temp\580992_Z100987_20190408_114332.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Information">
+      <text>Process 631 / 852 ('D:\DATA\DE\Original Data Temp\581092_Z129206_20190408_104457.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Information">
+      <text>Process 632 / 852 ('D:\DATA\DE\Original Data Temp\581342_Z121015_20190408_093007.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Information">
+      <text>Process 633 / 852 ('D:\DATA\DE\Original Data Temp\581368_Z126411_20190408_093319.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\581368_Z126411_20190408_093319.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Information">
+      <text>Process 634 / 852 ('D:\DATA\DE\Original Data Temp\581898_Z121374_20190408_104103.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Information">
+      <text>Process 635 / 852 ('D:\DATA\DE\Original Data Temp\582048_Z128297_20190408_101424.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:13+2" type="Information">
+      <text>Process 636 / 852 ('D:\DATA\DE\Original Data Temp\582150_Z118734_20190408_091134.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:14+2" type="Information">
+      <text>Process 637 / 852 ('D:\DATA\DE\Original Data Temp\582288_Z150212_20190408_114714.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:14+2" type="Information">
+      <text>Process 638 / 852 ('D:\DATA\DE\Original Data Temp\582321_Z118797_20190408_113513.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:14+2" type="Information">
+      <text>Process 639 / 852 ('D:\DATA\DE\Original Data Temp\582353_Z102447_20190408_104436.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:14+2" type="Information">
+      <text>Process 640 / 852 ('D:\DATA\DE\Original Data Temp\582383_Z112730_20190408_115642.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:14+2" type="Information">
+      <text>Process 641 / 852 ('D:\DATA\DE\Original Data Temp\583178_Z104508_20190408_110958.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:14+2" type="Information">
+      <text>Process 642 / 852 ('D:\DATA\DE\Original Data Temp\583222_Z113335_20190408_114804.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:14+2" type="Information">
+      <text>Process 643 / 852 ('D:\DATA\DE\Original Data Temp\583243_Z111734_20190408_095014.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:15+2" type="Information">
+      <text>Process 644 / 852 ('D:\DATA\DE\Original Data Temp\583306_Z127609_20190408_090637.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:15+2" type="Information">
+      <text>Process 645 / 852 ('D:\DATA\DE\Original Data Temp\583494_Z122075_20190408_093223.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:15+2" type="Information">
+      <text>Process 646 / 852 ('D:\DATA\DE\Original Data Temp\583533_Z110850_20190408_110613.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:15+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\583533_Z110850_20190408_110613.xml' rawid '90')</text>
+    </message>
+    <message time="2019-04-08T12:03:15+2" type="Information">
+      <text>Process 647 / 852 ('D:\DATA\DE\Original Data Temp\583586_Z104951_20190408_101010.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:15+2" type="Information">
+      <text>Process 648 / 852 ('D:\DATA\DE\Original Data Temp\583758_Z101339_20190408_095320.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:15+2" type="Information">
+      <text>Process 649 / 852 ('D:\DATA\DE\Original Data Temp\584734_Z100896_20190408_093750.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:15+2" type="Information">
+      <text>Process 650 / 852 ('D:\DATA\DE\Original Data Temp\586726_Z101823_20190408_102436.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:15+2" type="Information">
+      <text>Process 651 / 852 ('D:\DATA\DE\Original Data Temp\600008_Z125407_20190408_100259.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:15+2" type="Information">
+      <text>Process 652 / 852 ('D:\DATA\DE\Original Data Temp\600049_Z122995_20190408_115123.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:15+2" type="Information">
+      <text>Process 653 / 852 ('D:\DATA\DE\Original Data Temp\600098_Z122913_20190408_103419.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:15+2" type="Information">
+      <text>Process 654 / 852 ('D:\DATA\DE\Original Data Temp\600112_Z119797_20190408_105420.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:16+2" type="Information">
+      <text>Process 655 / 852 ('D:\DATA\DE\Original Data Temp\600454_Z121266_20190408_105640.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:16+2" type="Information">
+      <text>Process 656 / 852 ('D:\DATA\DE\Original Data Temp\600594_Z122024_20190408_112309.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:16+2" type="Information">
+      <text>Process 657 / 852 ('D:\DATA\DE\Original Data Temp\600600_Z111145_20190408_113606.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:16+2" type="Information">
+      <text>Process 658 / 852 ('D:\DATA\DE\Original Data Temp\600690_Z128339_20190408_111946.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:16+2" type="Information">
+      <text>Process 659 / 852 ('D:\DATA\DE\Original Data Temp\600776_Z101056_20190408_090908.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:16+2" type="Information">
+      <text>Process 660 / 852 ('D:\DATA\DE\Original Data Temp\600962_Z103935_20190408_094544.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:16+2" type="Information">
+      <text>Process 661 / 852 ('D:\DATA\DE\Original Data Temp\601114_Z100131_20190408_112113.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:16+2" type="Information">
+      <text>Process 662 / 852 ('D:\DATA\DE\Original Data Temp\601353_Z121513_20190408_110930.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:16+2" type="Information">
+      <text>Process 663 / 852 ('D:\DATA\DE\Original Data Temp\601385_Z120027_20190408_112824.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:16+2" type="Information">
+      <text>Process 664 / 852 ('D:\DATA\DE\Original Data Temp\601551_Z1000196_20190408_095032.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:16+2" type="Information">
+      <text>Process 665 / 852 ('D:\DATA\DE\Original Data Temp\601673_Z111252_20190408_091225.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:17+2" type="Information">
+      <text>Process 666 / 852 ('D:\DATA\DE\Original Data Temp\601673_Z111252_20190408_100718.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:17+2" type="Information">
+      <text>Process 667 / 852 ('D:\DATA\DE\Original Data Temp\601711_Z122963_20190408_102637.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:17+2" type="Information">
+      <text>Process 668 / 852 ('D:\DATA\DE\Original Data Temp\602379_Z119585_20190408_095835.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:17+2" type="Information">
+      <text>Process 669 / 852 ('D:\DATA\DE\Original Data Temp\602455_Z128700_20190408_113627.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:17+2" type="Information">
+      <text>Process 670 / 852 ('D:\DATA\DE\Original Data Temp\602673_Z104049_20190408_114612.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:17+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\602673_Z104049_20190408_114612.xml' rawid '60')</text>
+    </message>
+    <message time="2019-04-08T12:03:17+2" type="Information">
+      <text>Process 671 / 852 ('D:\DATA\DE\Original Data Temp\602710_Z121540_20190408_082659.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:17+2" type="Information">
+      <text>Process 672 / 852 ('D:\DATA\DE\Original Data Temp\603309_Z121116_20190408_101513.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:17+2" type="Information">
+      <text>Process 673 / 852 ('D:\DATA\DE\Original Data Temp\603340_Z121894_20190408_104857.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:17+2" type="Information">
+      <text>Process 674 / 852 ('D:\DATA\DE\Original Data Temp\603637_Z1200516_20190408_115732.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:17+2" type="Information">
+      <text>Process 675 / 852 ('D:\DATA\DE\Original Data Temp\603743_Z104042_20190408_104031.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:17+2" type="Information">
+      <text>Process 676 / 852 ('D:\DATA\DE\Original Data Temp\603783_Z128241_20190408_085939.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 677 / 852 ('D:\DATA\DE\Original Data Temp\603923_Z121230_20190408_102028.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 678 / 852 ('D:\DATA\DE\Original Data Temp\604107_Z122888_20190408_103645.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 679 / 852 ('D:\DATA\DE\Original Data Temp\604260_Z111945_20190408_095157.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 680 / 852 ('D:\DATA\DE\Original Data Temp\604392_Z127267_20190408_115518.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 681 / 852 ('D:\DATA\DE\Original Data Temp\604799_Z127017_20190408_101426.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 682 / 852 ('D:\DATA\DE\Original Data Temp\604805_Z127336_20190408_111317.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 683 / 852 ('D:\DATA\DE\Original Data Temp\604977_Z122191_20190408_095006.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 684 / 852 ('D:\DATA\DE\Original Data Temp\605124_Z124420_20190408_114627.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 685 / 852 ('D:\DATA\DE\Original Data Temp\605353_Z123229_20190408_112536.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 686 / 852 ('D:\DATA\DE\Original Data Temp\605364_Z112046_20190408_111944.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 687 / 852 ('D:\DATA\DE\Original Data Temp\605460_Z127057_20190408_111553.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 688 / 852 ('D:\DATA\DE\Original Data Temp\605473_Z112734_20190408_092552.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\605473_Z112734_20190408_092552.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 689 / 852 ('D:\DATA\DE\Original Data Temp\605656_Z122716_20190408_113744.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 690 / 852 ('D:\DATA\DE\Original Data Temp\605799_Z128452_20190408_113439.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:18+2" type="Information">
+      <text>Process 691 / 852 ('D:\DATA\DE\Original Data Temp\605821_Z102006_20190408_084406.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:19+2" type="Information">
+      <text>Process 692 / 852 ('D:\DATA\DE\Original Data Temp\605841_Z121889_20190408_095308.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:19+2" type="Information">
+      <text>Process 693 / 852 ('D:\DATA\DE\Original Data Temp\605867_Z122946_20190408_112657.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:19+2" type="Information">
+      <text>Process 694 / 852 ('D:\DATA\DE\Original Data Temp\605869_Z105084_20190408_115040.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:19+2" type="Information">
+      <text>Process 695 / 852 ('D:\DATA\DE\Original Data Temp\606003_Z1200482_20190408_112800.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:19+2" type="Information">
+      <text>Process 696 / 852 ('D:\DATA\DE\Original Data Temp\606052_Z101087_20190408_103843.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:19+2" type="Information">
+      <text>Process 697 / 852 ('D:\DATA\DE\Original Data Temp\606178_Z104997_20190408_114817.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:19+2" type="Information">
+      <text>Process 698 / 852 ('D:\DATA\DE\Original Data Temp\606185_Z126338_20190408_110052.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:19+2" type="Information">
+      <text>Process 699 / 852 ('D:\DATA\DE\Original Data Temp\606427_Z122573_20190408_110520.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:19+2" type="Information">
+      <text>Process 700 / 852 ('D:\DATA\DE\Original Data Temp\606516_Z125438_20190408_110636.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:20+2" type="Information">
+      <text>Process 701 / 852 ('D:\DATA\DE\Original Data Temp\606532_Z113536_20190408_093919.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:20+2" type="Information">
+      <text>Process 702 / 852 ('D:\DATA\DE\Original Data Temp\606537_Z119934_20190408_113445.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:20+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\606537_Z119934_20190408_113445.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:03:20+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\606537_Z119934_20190408_113445.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:03:20+2" type="Information">
+      <text>Process 703 / 852 ('D:\DATA\DE\Original Data Temp\606635_Z112752_20190408_111803.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:20+2" type="Information">
+      <text>Process 704 / 852 ('D:\DATA\DE\Original Data Temp\606789_Z101873_20190408_111944.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:20+2" type="Information">
+      <text>Process 705 / 852 ('D:\DATA\DE\Original Data Temp\606835_Z1200521_20190408_100629.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:20+2" type="Information">
+      <text>Process 706 / 852 ('D:\DATA\DE\Original Data Temp\607079_Z126911_20190408_102127.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:20+2" type="Information">
+      <text>Process 707 / 852 ('D:\DATA\DE\Original Data Temp\607225_Z106904_20190408_082251.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:20+2" type="Information">
+      <text>Process 708 / 852 ('D:\DATA\DE\Original Data Temp\607225_Z106904_20190408_115832.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:20+2" type="Information">
+      <text>Process 709 / 852 ('D:\DATA\DE\Original Data Temp\607312_Z126423_20190408_112843.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:20+2" type="Information">
+      <text>Process 710 / 852 ('D:\DATA\DE\Original Data Temp\607525_Z105056_20190408_090919.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:20+2" type="Information">
+      <text>Process 711 / 852 ('D:\DATA\DE\Original Data Temp\607540_Z113551_20190408_110736.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:21+2" type="Information">
+      <text>Process 712 / 852 ('D:\DATA\DE\Original Data Temp\607576_Z119103_20190408_113249.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:21+2" type="Information">
+      <text>Process 713 / 852 ('D:\DATA\DE\Original Data Temp\607631_Z110642_20190408_100925.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:21+2" type="Information">
+      <text>Process 714 / 852 ('D:\DATA\DE\Original Data Temp\607899_Z111976_20190408_103915.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:21+2" type="Information">
+      <text>Process 715 / 852 ('D:\DATA\DE\Original Data Temp\607899_Z111976_20190408_104910.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:21+2" type="Information">
+      <text>Process 716 / 852 ('D:\DATA\DE\Original Data Temp\607979_Z104248_20190408_103911.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:21+2" type="Information">
+      <text>Process 717 / 852 ('D:\DATA\DE\Original Data Temp\607991_Z128119_20190408_105719.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:21+2" type="Information">
+      <text>Process 718 / 852 ('D:\DATA\DE\Original Data Temp\608270_Z105320_20190408_101552.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:21+2" type="Information">
+      <text>Process 719 / 852 ('D:\DATA\DE\Original Data Temp\608354_Z101822_20190408_092909.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:21+2" type="Information">
+      <text>Process 720 / 852 ('D:\DATA\DE\Original Data Temp\608355_Z105505_20190408_105206.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:22+2" type="Information">
+      <text>Process 721 / 852 ('D:\DATA\DE\Original Data Temp\608650_Z110916_20190408_100838.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:22+2" type="Information">
+      <text>Process 722 / 852 ('D:\DATA\DE\Original Data Temp\608712_Z127237_20190408_092445.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:22+2" type="Information">
+      <text>Process 723 / 852 ('D:\DATA\DE\Original Data Temp\608871_Z103625_20190408_103617.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:22+2" type="Information">
+      <text>Process 724 / 852 ('D:\DATA\DE\Original Data Temp\608889_Z112523_20190408_113745.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:22+2" type="Information">
+      <text>Process 725 / 852 ('D:\DATA\DE\Original Data Temp\608921_Z111173_20190408_091115.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:22+2" type="Information">
+      <text>Process 726 / 852 ('D:\DATA\DE\Original Data Temp\608921_Z111173_20190408_101254.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:22+2" type="Information">
+      <text>Process 727 / 852 ('D:\DATA\DE\Original Data Temp\609065_Z104940_20190408_115215.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:22+2" type="Information">
+      <text>Process 728 / 852 ('D:\DATA\DE\Original Data Temp\609225_Z112484_20190408_112621.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:23+2" type="Information">
+      <text>Process 729 / 852 ('D:\DATA\DE\Original Data Temp\609262_Z122249_20190408_115119.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:23+2" type="Information">
+      <text>Process 730 / 852 ('D:\DATA\DE\Original Data Temp\609281_Z124814_20190408_104601.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:23+2" type="Information">
+      <text>Process 731 / 852 ('D:\DATA\DE\Original Data Temp\609281_Z124814_20190408_114626.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:23+2" type="Information">
+      <text>Process 732 / 852 ('D:\DATA\DE\Original Data Temp\609297_Z103860_20190408_083955.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:23+2" type="Information">
+      <text>Process 733 / 852 ('D:\DATA\DE\Original Data Temp\609325_Z150225_20190408_093542.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:23+2" type="Information">
+      <text>Process 734 / 852 ('D:\DATA\DE\Original Data Temp\609381_Z105430_20190408_094103.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:23+2" type="Information">
+      <text>Process 735 / 852 ('D:\DATA\DE\Original Data Temp\609425_Z104895_20190408_101412.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:23+2" type="Information">
+      <text>Process 736 / 852 ('D:\DATA\DE\Original Data Temp\609486_Z124523_20190408_113040.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:23+2" type="Information">
+      <text>Process 737 / 852 ('D:\DATA\DE\Original Data Temp\609521_Z121675_20190408_085451.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:23+2" type="Information">
+      <text>Process 738 / 852 ('D:\DATA\DE\Original Data Temp\609527_Z121875_20190408_094753.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:23+2" type="Information">
+      <text>Process 739 / 852 ('D:\DATA\DE\Original Data Temp\609528_Z105589_20190408_083809.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:23+2" type="Information">
+      <text>Process 740 / 852 ('D:\DATA\DE\Original Data Temp\609581_Z125685_20190408_113414.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:24+2" type="Information">
+      <text>Process 741 / 852 ('D:\DATA\DE\Original Data Temp\609595_Z127320_20190408_101850.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:24+2" type="Information">
+      <text>Process 742 / 852 ('D:\DATA\DE\Original Data Temp\609719_Z127592_20190408_105653.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:24+2" type="Information">
+      <text>Process 743 / 852 ('D:\DATA\DE\Original Data Temp\610389_Z111198_20190408_111936.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:24+2" type="Information">
+      <text>Process 744 / 852 ('D:\DATA\DE\Original Data Temp\610672_Z106703_20190408_095241.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:24+2" type="Information">
+      <text>Process 745 / 852 ('D:\DATA\DE\Original Data Temp\610685_Z123726_20190408_090615.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:24+2" type="Information">
+      <text>Process 746 / 852 ('D:\DATA\DE\Original Data Temp\610685_Z123726_20190408_105329.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:24+2" type="Information">
+      <text>Process 747 / 852 ('D:\DATA\DE\Original Data Temp\610911_Z122667_20190408_100123.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:24+2" type="Information">
+      <text>Process 748 / 852 ('D:\DATA\DE\Original Data Temp\611334_Z118813_20190408_113059.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:24+2" type="Information">
+      <text>Process 749 / 852 ('D:\DATA\DE\Original Data Temp\616527_Z103799_20190408_082224.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:24+2" type="Information">
+      <text>Process 750 / 852 ('D:\DATA\DE\Original Data Temp\616530_Z104208_20190408_091727.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:24+2" type="Information">
+      <text>Process 751 / 852 ('D:\DATA\DE\Original Data Temp\616634_Z129084_20190408_105912.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:25+2" type="Information">
+      <text>Process 752 / 852 ('D:\DATA\DE\Original Data Temp\617122_Z106913_20190408_103506.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:25+2" type="Information">
+      <text>Process 753 / 852 ('D:\DATA\DE\Original Data Temp\617158_Z121128_20190408_112941.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:25+2" type="Information">
+      <text>Process 754 / 852 ('D:\DATA\DE\Original Data Temp\617211_Z111538_20190408_090844.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:25+2" type="Information">
+      <text>Process 755 / 852 ('D:\DATA\DE\Original Data Temp\617818_Z112925_20190408_115225.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:25+2" type="Information">
+      <text>Process 756 / 852 ('D:\DATA\DE\Original Data Temp\618090_Z103776_20190408_113202.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:26+2" type="Information">
+      <text>Process 757 / 852 ('D:\DATA\DE\Original Data Temp\618259_Z100861_20190408_082848.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:26+2" type="Information">
+      <text>Process 758 / 852 ('D:\DATA\DE\Original Data Temp\618385_Z103990_20190408_105906.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:26+2" type="Information">
+      <text>Process 759 / 852 ('D:\DATA\DE\Original Data Temp\618851_Z105401_20190408_102215.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:26+2" type="Information">
+      <text>Process 760 / 852 ('D:\DATA\DE\Original Data Temp\622055_Z122576_20190408_113428.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:26+2" type="Information">
+      <text>Process 761 / 852 ('D:\DATA\DE\Original Data Temp\622328_Z120122_20190408_111641.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:26+2" type="Information">
+      <text>Process 762 / 852 ('D:\DATA\DE\Original Data Temp\623427_Z124851_20190408_112903.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:26+2" type="Information">
+      <text>Process 763 / 852 ('D:\DATA\DE\Original Data Temp\623747_Z104068_20190408_112108.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:27+2" type="Information">
+      <text>Process 764 / 852 ('D:\DATA\DE\Original Data Temp\624375_Z126422_20190408_112025.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:27+2" type="Information">
+      <text>Process 765 / 852 ('D:\DATA\DE\Original Data Temp\627780_Z101222_20190408_112402.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:27+2" type="Information">
+      <text>Process 766 / 852 ('D:\DATA\DE\Original Data Temp\630260_Z112054_20190408_115605.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:27+2" type="Information">
+      <text>Process 767 / 852 ('D:\DATA\DE\Original Data Temp\630742_Z103697_20190408_102015.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:27+2" type="Information">
+      <text>Process 768 / 852 ('D:\DATA\DE\Original Data Temp\631014_Z128434_20190408_085147.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:27+2" type="Information">
+      <text>Process 769 / 852 ('D:\DATA\DE\Original Data Temp\635969_Z126731_20190408_102627.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:27+2" type="Information">
+      <text>Process 770 / 852 ('D:\DATA\DE\Original Data Temp\636064_Z126241_20190408_104809.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:27+2" type="Information">
+      <text>Process 771 / 852 ('D:\DATA\DE\Original Data Temp\636549_Z113431_20190408_095032.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:27+2" type="Information">
+      <text>Process 772 / 852 ('D:\DATA\DE\Original Data Temp\637255_Z1000170_20190408_092425.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:27+2" type="Information">
+      <text>Process 773 / 852 ('D:\DATA\DE\Original Data Temp\637319_Z124543_20190408_105318.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:27+2" type="Information">
+      <text>Process 774 / 852 ('D:\DATA\DE\Original Data Temp\637652_Z1200144_20190408_090840.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:27+2" type="Information">
+      <text>Process 775 / 852 ('D:\DATA\DE\Original Data Temp\637858_Z136584_20190408_111228.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:28+2" type="Information">
+      <text>Process 776 / 852 ('D:\DATA\DE\Original Data Temp\637865_Z101713_20190408_113149.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:28+2" type="Information">
+      <text>Process 777 / 852 ('D:\DATA\DE\Original Data Temp\638313_Z122507_20190408_113357.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:28+2" type="Information">
+      <text>Process 778 / 852 ('D:\DATA\DE\Original Data Temp\804921_Z110883_20190408_102559.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:28+2" type="Information">
+      <text>Process 779 / 852 ('D:\DATA\DE\Original Data Temp\805072_Z104390_20190408_104408.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:28+2" type="Information">
+      <text>Process 780 / 852 ('D:\DATA\DE\Original Data Temp\807873_Z125783_20190408_115911.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:28+2" type="Information">
+      <text>Process 781 / 852 ('D:\DATA\DE\Original Data Temp\809315_Z104692_20190408_114033.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:29+2" type="Information">
+      <text>Process 782 / 852 ('D:\DATA\DE\Original Data Temp\825308_Z127269_20190408_104052.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:29+2" type="Information">
+      <text>Process 783 / 852 ('D:\DATA\DE\Original Data Temp\863201_Z110426_20190408_104644.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:29+2" type="Information">
+      <text>Process 784 / 852 ('D:\DATA\DE\Original Data Temp\866625_Z112911_20190408_105800.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:29+2" type="Information">
+      <text>Process 785 / 852 ('D:\DATA\DE\Original Data Temp\870845_Z113430_20190408_105147.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:29+2" type="Information">
+      <text>Process 786 / 852 ('D:\DATA\DE\Original Data Temp\871268_Z102172_20190408_112529.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:29+2" type="Information">
+      <text>Process 787 / 852 ('D:\DATA\DE\Original Data Temp\875321_Z103518_20190408_111311.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:29+2" type="Information">
+      <text>Process 788 / 852 ('D:\DATA\DE\Original Data Temp\879873_Z106576_20190408_112122.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:29+2" type="Information">
+      <text>Process 789 / 852 ('D:\DATA\DE\Original Data Temp\895084_Z116828_20190408_115914.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:29+2" type="Information">
+      <text>Process 790 / 852 ('D:\DATA\DE\Original Data Temp\919795_Z102229_20190408_115601.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:29+2" type="Information">
+      <text>Process 791 / 852 ('D:\DATA\DE\Original Data Temp\960966_Z101124_20190408_093743.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:29+2" type="Information">
+      <text>Process 792 / 852 ('D:\DATA\DE\Original Data Temp\965151_Z100694_20190408_114256.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:30+2" type="Information">
+      <text>Process 793 / 852 ('D:\DATA\DE\Original Data Temp\966109_Z105218_20190408_110838.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:30+2" type="Information">
+      <text>Process 794 / 852 ('D:\DATA\DE\Original Data Temp\966502_Z101535_20190408_101740.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:30+2" type="Information">
+      <text>Process 795 / 852 ('D:\DATA\DE\Original Data Temp\966575_Z127654_20190408_090816.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:30+2" type="Information">
+      <text>Process 796 / 852 ('D:\DATA\DE\Original Data Temp\966575_Z127654_20190408_111025.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:30+2" type="Information">
+      <text>Process 797 / 852 ('D:\DATA\DE\Original Data Temp\966592_Z102204_20190408_090236.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:30+2" type="Information">
+      <text>Process 798 / 852 ('D:\DATA\DE\Original Data Temp\966634_Z122640_20190408_095608.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:30+2" type="Information">
+      <text>Process 799 / 852 ('D:\DATA\DE\Original Data Temp\966675_Z112924_20190408_105212.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:31+2" type="Information">
+      <text>Process 800 / 852 ('D:\DATA\DE\Original Data Temp\966720_Z128536_20190408_103341.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:31+2" type="Information">
+      <text>Process 801 / 852 ('D:\DATA\DE\Original Data Temp\966776_Z111754_20190408_091420.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:31+2" type="Information">
+      <text>Process 802 / 852 ('D:\DATA\DE\Original Data Temp\966982_Z100577_20190408_115802.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:31+2" type="Information">
+      <text>Process 803 / 852 ('D:\DATA\DE\Original Data Temp\967509_Z129141_20190408_110843.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:31+2" type="Information">
+      <text>Process 804 / 852 ('D:\DATA\DE\Original Data Temp\967821_Z113422_20190408_092815.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:31+2" type="Information">
+      <text>Process 805 / 852 ('D:\DATA\DE\Original Data Temp\968585_Z105174_20190408_090013.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:31+2" type="Information">
+      <text>Process 806 / 852 ('D:\DATA\DE\Original Data Temp\969023_Z125878_20190408_100224.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:31+2" type="Information">
+      <text>Process 807 / 852 ('D:\DATA\DE\Original Data Temp\970152_Z127568_20190408_092723.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:31+2" type="Information">
+      <text>Process 808 / 852 ('D:\DATA\DE\Original Data Temp\971577_Z129149_20190408_103513.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:31+2" type="Information">
+      <text>Process 809 / 852 ('D:\DATA\DE\Original Data Temp\972048_Z122921_20190408_080048.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:32+2" type="Information">
+      <text>Process 810 / 852 ('D:\DATA\DE\Original Data Temp\972318_Z122982_20190408_082337.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:32+2" type="Information">
+      <text>Process 811 / 852 ('D:\DATA\DE\Original Data Temp\972318_Z122982_20190408_104706.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:32+2" type="Information">
+      <text>Process 812 / 852 ('D:\DATA\DE\Original Data Temp\972327_Z101928_20190408_115438.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:32+2" type="Information">
+      <text>Process 813 / 852 ('D:\DATA\DE\Original Data Temp\972665_Z126371_20190408_113132.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:32+2" type="Information">
+      <text>Process 814 / 852 ('D:\DATA\DE\Original Data Temp\972856_Z123607_20190408_112503.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:32+2" type="Information">
+      <text>Process 815 / 852 ('D:\DATA\DE\Original Data Temp\973102_Z111208_20190408_081455.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:32+2" type="Information">
+      <text>Process 816 / 852 ('D:\DATA\DE\Original Data Temp\973382_Z122873_20190408_111226.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:32+2" type="Information">
+      <text>Process 817 / 852 ('D:\DATA\DE\Original Data Temp\974071_Z122372_20190408_083306.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:32+2" type="Information">
+      <text>Process 818 / 852 ('D:\DATA\DE\Original Data Temp\974071_Z122372_20190408_093329.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:32+2" type="Information">
+      <text>Process 819 / 852 ('D:\DATA\DE\Original Data Temp\974082_Z105026_20190408_104703.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:33+2" type="Information">
+      <text>Process 820 / 852 ('D:\DATA\DE\Original Data Temp\974428_Z122513_20190408_094832.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:33+2" type="Information">
+      <text>Process 821 / 852 ('D:\DATA\DE\Original Data Temp\974979_Z103971_20190408_084448.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:33+2" type="Information">
+      <text>Process 822 / 852 ('D:\DATA\DE\Original Data Temp\975244_Z121092_20190408_104547.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:33+2" type="Information">
+      <text>Process 823 / 852 ('D:\DATA\DE\Original Data Temp\975506_Z105388_20190408_111956.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:33+2" type="Information">
+      <text>Process 824 / 852 ('D:\DATA\DE\Original Data Temp\975647_Z125710_20190408_113840.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:33+2" type="Information">
+      <text>Process 825 / 852 ('D:\DATA\DE\Original Data Temp\975678_Z121057_20190408_115236.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:33+2" type="Information">
+      <text>Process 826 / 852 ('D:\DATA\DE\Original Data Temp\976105_Z111489_20190408_104345.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:33+2" type="Information">
+      <text>Process 827 / 852 ('D:\DATA\DE\Original Data Temp\976534_Z112503_20190408_111332.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:33+2" type="Information">
+      <text>Process 828 / 852 ('D:\DATA\DE\Original Data Temp\976690_Z130441_20190408_111656.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:33+2" type="Information">
+      <text>Process 829 / 852 ('D:\DATA\DE\Original Data Temp\976994_Z123408_20190408_114014.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:34+2" type="Information">
+      <text>Process 830 / 852 ('D:\DATA\DE\Original Data Temp\977438_Z122647_20190408_112640.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:34+2" type="Information">
+      <text>Process 831 / 852 ('D:\DATA\DE\Original Data Temp\978828_Z131857_20190408_111540.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:34+2" type="Information">
+      <text>Process 832 / 852 ('D:\DATA\DE\Original Data Temp\979200_Z117148_20190408_102759.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:34+2" type="Information">
+      <text>Process 833 / 852 ('D:\DATA\DE\Original Data Temp\979622_Z118815_20190408_092554.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:34+2" type="Information">
+      <text>Process 834 / 852 ('D:\DATA\DE\Original Data Temp\979622_Z118815_20190408_111840.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:34+2" type="Information">
+      <text>Process 835 / 852 ('D:\DATA\DE\Original Data Temp\979652_Z113899_20190408_102055.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:34+2" type="Information">
+      <text>Process 836 / 852 ('D:\DATA\DE\Original Data Temp\980893_Z102588_20190408_110202.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:34+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\980893_Z102588_20190408_110202.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T12:03:34+2" type="Information">
+      <text>Process 837 / 852 ('D:\DATA\DE\Original Data Temp\982821_Z126408_20190408_102423.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:34+2" type="Information">
+      <text>Process 838 / 852 ('D:\DATA\DE\Original Data Temp\985966_Z126897_20190408_083612.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:34+2" type="Information">
+      <text>Process 839 / 852 ('D:\DATA\DE\Original Data Temp\986078_Z125334_20190408_083423.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:34+2" type="Information">
+      <text>Process 840 / 852 ('D:\DATA\DE\Original Data Temp\987315_Z131476_20190408_104430.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:34+2" type="Information">
+      <text>Process 841 / 852 ('D:\DATA\DE\Original Data Temp\987477_Z123154_20190408_102909.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:35+2" type="Information">
+      <text>Process 842 / 852 ('D:\DATA\DE\Original Data Temp\987511_Z100067_20190408_114808.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:35+2" type="Information">
+      <text>Process 843 / 852 ('D:\DATA\DE\Original Data Temp\987856_Z129641_20190408_115221.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:35+2" type="Information">
+      <text>Process 844 / 852 ('D:\DATA\DE\Original Data Temp\987867_Z113677_20190408_113138.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:35+2" type="Information">
+      <text>Process 845 / 852 ('D:\DATA\DE\Original Data Temp\988312_Z126904_20190408_101101.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:35+2" type="Information">
+      <text>Process 846 / 852 ('D:\DATA\DE\Original Data Temp\988784_Z100043_20190408_115934.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:35+2" type="Information">
+      <text>Process 847 / 852 ('D:\DATA\DE\Original Data Temp\989206_Z135775_20190408_091312.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:35+2" type="Information">
+      <text>Process 848 / 852 ('D:\DATA\DE\Original Data Temp\989208_Z135988_20190408_105848.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:35+2" type="Information">
+      <text>Process 849 / 852 ('D:\DATA\DE\Original Data Temp\989231_Z131152_20190408_115228.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:36+2" type="Information">
+      <text>Process 850 / 852 ('D:\DATA\DE\Original Data Temp\989669_Z123787_20190408_111052.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:36+2" type="Information">
+      <text>Process 851 / 852 ('D:\DATA\DE\Original Data Temp\989976_Z107937_20190408_112920.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:36+2" type="Information">
+      <text>Process 852 / 852 ('D:\DATA\DE\Original Data Temp\990495_Z116094_20190408_092756.xml') </text>
+    </message>
+    <message time="2019-04-08T12:03:36+2" type="Information">
+      <text>Skipping Result: 0 of 1253 Purchase Acts were skipped due to their redundant occurrence (now 1253 Purchase Acts). </text>
+    </message>
+    <message time="2019-04-08T12:03:40+2" type="Information">
+      <text>Writing ARaMIS-File 'D:\DATA\DE\ARaMIS File\ScanPlus_20190408_120209_export.aramis' </text>
+    </message>
+    <message time="2019-04-08T12:03:40+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:41+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:41+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:42+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:43+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:44+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:44+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:44+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:45+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:45+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:46+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:46+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:46+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:46+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:46+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:46+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:46+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:47+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:47+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:47+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:47+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:47+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:47+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:47+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:47+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:47+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:48+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:48+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:49+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:49+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:49+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:50+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:50+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:50+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:51+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:51+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:52+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:52+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:52+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:53+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:53+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:53+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:53+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:53+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:53+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:54+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:54+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:54+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:54+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:54+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:54+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:55+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:55+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:55+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:55+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:55+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:55+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:55+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:56+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:56+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:57+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:57+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:59+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:59+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:03:59+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:04:00+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:04:00+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:04:00+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:04:00+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:04:00+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:04:00+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:04:00+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:04:00+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:04:00+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:04:00+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:04:00+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T12:04:00+2" type="Information">
+      <text>76 of 10135 Articles were skipped due to script events (now 10059 Articles). </text>
+    </message>
+    <message time="2019-04-08T12:04:03+2" type="Information">
+      <text>Writing ReturnCode-File 'D:\DATA\DE\ARaMIS File\ScanPlus_20190408_120209_export.rc' </text>
+    </message>
+    <message time="2019-04-08T12:04:03+2" type="Information">
+      <text>Input files will be copied to folder 'D:\DATA\DE\Original Data'. </text>
+    </message>
+  </messages>
+  <statistics>
+    <input_count>8919</input_count>
+    <output_count>10059</output_count>
+  </statistics>
+  <summary>
+    <warnings>1868960</warnings>
+    <errors>47</errors>
+    <end>2019-04-08T12:04:09+2</end>
+  </summary>
+</protocol>

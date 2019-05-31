@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<protocol name="Datatrans" time="2019-04-10T21:00:09Z" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+	<general>
+		<start>2019-04-10T21:00:09Z</start>
+		<application>Datatrans</application>
+		<version>2.6.9091     (dt_batch-2.0.0)</version>
+		<user>dataro</user>
+		<atr_server>SYB_ATRRO</atr_server>
+		<atr_user>dataro</atr_user>
+		<atr_database>ro_admin</atr_database>
+		<input_file>ScanPlus_dataro_20190410_062039.xml</input_file>
+		<period_from>0</period_from>
+	</general>
+	<messages>
+		<message time="2019-04-10T21:00:10Z" type="error">
+			<text>** error: line 77, file:/move/dataro/datatrans/ScanPlus_dataro_20190410_062039.xml: invalid article key: '01059414440004213922524'
+</text>
+		</message>
+		<message time="2019-04-10T21:00:19Z" type="error">
+			<text>** error: line 3464, file:/move/dataro/datatrans/ScanPlus_dataro_20190410_062039.xml: invalid article key: '06050009'
+</text>
+		</message>
+		<message time="2019-04-10T21:00:20Z" type="error">
+			<text>** error: line 3728, file:/move/dataro/datatrans/ScanPlus_dataro_20190410_062039.xml: invalid article key: '0199121892298635'
+</text>
+		</message>
+		<message time="2019-04-10T21:00:22Z" type="error">
+			<text>** error: line 5602, file:/move/dataro/datatrans/ScanPlus_dataro_20190410_062039.xml: invalid article key: '01059412620000853922896'
+</text>
+		</message>
+		<message time="2019-04-10T21:00:23Z" type="error">
+			<text>** error: line 6612, file:/move/dataro/datatrans/ScanPlus_dataro_20190410_062039.xml: invalid article key: '01028049840031743922109'
+</text>
+		</message>
+		<message time="2019-04-10T21:00:23Z" type="error">
+			<text>** error: line 6613, file:/move/dataro/datatrans/ScanPlus_dataro_20190410_062039.xml: invalid article key: '0102804983003267392291'
+</text>
+		</message>
+		<message time="2019-04-10T21:00:24Z" type="error">
+			<text>** error: line 7079, file:/move/dataro/datatrans/ScanPlus_dataro_20190410_062039.xml: invalid article key: '04700012'
+</text>
+		</message>
+		<message time="2019-04-10T21:00:54Z" type="information">
+			<text>finished file: ScanPlus_dataro_20190410_062039.xml</text>
+		</message>
+	</messages>
+	<statistics>
+		<input_count>8892</input_count>
+		<output_count>8885</output_count>
+		<failed>7</failed>
+		<new_article_created>102</new_article_created>
+		<variable_weight_art_records>0</variable_weight_art_records>
+		<inserted_to_pool>0</inserted_to_pool>
+		<VariableWeightArticles_created>0</VariableWeightArticles_created>
+		<VariableWeightRecords_with_wrong_value>0</VariableWeightRecords_with_wrong_value>
+		<Value_adjusted>0</Value_adjusted>
+		<loadids>
+			<loadid>3366</loadid>
+		</loadids>
+	</statistics>
+	<summary>
+		<warnings>0</warnings>
+		<errors>7</errors>
+		<end>2019-04-10T21:00:54Z</end>
+		<exitcode>2</exitcode>
+	</summary>
+</protocol>

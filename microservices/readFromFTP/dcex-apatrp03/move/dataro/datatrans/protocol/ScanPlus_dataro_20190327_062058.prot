@@ -1,0 +1,51 @@
+		<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+		<protocol name="Datatrans" time="2019-03-27T22:01:18Z" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+			<general>
+				<start>2019-03-27T22:01:18Z</start>
+				<application>Datatrans</application>
+				<version>2.6.9088     (dt_batch-2.0.0)</version>
+				<user>dataro</user>
+				<atr_server>SYB_ATRRO</atr_server>
+				<atr_user>dataro</atr_user>
+				<atr_database>ro_admin</atr_database>
+				<input_file>ScanPlus_dataro_20190327_062058.xml</input_file>
+				<period_from>0</period_from>
+			</general>
+			<messages>
+				<message time="2019-03-27T22:07:15Z" type="error">
+					<text>** error: line 2548, file:/move/dataro/datatrans/ScanPlus_dataro_20190327_062058.xml: invalid article key: '02200002'
+</text>
+				</message>
+				<message time="2019-03-27T22:07:23Z" type="error">
+					<text>** error: line 5353, file:/move/dataro/datatrans/ScanPlus_dataro_20190327_062058.xml: invalid article key: '010594148500383239221049'
+</text>
+				</message>
+				<message time="2019-03-27T22:07:27Z" type="error">
+					<text>** error: line 6224, file:/move/dataro/datatrans/ScanPlus_dataro_20190327_062058.xml: invalid article key: '010642592900041439221049'
+</text>
+				</message>
+				<message time="2019-03-27T22:08:22Z" type="information">
+					<text>finished file: ScanPlus_dataro_20190327_062058.xml (PARTIAL)</text>
+				</message>
+			</messages>
+		</protocol>
+	</messages>
+	<statistics>
+		<input_count>8256</input_count>
+		<output_cnt>8253</output_cnt>
+		<failed>3</failed>
+		<new_article_created>90</new_article_created>
+		<variable_weight_art_records>0</variable_weight_art_records>
+		<inserted_to_pool>0</inserted_to_pool>
+		<VariableWeightArticles created>0</VariableWeightArticles created>
+		<VariableWeightRecords with wrong value>0</VariableWeightRecords with wrong value>
+		<Value adjusted>0</Value adjusted>
+		<loadid>3352</loadid>
+	</statistics>
+	<summary>
+		<warnings>0</warnings>
+		<errors>3</errors>
+		<end>2019-03-27T22:08:22Z</end>
+		<exitcode>2</exitcode>
+	</summary>
+</protocol>

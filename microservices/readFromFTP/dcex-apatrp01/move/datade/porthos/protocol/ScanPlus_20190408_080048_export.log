@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<protocol name="Porthos protocol" time="2019-04-08T08:00:48+2" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+  <general>
+    <start>2019-04-08T08:00:48+2</start>
+    <task>JOB 1</task>
+    <dataflow>ScanPlus</dataflow>
+    <application>Porthos</application>
+    <version>2.3.002</version>
+    <user>dce.PorthosAdmin.svc</user>
+    <input_file>D:\DATA\DE\Original Data Temp\*.xml</input_file>
+    <output_file>D:\DATA\DE\ARaMIS File\ScanPlus_20190408_080048_export.aramis</output_file>
+    <protocol_file>D:\DATA\DE\Protocol File\ScanPlus_20190408_080048_export.log</protocol_file>
+    <error_file>D:\DATA\DE\Error File\ScanPlus_20190408_080048_export.error</error_file>
+  </general>
+  <messages>
+    <message time="2019-04-08T08:00:48+2" type="Information">
+      <text>103 file(s) ready for processing. </text>
+    </message>
+    <message time="2019-04-08T08:00:48+2" type="Information">
+      <text>Process 1 / 103 ('D:\DATA\DE\Original Data Temp\061183_Z104464_20190408_025529.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:49+2" type="Information">
+      <text>Process 2 / 103 ('D:\DATA\DE\Original Data Temp\070063_Z123427_20190407_220236.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:49+2" type="Information">
+      <text>Process 3 / 103 ('D:\DATA\DE\Original Data Temp\070211_Z104514_20190407_221350.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:49+2" type="Information">
+      <text>Process 4 / 103 ('D:\DATA\DE\Original Data Temp\103391_Z110955_20190408_012944.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:49+2" type="Information">
+      <text>Process 5 / 103 ('D:\DATA\DE\Original Data Temp\104686_Z107029_20190407_222837.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:49+2" type="Information">
+      <text>Process 6 / 103 ('D:\DATA\DE\Original Data Temp\107945_Z125269_20190408_052334.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:49+2" type="Information">
+      <text>Process 7 / 103 ('D:\DATA\DE\Original Data Temp\108756_Z103983_20190408_005851.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:49+2" type="Information">
+      <text>Process 8 / 103 ('D:\DATA\DE\Original Data Temp\108923_Z100962_20190408_074517.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:49+2" type="Information">
+      <text>Process 9 / 103 ('D:\DATA\DE\Original Data Temp\109496_Z123190_20190407_220208.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:50+2" type="Information">
+      <text>Process 10 / 103 ('D:\DATA\DE\Original Data Temp\111498_Z121816_20190407_232725.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:50+2" type="Information">
+      <text>Process 11 / 103 ('D:\DATA\DE\Original Data Temp\112572_Z125794_20190408_063051.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:50+2" type="Information">
+      <text>Process 12 / 103 ('D:\DATA\DE\Original Data Temp\113388_Z127649_20190407_231221.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:50+2" type="Information">
+      <text>Process 13 / 103 ('D:\DATA\DE\Original Data Temp\117141_Z128856_20190408_073312.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:50+2" type="Information">
+      <text>Process 14 / 103 ('D:\DATA\DE\Original Data Temp\118856_Z128983_20190408_074646.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:50+2" type="Information">
+      <text>Process 15 / 103 ('D:\DATA\DE\Original Data Temp\120400_Z102008_20190408_075645.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:50+2" type="Information">
+      <text>Process 16 / 103 ('D:\DATA\DE\Original Data Temp\125807_Z103663_20190408_064947.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:50+2" type="Information">
+      <text>Process 17 / 103 ('D:\DATA\DE\Original Data Temp\126358_Z104416_20190408_072715.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:51+2" type="Information">
+      <text>Process 18 / 103 ('D:\DATA\DE\Original Data Temp\128529_Z111244_20190408_040631.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:51+2" type="Information">
+      <text>Process 19 / 103 ('D:\DATA\DE\Original Data Temp\136111_Z126179_20190408_062633.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:51+2" type="Information">
+      <text>Process 20 / 103 ('D:\DATA\DE\Original Data Temp\138070_Z100448_20190408_074854.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:51+2" type="Information">
+      <text>Process 21 / 103 ('D:\DATA\DE\Original Data Temp\139828_Z101803_20190408_024934.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:51+2" type="Information">
+      <text>Process 22 / 103 ('D:\DATA\DE\Original Data Temp\140915_Z101756_20190407_223418.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:51+2" type="Information">
+      <text>Process 23 / 103 ('D:\DATA\DE\Original Data Temp\143602_Z125945_20190408_071813.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:51+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\143602_Z125945_20190408_071813.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:51+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\143602_Z125945_20190408_071813.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:51+2" type="Information">
+      <text>Process 24 / 103 ('D:\DATA\DE\Original Data Temp\144437_Z137083_20190407_223409.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:51+2" type="Information">
+      <text>Process 25 / 103 ('D:\DATA\DE\Original Data Temp\146628_Z104183_20190408_033021.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:52+2" type="Information">
+      <text>Process 26 / 103 ('D:\DATA\DE\Original Data Temp\149268_Z100873_20190407_222152.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:52+2" type="Information">
+      <text>Process 27 / 103 ('D:\DATA\DE\Original Data Temp\149444_Z110637_20190408_040718.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:52+2" type="Information">
+      <text>Process 28 / 103 ('D:\DATA\DE\Original Data Temp\150153_Z105271_20190408_003806.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:52+2" type="Information">
+      <text>Process 29 / 103 ('D:\DATA\DE\Original Data Temp\152457_Z122164_20190408_004449.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:52+2" type="Information">
+      <text>Process 30 / 103 ('D:\DATA\DE\Original Data Temp\157915_Z126227_20190407_235636.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:52+2" type="Information">
+      <text>Process 31 / 103 ('D:\DATA\DE\Original Data Temp\159927_Z125510_20190408_015024.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:52+2" type="Information">
+      <text>Process 32 / 103 ('D:\DATA\DE\Original Data Temp\169684_Z123295_20190408_074152.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:52+2" type="Information">
+      <text>Process 33 / 103 ('D:\DATA\DE\Original Data Temp\174207_Z113338_20190408_002446.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:52+2" type="Information">
+      <text>Process 34 / 103 ('D:\DATA\DE\Original Data Temp\178827_Z126091_20190408_065542.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:53+2" type="Information">
+      <text>Process 35 / 103 ('D:\DATA\DE\Original Data Temp\181021_Z137007_20190408_064846.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:53+2" type="Information">
+      <text>Process 36 / 103 ('D:\DATA\DE\Original Data Temp\181834_Z110668_20190407_234745.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:53+2" type="Information">
+      <text>Process 37 / 103 ('D:\DATA\DE\Original Data Temp\183408_Z104986_20190407_230005.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:53+2" type="Information">
+      <text>Process 38 / 103 ('D:\DATA\DE\Original Data Temp\184727_Z126340_20190408_070520.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:53+2" type="Information">
+      <text>Process 39 / 103 ('D:\DATA\DE\Original Data Temp\185227_Z1200716_20190407_234536.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:53+2" type="Information">
+      <text>Process 40 / 103 ('D:\DATA\DE\Original Data Temp\188547_Z131690_20190408_053722.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:53+2" type="Information">
+      <text>Process 41 / 103 ('D:\DATA\DE\Original Data Temp\188829_Z111999_20190408_073305.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:54+2" type="Information">
+      <text>Process 42 / 103 ('D:\DATA\DE\Original Data Temp\190322_Z128505_20190407_224614.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:54+2" type="Information">
+      <text>Process 43 / 103 ('D:\DATA\DE\Original Data Temp\192774_Z150624_20190408_050927.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:54+2" type="Information">
+      <text>Process 44 / 103 ('D:\DATA\DE\Original Data Temp\194955_Z125833_20190408_062043.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:54+2" type="Information">
+      <text>Process 45 / 103 ('D:\DATA\DE\Original Data Temp\195663_Z125166_20190408_075358.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:54+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\195663_Z125166_20190408_075358.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:54+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\195663_Z125166_20190408_075358.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:54+2" type="Information">
+      <text>Process 46 / 103 ('D:\DATA\DE\Original Data Temp\197578_Z112362_20190408_053049.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:54+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\197578_Z112362_20190408_053049.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:54+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\197578_Z112362_20190408_053049.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:54+2" type="Information">
+      <text>Process 47 / 103 ('D:\DATA\DE\Original Data Temp\198777_Z113555_20190408_013223.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:54+2" type="Information">
+      <text>Process 48 / 103 ('D:\DATA\DE\Original Data Temp\199317_Z128728_20190407_234549.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:54+2" type="Information">
+      <text>Process 49 / 103 ('D:\DATA\DE\Original Data Temp\199548_Z101615_20190408_034324.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:54+2" type="Information">
+      <text>Process 50 / 103 ('D:\DATA\DE\Original Data Temp\199856_Z134912_20190408_063547.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Information">
+      <text>Process 51 / 103 ('D:\DATA\DE\Original Data Temp\351794_Z113376_20190407_233429.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Information">
+      <text>Process 52 / 103 ('D:\DATA\DE\Original Data Temp\360529_Z127890_20190408_023028.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Information">
+      <text>Process 53 / 103 ('D:\DATA\DE\Original Data Temp\365120_Z122702_20190408_075707.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Information">
+      <text>Process 54 / 103 ('D:\DATA\DE\Original Data Temp\365368_Z122726_20190407_220427.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\365368_Z122726_20190407_220427.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\365368_Z122726_20190407_220427.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Information">
+      <text>Process 55 / 103 ('D:\DATA\DE\Original Data Temp\365370_Z126506_20190407_233756.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\365370_Z126506_20190407_233756.xml' rawid '167')</text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Information">
+      <text>Process 56 / 103 ('D:\DATA\DE\Original Data Temp\365417_Z110974_20190408_031000.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Information">
+      <text>Process 57 / 103 ('D:\DATA\DE\Original Data Temp\365422_Z121519_20190407_225901.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Information">
+      <text>Process 58 / 103 ('D:\DATA\DE\Original Data Temp\488538_Z150511_20190408_005509.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Information">
+      <text>Process 59 / 103 ('D:\DATA\DE\Original Data Temp\493150_Z113490_20190408_074228.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Information">
+      <text>Process 60 / 103 ('D:\DATA\DE\Original Data Temp\493489_Z120546_20190407_234407.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\493489_Z120546_20190407_234407.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\493489_Z120546_20190407_234407.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Information">
+      <text>Process 61 / 103 ('D:\DATA\DE\Original Data Temp\494190_Z150260_20190408_042828.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:55+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\494190_Z150260_20190408_042828.xml' rawid '72')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 62 / 103 ('D:\DATA\DE\Original Data Temp\494642_Z113937_20190407_224915.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\494642_Z113937_20190407_224915.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\494642_Z113937_20190407_224915.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 63 / 103 ('D:\DATA\DE\Original Data Temp\494706_Z127145_20190408_025833.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 64 / 103 ('D:\DATA\DE\Original Data Temp\495861_Z112322_20190407_231345.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 65 / 103 ('D:\DATA\DE\Original Data Temp\495863_Z122740_20190408_074912.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 66 / 103 ('D:\DATA\DE\Original Data Temp\496584_Z116324_20190408_052936.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 67 / 103 ('D:\DATA\DE\Original Data Temp\496880_Z112838_20190407_224604.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 68 / 103 ('D:\DATA\DE\Original Data Temp\497181_Z121620_20190407_233347.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\497181_Z121620_20190407_233347.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\497181_Z121620_20190407_233347.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 69 / 103 ('D:\DATA\DE\Original Data Temp\497451_Z102109_20190408_074737.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 70 / 103 ('D:\DATA\DE\Original Data Temp\497784_Z103459_20190407_231353.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 71 / 103 ('D:\DATA\DE\Original Data Temp\498883_Z122473_20190407_220120.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\498883_Z122473_20190407_220120.xml' rawid '441')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\498883_Z122473_20190407_220120.xml' rawid '441')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 72 / 103 ('D:\DATA\DE\Original Data Temp\498886_Z119734_20190407_222320.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\498886_Z119734_20190407_222320.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 73 / 103 ('D:\DATA\DE\Original Data Temp\499520_Z119030_20190408_060951.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 74 / 103 ('D:\DATA\DE\Original Data Temp\499547_Z123128_20190408_070048.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\499547_Z123128_20190408_070048.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\499547_Z123128_20190408_070048.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 75 / 103 ('D:\DATA\DE\Original Data Temp\502460_Z103680_20190408_075337.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 76 / 103 ('D:\DATA\DE\Original Data Temp\503219_Z129521_20190408_043136.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 77 / 103 ('D:\DATA\DE\Original Data Temp\503570_Z122566_20190407_230052.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\503570_Z122566_20190407_230052.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\503570_Z122566_20190407_230052.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Information">
+      <text>Process 78 / 103 ('D:\DATA\DE\Original Data Temp\575876_Z124646_20190407_235538.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\575876_Z124646_20190407_235538.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\575876_Z124646_20190407_235538.xml' rawid '14')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\575876_Z124646_20190407_235538.xml' rawid '115')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\575876_Z124646_20190407_235538.xml' rawid '166')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\575876_Z124646_20190407_235538.xml' rawid '180')</text>
+    </message>
+    <message time="2019-04-08T08:00:56+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\575876_Z124646_20190407_235538.xml' rawid '195')</text>
+    </message>
+    <message time="2019-04-08T08:00:57+2" type="Information">
+      <text>Process 79 / 103 ('D:\DATA\DE\Original Data Temp\578808_Z121682_20190408_053225.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:57+2" type="Information">
+      <text>Process 80 / 103 ('D:\DATA\DE\Original Data Temp\579037_Z108892_20190408_040935.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:58+2" type="Information">
+      <text>Process 81 / 103 ('D:\DATA\DE\Original Data Temp\579072_Z107093_20190407_233334.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:58+2" type="Information">
+      <text>Process 82 / 103 ('D:\DATA\DE\Original Data Temp\579361_Z129180_20190407_235628.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:58+2" type="Information">
+      <text>Process 83 / 103 ('D:\DATA\DE\Original Data Temp\580378_Z122248_20190407_233938.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:58+2" type="Information">
+      <text>Process 84 / 103 ('D:\DATA\DE\Original Data Temp\580423_Z126049_20190407_220407.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:58+2" type="Information">
+      <text>Process 85 / 103 ('D:\DATA\DE\Original Data Temp\581175_Z115886_20190408_002310.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:58+2" type="Information">
+      <text>Process 86 / 103 ('D:\DATA\DE\Original Data Temp\581175_Z115886_20190408_012648.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:58+2" type="Information">
+      <text>Process 87 / 103 ('D:\DATA\DE\Original Data Temp\581175_Z115886_20190408_023050.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:58+2" type="Information">
+      <text>Process 88 / 103 ('D:\DATA\DE\Original Data Temp\581175_Z115886_20190408_035337.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:59+2" type="Information">
+      <text>Process 89 / 103 ('D:\DATA\DE\Original Data Temp\601837_Z110678_20190408_002142.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:59+2" type="Information">
+      <text>Process 90 / 103 ('D:\DATA\DE\Original Data Temp\604419_Z122790_20190408_062313.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:59+2" type="Information">
+      <text>Process 91 / 103 ('D:\DATA\DE\Original Data Temp\609125_Z127365_20190408_070313.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:59+2" type="Information">
+      <text>Process 92 / 103 ('D:\DATA\DE\Original Data Temp\609671_Z126922_20190408_054653.xml') </text>
+    </message>
+    <message time="2019-04-08T08:00:59+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\609671_Z126922_20190408_054653.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:59+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\609671_Z126922_20190408_054653.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:00:59+2" type="Information">
+      <text>Process 93 / 103 ('D:\DATA\DE\Original Data Temp\626595_Z100606_20190407_221801.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:00+2" type="Information">
+      <text>Process 94 / 103 ('D:\DATA\DE\Original Data Temp\627580_Z125345_20190407_224000.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:00+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\627580_Z125345_20190407_224000.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:01:00+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\627580_Z125345_20190407_224000.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:01:00+2" type="Information">
+      <text>Process 95 / 103 ('D:\DATA\DE\Original Data Temp\636634_Z101857_20190407_233454.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:00+2" type="Information">
+      <text>Process 96 / 103 ('D:\DATA\DE\Original Data Temp\891049_Z105326_20190408_054822.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:00+2" type="Information">
+      <text>Process 97 / 103 ('D:\DATA\DE\Original Data Temp\964362_Z113442_20190408_075911.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:00+2" type="Information">
+      <text>Process 98 / 103 ('D:\DATA\DE\Original Data Temp\972180_Z127234_20190408_044124.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:00+2" type="Error">
+      <text>Check failed   (description: 'No Article' source 'D:\DATA\DE\Original Data Temp\972180_Z127234_20190408_044124.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:01:00+2" type="Error">
+      <text>Check failed   (description: 'No Shop' source 'D:\DATA\DE\Original Data Temp\972180_Z127234_20190408_044124.xml' rawid '0')</text>
+    </message>
+    <message time="2019-04-08T08:01:00+2" type="Information">
+      <text>Process 99 / 103 ('D:\DATA\DE\Original Data Temp\972214_Z105117_20190407_223533.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:00+2" type="Information">
+      <text>Process 100 / 103 ('D:\DATA\DE\Original Data Temp\974764_Z125619_20190408_024725.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:01+2" type="Information">
+      <text>Process 101 / 103 ('D:\DATA\DE\Original Data Temp\977639_Z129213_20190407_224052.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:01+2" type="Information">
+      <text>Process 102 / 103 ('D:\DATA\DE\Original Data Temp\979764_Z118788_20190408_073407.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:01+2" type="Information">
+      <text>Process 103 / 103 ('D:\DATA\DE\Original Data Temp\990130_Z104992_20190408_050526.xml') </text>
+    </message>
+    <message time="2019-04-08T08:01:01+2" type="Information">
+      <text>Skipping Result: 0 of 201 Purchase Acts were skipped due to their redundant occurrence (now 201 Purchase Acts). </text>
+    </message>
+    <message time="2019-04-08T08:01:01+2" type="Information">
+      <text>Writing ARaMIS-File 'D:\DATA\DE\ARaMIS File\ScanPlus_20190408_080048_export.aramis' </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:02+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:03+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:03+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:03+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:03+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:03+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:03+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:03+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:03+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:03+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:03+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:03+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:03+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:03+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:04+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:04+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:04+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:04+2" type="Warning">
+      <text>Article was skipped due to script events </text>
+    </message>
+    <message time="2019-04-08T08:01:04+2" type="Information">
+      <text>32 of 1364 Articles were skipped due to script events (now 1332 Articles). </text>
+    </message>
+    <message time="2019-04-08T08:01:04+2" type="Information">
+      <text>Writing ReturnCode-File 'D:\DATA\DE\ARaMIS File\ScanPlus_20190408_080048_export.rc' </text>
+    </message>
+    <message time="2019-04-08T08:01:04+2" type="Information">
+      <text>Input files will be copied to folder 'D:\DATA\DE\Original Data'. </text>
+    </message>
+  </messages>
+  <statistics>
+    <input_count>1185</input_count>
+    <output_count>1332</output_count>
+  </statistics>
+  <summary>
+    <warnings>244457</warnings>
+    <errors>35</errors>
+    <end>2019-04-08T08:01:05+2</end>
+  </summary>
+</protocol>

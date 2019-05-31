@@ -14,7 +14,8 @@
     "prod-write2MongoDB": "NODE_ENV=10.10.1.235 pm2 start --name prod-write2MongoDB ./microservices/write2MongoDB/server.js",
     "prod-readFromMongoDB": "NODE_ENV=10.10.1.235 pm2 start --name prod-readFromMongoDB ./microservices/readFromMongoDB/server.js",
     "dev": "concurrently --raw --kill-others \"npm run dev-main\" \"npm run dev-readFromFTP\" \"npm run dev-checkwithMongoDB\" \"npm run dev-write2MongoDB\" \"npm run dev-readFromMongoDB\" ",
-    "prod": "npm run prod-main && npm run prod-readFromFTP && npm run prod-checkwithMongoDB && npm run prod-write2MongoDB && npm run prod-readFromMongoDB"
+    "prod": "npm run prod-main && npm run prod-readFromFTP && npm run prod-checkwithMongoDB && npm run prod-write2MongoDB && npm run prod-readFromMongoDB",
+    "test": "concurrently --raw --kill-others \"npm run dev-main\" \"npm run dev-readFromFTP\" "
   },
   "keywords": [],
   "author": "",
@@ -23,16 +24,23 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "concurrently": "^4.1.0",
-    "express": "^4.16.4",
+    "decompress": "^4.2.0",
+    "express": "^4.17.1",
     "ftp": "^0.3.10",
     "http2": "^3.3.7",
     "inject-tunnel-ssh": "0.0.5",
     "mongoose": "^5.4.9",
-    "npm": "^6.7.0",
+    "npm": "^6.9.0",
     "spdy": "^4.0.0",
+    "tar": "^4.4.8",
+    "tar-stream": "^2.0.1",
     "targz": "^1.0.1",
     "tunnel-ssh": "^4.1.4",
-    "xml-js": "^1.6.9"
+    "unzip": "^0.1.11",
+    "unzip-stream": "^0.3.0",
+    "unzipper": "^0.9.11",
+    "xml-js": "^1.6.9",
+    "zlib": "^1.0.5"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

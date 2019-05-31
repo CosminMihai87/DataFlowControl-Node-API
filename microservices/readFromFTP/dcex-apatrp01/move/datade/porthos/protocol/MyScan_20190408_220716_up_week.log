@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<protocol name="Porthos protocol" time="2019-04-08T22:07:16+2" version="1.0" xmlns="http://www.gfk.com/2016/AtrProtocol/1.0">
+  <general>
+    <start>2019-04-08T22:07:16+2</start>
+    <task>JOB 1</task>
+    <dataflow>MyScan_RC_UP_week</dataflow>
+    <application>Porthos</application>
+    <version>2.3.002</version>
+    <user>dce.PorthosAdmin.svc</user>
+    <input_file>D:\DATA\DE\Input MyScan\*.myscan</input_file>
+    <output_file>D:\DATA\DE\ARaMIS File\MyScan_20190408_220716_up_week.aramis</output_file>
+    <protocol_file>D:\DATA\DE\Protocol File\MyScan_20190408_220716_up_week.log</protocol_file>
+    <error_file>D:\DATA\DE\Error File\MyScan_20190408_220716_up_week.error</error_file>
+  </general>
+  <messages>
+    <message time="2019-04-08T22:07:16+2" type="Information">
+      <text>19 file(s) ready for processing. </text>
+    </message>
+    <message time="2019-04-08T22:07:16+2" type="Information">
+      <text>Process 1 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281060_ff5cb854-49da-405c-9563-3a8cd_20190408_201545.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 2 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281171_d7ca995b-962b-45ae-9a4e-319d8_20190408_203955.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 3 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281171_d7ca995b-962b-45ae-9a4e-319d8_20190408_204221.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 4 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281341_62629b75-1f30-43c2-b1d9-c4f9a_20190408_204356.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 5 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281479_c6b3cb0a-8823-441c-abb5-4606f_20190408_212701.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 6 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281479_c6b3cb0a-8823-441c-abb5-4606f_20190408_212900.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 7 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281621_ab0b3837-d694-41b8-b14c-2378d_20190408_204005.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 8 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281621_ab0b3837-d694-41b8-b14c-2378d_20190408_204324.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 9 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281621_ab0b3837-d694-41b8-b14c-2378d_20190408_204702.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 10 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281621_ab0b3837-d694-41b8-b14c-2378d_20190408_204908.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 11 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281718_4279c9f4-6ca7-4fb7-bd78-7843d_20190408_202234.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 12 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281784_36f6e75d-2ed5-438e-aa59-c5b05_20190408_200936.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 13 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281832_a65456c9-e8e5-4b5b-96b5-ea520_20190408_201259.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 14 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281844_503691da-1056-40c9-b97d-07404_20190408_202446.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 15 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281960_db7ac89c-731a-4817-a1a5-db259_20190408_201655.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 16 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281985_43687a1c-f7ea-437d-9776-79346_20190408_202344.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 17 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281991_31544fdf-517a-481c-9793-0dbff_20190408_200333.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 18 / 19 ('D:\DATA\DE\Input MyScan\MyScan_281991_31544fdf-517a-481c-9793-0dbff_20190408_200544.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Process 19 / 19 ('D:\DATA\DE\Input MyScan\MyScan_282023_210e8dea-7fde-448b-a62a-1a278_20190408_200456.myscan') </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Skipping Result: 0 of 19 Purchase Acts were skipped due to their redundant occurrence (now 19 Purchase Acts). </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Writing ARaMIS-File 'D:\DATA\DE\ARaMIS File\MyScan_20190408_220716_up_week.aramis' </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Writing ReturnCode-File 'D:\DATA\DE\ARaMIS File\MyScan_20190408_220716_up_week.rc' </text>
+    </message>
+    <message time="2019-04-08T22:07:17+2" type="Information">
+      <text>Input files will be moved to folder 'D:\DATA\DE\Original Data'. </text>
+    </message>
+  </messages>
+  <statistics>
+    <input_count>78</input_count>
+    <output_count>97</output_count>
+  </statistics>
+  <summary>
+    <warnings>0</warnings>
+    <errors>0</errors>
+    <end>2019-04-08T22:07:17+2</end>
+  </summary>
+</protocol>
