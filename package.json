@@ -24,7 +24,7 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "concurrently": "^4.1.0",
-    "decompress": "^4.2.0",
+    "decompress": "^4.2.1",
     "express": "^4.17.1",
     "ftp": "^0.3.10",
     "http2": "^3.3.7",
